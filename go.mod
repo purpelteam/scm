@@ -1,3 +1,3 @@
-module github.com/purpelteam/scm
+module github.com/purpeltim/scm
 
 go 1.14
