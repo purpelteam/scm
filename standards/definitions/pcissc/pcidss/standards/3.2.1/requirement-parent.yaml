@@ -1,0 +1,26 @@
+---
+requirements:
+  - id: 1
+    description: "Install and maintain a firewall configuration to protect cardholder data"
+  - id: 2
+    description: "Do not use vendor-supplied defaults for system passwords and other security parameters"
+  - id: 3
+    description: "Protect stored cardholder data"
+  - id: 4
+    description: "Encrypt transmission of cardholder data across open, public networks"
+  - id: 5
+    description: "Protect all systems against malware and regularly update anti-virus software or programs"
+  - id: 6
+    description: "Develop and maintain secure systems and applications"
+  - id: 7
+    description: "Restrict access to cardholder data by business need to know"
+  - id: 8
+    description: "Identify and authenticate access to system components"
+  - id: 9
+    description: "Restrict physical access to cardholder data"
+  - id: 10
+    description: "Track and monitor all access to network resources and cardholder data"
+  - id: 11
+    description: "Regularly test security systems and processes"
+  - id: 12
+    description: "Maintain a policy that addresses information security for all personnel"

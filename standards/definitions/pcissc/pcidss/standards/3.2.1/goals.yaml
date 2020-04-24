@@ -1,0 +1,14 @@
+---
+goals:
+  - id: 1
+    description: "Build and Maintain a Secure Network and Systems"
+  - id: 2
+    description: "Protect Cardholder Data"
+  - id: 3
+    description: "Maintain a Vulnerability Management Program"
+  - id: 4
+    description: "Implement Strong Access Control Measures"
+  - id: 5
+    description: "Regularly Monitor and Test 10. Track and monitor all access to network resources and cardholder data Networks"
+  - id: 6
+    description: "Maintain an Information Security Policy"

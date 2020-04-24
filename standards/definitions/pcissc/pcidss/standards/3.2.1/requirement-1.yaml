@@ -1,0 +1,65 @@
+---
+requirements:
+parent: 1
+details:
+  - id: 1.1
+    description: "Establish and implement firewall and router configuration standards that include the following:"
+    description_note: ""
+    testing_procedures: 
+      - id: 1.1
+        description: "Inspect the firewall and router configuration standards and other documentation specified below and verify that standards are complete and implemented as follows:"
+        description_note: ""
+    guidance: "
+      Firewalls and routers are key components of the architecture that controls entry to and exit from the network. These devices are software or hardware devices that block unwanted access and manage authorized access into and out of the network.
+
+      Configuration standards and procedures will help to ensure that the organization’s first line of defense in the protection of its data remains strong.
+    "
+    guidance_note: ""
+    details:
+      - id: 1.1.1
+        description: "A formal process for approving and testing all network connections and changes to the firewall and router configurations"
+        description_note: ""
+        testing_procedures:
+          - id: 1.1.1.a
+            description: "
+              Examine documented procedures to verify there is a formal process for testing and approval of all:
+              • Network connections and
+              • Changes to firewall and router configurations
+            "
+            description_note: ""
+          - id: 1.1.1.b
+            description: "
+              For a sample of network connections, interview responsible personnel and examine records to verify that network connections were approved and tested.
+            "
+            description_note: ""
+          - id: 1.1.1.c
+            description: "
+               Identify a sample of actual changes made to firewall and router configurations, compare to the change records, and interview responsible personnel to verify the changes were approved and tested.
+            "
+            description_note: ""
+        guidance: "
+          A documented and implemented process for approving and testing all connections and changes to the firewalls and routers will help prevent security problems caused by misconfiguration of the network, router, or firewall.
+          
+          Without formal approval and testing of changes, records of the changes might not be updated, which could lead to inconsistencies between network documentation and the actual configuration.
+        "
+        guidance_note: ""
+      - id: 1.1.2
+        description: "Current network diagram that identifies all connections between the cardholder data environment and other networks, including any wireless networks"
+        description_note: ""
+        testing_procedures:
+          - id: 1.1.2.a
+            description: "
+              Examine diagram(s) and observe network configurations to verify that a current network diagram exists and that it documents all connections to cardholder data, including any wireless networks.
+            "
+            description_note: ""
+          - id: 1.1.2.b
+            description: "
+              Interview responsible personnel to verify that the diagram is kept current.
+            "
+            description_note: ""
+        guidance: "
+          Network diagrams describe how networks are configured, and identify the location of all network devices.
+          
+          Without current network diagrams, devices could be overlooked and be unknowingly left out of the security controls implemented for PCI DSS and thus be vulnerable to compromise.
+        "
+        guidance_note: ""
