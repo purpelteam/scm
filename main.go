@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println("test")
+	// fmt.Println("test")
 
 	s := pci_dss_commons.Standard{}
 	pci_dss_commons.CfgDir = "standards/definitions/pcissc/pcidss/standards/"
@@ -22,5 +22,5 @@ func main() {
 	if err != nil {
 		util.ExitWithError(err)
 	}
-	fmt.Printf("Return: %s", ss)
+	fmt.Printf("%s", ss)
 }

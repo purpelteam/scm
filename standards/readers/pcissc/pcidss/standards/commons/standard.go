@@ -21,10 +21,11 @@ var (
 
 // Standard contain information about PCI DSS Standards
 type Standard struct {
-	ID          string `yaml:"id" json:"id"`
-	Description string `yaml:"description" json:"description"`
-	Since       string `yaml:"since" json:"since"`
-	Author      string `yaml:"author" json:"author"`
+	ID          string  `yaml:"id" json:"id"`
+	Description string  `yaml:"description" json:"description"`
+	Since       string  `yaml:"since" json:"since"`
+	Author      string  `yaml:"author" json:"author"`
+	Goals       []*Goal `json:"goals"`
 }
 
 // ReadStandard is function to read Standard Definition
@@ -37,15 +38,28 @@ func (s *Standard) ReadStandard(version string) (*Standard, error) {
 		version = "3.2.1"
 	}
 
-	path, err := getStandardDefinitionFilePath(version)
+	// standard
+	stdFilePath, err := getStandardDefinitionFilePath(version)
 	if err != nil {
 		util.ExitWithError(err)
 	}
 
-	s, err = getStandard(path)
+	s, err = getStandard(stdFilePath)
 	if err != nil {
 		util.ExitWithError(err)
 	}
+
+	// goals
+	goalFilePath, err := getGoalDefinitionFilePath(version)
+	if err != nil {
+		util.ExitWithError(err)
+	}
+
+	goals, err := getGoals(goalFilePath)
+	if err != nil {
+		util.ExitWithError(err)
+	}
+	s.Goals = goals.Values
 
 	return s, nil
 }
