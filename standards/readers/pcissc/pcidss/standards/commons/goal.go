@@ -12,8 +12,9 @@ import (
 
 // Goal contain information about PCI DSS Standard Goals Information
 type Goal struct {
-	ID          string `yaml:"id" json:"id"`
-	Description string `yaml:"description" json:"description"`
+	ID           string   `yaml:"id" json:"id"`
+	Description  string   `yaml:"description" json:"description"`
+	Requirements []string `yaml:"requirements" json:"requirements"`
 }
 
 // Goals contain list of PCI DSS goal information
