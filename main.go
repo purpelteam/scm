@@ -11,16 +11,17 @@ import (
 func main() {
 	// fmt.Println("test")
 
-	s := pci_dss_commons.Standard{}
+	std := pci_dss_commons.Standard{}
 	pci_dss_commons.CfgDir = "standards/definitions/pcissc/pcidss/standards/"
-	result, err := s.ReadStandard("3.2.1")
+	result, err := std.ReadStandard("3.2.1")
 	if err != nil {
 		util.ExitWithError(err)
 	}
 
-	ss, err := json.Marshal(result)
+	pciStd, err := json.Marshal(result)
 	if err != nil {
 		util.ExitWithError(err)
 	}
-	fmt.Printf("%s", ss)
+	fmt.Printf("%s", pciStd)
+
 }

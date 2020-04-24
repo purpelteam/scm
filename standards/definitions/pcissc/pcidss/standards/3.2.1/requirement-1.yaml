@@ -1,7 +1,7 @@
 ---
 requirements:
 parent: 1
-details:
+items:
   - id: 1.1
     description: "Establish and implement firewall and router configuration standards that include the following:"
     description_note: ""
@@ -15,7 +15,7 @@ details:
       Configuration standards and procedures will help to ensure that the organization’s first line of defense in the protection of its data remains strong.
     "
     guidance_note: ""
-    details:
+    items:
       - id: 1.1.1
         description: "A formal process for approving and testing all network connections and changes to the firewall and router configurations"
         description_note: ""
