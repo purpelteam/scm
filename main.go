@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/purpeltim/scm/util"
 	pci_dss_commons "github.com/purpeltim/scm/standards/readers/pcissc/pcidss/standards/commons"
+	"github.com/purpeltim/scm/standards/util"
 )
 
 func main() {

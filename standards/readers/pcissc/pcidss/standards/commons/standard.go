@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 
 	"github.com/golang/glog"
-	"github.com/purpeltim/scm/util"
+	"github.com/purpeltim/scm/standards/util"
 
 	"gopkg.in/yaml.v2"
 )
