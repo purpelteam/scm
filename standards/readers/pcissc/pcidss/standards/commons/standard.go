@@ -38,6 +38,9 @@ func (s *Standard) ReadStandard(version string) (*Standard, error) {
 	if version == "" {
 		version = "3.2.1"
 	}
+	if Version == "" {
+		Version = "3.2.1"
+	}
 
 	// standard
 	stdFilePath, err := getStandardDefinitionFilePath(version)
