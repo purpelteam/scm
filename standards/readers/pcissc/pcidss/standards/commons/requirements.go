@@ -82,7 +82,7 @@ func getRequirements(path string) (*Requirements, error) {
 
 	for i, parent := range reqParents.Values {
 
-		reqItemFilePath, err := getReqItemsDefinitionFilePath("3.2.1", parent.ID)
+		reqItemFilePath, err := getReqItemsDefinitionFilePath(Version, parent.ID)
 		if err != nil {
 			//util.ExitWithError(err)
 		} else {
