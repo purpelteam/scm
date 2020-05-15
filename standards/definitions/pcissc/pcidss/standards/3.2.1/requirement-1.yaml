@@ -9,13 +9,11 @@ items:
     description_note: ""
     testing_procedures: 
       - id: 1.1
-        description: "
-        Inspect the firewall and router configuration standards and other documentation specified below 
+        description: "Inspect the firewall and router configuration standards and other documentation specified below 
         and verify that standards are complete and implemented as follows:
         "
         description_note: ""
-    guidance: "
-    Firewalls and routers are key components of the architecture that controls entry to and exit from 
+    guidance: "Firewalls and routers are key components of the architecture that controls entry to and exit from 
     the network. These devices are software or hardware devices that block unwanted access and manage 
     authorized access into and out of the network.
 
@@ -25,34 +23,29 @@ items:
     guidance_note: ""
     items:
       - id: 1.1.1
-        description: "
-        A formal process for approving and testing all network connections and changes to the firewall 
+        description: "A formal process for approving and testing all network connections and changes to the firewall 
         and router configurations
         "
         description_note: ""
         testing_procedures:
           - id: 1.1.1.a
-            description: "
-              Examine documented procedures to verify there is a formal process for testing and approval of all:
+            description: "Examine documented procedures to verify there is a formal process for testing and approval of all:
               • Network connections and
               • Changes to firewall and router configurations
             "
             description_note: ""
           - id: 1.1.1.b
-            description: "
-              For a sample of network connections, interview responsible personnel and examine records 
+            description: "For a sample of network connections, interview responsible personnel and examine records 
               to verify that network connections were approved and tested.
             "
             description_note: ""
           - id: 1.1.1.c
-            description: "
-               Identify a sample of actual changes made to firewall and router configurations, 
+            description: "Identify a sample of actual changes made to firewall and router configurations, 
                compare to the change records, and interview responsible personnel to verify the changes 
                were approved and tested.
             "
             description_note: ""
-        guidance: "
-        A documented and implemented process for approving and testing all connections and changes 
+        guidance: "A documented and implemented process for approving and testing all connections and changes 
         to the firewalls and routers will help prevent security problems caused by misconfiguration 
         of the network, router, or firewall.
           
@@ -61,26 +54,22 @@ items:
         "
         guidance_note: ""
       - id: 1.1.2
-        description: "
-        Current network diagram that identifies all connections between the cardholder data environment 
+        description: "Current network diagram that identifies all connections between the cardholder data environment 
         and other networks, including any wireless networks
         "
         description_note: ""
         testing_procedures:
           - id: 1.1.2.a
-            description: "
-              Examine diagram(s) and observe network configurations to verify that a current 
+            description: "Examine diagram(s) and observe network configurations to verify that a current 
               network diagram exists and that it documents all connections to cardholder data, 
               including any wireless networks.
             "
             description_note: ""
           - id: 1.1.2.b
-            description: "
-              Interview responsible personnel to verify that the diagram is kept current.
+            description: "Interview responsible personnel to verify that the diagram is kept current.
             "
             description_note: ""
-        guidance: "
-        Network diagrams describe how networks are configured, and identify the location of all network devices.
+        guidance: "Network diagrams describe how networks are configured, and identify the location of all network devices.
           
         Without current network diagrams, devices could be overlooked and be unknowingly left out of 
         the security controls implemented for PCI DSS and thus be vulnerable to compromise.
@@ -89,40 +78,111 @@ items:
       - id: 1.1.3
         description: "Current diagram that shows all cardholder data flows across systems and networks"
         description_note: ""
-        testing_procedures: []
-        guidance: ""
+        testing_procedures:
+          - id: 1.1.3
+            description: "Examine data-flow diagram and interview personnel to verify the diagram:
+            • Shows all cardholder data flows across systems and networks.
+            • Is kept current and updated as needed upon changes to the environment.
+            "
+            description_note: ""
+        guidance: "Cardholder data-flow diagrams identify the location of all cardholder data that is stored, processed, or transmitted within the network.
+        
+        Network and cardholder data-flow diagrams help an organization to understand and keep track of the scope of their environment, by showing how cardholder data flows across networks and between individual systems and devices.
+        "
         guidance_note: ""
       - id: 1.1.4
         description: "Requirements for a firewall at each Internet connection and between any demilitarized zone (DMZ) 
         and the internal network zone
         "
         description_note: ""
-        testing_procedures: []
-        guidance: ""
+        testing_procedures:
+          - id: 1.1.4.a
+            description: "Examine the firewall configuration standards and verify that they include requirements for a firewall at each Internet connection and between any DMZ and the internal network zone.
+            "
+            description_note: ""
+          - id: 1.1.4.b
+            description: "Verify that the current network diagram is consistent with the firewall configuration standards.
+            "
+            description_note: ""
+          - id: 1.1.4.c
+            description: "Observe network configurations to verify that a firewall is in place at each Internet connection and between any demilitarized zone (DMZ) and the internal network zone, 
+            per the documented configuration standards and network diagrams.
+            "
+            description_note: ""
+        guidance: "Using a firewall on every Internet connection coming into (and out of) the network, and between any DMZ and the internal network, 
+        allows the organization to monitor and control access and minimizes the chances of a malicious individual obtaining access to the internal network via an unprotected connection.
+        "
         guidance_note: ""
       - id: 1.1.5
         description: "Description of groups, roles, and responsibilities for management of network components"
         description_note: ""
-        testing_procedures: []
-        guidance: ""
+        testing_procedures:
+          - id: 1.1.5.a
+            description: "Verify that firewall and router configuration standards include a description of groups, roles, and responsibilities for management of network components.
+            "
+            description_note: ""
+          - id: 1.1.5.b
+            description: "Interview personnel responsible for management of network components to confirm that roles and responsibilities are assigned as documented.
+            "
+            description_note: ""
+        guidance: "This description of roles and assignment of responsibilities ensures that personnel are aware of who is responsible for the security of all network components, 
+        and that those assigned to manage components are aware of their responsibilities. If roles and responsibilities are not formally assigned, devices could be left unmanaged.
+        "
         guidance_note: ""
       - id: 1.1.6
         description: "Documentation of business justification and approval for use of all services, protocols, and ports allowed, including documentation of security features implemented for those protocols considered to be insecure."
         description_note: ""
-        testing_procedures: []
-        guidance: ""
+        testing_procedures:
+          - id: 1.1.6.a
+            description: "Verify that firewall and router configuration standards include a documented list of all services, protocols and ports, including business justification and approval for each.
+            "
+            description_note: ""
+          - id: 1.1.6.b
+            description: "Identify insecure services, protocols, and ports allowed; and verify that security features are documented for each service.
+            "
+            description_note: ""
+          - id: 1.1.6.c
+            description: "Examine firewall and router configurations to verify that the documented security features are implemented for each insecure service, protocol, and port.
+            "
+            description_note: ""
+        guidance: "Compromises often happen due to unused or insecure service and ports, since these often have known vulnerabilities and many organizations don’t patch vulnerabilities for the services, protocols, and ports they don't use (even though the vulnerabilities are still present). By clearly defining and documenting the services, protocols, and ports that are necessary for business, organizations can ensure that all other services, protocols, and ports are disabled or removed.
+
+        Approvals should be granted by personnel independent of the personnel managing the configuration.
+
+        If insecure services, protocols, or ports are necessary for business, the risk posed by use of these protocols should be clearly understood and accepted by the organization, the use of the protocol should be justified, and the security features that allow these protocols to be used securely should be documented and implemented. If these insecure services, protocols, or ports are not necessary for business, they should be disabled or removed.
+
+        For guidance on services, protocols, or ports considered to be insecure, refer to industry standards and guidance (e.g., NIST, ENISA, OWASP, etc.).
+        "
         guidance_note: ""
       - id: 1.1.7
         description: "Requirement to review firewall and router rule sets at least every six months"
         description_note: ""
-        testing_procedures: []
-        guidance: ""
+        testing_procedures:
+          - id: 1.1.7.a
+            description: "Verify that firewall and router configuration standards require review of firewall and router rule sets at least every six months.
+            "
+            description_note: ""
+          - id: 1.1.7.b
+            description: "Examine documentation relating to rule set reviews and interview responsible personnel to verify that the rule sets are reviewed at least every six months.
+            "
+            description_note: ""
+        guidance: "This review gives the organization an opportunity at least every six months to clean up any unneeded, outdated, or incorrect rules, and ensure that all rule sets allow only authorized services and ports that match the documented business justifications.
+        
+        Organizations with a high volume of changes to firewall and router rule sets may wish to consider performing reviews more frequently, to ensure that the rule sets continue to meet the needs of the business.
+        "
         guidance_note: ""
   - id: 1.2
     description: "Build firewall and router configurations that restrict connections between untrusted networks and any system components in the cardholder data environment."
     description_note: "An “untrusted network” is any network that is external to the networks belonging to the entity under review, and/or which is out of the entity's ability to control or manage."
-    testing_procedures: []
-    guidance: ""
+    testing_procedures:
+      - id: 1.2
+        description: "Examine firewall and router configurations and perform the following to verify that connections are restricted between untrusted networks and system components in the cardholder data environment:
+        "
+        description_note: ""
+    guidance: "It is essential to install network protection between the internal, trusted network and any untrusted network that is external and/or out of the entity’s ability to control or manage. Failure to implement this measure correctly results in the entity being vulnerable to unauthorized access by malicious individuals or software.
+    
+    For firewall functionality to be effective, it must be properly configured to control and/or limit traffic into and out of the entity’s network.
+    "
     guidance_note: ""
     items:
 
