@@ -185,4 +185,62 @@ items:
     "
     guidance_note: ""
     items:
+      - id: 1.2.1
+        description: " Restrict inbound and outbound traffic to that which is necessary for the cardholder data environment, and specifically deny all other traffic.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.2.1.a
+            description: "Examine firewall and router configuration standards to verify that they identify inbound and outbound traffic necessary for the cardholder data environment.
+            "
+            description_note: ""
+          - id: 1.2.1.b
+            description: "Examine firewall and router configurations to verify that inbound and outbound traffic is limited to that which is necessary for the cardholder data environment.
+            "
+            description_note: ""
+          - id: 1.2.1.c
+            description: "Examine firewall and router configurations to verify that all other inbound and outbound traffic is specifically denied, for example by using an explicit “deny all” or an implicit deny after allow statement.
+            "
+            description_note: ""
+        guidance: "Examination of all inbound and outbound connections allows for inspection and restriction of traffic based on the source and/or destination address, thus preventing unfiltered access between untrusted and trusted environments. This prevents malicious individuals from accessing the entity’s network via unauthorized IP addresses or from using services, protocols, or ports in an unauthorized manner (for example, to send data they've obtained from within the entity’s network out to an untrusted server).
+        
+        Implementing a rule that denies all inbound and outbound traffic that is not specifically needed helps to prevent inadvertent holes that would allow unintended and potentially harmful traffic in or out.
+        "
+        guidance_note: ""
+      - id: 1.2.2
+        description: "Secure and synchronize router configuration files.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.2.2.a
+            description: "Examine router configuration files to verify they are secured from unauthorized access.
+            "
+            description_note: ""
+          - id: 1.2.2.b
+            description: "Examine router configurations to verify they are synchronized—for example, the running (or active) configuration matches the start-up configuration (used when machines are booted).
+            "
+            description_note: ""
+        guidance: "While the running (or active) router configuration files include the current, secure settings, the start- up files (which are used when routers are re- started or booted) must be updated with the same secure settings to ensure these settings are applied when the start-up configuration is run.
+        
+        Because they only run occasionally, start-up configuration files are often forgotten and are not updated. When a router re-starts and loads a start-up configuration that has not been updated with the same secure settings as those in the running configuration, it may result in weaker rules that allow malicious individuals into the network.
+        "
+        guidance_note: ""
+      - id: 1.2.3
+        description: " Install perimeter firewalls between all wireless networks and the cardholder data environment, and configure these firewalls to deny or, if traffic is necessary for business purposes, permit only authorized traffic between the wireless environment and the cardholder data environment.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.2.3.a
+            description: "Examine firewall and router configurations to verify that there are perimeter firewalls installed between all wireless networks and the cardholder data environment.
+            "
+            description_note: ""
+          - id: 1.2.3.b
+            description: "Verify that the firewalls deny or, if traffic is necessary for business purposes, permit only authorized traffic between the wireless environment and the cardholder data environment.
+            "
+            description_note: ""
+        guidance: "The known (or unknown) implementation and exploitation of wireless technology within a network is a common path for malicious individuals to gain access to the network and cardholder data. If a wireless device or network is installed without the entity’s knowledge, a malicious individual could easily and “invisibly” enter the network. If firewalls do not restrict access from wireless networks into the CDE, malicious individuals that gain unauthorized access to the wireless network can easily connect to the CDE and compromise account information.
+        
+        Firewalls must be installed between all wireless networks and the CDE, regardless of the purpose of the environment to which the wireless network is connected. This may include, but is not limited to, corporate networks, retail stores, guest networks, warehouse environments, etc.
+        "
+        guidance_note: ""
 
