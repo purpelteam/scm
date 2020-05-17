@@ -31,9 +31,14 @@ Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 - [ ] 4.3. CIS Controls Report
 - [ ] 4.4. PCI DSS Controls Report
 
-5. Integration/Automation
+5. Integration: Automation
 
 - [ ] 5.1. Ansible
+
+6. Integration: Notifications/Alers
+
+- [ ] 6.1. Slack
+- [ ] 6.2. Email
 
 ### References:
 
