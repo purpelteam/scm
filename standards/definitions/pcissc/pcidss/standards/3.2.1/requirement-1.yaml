@@ -392,4 +392,18 @@ items:
     "
     guidance_note: "This requirement applies to employee- owned and company-owned portable computing devices. Systems that cannot be managed by corporate policy introduce weaknesses and provide opportunities that malicious individuals may exploit. Allowing untrusted systems to connect to an organization’s CDE could result in access being granted to attackers and other malicious users.
     "
-  
+  - id: 1.5
+    description: "Ensure that security policies and operational procedures for managing firewalls are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 1.5
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for managing firewalls are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+    guidance: "Personnel need to be aware of and following security policies and operational procedures to ensure firewalls and routers are continuously managed to prevent unauthorized access to the network.
+    "
+    guidance_note: ""
