@@ -263,3 +263,106 @@ items:
         Full disk encryption helps to protect data in the event of physical loss of a disk and therefore may be appropriate for portable devices that store cardholder data.
         "
         guidance_note: ""
+  - id: 3.5
+    description: "Document and implement procedures to protect keys used to secure stored cardholder data against disclosure and misuse:
+    "
+    description_note: "This requirement applies to keys used to encrypt stored cardholder data, and also applies to key-encrypting keys used to protect data-encrypting keys—such key- encrypting keys must be at least as strong as the data-encrypting key.
+    "
+    testing_procedures:
+      - id: 3.5
+        description: "Examine key-management policies and procedures to verify processes are specified to protect keys used for encryption of cardholder data against disclosure and misuse and include at least the following:
+        
+        • Access to keys is restricted to the fewest number of custodians necessary.
+        • Key-encrypting keys are at least as strong as the data- encrypting keys they protect.
+        • Key-encrypting keys are stored separately from data- encrypting keys.
+        • Keys are stored securely in the fewest possible locations and forms.
+        "
+        description_note: ""
+    guidance: "Cryptographic keys must be strongly protected because those who obtain access will be able to decrypt data. Key-encrypting keys, if used, must be at least as strong as the data-encrypting key in order to ensure proper protection of the key that encrypts the data as well as the data encrypted with that key.
+    
+    The requirement to protect keys from disclosure and misuse applies to both data-encrypting keys and key-encrypting keys. Because one key- encrypting key may grant access to many data- encrypting keys, the key-encrypting keys require strong protection measures.
+    "
+    guidance_note: ""
+    items:
+      - id: 3.5.1
+        description: "Additional requirement for service providers only: Maintain a documented description of the cryptographic architecture that includes:
+        
+        • Details of all algorithms, protocols, and keys used for the protection of cardholder data, including key strength and expiry date
+        • Description of the key usage for each key
+        • Inventory of any HSMs and other SCDs used for key management
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.5.1
+            description: "Interview responsible personnel and review documentation to verify that a document exists to describe the cryptographic architecture, including:
+            
+            • Details of all algorithms, protocols, and keys used for the protection of cardholder data, including key strength and expiry date
+            • Description of the key usage for each key
+            • Inventory of any HSMs and other SCDs used for key management
+            "
+            description_note: ""
+        guidance: "Maintaining current documentation of the cryptographic architecture enables an entity to understand the algorithms, protocols, and cryptographic keys used to protect cardholder data, as well as the devices that generate, use and protect the keys. This allows an entity to keep pace with evolving threats to their architecture, enabling them to plan for updates as the assurance levels provided by different algorithms/key strengths changes. Maintaining such documentation also allows an entity to detect lost or missing keys or key-management devices, and identify unauthorized additions to their cryptographic architecture.
+        "
+        guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+        "
+      - id: 3.5.2
+        description: "Restrict access to cryptographic keys to the fewest number of custodians necessary.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.5.2
+            description: "Examine user access lists to verify that access to keys is restricted to the fewest number of custodians necessary.
+            "
+            description_note: ""
+        guidance: "There should be very few who have access to cryptographic keys (reducing the potential for rending cardholder data visible by unauthorized parties), usually only those who have key custodian responsibilities.
+        "
+        guidance_note: ""
+      - id: 3.5.3
+        description: "Store secret and private keys used to encrypt/decrypt cardholder data in one (or more) of the following forms at all times:
+        
+        • Encrypted with a key-encrypting key that is at least as strong as the data- encrypting key, and that is stored separately from the data-encrypting key
+        • Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device)
+        • As at least two full-length key components or key shares, in accordance with an industry- accepted method
+        "
+        description_note: "It is not required that public keys be stored in one of these forms.
+        "
+        testing_procedures:
+          - id: 3.5.3.a
+            description: "Examine documented procedures to verify that cryptographic keys used to encrypt/decrypt cardholder data must only exist in one (or more) of the following forms at all times.
+            
+            • Encrypted with a key-encrypting key that is at least as strong as the data-encrypting key, and that is stored separately from the data-encrypting key
+            • Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device)
+            • As key components or key shares, in accordance with an industry-accepted method
+            "
+            description_note: ""
+          - id: 3.5.3.b
+            description: "Examine system configurations and key storage locations to verify that cryptographic keys used to encrypt/decrypt cardholder data exist in one (or more) of the following form at all times.
+            
+            • Encrypted with a key-encrypting key.
+            • Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device).
+            • As key components or key shares, in accordance with an industry-accepted method.
+            "
+            description_note: ""
+          - id: 3.5.3.c
+            description: "Wherever key-encrypting keys are used, examine system configurations and key storage locations to verify:
+            
+            • Key-encrypting keys are at least as strong as the data- encrypting keys they protect.
+            • Key-encrypting keys are stored separately from data- encrypting keys.
+            "
+            description_note: ""
+        guidance: "Cryptographic keys must be stored securely to prevent unauthorized or unnecessary access that could result in the exposure of cardholder data.
+        It is not intended that the key-encrypting keys be encrypted, however they are to be protected against disclosure and misuse as defined in Requirement 3.5. If key-encrypting keys are used, storing the key-encrypting keys in physically and/or logically separate locations from the data- encrypting keys reduces the risk of unauthorized access to both keys.
+        "
+        guidance_note: ""
+      - id: 3.5.4
+        description: "Store cryptographic keys in the fewest possible locations.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.5.4
+            description: "Examine key storage locations and observe processes to verify that keys are stored in the fewest possible locations.
+            "
+            description_note: ""
+        guidance: "Storing cryptographic keys in the fewest locations helps an organization to keep track and monitor all key locations, and minimizes the potential for keys to be exposed to unauthorized parties.
+        "
+        guidance_note: ""
