@@ -243,3 +243,47 @@ items:
     "
     guidance_note: "SSL/early TLS is not considered strong cryptography and may not be used as a security control, except by POS POI terminals that are verified as not being susceptible to known exploits and the termination points to which they connect as defined in Appendix A2.
     "
+  - id: 2.4
+    description: "Maintain an inventory of system components that are in scope for PCI DSS.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 2.4.a
+        description: "Examine system inventory to verify that a list of hardware and software components is maintained and includes a description of function/use for each.
+        "
+        description_note: ""
+      - id: 2.4.b
+        description: "Interview personnel to verify the documented inventory is kept current.
+        "
+        description_note: ""
+    guidance: "Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization’s configuration standards.
+    "
+    guidance_note: ""
+  - id: 2.5
+    description: "Ensure that security policies and operational procedures for managing vendor defaults and other security parameters are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 2.5
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for managing vendor defaults and other security parameters are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and daily operational procedures to ensure vendor defaults and other security parameters are continuously managed to prevent insecure configurations.
+    "
+    guidance_note: ""
+  - id: 2.6
+    description: "Shared hosting providers must protect each entity’s hosted environment and cardholder data. These providers must meet specific requirements as detailed in Appendix A1: Additional PCI DSS Requirements for Shared Hosting Providers.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 2.6
+        description: "Perform testing procedures A1.1 through A1.4 detailed in Appendix A1: Additional PCI DSS Requirements for Shared Hosting Providers for PCI DSS assessments of shared hosting providers, to verify that shared hosting providers protect their entities’ (merchants and service providers) hosted environment and data.
+        "
+        description_note: ""
+    guidance: "This is intended for hosting providers that provide shared hosting environments for multiple clients on the same server. When all data is on the same server and under control of a single environment, often the settings on these shared servers are not manageable by individual clients. This allows clients to add insecure functions and scripts that impact the security of all other client environments; and thereby make it easy for a malicious individual to compromise one client's data and thereby gain access to all other clients' data. See Appendix A1 for details of requirements.
+    "
+    guidance_note: ""
