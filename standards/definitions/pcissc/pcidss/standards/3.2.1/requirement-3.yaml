@@ -366,3 +366,192 @@ items:
         guidance: "Storing cryptographic keys in the fewest locations helps an organization to keep track and monitor all key locations, and minimizes the potential for keys to be exposed to unauthorized parties.
         "
         guidance_note: ""
+  - id: 3.6
+    description: "Fully document and implement all key- management processes and procedures for cryptographic keys used for encryption of cardholder data, including the following:
+    "
+    description_note: "Numerous industry standards for key management are available from various resources including NIST, which can be found at http://csrc.nist.gov.
+    "
+    testing_procedures:
+      - id: 3.6.a
+        description: "Additional testing procedure for service provider assessments only: If the service provider shares keys with their customers for transmission or storage of cardholder data, examine the documentation that the service provider provides to their customers to verify that it includes guidance on how to securely transmit, store, and update customers’ keys, in accordance with Requirements 3.6.1 through 3.6.8 below.
+        "
+        description_note: ""
+      - id: 3.6.b
+        description: "Examine the key-management procedures and processes for keys used for encryption of cardholder data and perform the following:
+        "
+        description_note: ""
+    guidance: "The manner in which cryptographic keys are managed is a critical part of the continued security of the encryption solution. A good key- management process, whether it is manual or automated as part of the encryption product, is based on industry standards and addresses all key elements at 3.6.1 through 3.6.8.
+    Providing guidance to customers on how to securely transmit, store and update cryptographic keys can help prevent keys from being mismanaged or disclosed to unauthorized entities.
+    This requirement applies to keys used to encrypt stored cardholder data, and any respective key- encrypting keys.
+    "
+    guidance_note: "Testing Procedure 3.6.a is an additional procedure that only applies if the entity being assessed is a service provider.
+    "
+    items:
+      - id: 3.6.1
+        description: "Generation of strong cryptographic keys
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.1.a
+            description: "Verify that key-management procedures specify how to generate strong keys.
+            "
+            description_note: ""
+          - id: 3.6.1.b
+            description: "Observe the procedures for generating keys to verify that strong keys are generated.
+            "
+            description_note: ""
+        guidance: "The encryption solution must generate strong keys, as defined in the PCI DSS and PA-DSS Glossary of Terms, Abbreviations, and Acronyms under \"Cryptographic Key Generation.\" Use of strong cryptographic keys significantly increases the level of security of encrypted cardholder data.
+        "
+        guidance_note: ""
+      - id: 3.6.2
+        description: "Secure cryptographic key distribution
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.2.a
+            description: "Verify that key-management procedures specify how to securely distribute keys.
+            "
+            description_note: ""
+          - id: 3.6.2.b
+            description: "Observe the method for distributing keys to verify that keys are distributed securely.
+            "
+            description_note: ""
+        guidance: "The encryption solution must distribute keys securely, meaning the keys are distributed only to custodians identified in Requirement 3.5.2, and are never distributed in the clear.
+        "
+        guidance_note: ""
+      - id: 3.6.3
+        description: "Secure cryptographic key storage
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.3.a
+            description: "Verify that key-management procedures specify how to securely store keys.
+            "
+            description_note: ""
+          - id: 3.6.3.b
+            description: "Observe the method for storing keys to verify that keys are stored securely.
+            "
+            description_note: ""
+        guidance: "The encryption solution must store keys securely, for example, by encrypting them with a key- encrypting key. Storing keys without proper protection could provide access to attackers, resulting in the decryption and exposure of cardholder data.
+        "
+        guidance_note: ""
+      - id: 3.6.4
+        description: "Cryptographic key changes for keys that have reached the end of their cryptoperiod (for example, after a defined period of time has passed and/or after a certain amount of cipher-text has been produced by a given key), as defined by the associated application vendor or key owner, and based on industry best practices and guidelines (for example, NIST Special Publication 800-57).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.4.a
+            description: "Verify that key-management procedures include a defined cryptoperiod for each key type in use and define a process for key changes at the end of the defined cryptoperiod(s).
+            "
+            description_note: ""
+          - id: 3.6.4.b
+            description: " Interview personnel to verify that keys are changed at the end of the defined cryptoperiod(s).
+            "
+            description_note: ""
+        guidance: "A cryptoperiod is the time span during which a particular cryptographic key can be used for its defined purpose. Considerations for defining the cryptoperiod include, but are not limited to, the strength of the underlying algorithm, size or length of the key, risk of key compromise, and the sensitivity of the data being encrypted.
+        
+        Periodic changing of encryption keys when the keys have reached the end of their cryptoperiod is imperative to minimize the risk of someone’s obtaining the encryption keys, and using them to decrypt data.
+        "
+        guidance_note: ""
+      - id: 3.6.5
+        description: "Retirement or replacement (for example, archiving, destruction, and/or revocation) of keys as deemed necessary when the integrity of the key has been weakened (for example, departure of an employee with knowledge of a clear-text key component), or keys are suspected of being compromised.
+        "
+        description_note: "If retired or replaced cryptographic keys need to be retained, these keys must be securely archived (for example, by using a key-encryption key). Archived cryptographic keys should only be used for decryption/verification purposes.
+        "
+        testing_procedures:
+          - id: 3.6.5.a
+            description: "Verify that key-management procedures specify processes for the following:
+            
+            • The retirement or replacement of keys when the integrity of the key has been weakened.
+            • The replacement of known or suspected compromised keys.
+            • Any keys retained after retiring or replacing are not used for encryption operations.
+            "
+            description_note: ""
+          - id: 3.6.5.b
+            description: "Interview personnel to verify the following processes are implemented:
+            
+            • Keys are retired or replaced as necessary when the integrity of the key has been weakened, including when someone with knowledge of the key leaves the company.
+            • Keys are replaced if known or suspected to be compromised.
+            • Any keys retained after retiring or replacing are not used for encryption operations.
+            "
+            description_note: ""
+        guidance: "Keys that are no longer used or needed, or keys that are known or suspected to be compromised, should be revoked and/or destroyed to ensure that the keys can no longer be used. If such keys need to be kept (for example, to support archived, encrypted data) they should be strongly protected.
+        
+        The encryption solution should provide for and facilitate a process to replace keys that are due for replacement or that are known to be, or suspected of being, compromised.
+        "
+        guidance_note: ""
+      - id: 3.6.6
+        description: "If manual clear-text cryptographic key-management operations are used, these operations must be managed using split knowledge and dual control.
+        "
+        description_note: "Examples of manual key- management operations include, but are not limited to: key generation, transmission, loading, storage and destruction.
+        "
+        testing_procedures:
+          - id: 3.6.6.a
+            description: "Verify that manual clear-text key-management procedures specify processes for the use of the following:
+            
+            • Split knowledge of keys, such that key components are under the control of at least two people who only have knowledge of their own key components; AND
+            • Dual control of keys, such that at least two people are required to perform any key-management operations and no one person has access to the authentication materials (for example, passwords or keys) of another.
+            "
+            description_note: ""
+          - id: 3.6.6.b
+            description: "Interview personnel and/or observe processes to verify that manual clear-text keys are managed with:
+            
+            • Split knowledge, AND
+            • Dual control
+            "
+            description_note: ""
+        guidance: "Split knowledge and dual control of keys are used to eliminate the possibility of one person having access to the whole key. This control is applicable for manual key-management operations, or where key management is not implemented by the encryption product.
+        
+        Split knowledge is a method in which two or more people separately have key components, where each person knows only their own key component, and the individual key components convey no knowledge of the original cryptographic key.
+        
+        Dual control requires two or more people to perform a function, and no single person can access or use the authentication materials of another.
+        "
+        guidance_note: ""
+      - id: 3.6.7
+        description: "Prevention of unauthorized substitution of cryptographic keys.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.7.a
+            description: "Verify that key-management procedures specify processes to prevent unauthorized substitution of keys.
+            "
+            description_note: ""
+          - id: 3.6.7.b
+            description: "Interview personnel and/or observe processes to verify that unauthorized substitution of keys is prevented.
+            "
+            description_note: ""
+        guidance: "The encryption solution should not allow for or accept substitution of keys coming from unauthorized sources or unexpected processes.
+        "
+        guidance_note: ""
+      - id: 3.6.8
+        description: "Requirement for cryptographic key custodians to formally acknowledge that they understand and accept their key- custodian responsibilities.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.6.8.a
+            description: "Verify that key-management procedures specify processes for key custodians to acknowledge (in writing or electronically) that they understand and accept their key- custodian responsibilities.
+            "
+            description_note: ""
+          - id: 3.6.8.b
+            description: "Observe documentation or other evidence showing that key custodians have acknowledged (in writing or electronically) that they understand and accept their key- custodian responsibilities.
+            "
+            description_note: ""
+        guidance: "This process will help ensure individuals that act as key custodians commit to the key-custodian role and understand and accept the responsibilities.
+        "
+        guidance_note: ""
+  - id: 3.7
+    description: "Ensure that security policies and operational procedures for protecting stored cardholder data are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 3.7
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for protecting stored cardholder data are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and documented operational procedures for managing the secure storage of cardholder data on a continuous basis.
+    "
+    guidance_note: ""
