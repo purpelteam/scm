@@ -11,6 +11,7 @@ Features (Roadmap #1):
 - [ ] PCI-DSS Requirements and Security Assessment Procedures Version 3.2.1
 - [ ] CIS Controls Version 7.1
 - [ ] CIS Kubernetes Benchmark Version 1.5.1
+- [ ] CIS Docker Benchmark Version 1.2.0
 
 2. Mappings
 
@@ -20,10 +21,13 @@ Features (Roadmap #1):
 3. Tools
 
 - [ ] Using/Import kube-bench Capabilities (https://github.com/aquasecurity/kube-bench)
+- [ ] Using/Import docker-bench Capabilities (https://github.com/aquasecurity/docker-bench) OR
+- [ ] Using/Import docker-bench-security Capabilities (https://github.com/docker/docker-bench-security)
 
 4. Reports
 
 - [ ] CIS Kubernetes Benchmark Report
+- [ ] CIS Docker Benchmark Report
 - [ ] CIS Controls Report
 - [ ] PCI DSS Controls Report
 
@@ -32,4 +36,5 @@ Features (Roadmap #1):
 - PCI DSS (https://www.pcisecuritystandards.org/document_library)
 - CIS Controls (https://www.cisecurity.org/controls/)
 - CIS Kubernetes Benchmark (https://www.cisecurity.org/benchmark/kubernetes/)
+- CIS Docker Benchmark (https://www.cisecurity.org/benchmark/docker/)
 
