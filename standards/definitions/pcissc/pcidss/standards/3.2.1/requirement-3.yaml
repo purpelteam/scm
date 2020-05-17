@@ -156,3 +156,32 @@ items:
         guidance: "These values should be known only to the card owner or bank that issued the card. If this data is stolen, malicious individuals can execute fraudulent PIN-based debit transactions (for example, ATM withdrawals).
         "
         guidance_note: ""
+  - id: 3.3
+    description: "Mask PAN when displayed (the first six and last four digits are the maximum number of digits to be displayed), such that only personnel with a legitimate business need can see more than the first six/last four digits of the PAN.
+    "
+    description_note: "This requirement does not supersede stricter requirements in place for displays of cardholder data—for example, legal or payment card brand requirements for point- of-sale (POS) receipts.
+    "
+    testing_procedures:
+      - id: 3.3.a
+        description: "Examine written policies and procedures for masking the display of PANs to verify:
+        
+        • A list of roles that need access to displays of more than the first six/last four (includes full PAN) is documented, together with a legitimate business need for each role to have such access.
+        • PAN must be masked when displayed such that only personnel with a legitimate business need can see more than the first six/last four digits of the PAN.
+        • All roles not specifically authorized to see the full PAN must only see masked PANs.
+        "
+        description_note: ""
+      - id: 3.3.b
+        description: "Examine system configurations to verify that full PAN is only displayed for users/roles with a documented business need, and that PAN is masked for all other requests.
+        "
+        description_note: ""
+      - id: 3.3.c
+        description: "Examine displays of PAN (for example, on screen, on paper receipts) to verify that PANs are masked when displaying cardholder data, and that only those with a legitimate business need are able to see more than the first six/last four digits of the PAN.
+        "
+        description_note: ""
+    guidance: "The display of full PAN on items such as computer screens, payment card receipts, faxes, or paper reports can result in this data being obtained by unauthorized individuals and used fraudulently. Ensuring that full PAN is only displayed for those with a legitimate business need to see the full PAN minimizes the risk of unauthorized persons gaining access to PAN data.
+    
+    The masking approach should always ensure that only the minimum number of digits is displayed as necessary to perform a specific business function. For example, if only the last four digits are needed to perform a business function, mask the PAN so that individuals performing that function can view only the last four digits. As another example, if a function needs access to the bank identification number (BIN) for routing purposes, unmask only the BIN digits (traditionally the first six digits) during that function.
+    
+    This requirement relates to protection of PAN displayed on screens, paper receipts, printouts, etc., and is not to be confused with Requirement 3.4 for protection of PAN when stored in files, databases, etc.
+    "
+    guidance_note: ""
