@@ -1,6 +1,6 @@
 ---
 requirements:
-parent: 2
+parent: 3
 items:
   - id: 3.1
     description: "Keep cardholder data storage to a minimum by implementing data retention and disposal policies, procedures and processes that include at least the following for all cardholder data (CHD) storage:

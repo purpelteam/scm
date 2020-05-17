@@ -1,0 +1,122 @@
+---
+requirements:
+parent: 4
+items:
+  - id: 4.1
+    description: "Use strong cryptography and security protocols to safeguard sensitive cardholder data during transmission over open, public networks, including the following:
+    
+    • Only trusted keys and certificates are accepted.
+    • The protocol in use only supports secure versions or configurations.
+    • The encryption strength is appropriate for the encryption methodology in use.
+    "
+    description_note: "Examples of open, public networks include but are not limited to:
+    
+    • The Internet
+    • Wireless technologies, including 802.11
+    and Bluetooth
+    • Cellular technologies, for example, Global System for Mobile communications (GSM), Code division multiple access (CDMA)
+    • General Packet Radio Service (GPRS)
+    • Satellite communications
+    "
+    testing_procedures:
+      - id: 4.1.a
+        description: "Identify all locations where cardholder data is transmitted or received over open, public networks. Examine documented standards and compare to system configurations to verify the use of security protocols and strong cryptography for all locations.
+        "
+        description_note: ""
+      - id: 4.1.b
+        description: "Review documented policies and procedures to verify processes are specified for the following:
+        
+        • For acceptance of only trusted keys and/or certificates
+        • For the protocol in use to only support secure versions and configurations (that insecure versions or configurations are not supported)
+        • For implementation of proper encryption strength per the encryption methodology in use
+        "
+        description_note: ""
+      - id: 4.1.c
+        description: "Select and observe a sample of inbound and outbound transmissions as they occur (for example, by observing system processes or network traffic) to verify that all cardholder data is encrypted with strong cryptography during transit.
+        "
+        description_note: ""
+      - id: 4.1.d
+        description: "Examine keys and certificates to verify that only trusted keys and/or certificates are accepted.
+        "
+        description_note: ""
+      - id: 4.1.e
+        description: "Examine system configurations to verify that the protocol is implemented to use only secure configurations and does not support insecure versions or configurations.
+        "
+        description_note: ""
+      - id: 4.1.f
+        description: "Examine system configurations to verify that the proper encryption strength is implemented for the encryption methodology in use. (Check vendor recommendations/best practices.)
+        "
+        description_note: ""
+      - id: 4.1.g
+        description: "For TLS implementations, examine system configurations to verify that TLS is enabled whenever cardholder data is transmitted or received.
+        
+        For example, for browser-based implementations:
+        • “HTTPS” appears as the browser Universal Record Locator (URL) protocol, and
+        • Cardholder data is only requested if “HTTPS” appears as part of the URL.
+        "
+        description_note: ""
+    guidance: "Sensitive information must be encrypted during transmission over public networks, because it is easy and common for a malicious individual to intercept and/or divert data while in transit.
+    
+    Secure transmission of cardholder data requires using trusted keys/certificates, a secure protocol for transport, and proper encryption strength to encrypt cardholder data. Connection requests from systems that do not support the required encryption strength, and that would result in an insecure connection, should not be accepted.
+    
+    Note that some protocol implementations (such as SSL, SSH v1.0, and early TLS) have known vulnerabilities that an attacker can use to gain control of the affected system. Whichever security protocol is used, ensure it is configured to use only secure versions and configurations to prevent use of an insecure connection—for example, by using only trusted certificates and supporting only strong encryption (not supporting weaker, insecure protocols or methods).
+    
+    Verifying that certificates are trusted (for example, have not expired and are issued from a trusted source) helps ensure the integrity of the secure connection.
+
+    Generally, the web page URL should begin with \"HTTPS\" and/or the web browser display a padlock icon somewhere in the window of the browser. Many TLS certificate vendors also provide a highly visible verification seal— sometimes referred to as a “security seal,” \"secure site seal,\" or “secure trust seal”)—which may provide the ability to click on the seal to reveal information about the website.
+    Refer to industry standards and best practices for information on strong cryptography and secure protocols (e.g., NIST SP 800-52 and SP 800-57, OWASP, etc.)
+    "
+    guidance_note: "SSL/early TLS is not considered strong cryptography and may not be used as a security control, except by POS POI terminals that are verified as not being susceptible to known exploits and the termination points to which they connect as defined in Appendix A2.
+    "
+    items:
+      - id: 4.1.1
+        description: "Ensure wireless networks transmitting cardholder data or connected to the cardholder data environment, use industry best practices to implement strong encryption for authentication and transmission.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 4.1.1
+            description: "Identify all wireless networks transmitting cardholder data or connected to the cardholder data environment. Examine documented standards and compare to system configuration settings to verify the following for all wireless networks identified:
+            
+            • Industry best practices are used to implement strong encryption for authentication and transmission.
+            • Weak encryption (for example, WEP, SSL) is not used as a security control for authentication or transmission.
+            "
+            description_note: ""
+        guidance: "Malicious users use free and widely available tools to eavesdrop on wireless communications. Use of strong cryptography can help limit disclosure of sensitive information across wireless networks.
+        
+        Strong cryptography for authentication and transmission of cardholder data is required to prevent malicious users from gaining access to the wireless network or utilizing wireless networks to access other internal networks or data.
+        "
+        guidance_note: ""
+  - id: 4.2
+    description: "Never send unprotected PANs by end- user messaging technologies (for example, e- mail, instant messaging, SMS, chat, etc.).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 4.2.a
+        description: "If end-user messaging technologies are used to send cardholder data, observe processes for sending PAN and examine a sample of outbound transmissions as they occur to verify that PAN is rendered unreadable or secured with strong cryptography whenever it is sent via end-user messaging technologies.
+        "
+        description_note: ""
+      - id: 4.2.b
+        description: "Review written policies to verify the existence of a policy stating that unprotected PANs are not to be sent via end-user messaging technologies.
+        "
+        description_note: ""
+    guidance: "E-mail, instant messaging, SMS, and chat can be easily intercepted by packet-sniffing during delivery across internal and public networks. Do not utilize these messaging tools to send PAN unless they are configured to provide strong encryption.
+    
+    Additionally, if an entity requests PAN via end- user messaging technologies, the entity should provide a tool or method to protect these PANs using strong cryptography or render PANs unreadable before transmission.
+    "
+    guidance_note: ""
+  - id: 4.3
+    description: "Ensure that security policies and operational procedures for encrypting transmissions of cardholder data are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 4.3
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for encrypting transmissions of cardholder data are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and operational procedures for managing the secure transmission of cardholder data on a continuous basis.
+    "
+    guidance_note: ""
