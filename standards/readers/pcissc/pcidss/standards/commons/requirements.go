@@ -13,10 +13,12 @@ import (
 
 // Requirement contain information about PCI DSS Standard Requirement Information
 type Requirement struct {
-	ID          string  `yaml:"id" json:"id"`
-	Description string  `yaml:"description" json:"description"`
-	Goal        string  `yaml:"goal" json:"goal"`
-	Items       []*Item `yaml:"items" json:"items"`
+	ID              string  `yaml:"id" json:"id"`
+	Description     string  `yaml:"description" json:"description"`
+	Explanation     string  `yaml:"explanation" json:"explanation"`
+	ExplanationNote string  `yaml:"explanation_note" json:"explanation_note"`
+	Goal            string  `yaml:"goal" json:"goal"`
+	Items           []*Item `yaml:"items" json:"items"`
 }
 
 // Requirements contain list of PCI DSS Requirement information

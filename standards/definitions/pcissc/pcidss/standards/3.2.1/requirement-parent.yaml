@@ -2,37 +2,89 @@
 requirements:
   - id: 1
     description: "Install and maintain a firewall configuration to protect cardholder data"
+    explanation: "Firewalls are devices that control computer traffic allowed between an entity’s networks (internal) and untrusted networks (external), as well as traffic into and out of more sensitive areas within an entity’s internal trusted networks. The cardholder data environment is an example of a more sensitive area within an entity’s trusted network.
+    
+    A firewall examines all network traffic and blocks those transmissions that do not meet the specified security criteria.
+    
+    All systems must be protected from unauthorized access from untrusted networks, whether entering the system via the Internet as e-commerce, employee Internet access through desktop browsers, employee e-mail access, dedicated connections such as business-to-business connections, via wireless networks, or via other sources. Often, seemingly insignificant paths to and from untrusted networks can provide unprotected pathways into key systems. Firewalls are a key protection mechanism for any computer network.
+    
+    Other system components may provide firewall functionality, as long as they meet the minimum requirements for firewalls as defined in Requirement 1. Where other system components are used within the cardholder data environment to provide firewall functionality, these devices must be included within the scope and assessment of Requirement 1.
+    "
+    explanation_note: ""
     goal: 1
   - id: 2
     description: "Do not use vendor-supplied defaults for system passwords and other security parameters"
+    explanation: "Malicious individuals (external and internal to an entity) often use vendor default passwords and other vendor default settings to compromise systems. These passwords and settings are well known by hacker communities and are easily determined via public information.
+    "
+    explanation_note: ""
     goal: 1
   - id: 3
     description: "Protect stored cardholder data"
+    explanation: "Protection methods such as encryption, truncation, masking, and hashing are critical components of cardholder data protection. If an intruder circumvents other security controls and gains access to encrypted data, without the proper cryptographic keys, the data is unreadable and unusable to that person. Other effective methods of protecting stored data should also be considered as potential risk mitigation opportunities. For example, methods for minimizing risk include not storing cardholder data unless absolutely necessary, truncating cardholder data if full PAN is not needed, and not sending unprotected PANs using end-user messaging technologies, such as e-mail and instant messaging.
+    
+    Please refer to the PCI DSS and PA-DSS Glossary of Terms, Abbreviations, and Acronyms for definitions of “strong cryptography” and other PCI DSS terms.
+    "
+    explanation_note: ""
     goal: 2
   - id: 4
     description: "Encrypt transmission of cardholder data across open, public networks"
+    explanation: "Sensitive information must be encrypted during transmission over networks that are easily accessed by malicious individuals. Misconfigured wireless networks and vulnerabilities in legacy encryption and authentication protocols continue to be targets of malicious individuals who exploit these vulnerabilities to gain privileged access to cardholder data environments.
+    "
+    explanation_note: ""
     goal: 2
   - id: 5
     description: "Protect all systems against malware and regularly update anti-virus software or programs"
+    explanation: "Malicious software, commonly referred to as “malware”—including viruses, worms, and Trojans—enters the network during many business- approved activities including employee e-mail and use of the Internet, mobile computers, and storage devices, resulting in the exploitation of system vulnerabilities. Anti-virus software must be used on all systems commonly affected by malware to protect systems from current and evolving malicious software threats. Additional anti-malware solutions may be considered as a supplement to the anti-virus software; however, such additional solutions do not replace the need for anti-virus software to be in place.
+    "
+    explanation_note: ""
     goal: 3
   - id: 6
     description: "Develop and maintain secure systems and applications"
+    explanation: "Unscrupulous individuals use security vulnerabilities to gain privileged access to systems. Many of these vulnerabilities are fixed by vendor- provided security patches, which must be installed by the entities that manage the systems. All systems must have all appropriate software patches to protect against the exploitation and compromise of cardholder data by malicious individuals and malicious software.
+    "
+    explanation_note: "Appropriate software patches are those patches that have been evaluated and tested sufficiently to determine that the patches do not conflict with existing security configurations. For in-house developed applications, numerous vulnerabilities can be avoided by using standard system development processes and secure coding techniques.
+    "
     goal: 3
   - id: 7
     description: "Restrict access to cardholder data by business need to know"
+    explanation: "To ensure critical data can only be accessed by authorized personnel, systems and processes must be in place to limit access based on need to know and according to job responsibilities.
+    
+    “Need to know” is when access rights are granted to only the least amount of data and privileges needed to perform a job.
+    "
+    explanation_note: ""
     goal: 4
   - id: 8
     description: "Identify and authenticate access to system components"
+    explanation: "Assigning a unique identification (ID) to each person with access ensures that each individual is uniquely accountable for their actions. When such accountability is in place, actions taken on critical data and systems are performed by, and can be traced to, known and authorized users and processes.
+    
+    The effectiveness of a password is largely determined by the design and implementation of the authentication system—particularly, how frequently password attempts can be made by an attacker, and the security methods to protect user passwords at the point of entry, during transmission, and while in storage.
+    "
+    explanation_note: "These requirements are applicable for all accounts, including point-of-sale accounts, with administrative capabilities and all accounts used to view or access cardholder data or to access systems with cardholder data. This includes accounts used by vendors and other third parties (for example, for support or maintenance). These requirements do not apply to accounts used by consumers (e.g., cardholders).
+    
+    However, Requirements 8.1.1, 8.2, 8.5, 8.2.3 through 8.2.5, and 8.1.6 through 8.1.8 are not intended to apply to user accounts within a point-of- sale payment application that only have access to one card number at a time in order to facilitate a single transaction (such as cashier accounts).
+    "
     goal: 4
   - id: 9
     description: "Restrict physical access to cardholder data"
+    explanation: "Any physical access to data or systems that house cardholder data provides the opportunity for individuals to access devices or data and to remove systems or hardcopies, and should be appropriately restricted. For the purposes of Requirement 9, “onsite personnel” refers to full-time and part-time employees, temporary employees, contractors and consultants who are physically present on the entity’s premises. A “visitor” refers to a vendor, guest of any onsite personnel, service workers, or anyone who needs to enter the facility for a short duration, usually not more than one day. “Media” refers to all paper and electronic media containing cardholder data.
+    "
+    explanation_note: ""
     goal: 4
   - id: 10
     description: "Track and monitor all access to network resources and cardholder data"
+    explanation: "Logging mechanisms and the ability to track user activities are critical in preventing, detecting, or minimizing the impact of a data compromise. The presence of logs in all environments allows thorough tracking, alerting, and analysis when something does go wrong. Determining the cause of a compromise is very difficult, if not impossible, without system activity logs.
+    "
+    explanation_note: ""
     goal: 5
   - id: 11
     description: "Regularly test security systems and processes"
+    explanation: "Vulnerabilities are being discovered continually by malicious individuals and researchers, and being introduced by new software. System components, processes, and custom software should be tested frequently to ensure security controls continue to reflect a changing environment.
+    "
+    explanation_note: ""
     goal: 5
   - id: 12
     description: "Maintain a policy that addresses information security for all personnel"
+    explanation: "A strong security policy sets the security tone for the whole entity and informs personnel what is expected of them. All personnel should be aware of the sensitivity of data and their responsibilities for protecting it. For the purposes of Requirement 12, “personnel” refers to full-time and part-time employees, temporary employees, contractors and consultants who are “resident” on the entity’s site or otherwise have access to the cardholder data environment.
+    "
+    explanation_note: ""
     goal: 6
