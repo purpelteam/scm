@@ -66,7 +66,7 @@ items:
           - id: 2.1.1.e
             description: "Examine vendor documentation and observe wireless configuration settings to verify other security- related wireless vendor defaults were changed, if applicable.
             "
-            description_note: ""  
+            description_note: ""
         guidance: "If wireless networks are not implemented with sufficient security configurations (including changing default settings), wireless sniffers can eavesdrop on the traffic, easily capture data and passwords, and easily enter and attack the network.
         
         In addition, the key-exchange protocol for older versions of 802.11x encryption (Wired Equivalent Privacy, or WEP) has been broken and can render the encryption useless. Firmware for devices should be updated to support more secure protocols.
@@ -210,3 +210,36 @@ items:
         Including this in server-hardening standards and processes addresses the specific security implications associated with unnecessary functions (for example, by removing/disabling FTP or the web server if the server will not be performing those functions).
         "
         guidance_note: ""
+  - id: 2.3
+    description: "Encrypt all non-console administrative access using strong cryptography.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 2.3
+        description: "Select a sample of system components and verify that non-console administrative access is encrypted by performing the following:
+        "
+        description_note: ""
+      - id: 2.3.a
+        description: "Observe an administrator log on to each system and examine system configurations to verify that a strong encryption method is invoked before the administrator’s password is requested.
+        "
+        description_note: ""
+      - id: 2.3.b
+        description: "Review services and parameter files on systems to determine that Telnet and other insecure remote-login commands are not available for non-console access.
+        "
+        description_note: ""
+      - id: 2.3.c
+        description: "Observe an administrator log on to each system to verify that administrator access to any web-based management interfaces is encrypted with strong cryptography.
+        "
+        description_note: ""
+      - id: 2.3.d
+        description: "Examine vendor documentation and interview personnel to verify that strong cryptography for the technology in use is implemented according to industry best practices and/or vendor recommendations.
+        "
+        description_note: ""
+    guidance: "If non-console (including remote) administration does not use secure authentication and encrypted communications, sensitive administrative or operational level information (like administrator’s IDs and passwords) can be revealed to an eavesdropper. A malicious individual could use this information to access the network, become administrator, and steal data.
+    
+    Clear-text protocols (such as HTTP, telnet, etc.) do not encrypt traffic or logon details, making it easy for an eavesdropper to intercept this information.
+
+    To be considered “strong cryptography,” industry- recognized protocols with appropriate key strengths and key management should be in place as applicable for the type of technology in use. (Refer to \"strong cryptography\" in the PCI DSS and PA-DSS Glossary of Terms, Abbreviations, and Acronyms, and industry standards and best practices such as NIST SP 800-52 and SP 800-57, OWASP, etc.)
+    "
+    guidance_note: "SSL/early TLS is not considered strong cryptography and may not be used as a security control, except by POS POI terminals that are verified as not being susceptible to known exploits and the termination points to which they connect as defined in Appendix A2.
+    "
