@@ -1,0 +1,52 @@
+---
+requirements:
+parent: 2
+items:
+  - id: 3.1
+    description: "Keep cardholder data storage to a minimum by implementing data retention and disposal policies, procedures and processes that include at least the following for all cardholder data (CHD) storage:
+    
+    • Limiting data storage amount and retention time to that which is required for legal, regulatory, and/or business requirements
+    • Specific retention requirements for cardholder data
+    • Processes for secure deletion of data when no longer needed
+    • A quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 3.1.a
+        description: "Examine the data retention and disposal policies, procedures and processes to verify they include the following for all cardholder data (CHD) storage:
+        
+        • Limiting data storage amount and retention time to that which is required for legal, regulatory, and/or business requirements.
+        • Specific requirements for retention of cardholder data (for example, cardholder data needs to be held for X period for Y business reasons).
+        • Processes for secure deletion of cardholder data when no longer needed for legal, regulatory, or business reasons.
+        • A quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention requirements.
+        "
+        description_note: ""
+      - id: 3.1.b
+        description: "Interview personnel to verify that:
+        
+        • All locations of stored cardholder data are included in the
+        data retention and disposal processes.
+        • Either a quarterly automatic or manual process is in place to identify and securely delete stored cardholder data.
+        • The quarterly automatic or manual process is performed for all locations of cardholder data.
+        "
+        description_note: ""
+      - id: 3.1.c
+        description: "For a sample of system components that store cardholder data:
+        
+        • Examine files and system records to verify that the data stored does not exceed the requirements defined in the data retention policy
+        • Observe the deletion mechanism to verify data is deleted securely.
+        "
+        description_note: ""
+    guidance: "A formal data retention policy identifies what data needs to be retained, and where that data resides so it can be securely destroyed or deleted as soon as it is no longer needed.
+    
+    The only cardholder data that may be stored after authorization is the primary account number or PAN (rendered unreadable), expiration date, cardholder name, and service code.
+    
+    Understanding where cardholder data is located is necessary so it can be properly retained or disposed of when no longer needed. In order to define appropriate retention requirements, an entity first needs to understand their own business needs as well as any legal or regulatory obligations that apply to their industry, and/or that apply to the type of data being retained.
+
+    Identifying and deleting stored data that has exceeded its specified retention period prevents unnecessary retention of data that is no longer needed. This process may be automated or manual or a combination of both. For example, a programmatic procedure (automatic or manual) to locate and remove data and/or a manual review of data storage areas could be performed.
+    
+    Implementing secure deletion methods ensure that the data cannot be retrieved when it is no longer needed.
+    
+    Remember, if you don't need it, don't store it!
+    "
+    guidance_note: ""
