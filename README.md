@@ -31,10 +31,15 @@ Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 - [ ] 4.3. CIS Controls Report
 - [ ] 4.4. PCI DSS Controls Report
 
+5. Integration/Automation
+
+- [ ] 5.1. Ansible
+
 ### References:
 
 - PCI DSS (https://www.pcisecuritystandards.org/document_library)
 - CIS Controls (https://www.cisecurity.org/controls/)
 - CIS Kubernetes Benchmark (https://www.cisecurity.org/benchmark/kubernetes/)
 - CIS Docker Benchmark (https://www.cisecurity.org/benchmark/docker/)
+- Ansible (https://docs.ansible.com/ansible/latest/)
 
