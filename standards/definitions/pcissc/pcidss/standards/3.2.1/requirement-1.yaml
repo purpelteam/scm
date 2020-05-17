@@ -243,4 +243,120 @@ items:
         Firewalls must be installed between all wireless networks and the CDE, regardless of the purpose of the environment to which the wireless network is connected. This may include, but is not limited to, corporate networks, retail stores, guest networks, warehouse environments, etc.
         "
         guidance_note: ""
+  - id: 1.3
+    description: "Prohibit direct public access between the Internet and any system component in the cardholder data environment.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 1.3
+        description: "Examine firewall and router configurations—including but not limited to the choke router at the Internet, the DMZ router and firewall, the DMZ cardholder segment, the perimeter router, and the internal cardholder network segment—and perform the following to determine that there is no direct access between the Internet and system components in the internal cardholder network segment:
+        "
+        description_note: ""
+    guidance: "While there may be legitimate reasons for untrusted connections to be permitted to DMZ systems (e.g., to allow public access to a web server), such connections should never be granted to systems in the internal network. A firewall's intent is to manage and control all connections between public systems and internal systems, especially those that store, process or transmit cardholder data. If direct access is allowed between public systems and the CDE, the protections offered by the firewall are bypassed, and system components storing cardholder data may be exposed to compromise.
+    "
+    guidance_note: ""
+    items:
+      - id: 1.3.1
+        description: "Implement a DMZ to limit inbound traffic to only system components that provide authorized publicly accessible services, protocols, and ports.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.1
+            description: "Examine firewall and router configurations to verify that a DMZ is implemented to limit inbound traffic to only system components that provide authorized publicly accessible services, protocols, and ports.
+            "
+            description_note: ""
+        guidance: "The DMZ is that part of the network that manages connections between the Internet (or other untrusted networks), and services that an organization needs to have available to the public (like a web server).
+        
+        This functionality is intended to prevent malicious individuals from accessing the organization's internal network from the Internet, or from using services, protocols, or ports in an unauthorized manner.
+        "
+        guidance_note: ""
+      - id: 1.3.2
+        description: "Limit inbound Internet traffic to IP addresses within the DMZ.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.2
+            description: "Examine firewall and router configurations to verify that inbound Internet traffic is limited to IP addresses within the DMZ.
+            "
+            description_note: ""
+        guidance: "The DMZ is that part of the network that manages connections between the Internet (or other untrusted networks), and services that an organization needs to have available to the public (like a web server).
+        
+        This functionality is intended to prevent malicious individuals from accessing the organization's internal network from the Internet, or from using services, protocols, or ports in an unauthorized manner.
+        "
+        guidance_note: ""
+      - id: 1.3.3
+        description: "Implement anti-spoofing measures to detect and block forged source IP addresses from entering the network.
+        
+        (For example, block traffic originating from the Internet with an internal source address.)
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.3
+            description: "Examine firewall and router configurations to verify that anti-spoofing measures are implemented, for example internal addresses cannot pass from the Internet into the DMZ.
+            "
+            description_note: ""
+        guidance: "Normally a packet contains the IP address of the computer that originally sent it so other computers in the network know where the packet came from. Malicious individuals will often try to spoof (or imitate) the sending IP address so that the target system believes the packet is from a trusted source.
+        
+        Filtering packets coming into the network helps to, among other things, ensure packets are not “spoofed” to look like they are coming from an organization’s own internal network.
+        "
+        guidance_note: ""
+      - id: 1.3.4
+        description: "Do not allow unauthorized outbound traffic from the cardholder data environment to the Internet.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.4
+            description: "Examine firewall and router configurations to verify that outbound traffic from the cardholder data environment to the Internet is explicitly authorized.
+            "
+            description_note: ""
+        guidance: "All traffic outbound from the cardholder data environment should be evaluated to ensure that it follows established, authorized rules. Connections should be inspected to restrict traffic to only authorized communications (for example by restricting source/destination addresses/ports, and/or blocking of content).
+        "
+        guidance_note: ""
+      - id: 1.3.5
+        description: "Permit only “established” connections into the network.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.5
+            description: "Examine firewall and router configurations to verify that the firewall permits only established connections into the internal network and denies any inbound connections not associated with a previously established session.
+            "
+            description_note: ""
+        guidance: "A firewall that maintains the \"state\" (or the status) for each connection through the firewall knows whether an apparent response to a previous connection is actually a valid, authorized response (since it retains each connection’s status) or is malicious traffic trying to trick the firewall into allowing the connection.
+        "
+        guidance_note: ""
+      - id: 1.3.6
+        description: "Place system components that store cardholder data (such as a database) in an internal network zone, segregated from the DMZ and other untrusted networks.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 1.3.6
+            description: "Examine firewall and router configurations to verify that system components that store cardholder data are on an internal network zone, segregated from the DMZ and other untrusted networks.
+            "
+        guidance: "If cardholder data is located within the DMZ, it is easier for an external attacker to access this information, since there are fewer layers to penetrate. Securing system components that store cardholder data in an internal network zone that is segregated from the DMZ and other untrusted networks by a firewall can prevent unauthorized network traffic from reaching the system component.
+        "
+        guidance_note: "This requirement is not intended to apply to temporary storage of cardholder data in volatile memory.
+        "
+      - id: 1.3.7
+        description: "Do not disclose private IP addresses and routing information to unauthorized parties.
+        "
+        description_note: "Methods to obscure IP addressing may include, but are not limited to:
 
+        • Network Address Translation(NAT)
+        • Placing servers containing cardholder data behind proxy servers/firewalls,
+        • Removal or filtering of route advertisements for private networks that employ registered addressing,
+        • Internal use of RFC1918 address space instead of registered addresses.
+        "
+        testing_procedures:
+          - id: 1.3.7.a
+            description: "Examine firewall and router configurations to verify that methods are in place to prevent the disclosure of private IP addresses and routing information from internal networks to the Internet.
+            "
+            description_note: ""
+          - id: 1.3.7.b
+            description: "Interview personnel and examine documentation to verify that any disclosure of private IP addresses and routing information to external entities is authorized.
+            "
+            description_note: ""
+        guidance: "Restricting the disclosure of internal or private IP addresses is essential to prevent a hacker “learning” the IP addresses of the internal network, and using that information to access the network.
+        
+        Methods used to meet the intent of this requirement may vary depending on the specific networking technology being used. For example, the controls used to meet this requirement may be different for IPv4 networks than for IPv6 networks.
+        "
+        guidance_note: ""
