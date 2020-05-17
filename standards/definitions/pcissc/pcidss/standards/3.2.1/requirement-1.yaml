@@ -360,3 +360,36 @@ items:
         Methods used to meet the intent of this requirement may vary depending on the specific networking technology being used. For example, the controls used to meet this requirement may be different for IPv4 networks than for IPv6 networks.
         "
         guidance_note: ""
+  - id: 1.4
+    description: "Install personal firewall software or equivalent functionality on any portable computing devices (including company and/or employee-owned) that connect to the Internet when outside the network (for example, laptops used by employees), and which are also used to access the CDE. Firewall (or equivalent) configurations include:
+    
+    • Specific configuration settings are defined.
+    • Personal firewall (or equivalent functionality) is actively running.
+    • Personal firewall (or equivalent functionality) is not alterable by users of the portable computing devices.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 1.4.a
+        description: "Examine policies and configuration standards to verify:
+        
+        • Personal firewall software or equivalent functionality is required for all portable computing devices (including company and/or employee-owned) that connect to the Internet when outside the network (for example, laptops used by employees), and which are also used to access the CDE.
+        • Specific configuration settings are defined for personal firewall (or equivalent functionality).
+        • Personal firewall (or equivalent functionality) is configured to actively run.
+        • Personal firewall (or equivalent functionality) is configured to not be alterable by users of the portable computing devices.
+        "
+        description_note: ""
+      - id: 1.4.b
+        description: "Inspect a sample of company and/or employee-owned devices to verify that:
+        
+        • Personal firewall (or equivalent functionality) is installed and configured per the organization’s specific configuration settings.
+        • Personal firewall (or equivalent functionality) is actively running.
+        • Personal firewall (or equivalent functionality) is not alterable by users of the portable computing devices.
+        "
+        description_note: ""
+    guidance: "Portable computing devices that are allowed to connect to the Internet from outside the corporate firewall are more vulnerable to Internet-based threats. Use of firewall functionality (e.g., personal firewall software or hardware) helps to protect devices from Internet-based attacks, which could use the device to gain access the organization’s systems and data once the device is re-connected to the network.
+    
+    The specific firewall configuration settings are determined by the organization.
+    "
+    guidance_note: "This requirement applies to employee- owned and company-owned portable computing devices. Systems that cannot be managed by corporate policy introduce weaknesses and provide opportunities that malicious individuals may exploit. Allowing untrusted systems to connect to an organization’s CDE could result in access being granted to attackers and other malicious users.
+    "
+  
