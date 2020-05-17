@@ -50,3 +50,109 @@ items:
     Remember, if you don't need it, don't store it!
     "
     guidance_note: ""
+  - id: 3.2
+    description: "Do not store sensitive authentication data after authorization (even if encrypted). If sensitive authentication data is received, render all data unrecoverable upon completion of the authorization process.
+
+    It is permissible for issuers and companies that support issuing services to store sensitive authentication data if:
+    • There is a business justification and
+    • The data is stored securely.
+
+    Sensitive authentication data includes the data as cited in the following Requirements 3.2.1 through 3.2.3:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 3.2.a
+        description: "For issuers and/or companies that support issuing services and store sensitive authentication data, review policies and interview personnel to verify there is a documented business justification for the storage of sensitive authentication data.
+        "
+        description_note: ""
+      - id: 3.2.b
+        description: "For issuers and/or companies that support issuing services and store sensitive authentication data, examine data stores and system configurations to verify that the sensitive authentication data is secured.
+        "
+        description_note: ""
+      - id: 3.2.c
+        description: "For all other entities, if sensitive authentication data is received, review policies and procedures, and examine system configurations to verify the data is not retained after authorization.
+        "
+        description_note: ""
+      - id: 3.2.d
+        description: "For all other entities, if sensitive authentication data is received, review procedures and examine the processes for securely deleting the data to verify that the data is unrecoverable.
+        "
+        description_note: ""
+    guidance: "Sensitive authentication data consists of full track data, card validation code or value, and PIN data. Storage of sensitive authentication data after authorization is prohibited! This data is very valuable to malicious individuals as it allows them to generate counterfeit payment cards and create fraudulent transactions.
+    
+    Entities that issue payment cards or that perform or support issuing services will often create and control sensitive authentication data as part of the issuing function. It is allowable for companies that perform, facilitate, or support issuing services to store sensitive authentication data ONLY IF they have a legitimate business need to store such data.
+    
+    It should be noted that all PCI DSS requirements apply to issuers, and the only exception for issuers and issuer processors is that sensitive authentication data may be retained if there is a legitimate reason to do so. A legitimate reason is one that is necessary for the performance of the function being provided for the issuer and not one of convenience. Any such data must be stored securely and in accordance with all PCI DSS and specific payment brand requirements.
+
+    For non-issuing entities, retaining sensitive authentication data post-authorization is not permitted.
+    "
+    guidance_note: ""
+    items:
+      - id: 3.2.1
+        description: "Do not store the full contents of any track (from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere) after authorization. This data is alternatively called full track, track, track 1, track 2, and magnetic-stripe data.
+        "
+        description_note: "In the normal course of business, the following data elements from the magnetic stripe may need to be retained:
+
+        • The cardholder’s name
+        • Primary account number (PAN)
+        • Expiration date
+        • Service code
+
+        To minimize risk, store only these data elements as needed for business.
+        "
+        testing_procedures:
+          - id: 3.2.1
+            description: "For a sample of system components, examine data sources including but not limited to the following, and verify that the full contents of any track from the magnetic stripe on the back of card or equivalent data on a chip are not stored after authorization:
+            
+            • Incoming transaction data
+            • All logs (for example, transaction, history, debugging,
+            error)
+            • History files
+            • Trace files
+            • Several database schemas
+            • Database contents.
+            "
+            description_note: ""
+        guidance: "If full track data is stored, malicious individuals who obtain that data can use it to reproduce payment cards and complete fraudulent transactions.
+        "
+        guidance_note: ""
+      - id: 3.2.2
+        description: "Do not store the card verification code or value (three-digit or four-digit number printed on the front or back of a payment card used to verify card-not- present transactions) after authorization.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.2.2
+            description: "For a sample of system components, examine data sources, including but not limited to the following, and verify that the three-digit or four-digit card verification code or value printed on the front of the card or the signature panel (CVV2, CVC2, CID, CAV2 data) is not stored after authorization:
+            
+            • Incoming transaction data
+            • All logs (for example, transaction, history, debugging,
+            error)
+            • History files
+            • Trace files
+            • Several database schemas
+            • Database contents.
+            "
+            description_note: ""
+        guidance: "The purpose of the card validation code is to protect \"card-not-present\" transactions—Internet or mail order/telephone order (MO/TO) transactions—where the consumer and the card are not present.
+        
+        If this data is stolen, malicious individuals can execute fraudulent Internet and MO/TO transactions.
+        "
+        guidance_note: ""
+      - id: 3.2.3
+        description: "Do not store the personal identification number (PIN) or the encrypted PIN block after authorization.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 3.2.3
+            description: "For a sample of system components, examine data sources, including but not limited to the following and verify that PINs and encrypted PIN blocks are not stored after authorization:
+            
+            • Incoming transaction data
+            • All logs (for example, transaction, history, debugging,
+            error)
+            • History files
+            • Trace files
+            • Several database schemas
+            • Database contents.
+            "
+        guidance: "These values should be known only to the card owner or bank that issued the card. If this data is stolen, malicious individuals can execute fraudulent PIN-based debit transactions (for example, ATM withdrawals).
+        "
+        guidance_note: ""
