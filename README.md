@@ -35,7 +35,7 @@ Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 
 - [ ] 5.1. Ansible
 
-6. Integration: Notifications/Alers
+6. Integration: Notifications/Alerts
 
 - [ ] 6.1. Slack
 - [ ] 6.2. Email
