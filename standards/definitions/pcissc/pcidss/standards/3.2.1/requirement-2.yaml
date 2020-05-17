@@ -72,3 +72,141 @@ items:
         In addition, the key-exchange protocol for older versions of 802.11x encryption (Wired Equivalent Privacy, or WEP) has been broken and can render the encryption useless. Firmware for devices should be updated to support more secure protocols.
         "
         guidance_note: ""
+  - id: 2.2
+    description: "Develop configuration standards for all system components. Assure that these standards address all known security vulnerabilities and are consistent with industry-accepted system hardening standards.
+    
+    Sources of industry-accepted system hardening standards may include, but are not limited to:
+    
+    • Center for Internet Security (CIS)
+    • International Organization for
+    Standardization (ISO)
+    • SysAdmin Audit Network Security (SANS) Institute
+    • National Institute of Standards Technology (NIST).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 2.2.a
+        description: "Examine the organization’s system configuration standards for all types of system components and verify the system configuration standards are consistent with industry- accepted hardening standards.
+        "
+        description_note: ""
+      - id: 2.2.b
+        description: "Examine policies and interview personnel to verify that system configuration standards are updated as new vulnerability issues are identified, as defined in Requirement 6.1.
+        "
+        description_note: ""
+      - id: 2.2.c
+        description: "Examine policies and interview personnel to verify that system configuration standards are applied when new systems are configured and verified as being in place before a system is installed on the network.
+        "
+        description_note: ""
+      - id: 2.2.d
+        description: "Verify that system configuration standards include the following procedures for all types of system components:
+        
+        • Changing of all vendor-supplied defaults and elimination of unnecessary default accounts
+        • Implementing only one primary function per server to prevent functions that require different security levels from co-existing on the same server
+        • Enabling only necessary services, protocols, daemons, etc., as required for the function of the system
+        • Implementing additional security features for any required services, protocols or daemons that are considered to be insecure
+        • Configuring system security parameters to prevent misuse
+        • Removing all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers.
+        "
+        description_note: ""
+    guidance: "There are known weaknesses with many operating systems, databases, and enterprise applications, and there are also known ways to configure these systems to fix security vulnerabilities. To help those that are not security experts, a number of security organizations have established system-hardening guidelines and recommendations, which advise how to correct these weaknesses.
+    
+    Examples of sources for guidance on configuration standards include, but are not limited to: www.nist.gov, www.sans.org, and www.cisecurity.org, www.iso.org, and product vendors.
+    
+    System configuration standards must be kept up to date to ensure that newly identified weaknesses are corrected prior to a system being installed on the network.
+    "
+    guidance_note: ""
+    items:
+      - id: 2.2.1
+        description: "Implement only one primary function per server to prevent functions that require different security levels from co-existing on the same server. (For example, web servers, database servers, and DNS should be implemented on separate servers.)
+        "
+        description_note: "Where virtualization technologies are in use, implement only one primary function per virtual system component.
+        "
+        testing_procedures:
+          - id: 2.2.1.a
+            description: "Select a sample of system components and inspect the system configurations to verify that only one primary function is implemented per server.
+            "
+            description_note: ""
+          - id: 2.2.1.b
+            description: "If virtualization technologies are used, inspect the system configurations to verify that only one primary function is implemented per virtual system component or device.
+            "
+            description_note: ""
+        guidance: "If server functions that need different security levels are located on the same server, the security level of the functions with higher security needs would be reduced due to the presence of the lower-security functions. Additionally, the server functions with a lower security level may introduce security weaknesses to other functions on the same server. By considering the security needs of different server functions as part of the system configuration standards and related processes, organizations can ensure that functions requiring different security levels don’t co-exist on the same server.
+        "
+        guidance_note: ""
+      - id: 2.2.2
+        description: "Enable only necessary services, protocols, daemons, etc., as required for the function of the system.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 2.2.2.a
+            description: "Select a sample of system components and inspect enabled system services, daemons, and protocols to verify that only necessary services or protocols are enabled.
+            "
+            description_note: ""
+          - id: 2.2.2.b
+            description: "Identify any enabled insecure services, daemons, or protocols and interview personnel to verify they are justified per documented configuration standards.
+            "
+            description_note: ""
+        guidance: "As stated in Requirement 1.1.6, there are many protocols that a business may need (or have enabled by default) that are commonly used by malicious individuals to compromise a network. Including this requirement as part of an organization's configuration standards and related processes ensures that only the necessary services and protocols are enabled.
+        "
+        guidance_note: ""
+      - id: 2.2.3
+        description: "Implement additional security features for any required services, protocols, or daemons that are considered to be insecure.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 2.2.3
+            description: "Inspect configuration settings to verify that security features are documented and implemented for all insecure services, daemons, or protocols.
+            "
+            description_note: ""
+        guidance: "Enabling security features before new servers are deployed will prevent servers being installed into the environment with insecure configurations.
+        
+        Ensuring that all insecure services, protocols, and daemons are adequately secured with appropriate security features makes it more difficult for malicious individuals to take advantage of commonly used points of compromise within a network.
+        
+        Refer to industry standards and best practices for information on strong cryptography and secure protocols (e.g., NIST SP 800-52 and SP 800-57, OWASP, etc.).
+        "
+        guidance_note: "SSL/early TLS is not considered strong cryptography and may not be used as a security control, except by POS POI terminals that are verified as not being susceptible to known exploits and the termination points to which they connect as defined in Appendix A2.
+        "
+      - id: 2.2.4
+        description: "Configure system security parameters to prevent misuse.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 2.2.4.a
+            description: "Interview system administrators and/or security managers to verify that they have knowledge of common security parameter settings for system components.
+            "
+            description_note: ""
+          - id: 2.2.4.b
+            description: "Examine the system configuration standards to verify that common security parameter settings are included.
+            "
+            description_note: ""
+          - id: 2.2.4.c
+            description: "Select a sample of system components and inspect the common security parameters to verify that they are set appropriately and in accordance with the configuration standards.
+            "
+            description_note: ""
+        guidance: "System configuration standards and related processes should specifically address security settings and parameters that have known security implications for each type of system in use.
+        
+        In order for systems to be configured securely, personnel responsible for configuration and/or administering systems must be knowledgeable in the specific security parameters and settings that apply to the system.
+        "
+        guidance_note: ""
+      - id: 2.2.5
+        description: "Remove all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 2.2.5.a
+            description: "Select a sample of system components and inspect the configurations to verify that all unnecessary functionality (for example, scripts, drivers, features, subsystems, file systems, etc.) is removed.
+            "
+            description_note: ""
+          - id: 2.2.5.b
+            description: "Examine the documentation and security parameters to verify enabled functions are documented and support secure configuration.
+            "
+            description_note: ""
+          - id: 2.2.5.c
+            description: "Examine the documentation and security parameters to verify that only documented functionality is present on the sampled system components.
+            "
+            description_note: ""
+        guidance: "Unnecessary functions can provide additional opportunities for malicious individuals to gain access to a system. By removing unnecessary functionality, organizations can focus on securing the functions that are required and reduce the risk that unknown functions will be exploited.
+        
+        Including this in server-hardening standards and processes addresses the specific security implications associated with unnecessary functions (for example, by removing/disabling FTP or the web server if the server will not be performing those functions).
+        "
+        guidance_note: ""
