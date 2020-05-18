@@ -4,6 +4,10 @@
 
 SCM (Security Control Management) is a simple ways to manage your security control management system based on industry standards.
 
+#### ------------------------------------------------------------------
+#### SCM is under development and is considered a work in progress.
+#### ------------------------------------------------------------------
+
 Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 
 1. Definitions
