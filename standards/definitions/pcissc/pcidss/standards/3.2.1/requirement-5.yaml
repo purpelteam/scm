@@ -1,0 +1,127 @@
+---
+requirements:
+parent: 5
+items:
+  - id: 5.1
+    description: "Deploy anti-virus software on all systems commonly affected by malicious software (particularly personal computers and servers).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 5.1
+        description: "For a sample of system components including all operating system types commonly affected by malicious software, verify that anti-virus software is deployed if applicable anti-virus technology exists.
+        "
+        description_note: ""
+    guidance: "There is a constant stream of attacks using widely published exploits, often called \"zero day\" (an attack that exploits a previously unknown vulnerability), against otherwise secured systems. Without an anti-virus solution that is updated regularly, these new forms of malicious software can attack systems, disable a network, or lead to compromise of data.
+    "
+    guidance_note: ""
+    items:
+      - id: 5.1.1
+        description: "Ensure that anti-virus programs are capable of detecting, removing, and protecting against all known types of malicious software.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 5.1.1
+            description: "Review vendor documentation and examine anti-virus configurations to verify that anti-virus programs;
+            
+            • Detect all known types of malicious software,
+            • Remove all known types of malicious software, and
+            • Protect against all known types of malicious software.
+            "
+            description_note: "Examples of types of malicious software include viruses, Trojans, worms, spyware, adware, and rootkits.
+            "
+        guidance: "It is important to protect against ALL types and forms of malicious software.
+        "
+        guidance_note: ""
+      - id: 5.1.2
+        description: "For systems considered to be not commonly affected by malicious software, perform periodic evaluations to identify and evaluate evolving malware threats in order to confirm whether such systems continue to not require anti-virus software.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 5.1.2
+            description: "Interview personnel to verify that evolving malware threats are monitored and evaluated for systems not currently considered to be commonly affected by malicious software, in order to confirm whether such systems continue to not require anti-virus software.
+            "
+            description_note: ""
+        guidance: "Typically, mainframes, mid-range computers (such as AS/400) and similar systems may not currently be commonly targeted or affected by malware. However, industry trends for malicious software can change quickly, so it is important for organizations to be aware of new malware that might affect their systems—for example, by monitoring vendor security notices and anti-virus news groups to determine whether their systems might be coming under threat from new and evolving malware.
+        
+        Trends in malicious software should be included in the identification of new security vulnerabilities, and methods to address new trends should be incorporated into the company's configuration standards and protection mechanisms as needed
+        "
+        guidance_note: ""
+  - id: 5.2
+    description: "Ensure that all anti-virus mechanisms are maintained as follows:
+    
+    • Are kept current,
+    • Perform periodic scans
+    • Generate audit logs which are retained per PCI DSS Requirement 10.7.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 5.2.a
+        description: "Examine policies and procedures to verify that anti-virus software and definitions are required to be kept up to date.
+        "
+        description_note: ""
+      - id: 5.2.b
+        description: "Examine anti-virus configurations, including the master installation of the software to verify anti-virus mechanisms are:
+        
+        • Configured to perform automatic updates, and
+        • Configured to perform periodic scans.
+        "
+        description_note: ""
+      - id: 5.2.c
+        description: "Examine a sample of system components, including all operating system types commonly affected by malicious software, to verify that:
+        
+        • The anti-virus software and definitions are current.
+        • Periodic scans are performed.
+        "
+        description_note: ""
+      - id: 5.2.d
+        description: "Examine anti-virus configurations, including the master installation of the software and a sample of system components, to verify that:
+        
+        • Anti-virus software log generation is enabled, and
+        • Logs are retained in accordance with PCI DSS Requirement 10.7.
+        "
+        description_note: ""
+    guidance: "Even the best anti-virus solutions are limited in effectiveness if they are not maintained and kept current with the latest security updates, signature files, or malware protections.
+    
+    Audit logs provide the ability to monitor virus and malware activity and anti-malware reactions. Thus, it is imperative that anti-malware solutions be configured to generate audit logs and that these logs be managed in accordance with Requirement 10.
+    "
+    guidance_note: ""
+  - id: 5.3
+    description: "Ensure that anti-virus mechanisms are actively running and cannot be disabled or altered by users, unless specifically authorized by management on a case-by-case basis for a limited time period.
+    "
+    description_note: "Anti-virus solutions may be temporarily disabled only if there is legitimate technical need, as authorized by management on a case-by-case basis. If anti-virus protection needs to be disabled for a specific purpose, it must be formally authorized. Additional security measures may also need to be implemented for the period of time during which anti-virus protection is not active.
+    "
+    testing_procedures:
+      - id: 5.3.a
+        description: "Examine anti-virus configurations, including the master installation of the software and a sample of system components, to verify the anti-virus software is actively running.
+        "
+        description_note: ""
+      - id: 5.3.b
+        description: "Examine anti-virus configurations, including the master installation of the software and a sample of system components, to verify that the anti-virus software cannot be disabled or altered by users.
+        "
+        description_note: ""
+      - id: 5.3.c
+        description: "Interview responsible personnel and observe processes to verify that anti-virus software cannot be disabled or altered by users, unless specifically authorized by management on a case-by-case basis for a limited time period.
+        "
+        description_note: ""
+    guidance: "Anti-virus that continually runs and is unable to be altered will provide persistent security against malware.
+    
+    Use of policy-based controls on all systems to ensure anti-malware protections cannot be altered or disabled will help prevent system weaknesses from being exploited by malicious software.
+    
+    Additional security measures may also need to be implemented for the period of time during which anti-virus protection is not active—for example, disconnecting the unprotected system from the Internet while the anti-virus protection is disabled, and running a full scan after it is re-enabled.
+    "
+    guidance_note: ""
+  - id: 5.4
+    description: "Ensure that security policies and operational procedures for protecting systems against malware are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 5.4
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for protecting systems against malware are:
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and operational procedures to ensure systems are protected from malware on a continuous basis.
+    "
+    guidance_note: ""
