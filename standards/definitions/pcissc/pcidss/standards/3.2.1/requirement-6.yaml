@@ -1,0 +1,37 @@
+---
+requirements:
+parent: 6
+items:
+  - id: 6.1
+    description: "Establish a process to identify security vulnerabilities, using reputable outside sources for security vulnerability information, and assign a risk ranking (for example, as “high,” “medium,” or “low”) to newly discovered security vulnerabilities.
+    "
+    description_note: "Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score, and/or the classification by the vendor, and/or type of systems affected.
+    
+    Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk- assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a “high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered “critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process, or transmit cardholder data.
+    "
+    testing_procedures:
+      - id: 6.1.a
+        description: "Examine policies and procedures to verify that processes are defined for the following:
+        
+        • To identify new security vulnerabilities
+        • To assign a risk ranking to vulnerabilities that includes identification of all “high risk” and “critical” vulnerabilities.
+        • To use reputable outside sources for security vulnerability information.
+        "
+        description_note: ""
+      - id: 6.1.b
+        description: " Interview responsible personnel and observe processes to verify that:
+        
+        • New security vulnerabilities are identified.
+        • A risk ranking is assigned to vulnerabilities that includes identification of all “high risk” and “critical” vulnerabilities.
+        • Processes to identify new security vulnerabilities include using reputable outside sources for security vulnerability information.
+        "
+        description_note: ""
+    guidance: "The intent of this requirement is that organizations keep up to date with new vulnerabilities that may impact their environment.
+    
+    Sources for vulnerability information should be trustworthy and often include vendor websites, industry news groups, mailing list, or RSS feeds.
+    
+    Once an organization identifies a vulnerability that could affect their environment, the risk that the vulnerability poses must be evaluated and ranked. The organization must therefore have a method in place to evaluate vulnerabilities on an ongoing basis and assign risk rankings to those vulnerabilities. This is not achieved by an ASV scan or internal vulnerability scan, rather this requires a process to actively monitor industry sources for vulnerability information.
+    
+    Classifying the risks (for example, as “high,” “medium,” or “low”) allows organizations to identify, prioritize, and address the highest risk items more quickly and reduce the likelihood that vulnerabilities posing the greatest risk will be exploited.
+    "
+    guidance_note: ""
