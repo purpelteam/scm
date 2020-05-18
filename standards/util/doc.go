@@ -1,4 +1,2 @@
-/*
-	Package util implement util functions.
-*/
+// Package util implement util functions.
 package util
