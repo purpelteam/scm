@@ -46,5 +46,6 @@ Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 - CIS Controls (https://www.cisecurity.org/controls/)
 - CIS Kubernetes Benchmark (https://www.cisecurity.org/benchmark/kubernetes/)
 - CIS Docker Benchmark (https://www.cisecurity.org/benchmark/docker/)
+- AuditScripts Critical Security Controls (https://www.auditscripts.com/free-resources/critical-security-controls/)
 - Ansible (https://docs.ansible.com/ansible/latest/)
 
