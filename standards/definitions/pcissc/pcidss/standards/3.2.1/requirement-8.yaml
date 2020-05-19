@@ -412,4 +412,74 @@ items:
         "
         guidance_note: "This requirement applies only when the entity being assessed is a service provider.
         "
-
+  - id: 8.6
+    description: " Where other authentication mechanisms are used (for example, physical or logical security tokens, smart cards, certificates, etc.), use of these mechanisms must be assigned as follows:
+    
+    • Authentication mechanisms must be assigned to an individual account and not shared among multiple accounts.
+    • Physical and/or logical controls must be in place to ensure only the intended account can use that mechanism to gain access.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 8.6.a
+        description: "Examine authentication policies and procedures to verify that procedures for using authentication mechanisms such as physical security tokens, smart cards, and certificates are defined and include:
+        
+        • Authentication mechanisms are assigned to an individual account and not shared among multiple accounts.
+        • Physical and/or logical controls are defined to ensure only the intended account can use that mechanism to gain access.
+        "
+        description_note: ""
+      - id: 8.6.b
+        description: "Interview security personnel to verify authentication mechanisms are assigned to an account and not shared among multiple accounts.
+        "
+        description_note: ""
+      - id: 8.6.c
+        description: "Examine system configuration settings and/or physical controls, as applicable, to verify that controls are implemented to ensure only the intended account can use that mechanism to gain access.
+        "
+        description_note: ""
+    guidance: "If user authentication mechanisms such as tokens, smart cards, and certificates can be used by multiple accounts, it may be impossible to identify the individual using the authentication mechanism. Having physical and/or logical controls (for example, a PIN, biometric data, or a password) to uniquely identify the user of the account will prevent unauthorized users from gaining access through use of a shared authentication mechanism.
+    "
+    guidance_note: ""
+  - id: 8.7
+    description: "All access to any database containing cardholder data (including access by applications, administrators, and all other users) is restricted as follows:
+    
+    • All user access to, user queries of, and user actions on databases are through programmatic methods.
+    • Only database administrators have the ability to directly access or query databases.
+    • Application IDs for database applications can only be used by the applications (and not by individual users or other non-application processes).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 8.7.a
+        description: "Review database and application configuration settings and verify that all users are authenticated prior to access.
+        "
+        description_note: ""
+      - id: 8.7.b
+        description: "Examine database and application configuration settings to verify that all user access to, user queries of, and user actions on (for example, move, copy, delete), the database are through programmatic methods only (for example, through stored procedures).
+        "
+        description_note: ""
+      - id: 8.7.c
+        description: "Examine database access control settings and database application configuration settings to verify that user direct access to or queries of databases are restricted to database administrators.
+        "
+        description_note: ""
+      - id: 8.7.d
+        description: "Examine database access control settings, database application configuration settings, and the related application IDs to verify that application IDs can only be used by the applications (and not by individual users or other processes).
+        "
+        description_note: ""
+    guidance: "Without user authentication for access to databases and applications, the potential for unauthorized or malicious access increases, and such access cannot be logged since the user has not been authenticated and is therefore not known to the system. Also, database access should be granted through programmatic methods only (for example, through stored procedures), rather than via direct access to the database by end users (except for DBAs, who may need direct access to the database for their administrative duties).
+    "
+    guidance_note: ""
+  - id: 8.8
+    description: "Ensure that security policies and operational procedures for identification and authentication are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 8.8
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for identification and authentication are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and operational procedures for managing identification and authorization on a continuous basis.
+    "
+    guidance_note: ""
+  
