@@ -62,3 +62,83 @@ items:
     This requirement applies to applicable patches for all installed software, including payment applications (both those that are PA-DSS validated and those that are not).
     "
     guidance_note: ""
+  - id: 6.3
+    description: "Develop internal and external software applications (including web-based administrative access to applications) securely, as follows:
+    
+    • In accordance with PCI DSS (for example, secure authentication and logging)
+    • Based on industry standards and/or best practices.
+    • Incorporating information security throughout the software-development life cycle
+    "
+    description_note: "This applies to all software developed internally as well as bespoke or custom software developed by a third party.
+    "
+    testing_procedures:
+      - id: 6.3.a
+        description: "Examine written software-development processes to verify that the processes are based on industry standards and/or best practices.
+        "
+        description_note: ""
+      - id: 6.3.b
+        description: "Examine written software-development processes to verify that information security is included throughout the life cycle.
+        "
+        description_note: ""
+      - id: 6.3.c
+        description: "Examine written software-development processes to verify that software applications are developed in accordance with PCI DSS.
+        "
+        description_note: ""
+      - id: 6.3.d
+        description: "Interview software developers to verify that written software-development processes are implemented.
+        "
+        description_note: ""
+    guidance: "Without the inclusion of security during the requirements definition, design, analysis, and testing phases of software development, security vulnerabilities can be inadvertently or maliciously introduced into the production environment.
+    
+    Understanding how sensitive data is handled by the application—including when stored, transmitted, and when in memory—can help identify where data needs to be protected.
+    "
+    guidance_note: ""
+    items:
+      - id: 6.3.1
+        description: "Remove development, test and/or custom application accounts, user IDs, and passwords before applications become active or are released to customers.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.3.1
+            description: "Examine written software-development procedures and interview responsible personnel to verify that pre- production and/or custom application accounts, user IDs and/or passwords are removed before an application goes into production or is released to customers.
+            "
+            description_note: ""
+        guidance: "Development, test and/or custom application accounts, user IDs, and passwords should be removed from production code before the application becomes active or is released to customers, since these items may give away information about the functioning of the application. Possession of such information could facilitate compromise of the application and related cardholder data.
+        "
+        guidance_note: ""
+      - id: 6.3.2
+        description: "Review custom code prior to release to production or customers in order to identify any potential coding vulnerability (using either manual or automated processes) to include at least the following:
+        
+        • Code changes are reviewed by individuals other than the originating code author, and by individuals knowledgeable about code-review techniques and secure coding practices.
+        • Code reviews ensure code is developed according to secure coding guidelines
+        • Appropriate corrections are implemented prior to release.
+        • Code-review results are reviewed and approved by management prior to release.
+        "
+        description_note: "This requirement for code reviews applies to all custom code (both internal and public-facing), as part of the system development life cycle.
+        
+        Code reviews can be conducted by knowledgeable internal personnel or third parties. Public-facing web applications are also subject to additional controls, to address ongoing threats and vulnerabilities after implementation, as defined at PCI DSS Requirement 6.6.
+        "
+        testing_procedures:
+          - id: 6.3.2.a
+            description: "Examine written software-development procedures and interview responsible personnel to verify that all custom application code changes must be reviewed (using either manual or automated processes) as follows:
+            
+            • Code changes are reviewed by individuals other than the originating code author, and by individuals who are knowledgeable in code-review techniques and secure coding practices.
+            • Code reviews ensure code is developed according to secure coding guidelines (see PCI DSS Requirement 6.5).
+            • Appropriate corrections are implemented prior to release.
+            • Code-review results are reviewed and approved by management prior to release.
+            "
+            description_note: ""
+          - id: 6.3.2.b
+            description: "Select a sample of recent custom application changes and verify that custom application code is reviewed according to 6.3.2.a, above.
+            "
+            description_note: ""
+        guidance: "Security vulnerabilities in custom code are commonly exploited by malicious individuals to gain access to a network and compromise cardholder data.
+        
+        An individual knowledgeable and experienced in code-review techniques should be involved in the review process. Code reviews should be performed by someone other than the developer of the code to allow for an independent, objective review. Automated tools or processes may also be used in lieu of manual reviews, but keep in mind that it may be difficult or even impossible for an automated tool to identify some coding issues.
+        
+        Correcting coding errors before the code is deployed into a production environment or released to customers prevents the code exposing the environments to potential exploit. Faulty code is also far more difficult and expensive to address after it has been deployed or released into production environments.
+        
+        Including a formal review and signoff by management prior to release helps to ensure that code is approved and has been developed in accordance with policies and procedures.
+        "
+        guidance_note: ""
+      
