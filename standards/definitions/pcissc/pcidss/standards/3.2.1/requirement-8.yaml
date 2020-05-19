@@ -333,3 +333,83 @@ items:
         guidance: "This requirement is intended to apply to all personnel—including general users, administrators, and vendors (for support or maintenance) with remote access to the network—where that remote access could lead to access to the CDE. If remote access is to an entity’s network that has appropriate segmentation, such that remote users cannot access or impact the cardholder data environment, multi-factor authentication for remote access to that network would not be required. However, multi- factor authentication is required for any remote access to networks with access to the cardholder data environment, and is recommended for all remote access to the entity’s networks.
         "
         guidance_note: ""
+  - id: 8.4
+    description: "Document and communicate authentication policies and procedures to all users including:
+    
+    • Guidance on selecting strong authentication credentials
+    • Guidance for how users should protect their authentication credentials
+    • Instructions not to reuse previously used passwords
+    • Instructions to change passwords if there is any suspicion the password could be compromised.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 8.4.a
+        description: "Examine procedures and interview personnel to verify that authentication policies and procedures are distributed to all users.
+        "
+        description_note: ""
+      - id: 8.4.b
+        description: "Review authentication policies and procedures that are distributed to users and verify they include:
+        
+        • Guidance on selecting strong authentication credentials
+        • Guidance for how users should protect their authentication credentials.
+        • Instructions for users not to reuse previously used passwords
+        • Instructions to change passwords if there is any suspicion the password could be compromised.
+        "
+        description_note: ""
+      - id: 8.4.c
+        description: "Interview a sample of users to verify that they are familiar with authentication policies and procedures.
+        "
+        description_note: ""
+    guidance: "Communicating password/authentication policies and procedures to all users helps those users understand and abide by the policies.
+    
+    For example, guidance on selecting strong passwords may include suggestions to help personnel select hard-to-guess passwords that don’t contain dictionary words, and that don’t contain information about the user (such as the user ID, names of family members, date of birth, etc.). Guidance for protecting authentication credentials may include not writing down passwords or saving them in insecure files, and being alert for malicious individuals who may attempt to exploit their passwords (for example, by calling an employee and asking for their password so the caller can “troubleshoot a problem”).
+    
+    Instructing users to change passwords if there is a chance the password is no longer secure can prevent malicious users from using a legitimate password to gain unauthorized access.
+    "
+    guidance_note: ""
+  - id: 8.5
+    description: "Do not use group, shared, or generic IDs, passwords, or other authentication methods as follows:
+    
+    • Generic user IDs are disabled or removed.
+    • Shared user IDs do not exist for system administration and other critical functions.
+    • Shared and generic user IDs are not used to administer any system components.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 8.5.a
+        description: "For a sample of system components, examine user ID lists to verify the following:
+        
+        • Generic user IDs are disabled or removed.
+        • Shared user IDs for system administration activities and other critical functions do not exist.
+        • Shared and generic user IDs are not used to administer any system components.
+        "
+        description_note: ""
+      - id: 8.5.b
+        description: "Examine authentication policies and procedures to verify that use of group and shared IDs and/or passwords or other authentication methods are explicitly prohibited.
+        "
+        description_note: ""
+      - id: 8.5.c
+        description: "Interview system administrators to verify that group and shared IDs and/or passwords or other authentication methods are not distributed, even if requested.
+        "
+        description_note: ""
+    guidance: "If multiple users share the same authentication credentials (for example, user account and password), it becomes impossible to trace system access and activities to an individual. This in turn prevents an entity from assigning accountability for, or having effective logging of, an individual’s actions, since a given action could have been performed by anyone in the group that has knowledge of the authentication credentials.
+    "
+    guidance_note: ""
+    items:
+      - id: 8.5.1
+        description: "Additional requirement for service providers only: Service providers with remote access to customer premises (for example, for support of POS systems or servers) must use a unique authentication credential (such as a password/phrase) for each customer.
+        "
+        description_note: "This requirement is not intended to apply to shared hosting providers accessing their own hosting environment, where multiple customer environments are hosted.
+        "
+        testing_procedures:
+          - id: 8.5.1
+            description: "Additional testing procedure for service provider assessments only: Examine authentication policies and procedures and interview personnel to verify that different authentication credentials are used for access to each customer.
+            "
+            description_note: ""
+        guidance: "To prevent the compromise of multiple customers through the use of a single set of credentials, vendors with remote access accounts to customer environments should use a different authentication credential for each customer.
+        
+        Technologies, such as multi-factor mechanisms, that provide a unique credential for each connection (for example, via a single-use password) could also meet the intent of this requirement.
+        "
+        guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+        "
+
