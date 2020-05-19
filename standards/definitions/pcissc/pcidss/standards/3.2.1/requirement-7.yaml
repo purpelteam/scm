@@ -90,3 +90,74 @@ items:
         guidance: "Documented approval (for example, in writing or electronically) assures that those with access and privileges are known and authorized by management, and that their access is necessary for their job function.
         "
         guidance_note: ""
+  - id: 7.2
+    description: "Establish an access control system(s) for systems components that restricts access based on a user’s need to know, and is set to “deny all” unless specifically allowed.
+    
+    This access control system(s) must include the following:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 7.2
+        description: " Examine system settings and vendor documentation to verify that an access control system(s) is implemented as follows:
+        "
+        description_note: ""
+    guidance: "Without a mechanism to restrict access based on user’s need to know, a user may unknowingly be granted access to cardholder data. Access control systems automate the process of restricting access and assigning privileges. Additionally, a default “deny-all” setting ensures no one is granted access until and unless a rule is established specifically granting such access. Entities may have one or more access controls systems to manage user access.
+    "
+    guidance_note: "Some access control systems are set by default to “allow-all,” thereby permitting access unless/until a rule is written to specifically deny it.
+    "
+    items:
+      - id: 7.2.1
+        description: "Coverage of all system components
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.2.1
+            description: "Confirm that access control systems are in place on all system components.
+            "
+            description_note: ""
+        guidance: "Without a mechanism to restrict access based on user’s need to know, a user may unknowingly be granted access to cardholder data. Access control systems automate the process of restricting access and assigning privileges. Additionally, a default “deny-all” setting ensures no one is granted access until and unless a rule is established specifically granting such access. Entities may have one or more access controls systems to manage user access.
+        "
+        guidance_note: "Some access control systems are set by default to “allow-all,” thereby permitting access unless/until a rule is written to specifically deny it.
+        "
+      - id: 7.2.2
+        description: "Assignment of privileges to individuals based on job classification and function.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.2.2
+            description: "Confirm that access control systems are configured to enforce privileges assigned to individuals based on job classification and function.
+            "
+            description_note: ""
+        guidance: "Without a mechanism to restrict access based on user’s need to know, a user may unknowingly be granted access to cardholder data. Access control systems automate the process of restricting access and assigning privileges. Additionally, a default “deny-all” setting ensures no one is granted access until and unless a rule is established specifically granting such access. Entities may have one or more access controls systems to manage user access.
+        "
+        guidance_note: "Some access control systems are set by default to “allow-all,” thereby permitting access unless/until a rule is written to specifically deny it.
+        "
+      - id: 7.2.3
+        description: "Default “deny-all” setting.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.2.3
+            description: "Confirm that the access control systems have a default “deny-all” setting.
+            "
+            description_note: ""
+        guidance: "Without a mechanism to restrict access based on user’s need to know, a user may unknowingly be granted access to cardholder data. Access control systems automate the process of restricting access and assigning privileges. Additionally, a default “deny-all” setting ensures no one is granted access until and unless a rule is established specifically granting such access. Entities may have one or more access controls systems to manage user access.
+        "
+        guidance_note: "Some access control systems are set by default to “allow-all,” thereby permitting access unless/until a rule is written to specifically deny it.
+        "
+  - id: 7.3
+    description: "Ensure that security policies and operational procedures for restricting access to cardholder data are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 7.3
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for restricting access to cardholder data are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and operational procedures to ensure that access is controlled and based on need- to-know and least privilege, on a continuous basis.
+    "
+    guidance_note: ""
