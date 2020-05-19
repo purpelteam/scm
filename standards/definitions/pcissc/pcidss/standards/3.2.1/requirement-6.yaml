@@ -141,4 +141,180 @@ items:
         Including a formal review and signoff by management prior to release helps to ensure that code is approved and has been developed in accordance with policies and procedures.
         "
         guidance_note: ""
-      
+  - id: 6.4
+    description: "Follow change control processes and procedures for all changes to system components. The processes must include the following:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 6.4
+        description: "Examine policies and procedures to verify the following are defined:
+        
+        • Development/test environments are separate from production environments with access control in place to enforce separation.
+        • A separation of duties between personnel assigned to the development/test environments and those assigned to the production environment.
+        • Production data (live PANs) are not used for testing or development.
+        • Test data and accounts are removed before a production system becomes active.
+        • Change control procedures related to implementing security patches and software modifications are documented.
+        "
+        description_note: ""
+    guidance: "Without properly documented and implemented change controls, security features could be inadvertently or deliberately omitted or rendered inoperable, processing irregularities could occur, or malicious code could be introduced.
+    "
+    guidance_note: ""
+    items:
+      - id: 6.4.1
+        description: "Separate development/test environments from production environments, and enforce the separation with access controls.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.1.a
+            description: "Examine network documentation and network device configurations to verify that the development/test environments are separate from the production environment(s).
+            "
+            description_note: ""
+          - id: 6.4.1.b
+            description: "Examine access controls settings to verify that access controls are in place to enforce separation between the development/test environments and the production environment(s).
+            "
+            description_note: ""  
+        guidance: "Due to the constantly changing state of development and test environments, they tend to be less secure than the production environment. Without adequate separation between environments, it may be possible for the production environment, and cardholder data, to be compromised due to less- stringent security configurations and possible vulnerabilities in a test or development environment.
+        "
+        guidance_note: ""
+      - id: 6.4.2
+        description: "Separation of duties between development/test and production environments
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.2
+            description: "Observe processes and interview personnel assigned to development/test environments and personnel assigned to production environments to verify that separation of duties is in place between development/test environments and the production environment.
+            "
+            description_note: ""
+        guidance: "Reducing the number of personnel with access to the production environment and cardholder data minimizes risk and helps ensure that access is limited to those individuals with a business need to know.
+        
+        The intent of this requirement is to separate development and test functions from production functions. For example, a developer may use an administrator-level account with elevated privileges in the development environment, and have a separate account with user-level access to the production environment.
+        "
+        guidance_note: ""
+      - id: 6.4.3
+        description: "Production data (live PANs) are not used for testing or development
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.3.a
+            description: "Observe testing processes and interview personnel to verify procedures are in place to ensure production data (live PANs) are not used for testing or development.
+            "
+            description_note: ""
+          - id: 6.4.3.b
+            description: "Examine a sample of test data to verify production data (live PANs) is not used for testing or development.
+            "
+            description_note: ""
+        guidance: "Security controls are usually not as stringent in test or development environments. Use of production data provides malicious individuals with the opportunity to gain unauthorized access to production data (cardholder data).
+        "
+        guidance_note: ""
+      - id: 6.4.4
+        description: "Removal of test data and accounts from system components before the system becomes active / goes into production.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.4.a
+            description: "Observe testing processes and interview personnel to verify test data and accounts are removed before a production system becomes active.
+            "
+            description_note: ""
+          - id: 6.4.4.b
+            description: "Examine a sample of data and accounts from production systems recently installed or updated to verify test data and accounts are removed before the system becomes active.
+            "
+            description_note: ""
+        guidance: "Test data and accounts should be removed before the system component becomes active (in production), since these items may give away information about the functioning of the application or system. Possession of such information could facilitate compromise of the system and related cardholder data.
+        "
+        guidance_note: ""
+      - id: 6.4.5
+        description: "Change control procedures must include the following:
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.5.a
+            description: "Examine documented change control procedures and verify procedures are defined for:
+            
+            • Documentation of impact
+            • Documented change approval by authorized parties
+            • Functionality testing to verify that the change does not adversely impact the security of the system
+            • Back-out procedures
+            "
+            description_note: ""
+          - id: 6.4.5.b
+            description: "For a sample of system components, interview responsible personnel to determine recent changes. Trace those changes back to related change control documentation. For each change examined, perform the following:
+            "
+            description_note: ""
+        guidance: "If not properly managed, the impact of system changes—such as hardware or software updates and installation of security patches—might not be fully realized and could have unintended consequences.
+        "
+        guidance_note: ""
+        items:
+          - id: 6.4.5.1
+            description: "Documentation of impact.
+            "
+            description_note: ""
+            testing_procedures:
+              - id: 6.4.5.1
+                description: "Verify that documentation of impact is included in the change control documentation for each sampled change.
+                "
+                description_note: ""
+            guidance: "The impact of the change should be documented so that all affected parties can plan appropriately for any processing changes.
+            "
+            guidance_note: ""
+          - id: 6.4.5.2
+            description: "Documented change approval by authorized parties.
+            "
+            description_note: ""
+            testing_procedures:
+              - id: 6.4.5.2
+                description: "Verify that documented approval by authorized parties is present for each sampled change.
+                "
+                description_note: ""
+            guidance: "Approval by authorized parties indicates that the change is a legitimate and approved change sanctioned by the organization.
+            "
+            guidance_note: ""
+          - id: 6.4.5.3
+            description: "Functionality testing to verify that the change does not adversely impact the security of the system.
+            "
+            description_note: ""
+            testing_procedures:
+              - id: 6.4.5.3.a
+                description: "For each sampled change, verify that functionality testing is performed to verify that the change does not adversely impact the security of the system.
+                "
+                description_note: ""
+              - id: 6.4.5.3.b
+                description: "For custom code changes, verify that all updates are tested for compliance with PCI DSS Requirement 6.5 before being deployed into production.
+                "
+                description_note: ""
+            guidance: "Thorough testing should be performed to verify that the security of the environment is not reduced by implementing a change. Testing should validate that all existing security controls remain in place, are replaced with equally strong controls, or are strengthened after any change to the environment.
+            "
+            guidance_note: ""
+          - id: 6.4.5.4
+            description: "Back-out procedures.
+            "
+            description_note: ""
+            testing_procedures:
+              - id: 6.4.5.4
+                description: "Verify that back-out procedures are prepared for each sampled change.
+                "
+                description_note: ""
+            guidance: "For each change, there should be documented back-out procedures in case the change fails or adversely affects the security of an application or system, to allow the system to be restored back to its previous state.
+            "
+            guidance_note: ""
+      - id: 6.4.6
+        description: "Upon completion of a significant change, all relevant PCI DSS requirements must be implemented on all new or changed systems and networks, and documentation updated as applicable.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 6.4.6
+            description: "For a sample of significant changes, examine change records, interview personnel, and observe the affected systems/networks to verify that applicable PCI DSS requirements were implemented and documentation updated as part of the change.
+            "
+            description_note: ""
+        guidance: "Having processes to analyze significant changes helps ensure that all appropriate PCI DSS controls are applied to any systems or networks added or changed within the in-scope environment.
+        
+        Building this validation into change management processes helps ensure that device inventories and configuration standards are kept up to date and security controls are applied where needed.
+        
+        A change management process should include supporting evidence that PCI DSS requirements are implemented or preserved through the iterative process. Examples of PCI DSS requirements that could be impacted include, but are not limited to:
+        
+        • Network diagram is updated to reflect changes.
+        • Systems are configured per configuration standards, with all default passwords changed and unnecessary services disabled.
+        • Systems are protected with required controls— e.g., file-integrity monitoring (FIM), anti-virus, patches, audit logging.
+        • Sensitive authentication data (SAD) is not stored and all cardholder data (CHD) storage is documented and incorporated into data- retention policy and procedures
+        • New systems are included in the quarterly vulnerability scanning process.
+        "
+        guidance_note: ""
