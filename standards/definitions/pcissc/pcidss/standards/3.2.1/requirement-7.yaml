@@ -1,0 +1,92 @@
+---
+requirements:
+parent: 7
+items:
+  - id: 7.1
+    description: "Limit access to system components and cardholder data to only those individuals whose job requires such access.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 7.1
+        description: "Examine written policy for access control, and verify that the policy incorporates 7.1.1 through 7.1.4 as follows:
+        
+        • Defining access needs and privilege assignments for each role
+        • Restriction of access to privileged user IDs to least privileges necessary to perform job responsibilities
+        • Assignment of access based on individual personnel’s job classification and function
+        • Documented approval (electronically or in writing) by authorized parties for all access, including listing of specific privileges approved.
+        "
+        description_note: ""
+    guidance: "The more people who have access to cardholder data, the more risk there is that a user’s account will be used maliciously. Limiting access to those with a legitimate business reason for the access helps an organization prevent mishandling of cardholder data through inexperience or malice.
+    "
+    guidance_note: ""
+    items:
+      - id: 7.1.1
+        description: "Define access needs for each role, including:
+        
+        • System components and data resources that each role needs to access for their job function
+        • Level of privilege required (for example, user, administrator, etc.) for accessing resources.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.1.1
+            description: "Select a sample of roles and verify access needs for each role are defined and include:
+            
+            • System components and data resources that each role needs to access for their job function
+            • Identification of privilege necessary for each role to perform their job function.
+            "
+            description_note: ""
+        guidance: "In order to limit access to cardholder data to only those individuals who need such access, first it is necessary to define access needs for each role (for example, system administrator, call center personnel, store clerk), the systems/devices/data each role needs access to, and the level of privilege each role needs to effectively perform assigned tasks. Once roles and corresponding access needs are defined, individuals can be granted access accordingly.
+        "
+        guidance_note: ""
+      - id: 7.1.2
+        description: "Restrict access to privileged user IDs to least privileges necessary to perform job responsibilities.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.1.2.a
+            description: "Interview personnel responsible for assigning access to verify that access to privileged user IDs is:
+            
+            • Assigned only to roles that specifically require such privileged access
+            • Restricted to least privileges necessary to perform job responsibilities.
+            "
+            description_note: ""
+          - id: 7.1.2.b
+            description: "Select a sample of user IDs with privileged access and interview responsible management personnel to verify that privileges assigned are:
+            
+            • Necessary for that individual’s job function
+            • Restricted to least privileges necessary to perform job responsibilities.
+            "
+            description_note: ""
+        guidance: "When assigning privileged IDs, it is important to assign individuals only the privileges they need to perform their job (the “least privileges”). For example, the database administrator or backup administrator should not be assigned the same privileges as the overall systems administrator.
+        
+        Assigning least privileges helps prevent users without sufficient knowledge about the application from incorrectly or accidentally changing application configuration or altering its security settings. Enforcing least privilege also helps to minimize the scope of damage if an unauthorized person gains access to a user ID.
+        "
+        guidance_note: ""
+      - id: 7.1.3
+        description: "Assign access based on individual personnel’s job classification and function.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.1.3
+            description: "Select a sample of user IDs and interview responsible management personnel to verify that privileges assigned are based on that individual’s job classification and function.
+            "
+            description_note: ""
+        guidance: "Once needs are defined for user roles (per PCI DSS requirement 7.1.1), it is easy to grant individuals access according to their job classification and function by using the already-created roles.
+        "
+        guidance_note: ""
+      - id: 7.1.4
+        description: "Require documented approval by authorized parties specifying required privileges.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 7.1.4
+            description: "Select a sample of user IDs and compare with documented approvals to verify that:
+            
+            • Documented approval exists for the assigned privileges
+            • The approval was by authorized parties
+            • That specified privileges match the roles assigned to the individual.
+            "
+            description_note: ""
+        guidance: "Documented approval (for example, in writing or electronically) assures that those with access and privileges are known and authorized by management, and that their access is necessary for their job function.
+        "
+        guidance_note: ""
