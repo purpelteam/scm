@@ -1,0 +1,127 @@
+---
+requirements:
+parent: 10
+items:
+  - id: 10.1
+    description: "Implement audit trails to link all access to system components to each individual user.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.1
+        description: "Verify, through observation and interviewing the system administrator, that:
+        
+        • Audit trails are enabled and active for system components.
+        • Access to system components is linked to individual users.
+        "
+        description_note: ""
+    guidance: "It is critical to have a process or system that links user access to system components accessed. This system generates audit logs and provides the ability to trace back suspicious activity to a specific user.
+    "
+    guidance_note: ""
+  - id: 10.2
+    description: "Implement automated audit trails for all system components to reconstruct the following events:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.2
+        description: "Through interviews of responsible personnel, observation of audit logs, and examination of audit log settings, perform the following:
+        "
+        description_note: ""
+    guidance: "Generating audit trails of suspect activities alerts the system administrator, sends data to other monitoring mechanisms (like intrusion detection systems), and provides a history trail for post- incident follow-up. Logging of the following events enables an organization to identify and trace potentially malicious activities
+    "
+    guidance_note: ""
+    items:
+      - id: 10.2.1
+        description: "All individual user accesses to cardholder data
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.1
+            description: "Verify all individual access to cardholder data is logged.
+            "
+            description_note: ""
+        guidance: "Malicious individuals could obtain knowledge of a user account with access to systems in the CDE, or they could create a new, unauthorized account in order to access cardholder data. A record of all individual accesses to cardholder data can identify which accounts may have been compromised or misused.
+        "
+        guidance_note: ""
+      - id: 10.2.2
+        description: "All actions taken by any individual with root or administrative privileges
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.2
+            description: "Verify all actions taken by any individual with root or administrative privileges are logged.
+            "
+            description_note: ""
+        guidance: "Accounts with increased privileges, such as the “administrator” or “root” account, have the potential to greatly impact the security or operational functionality of a system. Without a log of the activities performed, an organization is unable to trace any issues resulting from an administrative mistake or misuse of privilege back to the specific action and individual.
+        "
+        guidance_note: ""
+      - id: 10.2.3
+        description: "Access to all audit trails
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.3
+            description: "Verify access to all audit trails is logged.
+            "
+            description_note: ""
+        guidance: "Malicious users often attempt to alter audit logs to hide their actions, and a record of access allows an organization to trace any inconsistencies or potential tampering of the logs to an individual account. Having access to logs identifying changes, additions, and deletions can help retrace steps made by unauthorized personnel.
+        "
+        guidance_note: ""
+      - id: 10.2.4
+        description: "Invalid logical access attempts
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.4
+            description: "Verify invalid logical access attempts are logged.
+            "
+            description_note: ""
+        guidance: "Malicious individuals will often perform multiple access attempts on targeted systems. Multiple invalid login attempts may be an indication of an unauthorized user’s attempts to “brute force” or guess a password.
+        "
+        guidance_note: ""
+      - id: 10.2.5
+        description: "Use of and changes to identification and authentication mechanisms—including but not limited to creation of new accounts and elevation of privileges—and all changes, additions, or deletions to accounts with root or administrative privileges
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.5.a
+            description: "Verify use of identification and authentication mechanisms is logged.
+            "
+            description_note: ""
+          - id: 10.2.5.b
+            description: "Verify all elevation of privileges is logged.
+            "
+            description_note: ""
+          - id: 10.2.5.c
+            description: "Verify all changes, additions, or deletions to any account with root or administrative privileges are logged.
+            "
+            description_note: ""
+        guidance: "Without knowing who was logged on at the time of an incident, it is impossible to identify the accounts that may have been used. Additionally, malicious users may attempt to manipulate the authentication controls with the intent of bypassing them or impersonating a valid account.
+        "
+        guidance_note: ""
+      - id: 10.2.6
+        description: "Initialization, stopping, or pausing of the audit logs
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.6
+            description: "Verify the following are logged:
+            
+            • Initialization of audit logs
+            • Stopping or pausing of audit logs.
+            "
+            description_note: ""
+        guidance: "Turning the audit logs off (or pausing them) prior to performing illicit activities is a common practice for malicious users wishing to avoid detection. Initialization of audit logs could indicate that the log function was disabled by a user to hide their actions.
+        "
+        guidance_note: ""
+      - id: 10.2.7
+        description: "Creation and deletion of system- level objects
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.2.7
+            description: "Verify creation and deletion of system level objects are logged.
+            "
+            description_note: ""
+        guidance: "Malicious software, such as malware, often creates or replaces system level objects on the target system in order to control a particular function or operation on that system. By logging when system-level objects, such as database tables or stored procedures, are created or deleted, it will be easier to determine whether such modifications were authorized.
+        "
+        guidance_note: ""
