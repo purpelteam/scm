@@ -209,3 +209,69 @@ items:
         guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
         "
         guidance_note: ""
+  - id: 10.4
+    description: "Using time-synchronization technology, synchronize all critical system clocks and times and ensure that the following is implemented for acquiring, distributing, and storing time.
+    "
+    description_note: "One example of time synchronization technology is Network Time Protocol (NTP).
+    "
+    testing_procedures:
+      - id: 10.4
+        description: "Examine configuration standards and processes to verify that time-synchronization technology is implemented and kept current per PCI DSS Requirements 6.1 and 6.2.
+        "
+        description_note: ""
+    guidance: "Time synchronization technology is used to synchronize clocks on multiple systems. When clocks are not properly synchronized, it can be difficult, if not impossible, to compare log files from different systems and establish an exact sequence of event (crucial for forensic analysis in the event of a breach). For post-incident forensics teams, the accuracy and consistency of time across all systems and the time of each activity is critical in determining how the systems were compromised.
+    "
+    guidance_note: ""
+    items:
+      - id: 10.4.1
+        description: " Critical systems have the correct and consistent time.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.4.1.a
+            description: "Examine the process for acquiring, distributing and storing the correct time within the organization to verify that:
+            
+            • Only the designated central time server(s) receives time signals from external sources, and time signals from external sources are based on International Atomic Time or UTC.
+            • Where there is more than one designated time server, the time servers peer with one another to keep accurate time,
+            • Systems receive time information only from designated central time server(s).
+            "
+            description_note: ""
+          - id: 10.4.1.b
+            description: "Observe the time-related system-parameter settings for a sample of system components to verify:
+            
+            • Only the designated central time server(s) receives time signals from external sources, and time signals from external sources are based on International Atomic Time or UTC.
+            • Where there is more than one designated time server, the designated central time server(s) peer with one another to keep accurate time.
+            • Systems receive time only from designated central time server(s).
+            "
+            description_note: ""
+        guidance: "Time synchronization technology is used to synchronize clocks on multiple systems. When clocks are not properly synchronized, it can be difficult, if not impossible, to compare log files from different systems and establish an exact sequence of event (crucial for forensic analysis in the event of a breach). For post-incident forensics teams, the accuracy and consistency of time across all systems and the time of each activity is critical in determining how the systems were compromised.
+        "
+        guidance_note: ""
+      - id: 10.4.2
+        description: "Time data is protected.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.4.2.a
+            description: "Examine system configurations and time- synchronization settings to verify that access to time data is restricted to only personnel with a business need to access time data.
+            "
+            description_note: ""
+          - id: 10.4.2.b
+            description: "Examine system configurations, time synchronization settings and logs, and processes to verify that any changes to time settings on critical systems are logged, monitored, and reviewed.
+            "
+            description_note: ""
+        guidance: "Time synchronization technology is used to synchronize clocks on multiple systems. When clocks are not properly synchronized, it can be difficult, if not impossible, to compare log files from different systems and establish an exact sequence of event (crucial for forensic analysis in the event of a breach). For post-incident forensics teams, the accuracy and consistency of time across all systems and the time of each activity is critical in determining how the systems were compromised.
+        "
+        guidance_note: ""
+      - id: 10.4.3
+        description: "Time settings are received from industry-accepted time sources.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.4.3
+            description: "Examine systems configurations to verify that the time server(s) accept time updates from specific, industry-accepted external sources (to prevent a malicious individual from changing the clock). Optionally, those updates can be encrypted with a symmetric key, and access control lists can be created that specify the IP addresses of client machines that will be provided with the time updates (to prevent unauthorized use of internal time servers).
+            "
+            description_note: ""
+        guidance: "Time synchronization technology is used to synchronize clocks on multiple systems. When clocks are not properly synchronized, it can be difficult, if not impossible, to compare log files from different systems and establish an exact sequence of event (crucial for forensic analysis in the event of a breach). For post-incident forensics teams, the accuracy and consistency of time across all systems and the time of each activity is critical in determining how the systems were compromised.
+        "
+        guidance_note: ""
