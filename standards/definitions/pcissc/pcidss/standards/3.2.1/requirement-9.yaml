@@ -416,3 +416,131 @@ items:
         Examples of methods for securely destroying electronic media include secure wiping, degaussing, or physical destruction (such as grinding or shredding hard disks).
         "
         guidance_note: ""
+  - id: 9.9
+    description: "Protect devices that capture payment card data via direct physical interaction with the card from tampering and substitution.
+    "
+    description_note: "These requirements apply to card- reading devices used in card-present transactions (that is, card swipe or dip) at the point of sale. This requirement is not intended to apply to manual key-entry components such as computer keyboards and POS keypads.
+    "
+    testing_procedures:
+      - id: 9.9
+        description: "Examine documented policies and procedures to verify they include:
+        
+        • Maintaining a list of devices
+        • Periodically inspecting devices to look for tampering or substitution
+        • Training personnel to be aware of suspicious behavior and to report tampering or substitution of devices.
+        "
+        description_note: ""
+    guidance: "Criminals attempt to steal cardholder data by stealing and/or manipulating card-reading devices and terminals. For example, they will try to steal devices so they can learn how to break into them, and they often try to replace legitimate devices with fraudulent devices that send them payment card information every time a card is entered. Criminals will also try to add “skimming” components to the outside of devices, which are designed to capture payment card details before they even enter the device—for example, by attaching an additional card reader on top of the legitimate card reader so that the payment card details are captured twice: once by the criminal’s component and then by the device’s legitimate component. In this way, transactions may still be completed without interruption while the criminal is “skimming” the payment card information during the process.
+    
+    This requirement is recommended, but not required, for manual key-entry components such as computer keyboards and POS keypads.
+    
+    Additional best practices on skimming prevention are available on the PCI SSC website.
+    "
+    guidance_note: ""
+    items:
+      - id: 9.9.1
+        description: "Maintain an up-to-date list of devices. The list should include the following:
+        
+        • Make, model of device
+        • Location of device (for example, the address of the site or facility where the device is located)
+        • Device serial number or other method of unique identification.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.9.1.a
+            description: "Examine the list of devices to verify it includes:
+            
+            • Make, model of device
+            • Location of device (for example, the address of the site or facility where the device is located)
+            • Device serial number or other method of unique identification.
+            "
+            description_note: ""
+          - id: 9.9.1.b
+            description: "Select a sample of devices from the list and observe devices and device locations to verify that the list is accurate and up to date.
+            "
+            description_note: ""
+          - id: 9.9.1.c
+            description: "Interview personnel to verify the list of devices is updated when devices are added, relocated, decommissioned, etc.
+            "
+            description_note: ""
+        guidance: "Keeping an up-to-date list of devices helps an organization keep track of where devices are supposed to be, and quickly identify if a device is missing or lost.
+        
+        The method for maintaining a list of devices may be automated (for example, a device-management system) or manual (for example, documented in electronic or paper records). For on-the-road devices, the location may include the name of the personnel to whom the device is assigned.
+        "
+        guidance_note: ""
+      - id: 9.9.2
+        description: "Periodically inspect device surfaces to detect tampering (for example, addition of card skimmers to devices), or substitution (for example, by checking the serial number or other device characteristics to verify it has not been swapped with a fraudulent device).
+        "
+        description_note: "Examples of signs that a device might have been tampered with or substituted include unexpected attachments or cables plugged into the device, missing or changed security labels, broken or differently colored casing, or changes to the serial number or other external markings.
+        "
+        testing_procedures:
+          - id: 9.9.2.a
+            description: "Examine documented procedures to verify processes are defined to include the following:
+            
+            • Procedures for inspecting devices
+            • Frequency of inspections.
+            "
+            description_note: ""
+          - id: 9.9.2.b
+            description: "Interview responsible personnel and observe inspection processes to verify:
+            
+            • Personnel are aware of procedures for inspecting devices.
+            • All devices are periodically inspected for evidence of tampering and substitution.
+            "
+            description_note: ""
+        guidance: "Regular inspections of devices will help organizations to more quickly detect tampering or replacement of a device, and thereby minimize the potential impact of using fraudulent devices.
+        
+        The type of inspection will depend on the device— for example, photographs of devices that are known to be secure can be used to compare a device’s current appearance with its original appearance to see whether it has changed. Another option may be to use a secure marker pen, such as a UV light marker, to mark device surfaces and device openings so any tampering or replacement will be apparent. Criminals will often replace the outer casing of a device to hide their tampering, and these methods may help to detect such activities. Device vendors may also be able to provide security guidance and “how to” guides to help determine whether the device has been tampered with.
+        
+        The frequency of inspections will depend on factors such as location of device and whether the device is attended or unattended. For example, devices left in public areas without supervision by the organization’s personnel may have more frequent inspections than devices that are kept in secure areas or are supervised when they are accessible to the public. The type and frequency of inspections is determined by the merchant, as defined by their annual risk-assessment process.
+        "
+        guidance_note: ""
+      - id: 9.9.3
+        description: "Provide training for personnel to be aware of attempted tampering or replacement of devices. Training should include the following:
+        
+        • Verify the identity of any third-party persons claiming to be repair or maintenance personnel, prior to granting them access to modify or troubleshoot devices.
+        • Do not install, replace, or return devices without verification.
+        • Be aware of suspicious behavior around devices (for example, attempts by unknown persons to unplug or open devices).
+        • Report suspicious behavior and indications of device tampering or substitution to appropriate personnel (for example, to a manager or security officer).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.9.3.a
+            description: "Review training materials for personnel at point-of-sale locations to verify they include training in the following:
+            
+            • Verifying the identity of any third-party persons claiming to be repair or maintenance personnel, prior to granting them access to modify or troubleshoot devices
+            • Not to install, replace, or return devices without verification
+            • Being aware of suspicious behavior around devices (for example, attempts by unknown persons to unplug or open devices)
+            • Reporting suspicious behavior and indications of device tampering or substitution to appropriate personnel (for example, to a manager or security officer).
+            "
+            description_note: ""
+          - id: 9.9.3.b
+            description: "Interview a sample of personnel at point-of-sale locations to verify they have received training and are aware of the procedures for the following:
+            
+            • Verifying the identity of any third-party persons claiming to be repair or maintenance personnel, prior to granting them access to modify or troubleshoot devices
+            • Not to install, replace, or return devices without verification
+            • Being aware of suspicious behavior around devices (for example, attempts by unknown persons to unplug or open devices)
+            • Reporting suspicious behavior and indications of device tampering or substitution to appropriate personnel (for example, to a manager or security officer).
+            "
+            description_note: ""
+        guidance: "Criminals will often pose as authorized maintenance personnel in order to gain access to POS devices. All third parties requesting access to devices should always be verified before being provided access—for example, by checking with management or phoning the POS maintenance company (such as the vendor or acquirer) for verification. Many criminals will try to fool personnel by dressing for the part (for example, carrying toolboxes and dressed in work wear), and could also be knowledgeable about locations of devices, so it’s important personnel are trained to follow procedures at all times.
+        
+        Another trick criminals like to use is to send a “new” POS system with instructions for swapping it with a legitimate system and “returning” the legitimate system to a specified address. The criminals may even provide return postage as they are very keen to get their hands on these devices. Personnel always verify with their manager or supplier that the device is legitimate and came from a trusted source before installing it or using it for business.
+        "
+        guidance_note: ""
+  - id: 9.10
+    description: "Ensure that security policies and operational procedures for restricting physical access to cardholder data are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.10
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for restricting physical access to cardholder data are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and operational procedures for restricting physical access to cardholder data and CDE systems on a continuous basis.
+    "
+    guidance_note: ""
