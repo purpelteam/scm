@@ -186,3 +186,144 @@ items:
         Scanning an environment after any significant changes are made ensures that changes were completed appropriately such that the security of the environment was not compromised as a result of the change. All system components affected by the change will need to be scanned.
         "
         guidance_note: ""
+  - id: 11.3
+    description: "Implement a methodology for penetration testing that includes the following:
+    
+    • Is based on industry-accepted penetration testing approaches (for example, NIST SP800-115)
+    • Includes coverage for the entire CDE perimeter and critical systems
+    • Includes testing from both inside and outside the network
+    • Includes testing to validate any segmentation and scope-reduction controls
+    • Defines application-layer penetration tests to include, at a minimum, the vulnerabilities listed in Requirement 6.5
+    • Defines network-layer penetration tests to include components that support network functions as well as operating systems
+    • Includes review and consideration of threats and vulnerabilities experienced in the last 12 months
+    • Specifies retention of penetration testing results and remediation activities results.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 11.3
+        description: "Examine penetration-testing methodology and interview responsible personnel to verify a methodology is implemented that includes the following:
+        
+        • Is based on industry-accepted penetration testing approaches (for example, NIST SP800-115)
+        • Includes coverage for the entire CDE perimeter and critical systems
+        • Testing from both inside and outside the network
+        • Includes testing to validate any segmentation and scope-reduction controls
+        • Defines application-layer penetration tests to include, at a minimum, the vulnerabilities listed in Requirement 6.5
+        • Defines network-layer penetration tests to include components that support network functions as well as operating systems
+        • Includes review and consideration of threats and vulnerabilities experienced in the last 12 months
+        • Specifies retention of penetration testing results and remediation activities results.
+        "
+        description_note: ""
+    guidance: "The intent of a penetration test is to simulate a real-world attack situation with a goal of identifying how far an attacker would be able to penetrate into an environment. This allows an entity to gain a better understanding of their potential exposure and develop a strategy to defend against attacks.
+    
+    A penetration test differs from a vulnerability scan, as a penetration test is an active process that may include exploiting identified vulnerabilities. Conducting a vulnerability scan may be one of the first steps a penetration tester will perform in order to plan the testing strategy, although it is not the only step. Even if a vulnerability scan does not detect known vulnerabilities, the penetration tester will often gain enough knowledge about the system to identify possible security gaps.
+    
+    Penetration testing is generally a highly manual process. While some automated tools may be used, the tester uses their knowledge of systems to penetrate into an environment. Often the tester will chain several types of exploits together with a goal of breaking through layers of defenses. For example, if the tester finds a means to gain access to an application server, they will then use the compromised server as a point to stage a new attack based on the resources the server has access to. In this way, a tester is able to simulate the methods performed by an attacker to identify areas of potential weakness in the environment.
+    
+    Penetration testing techniques will be different for different organizations, and the type, depth, and complexity of the testing will depend on the specific environment and the organization’s risk assessment.
+    "
+    guidance_note: ""
+    items:
+      - id: 11.3.1
+        description: "Perform external penetration testing at least annually and after any significant infrastructure or application upgrade or modification (such as an operating system upgrade, a sub-network added to the environment, or a web server added to the environment).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.3.1.a
+            description: "Examine the scope of work and results from the most recent external penetration test to verify that penetration testing is performed as follows:
+            
+            • Per the defined methodology
+            • At least annually
+            • After any significant changes to the environment.
+            "
+            description_note: ""
+          - id: 11.3.1.b
+            description: "Verify that the test was performed by a qualified internal resource or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+            "
+            description_note: ""
+        guidance: "Penetration testing conducted on a regular basis and after significant changes to the environment is a proactive security measure that helps minimize potential access to the CDE by malicious individuals.
+        
+        The determination of what constitutes a significant upgrade or modification is highly dependent on the configuration of a given environment. If an upgrade or modification could allow access to cardholder data or affect the security of the cardholder data environment, then it could be considered significant. Performing penetration tests after network upgrades and modifications provides assurance that the controls assumed to be in place are still working effectively after the upgrade or modification.
+        "
+        guidance_note: ""
+      - id: 11.3.2
+        description: "Perform internal penetration testing at least annually and after any significant infrastructure or application upgrade or modification (such as an operating system upgrade, a sub-network added to the environment, or a web server added to the environment).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.3.2.a
+            description: "Examine the scope of work and results from the most recent internal penetration test to verify that penetration testing is performed as follows.
+            
+            • Per the defined methodology
+            • At least annually
+            • After any significant changes to the environment.
+            "
+            description_note: ""
+          - id: 11.3.2.b
+            description: "Verify that the test was performed by a qualified internal resource or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+            "
+            description_note: ""
+        guidance: "Penetration testing conducted on a regular basis and after significant changes to the environment is a proactive security measure that helps minimize potential access to the CDE by malicious individuals.
+        
+        The determination of what constitutes a significant upgrade or modification is highly dependent on the configuration of a given environment. If an upgrade or modification could allow access to cardholder data or affect the security of the cardholder data environment, then it could be considered significant. Performing penetration tests after network upgrades and modifications provides assurance that the controls assumed to be in place are still working effectively after the upgrade or modification.
+        "
+        guidance_note: ""
+      - id: 11.3.3
+        description: "Exploitable vulnerabilities found during penetration testing are corrected and testing is repeated to verify the corrections.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.3.3
+            description: "Examine penetration testing results to verify that noted exploitable vulnerabilities were corrected and that repeated testing confirmed the vulnerability was corrected.
+            "
+            description_note: ""
+        guidance: "Penetration testing conducted on a regular basis and after significant changes to the environment is a proactive security measure that helps minimize potential access to the CDE by malicious individuals.
+        
+        The determination of what constitutes a significant upgrade or modification is highly dependent on the configuration of a given environment. If an upgrade or modification could allow access to cardholder data or affect the security of the cardholder data environment, then it could be considered significant. Performing penetration tests after network upgrades and modifications provides assurance that the controls assumed to be in place are still working effectively after the upgrade or modification.
+        "
+        guidance_note: ""
+      - id: 11.3.4
+        description: "If segmentation is used to isolate the CDE from other networks, perform penetration tests at least annually and after any changes to segmentation controls/methods to verify that the segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.3.4.a
+            description: "Examine segmentation controls and review penetration-testing methodology to verify that penetration- testing procedures are defined to test all segmentation methods to confirm they are operational and effective, and isolate all out-of-scope systems from systems in the CDE.
+            "
+            description_note: ""
+          - id: 11.3.4.b
+            description: "Examine the results from the most recent penetration test to verify that:
+            
+            • Penetration testing to verify segmentation controls is performed at least annually and after any changes to segmentation controls/methods.
+            • The penetration testing covers all segmentation controls/methods in use.
+            • The penetration testing verifies that segmentation controls/methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE.
+            "
+            description_note: ""
+          - id: 11.3.4.c
+            description: "Verify that the test was performed by a qualified internal resource or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+            "
+            description_note: ""
+        guidance: "Penetration testing is an important tool to confirm that any segmentation in place to isolate the CDE from other networks is effective. The penetration testing should focus on the segmentation controls, both from outside the entity’s network and from inside the network but outside of the CDE, to confirm that they are not able to get through the segmentation controls to access the CDE. For example, network testing and/or scanning for open ports, to verify no connectivity between in-scope and out-of-scope networks.
+        "
+        guidance_note: ""
+        items:
+          - id: 11.3.4.1
+            description: "Additional requirement for service providers only: If segmentation is used, confirm PCI DSS scope by performing penetration testing on segmentation controls at least every six months and after any changes to segmentation controls/methods.
+            "
+            description_note: ""
+            testing_procedures:
+              - id: 11.3.4.1.a
+                description: "Examine the results from the most recent penetration test to verify that:
+                
+                • Penetration testing is performed to verify segmentation controls at least every six months and after any changes to segmentation controls/methods.
+                • The penetration testing covers all segmentation controls/methods in use.
+                • The penetration testing verifies that segmentation controls/methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE.
+                "
+                description_note: ""
+              - id: 11.3.4.1.b
+                description: "Verify that the test was performed by a qualified internal resource or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+                "
+                description_note: ""
+            guidance: "For service providers, validation of PCI DSS scope should be performed as frequently as possible to ensure PCI DSS scope remains up to date and aligned with changing business objectives.
+            "
+            guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+            "
