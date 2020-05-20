@@ -356,4 +356,84 @@ items:
         guidance: "File-integrity monitoring or change-detection systems check for changes to critical files, and notify when such changes are noted. For file- integrity monitoring purposes, an entity usually monitors files that don’t regularly change, but when changed indicate a possible compromise.
         "
         guidance_note: ""
-
+  - id: 10.6
+    description: "Review logs and security events for all system components to identify anomalies or suspicious activity.
+    "
+    description_note: "Log harvesting, parsing, and alerting tools may be used to meet this Requirement.
+    "
+    testing_procedures:
+      - id: 10.6
+        description: "Perform the following:
+        "
+        description_note: ""
+    guidance: "Many breaches occur over days or months before being detected. Regular log reviews by personnel or automated means can identify and proactively address unauthorized access to the cardholder data environment.
+    
+    The log review process does not have to be manual. The use of log harvesting, parsing, and alerting tools can help facilitate the process by identifying log events that need to be reviewed.
+    "
+    guidance_note: ""
+    items:
+      - id: 10.6.1
+        description: "Review the following at least daily:
+        
+        • All security events
+        • Logs of all system components that store, process, or transmit CHD and/or SAD
+        • Logs of all critical system components
+        • Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.6.1.a
+            description: "Examine security policies and procedures to verify that procedures are defined for reviewing the following at least daily, either manually or via log tools:
+            
+            • All security events
+            • Logs of all system components that store, process, or transmit CHD and/or SAD
+            • Logs of all critical system components
+            • Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)
+            "
+            description_note: ""
+          - id: 10.6.1.b
+            description: "Observe processes and interview personnel to verify that the following are reviewed at least daily:
+            
+            • All security events
+            • Logs of all system components that store, process, or transmit CHD and/or SAD
+            • Logs of all critical system components
+            • Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.).
+            "
+            description_note: ""
+        guidance: "Checking logs daily minimizes the amount of time and exposure of a potential breach.
+        
+        Daily review of security events—for example, notifications or alerts that identify suspicious or anomalous activities—as well as logs from critical system components, and logs from systems that perform security functions, such as firewalls, IDS/IPS, file-integrity monitoring (FIM) systems, etc. is necessary to identify potential issues. Note that the determination of “security event” will vary for each organization and may include consideration for the type of technology, location, and function of the device. Organizations may also wish to maintain a baseline of “normal” traffic to help identify anomalous behavior.
+        "
+        guidance_note: ""
+      - id: 10.6.2
+        description: "Review logs of all other system components periodically based on the organization’s policies and risk management strategy, as determined by the organization’s annual risk assessment.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.6.2.a
+            description: "Examine security policies and procedures to verify that procedures are defined for reviewing logs of all other system components periodically—either manually or via log tools—based on the organization’s policies and risk management strategy.
+            "
+            description_note: ""
+          - id: 10.6.2.b
+            description: "Examine the organization’s risk-assessment documentation and interview personnel to verify that reviews are performed in accordance with organization’s policies and risk management strategy.
+            "
+            description_note: ""
+        guidance: "Logs for all other system components should also be periodically reviewed to identify indications of potential issues or attempts to gain access to sensitive systems via less-sensitive systems. The frequency of the reviews should be determined by an entity’s annual risk assessment.
+        "
+        guidance_note: ""
+      - id: 10.6.3
+        description: "Follow up exceptions and anomalies identified during the review process.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.6.3.a
+            description: "Examine security policies and procedures to verify that procedures are defined for following up on exceptions and anomalies identified during the review process.
+            "
+            description_note: ""
+          - id: 10.6.3.b
+            description: "Observe processes and interview personnel to verify that follow-up to exceptions and anomalies is performed.
+            "
+            description_note: ""
+        guidance: "If exceptions and anomalies identified during the log-review process are not investigated, the entity may be unaware of unauthorized and potentially malicious activities that are occurring within their own network.
+        "
+        guidance_note: ""
