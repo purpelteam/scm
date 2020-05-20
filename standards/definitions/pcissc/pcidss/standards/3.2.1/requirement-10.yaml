@@ -275,3 +275,85 @@ items:
         guidance: "Time synchronization technology is used to synchronize clocks on multiple systems. When clocks are not properly synchronized, it can be difficult, if not impossible, to compare log files from different systems and establish an exact sequence of event (crucial for forensic analysis in the event of a breach). For post-incident forensics teams, the accuracy and consistency of time across all systems and the time of each activity is critical in determining how the systems were compromised.
         "
         guidance_note: ""
+  - id: 10.5
+    description: "Secure audit trails so they cannot be altered.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.5
+        description: "Interview system administrators and examine system configurations and permissions to verify that audit trails are secured so that they cannot be altered as follows:
+        "
+        description_note: ""
+    guidance: "Often a malicious individual who has entered the network will attempt to edit the audit logs in order to hide their activity. Without adequate protection of audit logs, their completeness, accuracy, and integrity cannot be guaranteed, and the audit logs can be rendered useless as an investigation tool after a compromise.
+    "
+    guidance_note: ""
+    items:
+      - id: 10.5.1
+        description: "Limit viewing of audit trails to those with a job-related need.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.5.1
+            description: "Only individuals who have a job-related need can view audit trail files.
+            "
+            description_note: ""
+        guidance: "Adequate protection of the audit logs includes strong access control (limit access to logs based on “need to know” only), and use of physical or network segregation to make the logs harder to find and modify.
+        
+        Promptly backing up the logs to a centralized log server or media that is difficult to alter keeps the logs protected even if the system generating the logs becomes compromised.
+        "
+        guidance_note: ""
+      - id: 10.5.2
+        description: "Protect audit trail files from unauthorized modifications.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.5.2
+            description: "Current audit trail files are protected from unauthorized modifications via access control mechanisms, physical segregation, and/or network segregation.
+            "
+            description_note: ""
+        guidance: "Adequate protection of the audit logs includes strong access control (limit access to logs based on “need to know” only), and use of physical or network segregation to make the logs harder to find and modify.
+        
+        Promptly backing up the logs to a centralized log server or media that is difficult to alter keeps the logs protected even if the system generating the logs becomes compromised.
+        "
+        guidance_note: ""
+      - id: 10.5.3
+        description: "Promptly back up audit trail files to a centralized log server or media that is difficult to alter.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.5.3
+            description: "Current audit trail files are promptly backed up to a centralized log server or media that is difficult to alter.
+            "
+            description_note: ""
+        guidance: "Adequate protection of the audit logs includes strong access control (limit access to logs based on “need to know” only), and use of physical or network segregation to make the logs harder to find and modify.
+        
+        Promptly backing up the logs to a centralized log server or media that is difficult to alter keeps the logs protected even if the system generating the logs becomes compromised.
+        "
+        guidance_note: ""
+      - id: 10.5.4
+        description: "Write logs for external-facing technologies onto a secure, centralized, internal log server or media device.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.5.4
+            description: "Logs for external-facing technologies (for example, wireless, firewalls, DNS, mail) are written onto a secure, centralized, internal log server or media.
+            "
+            description_note: ""
+        guidance: "By writing logs from external-facing technologies such as wireless, firewalls, DNS, and mail servers, the risk of those logs being lost or altered is lowered, as they are more secure within the internal network.
+        
+        Logs may be written directly, or offloaded or copied from external systems, to the secure internal system or media.
+        "
+        guidance_note: ""
+      - id: 10.5.5
+        description: "Use file-integrity monitoring or change-detection software on logs to ensure that existing log data cannot be changed without generating alerts (although new data being added should not cause an alert).
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.5.5
+            description: "Examine system settings, monitored files, and results from monitoring activities to verify the use of file-integrity monitoring or change-detection software on logs.
+            "
+            description_note: ""
+        guidance: "File-integrity monitoring or change-detection systems check for changes to critical files, and notify when such changes are noted. For file- integrity monitoring purposes, an entity usually monitors files that don’t regularly change, but when changed indicate a possible compromise.
+        "
+        guidance_note: ""
+
