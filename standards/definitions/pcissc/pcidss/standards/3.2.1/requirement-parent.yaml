@@ -88,3 +88,51 @@ requirements:
     "
     explanation_note: ""
     goal: 6
+  - id: Appendix1
+    description: "Additional PCI DSS Requirements for Shared Hosting Providers"
+    explanation: "As referenced in Requirement 12.8 and 12.9, all service providers with access to cardholder data (including shared hosting providers) must adhere to the PCI DSS. In addition, Requirement 2.6 states that shared hosting providers must protect each entity’s hosted environment and data. Therefore, shared hosting providers must additionally comply with the requirements in this Appendix.
+    "
+    explanation_note: ""
+    goal: Appendix
+  - id: Appendix2
+    description: "Additional PCI DSS Requirements for Entities using SSL/early TLS for Card-Present POS POI terminal connections"
+    explanation: |
+      Entities using SSL and early TLS for POS POI terminal connections must work toward upgrading to a strong cryptographic protocol as soon as possible. Additionally, SSL and/or early TLS must not be introduced into environments where those protocols don’t already exist. At the time of publication, the known vulnerabilities are difficult to exploit in POS POI payment terminals. However, new vulnerabilities could emerge at any time, and it is up to the organization to remain up to date with vulnerability trends and determine whether or not they are susceptible to any known exploits.
+      The PCI DSS requirements directly affected are:
+
+        - Requirement 2.2.3
+        - Requirement 2.3 Requirement 4.1
+      
+      Implement additional security features for any required services, protocols, or daemons that are considered to be insecure.
+      Encrypt all non-console administrative access using strong cryptography.
+
+      Use strong cryptography and security protocols to safeguard sensitive cardholder data during transmission over open, public networks.
+      SSL and early TLS must not be used as a security control to meet these requirements, except in the case of POS POI terminal connections as detailed in this appendix. To support entities working to migrate away from SSL/early TLS on POS POI terminals, the following provisions are included:
+
+      • New POS POI terminal implementations must not use SSL or early TLS as a security control.
+      • All POS POI terminal service providers must provide a secure service offering.
+      • Service providers supporting existing POS POI terminal implementations that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+      • POS POI terminals in card-present environments that can be verified as not being susceptible to any known exploits for SSL and early TLS, and the SSL/TLS termination points to which they connect, may continue using SSL/early TLS as a security control.
+
+      This Appendix only applies to entities using SSL/early TLS as a security control to protect POS POI terminals, including service providers who provide connections into POS POI terminals.
+    explanation_note: ""
+    goal: Appendix
+  - id: Appendix3
+    description: "Designated Entities Supplemental Validation"
+    explanation: |
+      This Appendix applies only to entities designated by a payment brand(s) or acquirer as requiring additional validation of existing PCI DSS requirements. Examples of entities that this Appendix could apply to include:
+
+        - Those storing, processing, and/or transmitting large volumes of cardholder data, 
+        - Those providing aggregation points for cardholder data, or
+        - Those that have suffered significant or repeated breaches of cardholder data.
+
+      These supplemental validation steps are intended to provide greater assurance that PCI DSS controls are maintained effectively and on a continuous basis through validation of business-as-usual (BAU) processes, and increased validation and scoping consideration.
+      The additional validation steps in this document are organized into the following control areas:
+
+        • A3.1 Implement a PCI DSS compliance program.
+        • A3.2 Document and validate PCI DSS scope.
+        • A3.3 Validate PCI DSS is incorporated into business-as-usual (BAU) activities.
+        • A3.4 Control and manage logical access to the cardholder data environment.
+        • A3.5 Identify and respond to suspicious events.
+    explanation_note: ""
+    goal: Appendix

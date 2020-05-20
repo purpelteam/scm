@@ -18,3 +18,6 @@ goals:
   - id: 6
     description: "Maintain an Information Security Policy"
     requirements: [12]
+  - id: Appendix
+    description: "Additional PCI DSS Requirements"
+    requirements: [Appendix1, Appendix2, Appendix3]
