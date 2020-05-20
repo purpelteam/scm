@@ -437,3 +437,119 @@ items:
         guidance: "If exceptions and anomalies identified during the log-review process are not investigated, the entity may be unaware of unauthorized and potentially malicious activities that are occurring within their own network.
         "
         guidance_note: ""
+  - id: 10.7
+    description: "Retain audit trail history for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.7.a
+        description: "Examine security policies and procedures to verify that they define the following:
+        
+        • Audit log retention policies
+        • Procedures for retaining audit logs for at least one year, with a minimum of three months immediately available online.
+        "
+        description_note: ""
+      - id: 10.7.b
+        description: "Interview personnel and examine audit logs to verify that audit logs are retained for at least one year.
+        "
+        description_note: ""
+      - id: 10.7.c
+        description: "Interview personnel and observe processes to verify that at least the last three months’ logs are immediately available for analysis.
+        "
+        description_note: ""
+    guidance: "Retaining logs for at least a year allows for the fact that it often takes a while to notice that a compromise has occurred or is occurring, and allows investigators sufficient log history to better determine the length of time of a potential breach and potential system(s) impacted. By having three months of logs immediately available, an entity can quickly identify and minimize impact of a data breach. Storing logs in off-line locations could prevent them from being readily available, resulting in longer time frames to restore log data, perform analysis, and identify impacted systems or data.
+    "
+    guidance_note: ""
+  - id: 10.8
+    description: "Additional requirement for service providers only: Implement a process for the timely detection and reporting of failures of critical security control systems, including but not limited to failure of:
+    
+    • Firewalls
+    • IDS/IPS
+    • FIM
+    • Anti-virus
+    • Physical access controls
+    • Logical access controls
+    • Audit logging mechanisms
+    • Segmentation controls (if used)
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.8.a
+        description: "Examine documented policies and procedures to verify that processes are defined for the timely detection and reporting of failures of critical security control systems, including but not limited to failure of:
+        
+        • Firewalls
+        • IDS/IPS
+        • FIM
+        • Anti-virus
+        • Physical access controls
+        • Logical access controls
+        • Audit logging mechanisms
+        • Segmentation controls (if used)
+        "
+        description_note: ""
+      - id: 10.8.b
+        description: "Examine detection and alerting processes and interview personnel to verify that processes are implemented for all critical security controls, and that failure of a critical security control results in the generation of an alert.
+        "
+        description_note: ""
+    guidance: "Without formal processes to detect and alert when critical security controls fail, failures may go undetected for extended periods and provide attackers ample time to compromise systems and steal sensitive data from the cardholder data environment.
+    
+    The specific types of failures may vary depending on the function of the device and technology in use. Typical failures include a system ceasing to perform its security function or not functioning in its intended manner; for example, a firewall erasing all its rules or going offline.
+    "
+    guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+    "
+    items:
+      - id: 10.8.1
+        description: "Additional requirement for service providers only: Respond to failures of any critical security controls in a timely manner. Processes for responding to failures in security controls must include:
+        
+        • Restoring security functions
+        • Identifying and documenting the duration (date and time start to end) of the security failure
+        • Identifying and documenting cause(s) of failure, including root cause, and documenting remediation required to address root cause
+        • Identifying and addressing any security issues that arose during the failure
+        • Performing a risk assessment to determine whether further actions are required as a result of the security failure
+        • Implementing controls to prevent cause of failure from reoccurring
+        • Resuming monitoring of security controls
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.8.1.a
+            description: "Examine documented policies and procedures and interview personnel to verify processes are defined and implemented to respond to a security control failure, and include:
+            
+            • Restoring security functions
+            • Identifying and documenting the duration (date and time start to end) of the security failure
+            • Identifying and documenting cause(s) of failure, including root cause, and documenting remediation required to address root cause
+            • Identifying and addressing any security issues that arose during the failure
+            • Performing a risk assessment to determine whether further actions are required as a result of the security failure
+            • Implementing controls to prevent cause of failure from reoccurring
+            • Resuming monitoring of security controls
+            "
+            description_note: ""
+          - id: 10.8.1.b
+            description: "Examine records to verify that security control failures are documented to include:
+            
+            • Identification of cause(s) of the failure, including root cause
+            • Duration (date and time start and end) of the security failure
+            • Details of the remediation required to address the root cause
+            "
+            description_note: ""
+        guidance: "If critical security control failures alerts are not quickly and effectively responded to, attackers may use this time to insert malicious software, gain control of a system, or steal data from the entity’s environment.
+        
+        Documented evidence (e.g., records within a problem management system) should support that processes and procedures are in place to respond to security failures. In addition, personnel should be aware of their responsibilities in the event of a failure. Actions and responses to the failure should be captured in the documented evidence.
+        "
+        guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+        "
+  - id: 10.9
+    description: "Ensure that security policies and operational procedures for monitoring all access to network resources and cardholder data are documented, in use, and known to all affected parties.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.9
+        description: "Examine documentation and interview personnel to verify that security policies and operational procedures for monitoring all access to network resources and cardholder data are:
+        
+        • Documented,
+        • In use, and
+        • Known to all affected parties.
+        "
+        description_note: ""
+    guidance: "Personnel need to be aware of and following security policies and daily operational procedures for monitoring all access to network resources and cardholder data on a continuous basis.
+    "
+    guidance_note: ""
