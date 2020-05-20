@@ -1,0 +1,188 @@
+---
+requirements:
+parent: 11
+items:
+  - id: 11.1
+    description: "Implement processes to test for the presence of wireless access points (802.11), and detect and identify all authorized and unauthorized wireless access points on a quarterly basis.
+    "
+    description_note: "Methods that may be used in the process include but are not limited to wireless network scans, physical/logical inspections of system components and infrastructure, network access control (NAC), or wireless IDS/IPS.
+    
+    Whichever methods are used, they must be sufficient to detect and identify both authorized and unauthorized devices.
+    "
+    testing_procedures:
+      - id: 11.1.a
+        description: "Examine policies and procedures to verify processes are defined for detection and identification of both authorized and unauthorized wireless access points on a quarterly basis.
+        "
+        description_note: ""
+      - id: 11.1.b
+        description: "Verify that the methodology is adequate to detect and identify any unauthorized wireless access points, including at least the following:
+        
+        • WLAN cards inserted into system components
+        • Portable or mobile devices attached to system components to create a wireless access point (for example, by USB, etc.)
+        • Wireless devices attached to a network port or network device.
+        "
+        description_note: ""
+      - id: 11.1.c
+        description: "If wireless scanning is utilized, examine output from recent wireless scans to verify that:
+        
+        • Authorized and unauthorized wireless access points are identified, and
+        • The scan is performed at least quarterly for all system components and facilities.
+        "
+        description_note: ""
+      - id: 11.1.d
+        description: "If automated monitoring is utilized (for example, wireless IDS/IPS, NAC, etc.), verify the configuration will generate alerts to notify personnel.
+        "
+        description_note: ""
+    guidance: "Implementation and/or exploitation of wireless technology within a network are some of the most common paths for malicious users to gain access to the network and cardholder data. If a wireless device or network is installed without a company’s knowledge, it can allow an attacker to easily and “invisibly” enter the network. Unauthorized wireless devices may be hidden within or attached to a computer or other system component, or be attached directly to a network port or network device, such as a switch or router. Any such unauthorized device could result in an unauthorized access point into the environment.
+    
+    Knowing which wireless devices are authorized can help administrators quickly identify non- authorized wireless devices, and responding to the identification of unauthorized wireless access points helps to proactively minimize the exposure of CDE to malicious individuals.
+    
+    Due to the ease with which a wireless access point can be attached to a network, the difficulty in detecting their presence, and the increased risk presented by unauthorized wireless devices, these processes must be performed even when a policy exists prohibiting the use of wireless technology.
+    
+    The size and complexity of a particular environment will dictate the appropriate tools and processes to be used to provide sufficient assurance that a rogue wireless access point has not been installed in the environment.
+
+    For example: In the case of a single standalone retail kiosk in a shopping mall, where all communication components are contained within tamper-resistant and tamper-evident casings, performing a detailed physical inspection of the kiosk itself may be sufficient to provide assurance that a rogue wireless access point has not been attached or installed. However, in an environment with multiple nodes (such as in a large retail store, call center, server room or data center), detailed physical inspection is difficult. In this case, multiple methods may be combined to meet the requirement, such as performing physical system inspections in conjunction with the results of a wireless analyzer.
+    "
+    guidance_note: ""
+    items:
+      - id: 11.1.1
+        description: "Maintain an inventory of authorized wireless access points including a documented business justification.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.1.1
+            description: "Examine documented records to verify that an inventory of authorized wireless access points is maintained and a business justification is documented for all authorized wireless access points.
+            "
+            description_note: ""
+        guidance: "Implementation and/or exploitation of wireless technology within a network are some of the most common paths for malicious users to gain access to the network and cardholder data. If a wireless device or network is installed without a company’s knowledge, it can allow an attacker to easily and “invisibly” enter the network. Unauthorized wireless devices may be hidden within or attached to a computer or other system component, or be attached directly to a network port or network device, such as a switch or router. Any such unauthorized device could result in an unauthorized access point into the environment.
+    
+        Knowing which wireless devices are authorized can help administrators quickly identify non- authorized wireless devices, and responding to the identification of unauthorized wireless access points helps to proactively minimize the exposure of CDE to malicious individuals.
+        
+        Due to the ease with which a wireless access point can be attached to a network, the difficulty in detecting their presence, and the increased risk presented by unauthorized wireless devices, these processes must be performed even when a policy exists prohibiting the use of wireless technology.
+        
+        The size and complexity of a particular environment will dictate the appropriate tools and processes to be used to provide sufficient assurance that a rogue wireless access point has not been installed in the environment.
+
+        For example: In the case of a single standalone retail kiosk in a shopping mall, where all communication components are contained within tamper-resistant and tamper-evident casings, performing a detailed physical inspection of the kiosk itself may be sufficient to provide assurance that a rogue wireless access point has not been attached or installed. However, in an environment with multiple nodes (such as in a large retail store, call center, server room or data center), detailed physical inspection is difficult. In this case, multiple methods may be combined to meet the requirement, such as performing physical system inspections in conjunction with the results of a wireless analyzer.
+        "
+        guidance_note: ""
+      - id: 11.1.2
+        description: "Implement incident response procedures in the event unauthorized wireless access points are detected.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.1.2.a
+            description: "Examine the organization’s incident response plan (Requirement 12.10) to verify it defines and requires a response in the event that an unauthorized wireless access point is detected.
+            "
+            description_note: ""
+          - id: 11.1.2.b
+            description: "Interview responsible personnel and/or inspect recent wireless scans and related responses to verify action is taken when unauthorized wireless access points are found.
+            "
+            description_note: ""
+        guidance: "Implementation and/or exploitation of wireless technology within a network are some of the most common paths for malicious users to gain access to the network and cardholder data. If a wireless device or network is installed without a company’s knowledge, it can allow an attacker to easily and “invisibly” enter the network. Unauthorized wireless devices may be hidden within or attached to a computer or other system component, or be attached directly to a network port or network device, such as a switch or router. Any such unauthorized device could result in an unauthorized access point into the environment.
+    
+        Knowing which wireless devices are authorized can help administrators quickly identify non- authorized wireless devices, and responding to the identification of unauthorized wireless access points helps to proactively minimize the exposure of CDE to malicious individuals.
+        
+        Due to the ease with which a wireless access point can be attached to a network, the difficulty in detecting their presence, and the increased risk presented by unauthorized wireless devices, these processes must be performed even when a policy exists prohibiting the use of wireless technology.
+        
+        The size and complexity of a particular environment will dictate the appropriate tools and processes to be used to provide sufficient assurance that a rogue wireless access point has not been installed in the environment.
+
+        For example: In the case of a single standalone retail kiosk in a shopping mall, where all communication components are contained within tamper-resistant and tamper-evident casings, performing a detailed physical inspection of the kiosk itself may be sufficient to provide assurance that a rogue wireless access point has not been attached or installed. However, in an environment with multiple nodes (such as in a large retail store, call center, server room or data center), detailed physical inspection is difficult. In this case, multiple methods may be combined to meet the requirement, such as performing physical system inspections in conjunction with the results of a wireless analyzer.
+        "
+        guidance_note: ""
+  - id: 11.2
+    description: "Run internal and external network vulnerability scans at least quarterly and after any significant change in the network (such as new system component installations, changes in network topology, firewall rule modifications, product upgrades).
+    "
+    description_note: "Multiple scan reports can be combined for the quarterly scan process to show that all systems were scanned and all applicable vulnerabilities have been addressed. Additional documentation may be required to verify non-remediated vulnerabilities are in the process of being addressed.
+    
+    For initial PCI DSS compliance, it is not required that four quarters of passing scans be completed if the assessor verifies 1) the most recent scan result was a passing scan, 2) the entity has documented policies and procedures requiring quarterly scanning, and 3) vulnerabilities noted in the scan results have been corrected as shown in a re-scan(s). For subsequent years after the initial PCI DSS review, four quarters of passing scans must have occurred.
+    "
+    testing_procedures:
+      - id: 11.2
+        description: "Examine scan reports and supporting documentation to verify that internal and external vulnerability scans are performed as follows:
+        "
+        description_note: ""
+    guidance: "A vulnerability scan is a combination of automated or manual tools, techniques, and/or methods run against external and internal network devices and servers, designed to expose potential vulnerabilities that could be found and exploited by malicious individuals.
+    
+    There are three types of vulnerability scanning required for PCI DSS:
+    
+    • Internal quarterly vulnerability scanning by qualified personnel (use of a PCI SSC Approved Scanning Vendor (ASV) is not required)
+    • External quarterly vulnerability scanning, which must be performed by an ASV
+    • Internal and external scanning as needed after significant changes
+    
+    Once these weaknesses are identified, the entity corrects them and repeats the scan until all vulnerabilities have been corrected.
+    Identifying and addressing vulnerabilities in a timely manner reduces the likelihood of a vulnerability being exploited and potential compromise of a system component or cardholder data.
+    "
+    guidance_note: ""
+    items:
+      - id: 11.2.1
+        description: "Perform quarterly internal vulnerability scans. Address vulnerabilities and perform rescans to verify all “high risk” vulnerabilities are resolved in accordance with the entity’s vulnerability ranking (per Requirement 6.1). Scans must be performed by qualified personnel.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.2.1.a
+            description: "Review the scan reports and verify that four quarterly internal scans occurred in the most recent 12- month period.
+            "
+            description_note: ""
+          - id: 11.2.1.b
+            description: "Review the scan reports and verify that all “high risk” vulnerabilities are addressed and the scan process includes rescans to verify that the “high risk” vulnerabilities (as defined in PCI DSS Requirement 6.1) are resolved.
+            "
+            description_note: ""
+          - id: 11.2.1.c
+            description: "Interview personnel to verify that the scan was performed by a qualified internal resource(s) or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+            "
+            description_note: ""
+        guidance: "An established process for identifying vulnerabilities on internal systems requires that vulnerability scans be conducted quarterly. Vulnerabilities posing the greatest risk to the environment (for example, ranked “High” per Requirement 6.1) should be resolved with the highest priority.
+        
+        Internal vulnerability scans can be performed by qualified, internal staff that are reasonably independent of the system component(s) being scanned (for example, a firewall administrator should not be responsible for scanning the firewall), or an entity may choose to have internal vulnerability scans performed by a firm specializing in vulnerability scanning.
+        "
+        guidance_note: ""
+      - id: 11.2.2
+        description: "Perform quarterly external vulnerability scans, via an Approved Scanning Vendor (ASV) approved by the Payment Card Industry Security Standards Council (PCI SSC). Perform rescans as needed, until passing scans are achieved.
+        "
+        description_note: "Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC).
+        
+        Refer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc.
+        "
+        testing_procedures:
+          - id: 11.2.2.a
+            description: "Review output from the four most recent quarters of external vulnerability scans and verify that four quarterly external vulnerability scans occurred in the most recent 12- month period.
+            "
+            description_note: ""
+          - id: 11.2.2.b
+            description: "Review the results of each quarterly scan and rescan to verify that the ASV Program Guide requirements for a passing scan have been met (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures).
+            "
+            description_note: ""
+          - id: 11.2.2.c
+            description: "Review the scan reports to verify that the scans were completed by a PCI SSC Approved Scanning Vendor (ASV).
+            "
+            description_note: ""
+        guidance: "As external networks are at greater risk of compromise, quarterly external vulnerability scanning must be performed by a PCI SSC Approved Scanning Vendor (ASV).
+        
+        A robust scanning program ensures that scans are performed and vulnerabilities addressed in a timely manner.
+        "
+        guidance_note: ""
+      - id: 11.2.3
+        description: "Perform internal and external scans, and rescans as needed, after any significant change. Scans must be performed by qualified personnel.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 11.2.3.a
+            description: "Inspect and correlate change control documentation and scan reports to verify that system components subject to any significant change were scanned.
+            "
+            description_note: ""
+          - id: 11.2.3.b
+            description: "Review scan reports and verify that the scan process includes rescans until:
+            
+            • For external scans, no vulnerabilities exist that are scored 4.0 or higher by the CVSS.
+            • For internal scans, all “high risk” vulnerabilities as defined in PCI DSS Requirement 6.1 are resolved.
+            "
+            description_note: ""
+          - id: 11.2.3.c
+            description: "Validate that the scan was performed by a qualified internal resource(s) or qualified external third party and, if applicable, organizational independence of the tester exists (not required to be a QSA or ASV).
+            "
+            description_note: ""
+        guidance: "The determination of what constitutes a significant change is highly dependent on the configuration of a given environment. If an upgrade or modification could allow access to cardholder data or affect the security of the cardholder data environment, then it could be considered significant.
+        
+        Scanning an environment after any significant changes are made ensures that changes were completed appropriately such that the security of the environment was not compromised as a result of the change. All system components affected by the change will need to be scanned.
+        "
+        guidance_note: ""
