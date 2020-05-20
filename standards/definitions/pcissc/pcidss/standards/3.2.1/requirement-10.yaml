@@ -125,3 +125,87 @@ items:
         guidance: "Malicious software, such as malware, often creates or replaces system level objects on the target system in order to control a particular function or operation on that system. By logging when system-level objects, such as database tables or stored procedures, are created or deleted, it will be easier to determine whether such modifications were authorized.
         "
         guidance_note: ""
+  - id: 10.3
+    description: "Record at least the following audit trail entries for all system components for each event:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 10.3
+        description: "Through interviews and observation of audit logs, for each auditable event (from 10.2), perform the following:
+        "
+        description_note: ""
+    guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+    "
+    guidance_note: ""
+    items:
+      - id: 10.3.1
+        description: "User identification
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.1
+            description: "Verify user identification is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
+      - id: 10.3.2
+        description: "Type of event
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.2
+            description: "Verify type of event is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
+      - id: 10.3.3
+        description: "Date and time
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.3
+            description: "Verify date and time stamp is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
+      - id: 10.3.4
+        description: "Success or failure indication
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.4
+            description: "Verify success or failure indication is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
+      - id: 10.3.5
+        description: "Origination of event
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.5
+            description: "Verify origination of event is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
+      - id: 10.3.6
+        description: "Identity or name of affected data, system component, or resource."
+        description_note: ""
+        testing_procedures:
+          - id: 10.3.6
+            description: "Verify identity or name of affected data, system component, or resources is included in log entries.
+            "
+            description_note: ""
+        guidance: "By recording these details for the auditable events at 10.2, a potential compromise can be quickly identified, and with sufficient detail to know who, what, where, when, and how.
+        "
+        guidance_note: ""
