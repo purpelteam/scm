@@ -133,3 +133,119 @@ items:
     When personnel leave the organization, all physical access mechanisms should be returned or disabled promptly (as soon as possible) upon their departure, to ensure personnel cannot gain physical access to sensitive areas once their employment has ended.
     "
     guidance_note: ""
+  - id: 9.4
+    description: "Implement procedures to identify and authorize visitors.
+    Procedures should include the following:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.4
+        description: "Verify that visitor authorization and access controls are in place as follows:
+        "
+        description_note: ""
+    guidance: "Visitor controls are important to reduce the ability of unauthorized and malicious persons to gain access to facilities (and potentially, to cardholder data).
+    
+    Visitor controls ensure visitors are identifiable as visitors so personnel can monitor their activities, and that their access is restricted to just the duration of their legitimate visit.
+    
+    Ensuring that visitor badges are returned upon expiry or completion of the visit prevents malicious persons from using a previously authorized pass to gain physical access into the building after the visit has ended.
+    
+    A visitor log documenting minimum information on the visitor is easy and inexpensive to maintain and will assist in identifying physical access to a building or room, and potential access to cardholder data.
+    "
+    guidance_note: ""
+    items:
+      - id: 9.4.1
+        description: "Visitors are authorized before entering, and escorted at all times within, areas where cardholder data is processed or maintained.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.4.1.a
+            description: "Observe procedures and interview personnel to verify that visitors must be authorized before they are granted access to, and escorted at all times within, areas where cardholder data is processed or maintained.
+            "
+            description_note: ""
+          - id: 9.4.1.b
+            description: "Observe the use of visitor badges or other identification to verify that a physical token badge does not permit unescorted access to physical areas where cardholder data is processed or maintained.
+            "
+            description_note: ""
+        guidance: "Visitor controls are important to reduce the ability of unauthorized and malicious persons to gain access to facilities (and potentially, to cardholder data).
+        
+        Visitor controls ensure visitors are identifiable as visitors so personnel can monitor their activities, and that their access is restricted to just the duration of their legitimate visit.
+        
+        Ensuring that visitor badges are returned upon expiry or completion of the visit prevents malicious persons from using a previously authorized pass to gain physical access into the building after the visit has ended.
+        
+        A visitor log documenting minimum information on the visitor is easy and inexpensive to maintain and will assist in identifying physical access to a building or room, and potential access to cardholder data.
+        "
+        guidance_note: ""
+      - id: 9.4.2
+        description: "Visitors are identified and given a badge or other identification that expires and that visibly distinguishes the visitors from onsite personnel.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.4.2.a
+            description: "Observe people within the facility to verify the use of visitor badges or other identification, and that visitors are easily distinguishable from onsite personnel.
+            "
+            description_note: ""
+          - id: 9.4.2.b
+            description: "Verify that visitor badges or other identification expire.
+            "
+            description_note: ""
+        guidance: "Visitor controls are important to reduce the ability of unauthorized and malicious persons to gain access to facilities (and potentially, to cardholder data).
+        
+        Visitor controls ensure visitors are identifiable as visitors so personnel can monitor their activities, and that their access is restricted to just the duration of their legitimate visit.
+        
+        Ensuring that visitor badges are returned upon expiry or completion of the visit prevents malicious persons from using a previously authorized pass to gain physical access into the building after the visit has ended.
+        
+        A visitor log documenting minimum information on the visitor is easy and inexpensive to maintain and will assist in identifying physical access to a building or room, and potential access to cardholder data.
+        "
+        guidance_note: ""
+      - id: 9.4.3
+        description: "Visitors are asked to surrender the badge or identification before leaving the facility or at the date of expiration.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.4.3
+            description: "Observe visitors leaving the facility to verify visitors are asked to surrender their badge or other identification upon departure or expiration.
+            "
+            description_note: ""
+        guidance: "Visitor controls are important to reduce the ability of unauthorized and malicious persons to gain access to facilities (and potentially, to cardholder data).
+        
+        Visitor controls ensure visitors are identifiable as visitors so personnel can monitor their activities, and that their access is restricted to just the duration of their legitimate visit.
+        
+        Ensuring that visitor badges are returned upon expiry or completion of the visit prevents malicious persons from using a previously authorized pass to gain physical access into the building after the visit has ended.
+        
+        A visitor log documenting minimum information on the visitor is easy and inexpensive to maintain and will assist in identifying physical access to a building or room, and potential access to cardholder data.
+        "
+        guidance_note: ""
+      - id: 9.4.4
+        description: "A visitor log is used to maintain a physical audit trail of visitor activity to the facility as well as computer rooms and data centers where cardholder data is stored or transmitted.
+        
+        Document the visitor’s name, the firm represented, and the onsite personnel authorizing physical access on the log.
+        
+        Retain this log for a minimum of three months, unless otherwise restricted by law.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.4.4.a
+            description: "Verify that a visitor log is in use to record physical access to the facility as well as computer rooms and data centers where cardholder data is stored or transmitted.
+            "
+            description_note: ""
+          - id: 9.4.4.b
+            description: "Verify that the log contains:
+            
+            • The visitor’s name,
+            • The firm represented, and
+            • The onsite personnel authorizing physical access.
+            "
+            description_note: ""
+          - id: 9.4.4.c
+            description: "Verify that the log is retained for at least three months.
+            "
+            description_note: ""
+        guidance: "Visitor controls are important to reduce the ability of unauthorized and malicious persons to gain access to facilities (and potentially, to cardholder data).
+        
+        Visitor controls ensure visitors are identifiable as visitors so personnel can monitor their activities, and that their access is restricted to just the duration of their legitimate visit.
+        
+        Ensuring that visitor badges are returned upon expiry or completion of the visit prevents malicious persons from using a previously authorized pass to gain physical access into the building after the visit has ended.
+        
+        A visitor log documenting minimum information on the visitor is easy and inexpensive to maintain and will assist in identifying physical access to a building or room, and potential access to cardholder data.
+        "
+        guidance_note: ""
