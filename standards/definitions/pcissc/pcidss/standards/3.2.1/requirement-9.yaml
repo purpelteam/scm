@@ -73,3 +73,63 @@ items:
         guidance: "Without security over access to wireless components and devices, malicious users could use an organization’s unattended wireless devices to access network resources, or even connect their own devices to the wireless network to gain unauthorized access. Additionally, securing networking and communications hardware prevents malicious users from intercepting network traffic or physically connecting their own devices to wired network resources.
         "
         guidance_note: ""
+  - id: 9.2
+    description: "Develop procedures to easily distinguish between onsite personnel and visitors, to include:
+    
+    • Identifying onsite personnel and visitors (for example, assigning badges)
+    • Changes to access requirements
+    • Revoking or terminating onsite personnel and expired visitor identification (such as ID badges).
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.2.a
+        description: "Review documented processes to verify that procedures are defined for identifying and distinguishing between onsite personnel and visitors.
+        
+        • Verify procedures include the following:
+        • Identifying onsite personnel and visitors (for example, assigning badges),
+        • Changing access requirements, and
+        • Revoking terminated onsite personnel and expired visitor identification (such as ID badges)
+        "
+        description_note: ""
+      - id: 9.2.b
+        description: "Examine identification methods (such as ID badges) and observe processes for identifying and distinguishing between onsite personnel and visitors to verify that:
+        
+        • Visitors are clearly identified, and
+        • It is easy to distinguish between onsite personnel and visitors.
+        "
+        description_note: ""
+      - id: 9.2.c
+        description: "Verify that access to the identification process (such as a badge system) is limited to authorized personnel.
+        "
+        description_note: ""
+    guidance: "Identifying authorized visitors so they are easily distinguished from onsite personnel prevents unauthorized visitors from being granted access to areas containing cardholder data.
+    "
+    guidance_note: ""
+  - id: 9.3
+    description: "Control physical access for onsite personnel to sensitive areas as follows:
+    
+    • Access must be authorized and based on individual job function.
+    • Access is revoked immediately upon termination, and all physical access mechanisms, such as keys, access cards, etc., are returned or disabled.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.3.a
+        description: "For a sample of onsite personnel with physical access to sensitive areas, interview responsible personnel and observe access control lists to verify that:
+        
+        • Access to the sensitive area is authorized.
+        • Access is required for the individual’s job function.
+        "
+        description_note: ""
+      - id: 9.3.b
+        description: "Observe personnel accessing sensitive areas to verify that all personnel are authorized before being granted access.
+        "
+        description_note: ""
+      - id: 9.3.c
+        description: "Select a sample of recently terminated employees and review access control lists to verify the personnel do not have physical access to sensitive areas.
+        "
+        description_note: ""
+    guidance: "Controlling physical access to sensitive areas helps ensure that only authorized personnel with a legitimate business need are granted access.
+    
+    When personnel leave the organization, all physical access mechanisms should be returned or disabled promptly (as soon as possible) upon their departure, to ensure personnel cannot gain physical access to sensitive areas once their employment has ended.
+    "
+    guidance_note: ""
