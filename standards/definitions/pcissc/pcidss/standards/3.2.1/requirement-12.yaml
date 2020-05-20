@@ -1,0 +1,56 @@
+---
+requirements:
+parent: 12
+items:
+  - id: 12.1
+    description: "Establish, publish, maintain, and disseminate a security policy.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.1
+        description: "Examine the information security policy and verify that the policy is published and disseminated to all relevant personnel (including vendors and business partners).
+        "
+        description_note: ""
+    guidance: "A company's information security policy creates the roadmap for implementing security measures to protect its most valuable assets. All personnel should be aware of the sensitivity of data and their responsibilities for protecting it.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.1.1
+        description: "Review the security policy at least annually and update the policy when the environment changes.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.1.1
+            description: "Verify that the information security policy is reviewed at least annually and updated as needed to reflect changes to business objectives or the risk environment.
+            "
+            description_note: ""
+        guidance: "Security threats and protection methods evolve rapidly. Without updating the security policy to reflect relevant changes, new protection measures to fight against these threats are not addressed.
+        "
+        guidance_note: ""  
+  - id: 12.2
+    description: "Implement a risk-assessment process that:
+    
+    • Is performed at least annually and upon significant changes to the environment (for example, acquisition, merger, relocation, etc.),
+    • Identifies critical assets, threats, and vulnerabilities, and
+    • Results in a formal, documented analysis of risk.
+    
+    Examples of risk-assessment methodologies include but are not limited to OCTAVE, ISO 27005 and NIST SP 800-30.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.2.a
+        description: "Verify that an annual risk-assessment process is documented that:
+        
+        • Identifies critical assets, threats, and vulnerabilities
+        • Results in a formal, documented analysis of risk
+        "
+        description_note: ""
+      - id: 12.2.b
+        description: "Review risk-assessment documentation to verify that the risk-assessment process is performed at least annually and upon significant changes to the environment.
+        "
+        description_note: ""
+    guidance: "A risk assessment enables an organization to identify threats and associated vulnerabilities with the potential to negatively impact their business. Examples of different risk considerations include cybercrime, web attacks, and POS malware. Resources can then be effectively allocated to implement controls that reduce the likelihood and/or the potential impact of the threat being realized.
+    
+    Performing risk assessments at least annually and upon significant changes allows the organization to keep up to date with organizational changes and evolving threats, trends, and technologies.
+    "
+    guidance_note: ""
