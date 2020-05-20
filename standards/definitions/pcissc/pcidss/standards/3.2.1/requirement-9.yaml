@@ -330,4 +330,89 @@ items:
         guidance: "Without a firm process for ensuring that all media movements are approved before the media is removed from secure areas, the media would not be tracked or appropriately protected, and its location would be unknown, leading to lost or stolen media.
         "
         guidance_note: ""
-  
+  - id: 9.7
+    description: "Maintain strict control over the storage and accessibility of media.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.7
+        description: "Obtain and examine the policy for controlling storage and maintenance of all media and verify that the policy requires periodic media inventories.
+        "
+        description_note: ""
+    guidance: "Without careful inventory methods and storage controls, stolen or missing media could go unnoticed for an indefinite amount of time.
+    
+    If media is not inventoried, stolen or lost media may not be noticed for a long time or at all.
+    "
+    guidance_note: ""
+    items:
+      - id: 9.7.1
+        description: "Properly maintain inventory logs of all media and conduct media inventories at least annually.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.7.1
+            description: "Review media inventory logs to verify that logs are maintained and media inventories are performed at least annually.
+            "
+            description_note: ""
+        guidance: "Without careful inventory methods and storage controls, stolen or missing media could go unnoticed for an indefinite amount of time.
+        
+        If media is not inventoried, stolen or lost media may not be noticed for a long time or at all.
+        "
+        guidance_note: ""
+  - id: 9.8
+    description: "Destroy media when it is no longer needed for business or legal reasons as follows:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.8
+        description: "Examine the periodic media destruction policy and verify that it covers all media and defines requirements for the following:
+        
+        • Hard-copy materials must be crosscut shredded, incinerated, or pulped such that there is reasonable assurance the hard- copy materials cannot be reconstructed.
+        • Storage containers used for materials that are to be destroyed must be secured.
+        • Cardholder data on electronic media must be rendered unrecoverable (e.g., via a secure wipe program in accordance with industry-accepted standards for secure deletion, or by physically destroying the media).
+        "
+        description_note: ""
+    guidance: "If steps are not taken to destroy information contained on hard disks, portable drives, CD/DVDs, or paper prior to disposal, malicious individuals may be able to retrieve information from the disposed media, leading to a data compromise. For example, malicious individuals may use a technique known as “dumpster diving,” where they search through trashcans and recycle bins looking for information they can use to launch an attack.
+    
+    Securing storage containers used for materials that are going to be destroyed prevents sensitive information from being captured while the materials are being collected. For example, “to-be-shredded” containers could have a lock preventing access to its contents or physic ally prevent access to the inside of the container.
+    
+    Examples of methods for securely destroying electronic media include secure wiping, degaussing, or physical destruction (such as grinding or shredding hard disks).
+    "
+    guidance_note: ""
+    items:
+      - id: 9.8.1
+        description: "Shred, incinerate, or pulp hard- copy materials so that cardholder data cannot be reconstructed. Secure storage containers used for materials that are to be destroyed.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.8.1.a
+            description: "Interview personnel and examine procedures to verify that hard-copy materials are crosscut shredded, incinerated, or pulped such that there is reasonable assurance the hard-copy materials cannot be reconstructed.
+            "
+            description_note: ""
+          - id: 9.8.1.b
+            description: "Examine storage containers used for materials that contain information to be destroyed to verify that the containers are secured.
+            "
+            description_note: ""
+        guidance: "If steps are not taken to destroy information contained on hard disks, portable drives, CD/DVDs, or paper prior to disposal, malicious individuals may be able to retrieve information from the disposed media, leading to a data compromise. For example, malicious individuals may use a technique known as “dumpster diving,” where they search through trashcans and recycle bins looking for information they can use to launch an attack.
+    
+        Securing storage containers used for materials that are going to be destroyed prevents sensitive information from being captured while the materials are being collected. For example, “to-be-shredded” containers could have a lock preventing access to its contents or physic ally prevent access to the inside of the container.
+        
+        Examples of methods for securely destroying electronic media include secure wiping, degaussing, or physical destruction (such as grinding or shredding hard disks).
+        "
+        guidance_note: ""
+      - id: 9.8.2
+        description: "Render cardholder data on electronic media unrecoverable so that cardholder data cannot be reconstructed.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.8.2
+            description: "Verify that cardholder data on electronic media is rendered unrecoverable (e.g., via a secure wipe program in accordance with industry-accepted standards for secure deletion, or by physically destroying the media).
+            "
+            description_note: ""
+        guidance: "If steps are not taken to destroy information contained on hard disks, portable drives, CD/DVDs, or paper prior to disposal, malicious individuals may be able to retrieve information from the disposed media, leading to a data compromise. For example, malicious individuals may use a technique known as “dumpster diving,” where they search through trashcans and recycle bins looking for information they can use to launch an attack.
+    
+        Securing storage containers used for materials that are going to be destroyed prevents sensitive information from being captured while the materials are being collected. For example, “to-be-shredded” containers could have a lock preventing access to its contents or physic ally prevent access to the inside of the container.
+        
+        Examples of methods for securely destroying electronic media include secure wiping, degaussing, or physical destruction (such as grinding or shredding hard disks).
+        "
+        guidance_note: ""
