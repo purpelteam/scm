@@ -1,0 +1,75 @@
+---
+requirements:
+parent: 9
+items:
+  - id: 9.1
+    description: "Use appropriate facility entry controls to limit and monitor physical access to systems in the cardholder data environment.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 9.1
+        description: "Verify the existence of physical security controls for each computer room, data center, and other physical areas with systems in the cardholder data environment.
+        
+        • Verify that access is controlled with badge readers or other devices including authorized badges and lock and key.
+        • Observe a system administrator’s attempt to log into consoles for randomly selected systems in the cardholder data environment and verify that they are “locked” to prevent unauthorized use.
+        "
+        description_note: ""
+    guidance: "Without physical access controls, such as badge systems and door controls, unauthorized persons could potentially gain access to the facility to steal, disable, disrupt, or destroy critical systems and cardholder data.
+    
+    Locking console login screens prevents unauthorized persons from gaining access to sensitive information, altering system configurations, introducing vulnerabilities into the network, or destroying records.
+    "
+    guidance_note: ""
+    items:
+      - id: 9.1.1
+        description: "Use either video cameras or access control mechanisms (or both) to monitor individual physical access to sensitive areas. Review collected data and correlate with other entries. Store for at least three months, unless otherwise restricted by law.
+        "
+        description_note: "“Sensitive areas” refers to any data center, server room or any area that houses systems that store, process, or transmit cardholder data. This excludes public-facing areas where only point-of- sale terminals are present, such as the cashier areas in a retail store.
+        "
+        testing_procedures:
+          - id: 9.1.1.a
+            description: "Verify that either video cameras or access control mechanisms (or both) are in place to monitor the entry/exit points to sensitive areas.
+            "
+            description_note: ""
+          - id: 9.1.1.b
+            description: "Verify that either video cameras or access control mechanisms (or both) are protected from tampering or disabling.
+            "
+            description_note: ""
+          - id: 9.1.1.c
+            description: "Verify that data from video cameras and/or access control mechanisms is reviewed, and that data is stored for at least three months.
+            "
+            description_note: ""
+        guidance: "When investigating physical breaches, these controls can help identify the individuals that physically accessed the sensitive areas, as well as when they entered and exited.
+        
+        Criminals attempting to gain physical access to sensitive areas will often attempt to disable or bypass the monitoring controls. To protect these controls from tampering, video cameras could be positioned so they are out of reach and/or be monitored to detect tampering. Similarly, access control mechanisms could be monitored or have physical protections installed to prevent them being damaged or disabled by malicious individuals.
+
+        Examples of sensitive areas include corporate database server rooms, back-office rooms at retail locations that store cardholder data, and storage areas for large quantities of cardholder data. Sensitive areas should be identified by each organization to ensure the appropriate physical monitoring controls are implemented.
+        "
+        guidance_note: ""
+      - id: 9.1.2
+        description: "Implement physical and/or logical controls to restrict access to publicly accessible network jacks.
+
+        For example, network jacks located in public areas and areas accessible to visitors could be disabled and only enabled when network access is explicitly authorized. Alternatively, processes could be implemented to ensure that visitors are escorted at all times in areas with active network jacks.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.1.2
+            description: "Interview responsible personnel and observe locations of publicly accessible network jacks to verify that physical and/or logical controls are in place to restrict access to publicly accessible network jacks.
+            "
+            description_note: ""
+        guidance: "Restricting access to network jacks (or network ports) will prevent malicious individuals from plugging into readily available network jacks and gain access into internal network resources.
+        
+        Whether logical or physical controls, or a combination of both, are used, they should be sufficient to prevent an individual or device that is not explicitly authorized from being able to connect to the network.
+        "
+        guidance_note: ""
+      - id: 9.1.3
+        description: "Restrict physical access to wireless access points, gateways, handheld devices, networking/communications hardware, and telecommunication lines.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 9.1.3
+            description: "Verify that physical access to wireless access points, gateways, handheld devices, networking/communications hardware, and telecommunication lines is appropriately restricted.
+            "
+            description_note: ""
+        guidance: "Without security over access to wireless components and devices, malicious users could use an organization’s unattended wireless devices to access network resources, or even connect their own devices to the wireless network to gain unauthorized access. Additionally, securing networking and communications hardware prevents malicious users from intercepting network traffic or physically connecting their own devices to wired network resources.
+        "
+        guidance_note: ""
