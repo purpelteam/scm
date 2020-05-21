@@ -352,3 +352,135 @@ items:
                 description_note: ""
             guidance: "Attempts to remove clear-text PAN via an unauthorized channel, method, or process may indicate malicious intent to steal data, or may be the actions of an authorized employee who is unaware of or simply not following the proper methods. Timely investigation of these occurrences can identify where remediation needs to be applied and provides valuable information to help understand where the threats are coming from."
             guidance_note: ""
+  - id: A.3.3
+    description: "Validate PCI DSS is incorporated into business-as-usual (BAU) activities
+    "
+    description_note: ""
+    testing_procedures:
+    guidance: ""
+    guidance_note: ""
+    items:
+      - id: A.3.3.1
+        description: "Implement a process to immediately detect and alert on critical security control failures. Examples of critical security controls include, but are not limited to:
+        
+        • Firewalls
+        • IDS/IPS
+        • FIM
+        • Anti-virus
+        • Physical access controls
+        • Logical access controls
+        • Audit logging mechanisms
+        • Segmentation controls (if used)
+        "
+        description_note: "PCI DSS Reference: Requirements 1-12
+        "
+        testing_procedures:
+          - id: A.3.3.1.a
+            description: "Examine documented policies and procedures to verify that processes are defined to immediately detect and alert on critical security control failures.
+            "
+            description_note: ""
+          - id: A.3.3.1.b
+            description: "Examine detection and alerting processes and interview personnel to verify that processes are implemented for all critical security controls, and that failure of a critical security control results in the generation of an alert.
+            "
+            description_note: ""
+        guidance: "Without formal processes for the prompt (as soon as possible) detection and alerting of critical security control failures, failures may go undetected for extended periods and provide attackers ample time to compromise systems and steal sensitive data from the cardholder data environment.
+        "
+        guidance_note: ""
+        items:
+          - id: A.3.3.1.1
+            description: "Respond to failures of any critical security controls in a timely manner. Processes for responding to failures in security controls must include:
+            • Restoring security functions
+            • Identifying and documenting the duration (date and time start to end) of the security failure
+            • Identifying and documenting cause(s) of failure, including root cause, and documenting remediation required to address root cause
+            • Identifying and addressing any security issues that arose during the failure
+            • Performing a risk assessment to determine whether further actions are required as a result of the security failure
+            • Implementing controls to prevent cause of failure from reoccurring
+            • Resuming monitoring of security controls
+            "
+            description_note: "PCI DSS Reference: Requirements 1-12
+            "
+            testing_procedures:
+              - id: A.3.3.1.1.a
+                description: "Examine documented policies and procedures and interview personnel to verify processes are defined and implemented to respond to a security control failure, and include:
+                • Restoring security functions
+                • Identifying and documenting the duration (date and time start to end) of the security failure
+                • Identifying and documenting cause(s) of failure, including root cause, and documenting remediation required to address root cause
+                • Identifying and addressing any security issues that arose during the failure
+                • Performing a risk assessment to determine whether further actions are required as a result of the security failure
+                • Implementing controls to prevent cause of failure from reoccurring
+                • Resuming monitoring of security controls
+                "
+                description_note: ""
+              - id: A.3.3.1.1.b
+                description: "Examine records to verify that security control failures are documented to include:
+                • Identification of cause(s) of the failure, including root cause
+                • Duration (date and time start and end) of the security failure
+                • Details of the remediation required to address the root cause
+                "
+                description_note: ""
+            guidance: "Documented evidence (e.g., records within a problem-management system) should support that processes and procedures are in place to respond to security failures. In addition, personnel should be aware of their responsibilities in the event of a failure. Actions and responses to the failure should be captured in the documented evidence.
+            "
+            guidance_note: ""
+      - id: A.3.3.2
+        description: "Review hardware and software technologies at least annually to confirm whether they continue to meet the organization’s PCI DSS requirements. (For example, a review of technologies that are no longer supported by the vendor and/or no longer meet the security needs of the organization.)
+        
+        The process includes a plan for remediating technologies that no longer meet the organization’s PCI DSS requirements, up to and including replacement of the technology, as appropriate.
+        "
+        description_note: "PCI DSS Reference: Requirements 2, 6
+        "
+        testing_procedures:
+          - id: A.3.3.2.a
+            description: "Examine documented policies and procedures and interview personnel to verify processes are defined and implemented to review hardware and software technologies to confirm whether they continue to meet the organization’s PCI DSS requirements.
+            "
+            description_note: ""
+          - id: A.3.3.2.b
+            description: "Review the results of the recent reviews to verify reviews are performed at least annually.
+            "
+            description_note: ""
+          - id: A.3.3.2.c
+            description: "For any technologies that have been determined to no longer meet the organization’s PCI DSS requirements, verify a plan is in place to remediate the technology.
+            "
+            description_note: ""
+        guidance: "Hardware and software technologies are constantly evolving, and organizations need to be aware of changes to the technologies they use, as well as the evolving threats to those technologies. Organizations also need to be aware of changes made by technology vendors to their products or support processes, to understand how such changes may impact the organization’s use of the technology.
+        
+        Regular reviews of technologies that impact or influence PCI DSS controls can assist with purchasing, usage, and deployment strategies, and ensure controls that rely on those technologies remain effective.
+        "
+        guidance_note: ""
+      - id: A.3.3.3
+        description: "Perform reviews at least quarterly to verify BAU activities are being followed. Reviews must be performed by personnel assigned to the PCI DSS compliance program (as identified in A3.1.3), and include the following:
+        
+        • Confirmation that all BAU activities (e.g., A3.2.2, A3.2.6, and A3.3.1) are being performed
+        • Confirmation that personnel are following security policies and operational procedures (for example, daily log reviews, firewall rule-set reviews, configuration standards for new systems, etc.)
+        • Documenting how the reviews were completed, including how all BAU activities were verified as being in place.
+        • Collection of documented evidence as required for the annual PCI DSS assessment
+        • Review and sign-off of results by personnel assigned responsibility for the PCI DSS compliance program (as identified in A3.1.3)
+        • Retention of records and documentation for at least 12 months, covering all BAU activities
+        "
+        description_note: "PCI DSS Reference: Requirements 1-12
+        "
+        testing_procedures:
+          - id: A.3.3.3.a
+            description: "Examine policies and procedures to verify that processes are defined for reviewing and verifying BAU activities. Verify the procedures include:
+            
+            • Confirming that all BAU activities (e.g., A3.2.2, A3.2.6, and A3.3.1) are being performed
+            • Confirming that personnel are following security policies and operational procedures (for example, daily log reviews, firewall rule-set reviews, configuration standards for new systems, etc.)
+            • Documenting how the reviews were completed, including how all BAU activities were verified as being in place
+            • Collecting documented evidence as required for the annual PCI DSS assessment
+            • Reviewing and sign-off of results by executive management assigned responsibility for PCI DSS governance
+            • Retaining records and documentation for at least 12 months, covering all BAU activities
+            "
+            description_note: ""
+          - id: A.3.3.3.b
+            description: "Interview responsible personnel and examine records of reviews to verify that:
+            
+            • Reviews are performed by personnel assigned to the PCI DSS compliance program.
+            • Reviews are performed at least quarterly.
+            "
+            description_note: ""
+        guidance: "Implementing PCI DSS controls into business-as- usual activities is an effective method to ensure security is included as part of normal business operations on an ongoing basis. Therefore, it is important that independent checks are performed to ensure BAU controls are active and working as intended.
+        
+        The intent of these independent checks is to review the evidence that confirms business-as- usual activities are being performed.
+        
+        These reviews can also be used to verify that appropriate evidence is being maintained—for example, audit logs, vulnerability scan reports, firewall reviews, etc.—to assist the entity’s preparation for its next PCI DSS assessment.
+        "
+        guidance_note: ""
