@@ -1,0 +1,22 @@
+---
+mapping_directories:
+indexs:
+  - id: pci-dss-3.2.1
+    description: PCI DSS
+    version: 3.2.1
+  - id: cis-control-7.1
+    description: CIS Control
+    version: 7.1
+mappings:
+  - id: 1
+    references: AuditScripts Critical Security Controls Master Mapping 
+    from: pci-dss-3.2.1
+    to: cis-control-7.1
+    location: pcissc/pcidss/3.2.1/2-cis-control-7_1.yaml
+    description: PCI DSS 3.2.1 to CIS Control 7.1
+  - id: 2
+    references: AuditScripts Critical Security Controls Master Mapping
+    from: cis-control-7.1
+    to: pci-dss-3.2.1
+    location: cis/controls/7.1/2-pcidss-3_2_1.yaml
+    description: CIS Control 7.1 to PCI DSS 3.2.1
