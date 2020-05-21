@@ -1,0 +1,26 @@
+---
+implementation_groups:
+  - id: 1
+    title: "Implementation Group 1"
+    description: |
+      An IG1 organization is small to medium-sized with limited IT and cybersecurity expertise to dedicate toward protecting IT assets and personnel. The principal concern of these organizations is to keep the business operational as they have a limited tolerance for downtime. The sensitivity of the data that they are trying to protect is low and principally surrounds employee and financial information. However, there may be some small to medium-sized organizations that are responsible for protecting sensitive data and, therefore, will fall into a higher Group. Sub-Controls selected for IG1 should be implementable with limited cybersecurity expertise and aimed to thwart general, non-targeted attacks. These Sub-Controls will also typically be designed to work in conjunction with small or home office commercial-off-the-Shelf (COTS) hardware and software.
+    definitions: |
+      CIS Sub-Controls for small, commercial off-the-shelf or home office software environments where sensitivity of the data is low will typically fall under IG1. Remember, any IG1 steps should also be followed by organizations in IG2 and IG3.
+    quick_start_guidance: |
+      A family-owned business with ~10 employees may self-classify as IG1
+  - id: 2
+    title: "Implementation Group 2"
+    description: |
+      An IG2 organization employs individuals responsible for managing and protecting IT infrastructure. These organizations support multiple departments with differing risk profiles based on job function and mission. Small organizational units may have regulatory compliance burdens. IG2 organizations often store and process sensitive client or company information and can withstand short interruptions of service. A major concern is loss of public confidence if a breach occurs. Sub-Controls selected for IG2 help security teams cope with increased operational complexity. Some Sub-Controls will depend on enterprise-grade technology and specialized expertise to properly install and configure.
+    definitions: |
+      CIS Sub-Controls focused on helping security teams manage sensitive client or company information fall under IG2. IG2 steps should also be followed by organizations in IG3.
+    quick_start_guidance: |
+      A regional organization providing a service may classify itself as IG2
+  - id: 3
+    title: "Implementation Group 3"
+    description: |
+      An IG3 organization employs security experts that specialize in the different facets of cybersecurity (e.g., risk management, penetration testing, application security). IG3 systems and data contain sensitive information or functions that are subject to regulatory and compliance oversight. A IG3 organization must address availability of services and the confidentiality and integrity of sensitive data. Successful attacks can cause significant harm to the public welfare. Sub-Controls selected for IG3 must abate targeted attacks from a sophisticated adversary and reduce the impact of zero-day attacks.
+    definitions: |
+      CIS Sub-Controls that reduce the impact of zero-day attacks and targeted attacks from sophisticated adversaries typically fall into IG3. IG1 and IG2 organizations may be unable to implement all IG3 Sub-Controls.
+    quick_start_guidance: |
+      A large corporation with thousands of employees may be labeled IG3

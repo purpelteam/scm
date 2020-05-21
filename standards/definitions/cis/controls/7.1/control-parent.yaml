@@ -1,0 +1,616 @@
+---
+controls:
+  - id: 1
+    title: "Inventory and Control of Hardware Assets"
+    description: |
+      Actively manage (inventory, track, and correct) all hardware devices on the network so that only authorized devices are given access, and unauthorized and unmanaged devices are found and prevented from gaining access.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      Attackers, who can be located anywhere in the world, are continuously scanning the address space of target organizations, waiting for new and possibly unprotected systems to be attached to the network. They are particularly interested in devices which come and go off of the enterprise’s network such as laptops or Bring-Your-Own-Device (BYOD) which might be out
+      of synchronization with security updates or might already be compromised. Attacks can take advantage of new hardware that is installed on the network one evening but not configured and patched with appropriate security updates until the following day. Even devices that are not visible from the Internet can be used by attackers who have already gained internal access and are hunting for internal pivot points or victims. Additional systems that connect to the enterprise’s network (e.g., demonstration systems, temporary test systems, guest networks) should also be managed carefully and/or isolated in order to prevent adversarial access from affecting the security of enterprise operations.
+      
+      Large, complex enterprises understandably struggle with the challenge of managing intricate, fast-changing environments. But attackers have shown the ability, patience, and willingness to “inventory and control” our assets at very large scale in order to support their opportunities.
+      
+      Managed control of all devices also plays a critical role in planning and executing system backup, incident response, and recovery.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      This Control requires both technical and procedural actions, united in a process that accounts for and manages the inventory of hardware and all associated information throughout its life cycle. It links to business governance by establishing information/asset owners who are responsible for each component of a business process that includes information, software, and hardware. Organizations can use large-scale, comprehensive enterprise products to maintain IT asset inventories. Others use more modest tools to gather the data by sweeping the network, and manage the results separately in a database.
+      
+      Maintaining a current and accurate view of IT assets is an ongoing and dynamic process. Organizations can actively scan on a regular basis, sending a variety of different packet types to identify devices connected to the network. Before such scanning can take place, organizations should verify that they have adequate bandwidth for such periodic scans by consulting load history and capacities for their networks.
+      
+      In conducting inventory scans, scanning tools could send traditional ping packets (ICMP Echo Request) looking for ping responses to identify a system at a given IP address. Because some systems block inbound ping packets, in addition to traditional pings, scanners can also identify devices on the network using transmission control protocol (TCP), synchronize (SYN), or acknowledge (ACK) packets. Once they have identified IP addresses of devices on the network, some scanners provide robust fingerprinting features to determine the operating system type of the discovered machine.
+      
+      In addition to active scanning tools that sweep the network, other asset identification tools passively listen on network interfaces for devices to announce their presence by sending traffic. Such passive tools can be connected to switch span ports at critical places in the network to view all data flowing through such switches, maximizing the chance of identifying systems communicating through those switches.
+      
+      Many organizations also pull information from network assets such as switches and routers regarding the machines connected to the network. Using securely authenticated and encrypted network management protocols, tools can retrieve media access control (MAC) addresses
+      and other information from network devices that can be reconciled with the organization’s asset inventory of servers, workstations, laptops, and other devices. Once MAC addresses are confirmed, switches should implement 802.1x and Network Access Control (NAC) to only allow authorized systems that are properly configured to connect to the network.
+      
+      Wireless devices (and wired laptops) may periodically join a network and then disappear, making the inventory of currently available systems very dynamic. Likewise, virtual machines can be difficult to track in asset inventories when they are shut down or paused. Additionally, remote machines accessing the network using virtual private network (VPN) technology may appear
+      on the network for a time, and then be disconnected from it. Whether physical or virtual, each machine using an IP address should be included in an organization’s asset inventory.
+    system_erd: "control_1_erd.png"
+  - id: 2
+    title: "Inventory and Control of Software Assets"
+    description: |
+      Actively manage (inventory, track, and correct) all software on the network so that only authorized software is installed and can execute, and that all unauthorized and unmanaged software is found and prevented from installation or execution.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      Attackers continuously scan target organizations looking for vulnerable versions of software that can be remotely exploited. Some attackers also distribute hostile web pages, document files, media files, and other content via their own web pages or otherwise trustworthy third-party sites. When unsuspecting victims access this content with a vulnerable browser or other client- side program, attackers compromise their machines, often installing backdoor programs and bots that give the attacker long-term control of the system. Some sophisticated attackers may use zero-day exploits, which take advantage of previously unknown vulnerabilities for which no patch has yet been released by the software vendor. Without proper knowledge or control of the software deployed in an organization, defenders cannot properly secure their assets.
+      
+      Poorly controlled machines are more likely to be either running software that is unneeded for business purposes (introducing potential security flaws), or running malware introduced by an attacker after a system is compromised. Once a single machine has been exploited, attackers often use it as a staging point for collecting sensitive information from the compromised system and from other systems connected to it. In addition, compromised machines are used as a launching point for movement throughout the network and partnering networks. In this way, attackers may quickly turn one compromised machine into many. Organizations that do not have complete software inventories are unable to find systems running vulnerable or malicious software to mitigate problems or root out attackers.
+      
+      Managed control of all software also plays a critical role in planning and executing system backup, incident response, and recovery.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Whitelisting can be implemented using a combination of commercial whitelisting tools, policies, or application execution tools that come with anti-virus suites and popular operating systems. Commercial software and asset inventory tools are widely available and in use in many enterprises today. The best of these tools provide an inventory check of hundreds of common applications used in enterprises, pulling information about the patch level of each installed program to ensure that it is the latest version, and leveraging standardized application names, such as those found in the common platform enumeration (CPE) specification.
+      
+      Features that implement whitelists are included in many modern endpoint security suites and even natively implemented in certain versions of major operating systems. Moreover, commercial solutions are increasingly bundling together anti-virus, anti-spyware, personal firewall, and host-based intrusion detection systems (IDS) and intrusion prevention systems (IPS), along with application white and black listing. In particular, most endpoint security solutions can look at the name, file system location, and/or cryptographic hash of a given executable to determine whether the application should be allowed to run on the protected machine. The most effective of these tools offer custom whitelists based on executable path, hash, or regular expression matching. Some even include a gray list function that allows administrators to define rules for execution of specific programs only by certain users and at certain times of day.
+    system_erd: "control_2_erd.png"
+  - id: 3
+    title: "Continuous Vulnerability Management"
+    description: |
+      Continuously acquire, assess, and take action on new information in order to identify vulnerabilities, remediate, and minimize the window of opportunity for attackers.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      Cyber defenders must operate in a constant stream of new information: software updates, patches, security advisories, threat bulletins, etc. Understanding and managing vulnerabilities has become a continuous activity, requiring significant time, attention, and resources.
+      
+      Attackers have access to the same information and can take advantage of gaps between the appearance of new knowledge and remediation. For example, when researchers report new vulnerabilities, a race starts among all parties, including: attackers (to “weaponize,” deploy an attack, exploit), vendors (to develop, deploy patches or signatures and updates), and defenders (to assess risk, regression-test patches, install).
+      
+      Organizations that do not scan for vulnerabilities and proactively address discovered flaws face a significant likelihood of having their computer systems compromised. Defenders face particular challenges in scaling remediation across an entire enterprise, and prioritizing actions with conflicting priorities, and sometimes uncertain side effects.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      A large number of vulnerability scanning tools are available to evaluate the security configuration of systems. Some enterprises have also found commercial services using remotely managed scanning appliances to be effective. To help standardize the definitions of discovered vulnerabilities in multiple departments of an organization or even across organizations, it is preferable to use vulnerability scanning tools that measure security flaws and map them to vulnerabilities and issues categorized using one or more of the following industry-recognized vulnerability, configuration, and platform classification schemes and languages: CVE, CCE, OVAL, CPE, CVSS, and/or XCCDF.
+      
+      Advanced vulnerability scanning tools can be configured with user credentials to login to scanned systems and perform more comprehensive scans than what can be achieved without login credentials. The frequency of scanning activities, however, should increase as the diversity of an organization’s systems increases to account for the varying patch cycles of each vendor.
+      
+      In addition to the scanning tools that check for vulnerabilities and misconfigurations across the network, various free and commercial tools can evaluate security settings and configurations
+      of local machines on which they are installed. Such tools can provide fine-grained insight into unauthorized changes in configuration or the inadvertent introduction of security weaknesses by administrators.
+      
+      Effective organizations link their vulnerability scanners with problem-ticketing systems that automatically monitor and report progress on fixing problems, and that makes unmitigated critical vulnerabilities visible to higher levels of management to ensure the problems are solved.
+      The most effective vulnerability scanning tools compare the results of the current scan with previous scans to determine how the vulnerabilities in the environment have changed over time. Security personnel use these features to conduct vulnerability trending from month to month.
+      
+      As vulnerabilities related to unpatched systems are discovered by scanning tools, security personnel should determine and document the amount of time that elapses between the public release of a patch for the system and the occurrence of the vulnerability scan. If this time window exceeds the organization’s benchmarks for deployment of the given patch’s criticality level, security personnel should note the delay and determine if a deviation was formally documented for the system and its patch. If not, the security team should work with management to improve the patching process.
+      
+      Additionally, some automated patching tools may not detect or install certain patches due to an error by the vendor or administrator. Because of this, all patch checks should reconcile system patches with a list of patches each vendor has announced on its website.
+    system_erd: "control_3_erd.png"
+  - id: 4
+    title: "Controlled Use of Administrative Privileges"
+    description: |
+      The processes and tools used to track/control/prevent/correct the use, assignment, and configuration of administrative privileges on computers, networks, and applications.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      The misuse of administrative privileges is a primary method for attackers to spread inside a target enterprise. Two very common attacker techniques take advantage of uncontrolled administrative privileges. In the first, a workstation user running as a privileged user is fooled into opening a malicious email attachment, downloading and opening a file from a malicious website, or simply surfing to a website hosting attacker content that can automatically exploit browsers. The file or exploit contains executable code that runs on the victim’s machine either automatically or by tricking the user into executing the attacker’s content. If the victim user’s account has administrative privileges, the attacker can take over the victim’s machine completely and install keystroke loggers, sniffers, and remote control software to find administrative passwords and other sensitive data. Similar attacks occur with email. An administrator inadvertently opens an email that contains an infected attachment and this is used to obtain a pivot point within the network that is used to attack other systems.
+      
+      The second common technique used by attackers is elevation of privileges by guessing or cracking a password for an administrative user to gain access to a target machine. If administrative privileges are loosely and widely distributed, or identical to passwords used on less critical systems, the attacker has a much easier time gaining full control of systems, because there are many more accounts that can act as avenues for the attacker to compromise administrative privileges.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Built-in operating system features can extract lists of accounts with super-user privileges, both locally on individual systems and on overall domain controllers. To verify that users with high- privileged accounts do not use such accounts for day-to-day web surfing and email reading, security personnel should periodically gather a list of running processes to determine whether any browsers or email readers are running with high privileges. Such information gathering can be scripted, with short shell scripts searching for a dozen or more different browsers, email readers, and document editing programs running with high privileges on machines. Some legitimate system administration activity may require the execution of such programs over the short term, but long-term or frequent use of such programs with administrative privileges could indicate that an administrator is not adhering to this Control.
+
+      An excellent resource is:
+      • The NIST Digital Identity Guidelines (https://pages.nist.gov/800-63-3/)
+    system_erd: "control_4_erd.png"
+  - id: 5
+    title: "Secure Configuration for Hardware and Software on Mobile Devices, Laptops, Workstations and Servers"
+    description: |
+      Establish, implement, and actively manage (track, report on, correct) the security configuration of mobile devices, laptops, servers, and workstations using a rigorous configuration management and change control process in order to prevent attackers from exploiting vulnerable services and settings.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      As delivered by manufacturers and resellers, the default configurations for operating systems and applications are normally geared towards ease-of-deployment and ease-of-use – not security. Basic controls, open services and ports, default accounts or passwords, older (vulnerable) protocols, and pre-installation of unneeded software can be exploitable in their default state.
+
+      Developing configuration settings with good security properties is a complex task beyond the ability of individual users, requiring analysis of potentially hundreds or thousands of options in order to make good choices (the Procedures and Tools section below provides resources for secure configurations). Even if a strong initial configuration is developed and installed, it must be continually managed to avoid security “decay” as software is updated or patched, new security vulnerabilities are reported, and configurations are “tweaked” to allow the installation of new software or support new operational requirements. If not, attackers will find opportunities to exploit both network accessible services and client software.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Rather than start from scratch developing a security baseline for each software system, organizations should start from publicly developed, vetted, and supported security benchmarks, security guides, or checklists. Excellent resources include:
+        • The CIS BenchmarksTM Program (https://www.cisecurity.org/cis-benchmarks/)
+        • The NIST National Checklist Program (https://nvd.nist.gov/ncp/repository)
+
+      Organizations should augment or adjust these baselines to satisfy local policies and requirements, but deviations and rationale should be documented to facilitate later reviews or audits.
+      
+      For a complex enterprise, the establishment of a single security baseline configuration (for example, a single installation image for all workstations across the entire enterprise) is sometimes not practical or deemed unacceptable. It is likely that you will need to support different standardized images, based on the proper hardening to address risks and needed functionality of the intended deployment. For example, a web server in the demilitarized zone (DMZ) versus an email or other application server in the internal network. The number of variations should be kept to a minimum in order to better understand and manage the security properties of each, but organizations then must be prepared to manage multiple baselines.
+      
+      Commercial and/or free configuration management tools can then be employed to measure
+      the settings of operating systems and applications of managed machines to look for deviations from the standard image configurations. Typical configuration management tools use some combination of an agent installed on each managed system, or agentless inspection of systems by remotely logging in to each managed machine using administrator credentials. Additionally, a hybrid approach is sometimes used whereby a remote session is initiated, a temporary or dynamic agent is deployed on the target system for the scan, and then the agent is removed.
+    system_erd: "control_5_erd.png"
+  - id: 6
+    title: "Maintenance, Monitoring and Analysis of Audit Logs"
+    description: |
+      Collect, manage, and analyze audit logs of events that could help detect, understand, or recover from an attack.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Deficiencies in security logging and analysis allow attackers to hide their location, malicious software, and activities on victim machines. Even if the victims know that their systems have been compromised, without protected and complete logging records they are blind to the details of the attack and to subsequent actions taken by the attackers. Without solid audit logs, an attack may go unnoticed indefinitely and the particular damages done may be irreversible.
+
+      Sometimes logging records are the only evidence of a successful attack. Many organizations keep audit records for compliance purposes, but attackers rely on the fact that such organizations rarely look at the audit logs, and they do not know that their systems have been compromised. Because of poor or nonexistent log analysis processes, attackers sometimes control victim machines for months or years without anyone in the target organization knowing, even though the evidence of the attack has been recorded in unexamined log files.
+    category: Basic
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Most free and commercial operating systems, network services, and firewall technologies offer logging capabilities. Such logging should be activated, with logs sent to centralized logging servers. Firewalls, proxies, and remote access systems (VPN, dial-up, etc.) should all be configured for verbose logging, storing all the information available for logging in the event a follow-up investigation is required. Furthermore, operating systems, especially those of servers, should be configured to create access control logs when a user attempts to access resources without the appropriate privileges. To evaluate whether such logging is in place, an organization should periodically scan through its logs and compare them with the asset inventory assembled as part of CIS Control 1 in order to ensure that each managed item actively connected to the network is periodically generating logs.
+      
+      Analytical programs such as SIEM solutions for reviewing logs can provide value, but the capabilities employed to analyze audit logs are quite extensive, even including, importantly, just a cursory examination by a person. Actual correlation tools can make audit logs far more useful for subsequent manual inspection. Such tools can be quite helpful in identifying subtle attacks. However, these tools are neither a panacea nor a replacement for skilled information security personnel and system administrators. Even with automated log analysis tools, human expertise and intuition are often required to identify and understand attacks.
+    system_erd: "control_6_erd.png"
+  - id: 7
+    title: "Email and Web Browser Protections"
+    description: |
+      Minimize the attack surface and the opportunities for attackers to manipulate human behavior through their interaction with web browsers and email systems.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Web browsers and email clients are very common points of entry and attack because of their technical complexity, flexibility, and their direct interaction with users and with other systems and websites. Content can be crafted to entice or spoof users into taking actions that greatly increase risk and allow introduction of malicious code, loss of valuable data, and other attacks. Since
+      these applications are the main means that users interact with untrusted environments, these are potential targets for both code exploitation and social engineering.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Web Browser
+
+      Cybercriminals can exploit web browsers in multiple different ways. If they have access to exploits of vulnerable browsers, they can craft malicious webpages that can exploit those vulnerabilities when browsed by an unpatched browser. Alternatively, if vulnerabilities within the browser are not available they can try to target any number of common web browser plugins that may allow them to hook into the browser or even directly into the OS. These plugins, much like any other application within your environment, need to be managed and controlled, not only to know what needs to be updated but to also reduce the probability that users unintentionally install malware that might be hiding in some of these plugins and add-ons. Simple configurations of the browser can make it much harder for malware to get installed by reducing the ability of installing add- ons/plugins and preventing specific types of content from automatically executing.
+
+      Most popular browsers employ a database of phishing and/or malware sites to protect against the most common threats. Make sure that you and your users enable these content filters
+      and turn on the popup blockers. Popups are not only annoying, they also can host embedded malware directly or lure users into clicking on something using social engineering tricks. To help enforce blocking of known malicious domains, also consider subscribing to DNS filtering services to block attempts to access these websites at the network level.
+
+
+      Email
+
+      Email represents one the most interactive ways humans work with computers and encouraging the right behavior is just as important as the technical settings.
+
+      Using a spam-filtering tool reduces the number of malicious emails that come into your network. Initiating Domain-based Message Authentication, Reporting and Conformance (DMARC) helps reduce spam and phishing activities. Installing an encryption tool to secure email and communications adds another layer of user and network-based security. In addition to blocking based on the sender, it is also worthwhile to only allow certain file types that users need for their jobs. This will require some level of interfacing with different business units to understand what type of files they receive via email to ensure that there is not an interruption to their processes. to their processes.
+    system_erd: "control_7_erd.png"
+  - id: 8
+    title: "Malware Defenses"
+    description: |
+      Control the installation, spread, and execution of malicious code at multiple points in the enterprise, while optimizing the use of automation to enable rapid updating of defense, data gathering, and corrective action.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Malicious software is an integral and dangerous aspect of Internet threats, as it is designed to attack your systems, devices, and your data. It is fast-moving, fast-changing, and enters through any number of points like end-user devices, email attachments, web pages, cloud services, user actions, and removable media. Modern malware is designed to avoid defenses, and attack or disable them.
+
+      Malware defenses must be able to operate in this dynamic environment through large-scale automation, rapid updating, and integration with processes like incident response. They must also be deployed at multiple possible points of attack to detect, stop the movement of, or control the execution of malicious software. Enterprise endpoint security suites provide administrative features to verify that all defenses are active and current on every managed system.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      To ensure anti-virus signatures are up-to-date, organizations use automation. They use the built- in administrative features of enterprise endpoint security suites to verify that anti-virus, anti- spyware, and host-based IDS features are active on every managed system. They run automated assessments daily and review the results to find and mitigate systems that have deactivated such protections, as well as systems that do not have the latest malware definitions.
+
+      Being able to block malicious applications is only part of this Control, there is also a big focus on collecting the logs to help organizations understand what happened within their environment, and this includes ensuring that there is logging enabled for various command line tools, such
+      as Microsoft Windows PowerShell and Bash. As malicious actors continue to develop their methodologies, many are starting to take a “live-off–the-land” approach to minimize the likelihood of being caught. Enabling logging will make it significantly easier for the organization to follow the events to understand what happened and why it happened.
+    system_erd: "control_8_erd.png"
+  - id: 9
+    title: "Limitation and Control of Network Ports, Protocols, and Services"
+    description: |
+      Manage (track/control/correct) the ongoing operational use of ports, protocols, and services on networked devices in order to minimize windows of vulnerability available to attackers
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Attackers search for remotely accessible network services that are vulnerable to exploitation. Common examples include poorly configured web servers, mail servers, file and print services, and DNS servers installed by default on a variety of different device types, often without a business need for the given service. Many software packages automatically install services and turn them on as part of the installation of the main software package without informing a user or administrator that the services have been enabled. Attackers scan for such services and attempt to exploit these services, often attempting to exploit default user IDs and passwords or widely available exploitation code.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Port scanning tools are used to determine which services are listening on the network for a range of target systems. In addition to determining which ports are open, effective port scanners can be configured to identify the version of the protocol and service listening on each discovered port. This list of services and their versions are compared against an inventory of services required by the organization for each server and workstation in an asset management system. Recently added features in these port scanners are being used to determine the changes in services offered by scanned machines on the network since the previous scan, helping security personnel identify differences over time.
+    system_erd: "control_9_erd.png"
+  - id: 10
+    title: "Data Recovery Capabilities"
+    description: |
+      The processes and tools used to properly back up critical information with a proven methodology for timely recovery of it.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      When attackers compromise machines, they often make significant changes to configurations and software. Sometimes attackers also make subtle alterations of data stored on compromised machines, potentially jeopardizing organizational effectiveness with polluted information. When the attackers are discovered, it can be extremely difficult for organizations without a trustworthy data recovery capability to remove all aspects of the attacker’s presence on the machine.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Once per quarter (or whenever new backup equipment is purchased), a testing team should evaluate a random sample of system backups by attempting to restore them on a test bed environment. The restored systems should be verified to ensure that the operating system, application, and data from the backup are all intact and functional.
+      
+      In the event of malware infection, restoration procedures should use a version of the backup that is believed to predate the original infection.
+    system_erd: "control_10_erd.png"
+  - id: 11
+    title: "Secure Configuration for Network Devices, such as Firewalls, Routers, and Switches"
+    description: |
+      Establish, implement, and actively manage (track, report on, correct) the security configuration of network infrastructure devices using a rigorous configuration management and change control process in order to prevent attackers from exploiting vulnerable services and settings.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      As delivered from manufacturers and resellers, the default configurations for network infrastructure devices are geared for ease-of-deployment and ease-of-use – not security. Open services and ports, default accounts (including service accounts) or passwords, support for older (vulnerable) protocols, pre-installation of unneeded software; all can be exploitable in their default state. The management of the secure configurations for networking devices is not a one- time event, but a process that involves regularly re-evaluating not only the configuration items but also the allowed traffic flows. Attackers take advantage of network devices becoming less securely configured over time as users demand exceptions for specific business needs. Sometimes the exceptions are deployed and then left undone when they are no longer applicable to the business needs. In some cases, the security risk of the exception is neither properly analyzed nor measured against the associated business need and can change over time.
+      
+      Attackers search for vulnerable default settings, gaps or inconsistencies in firewall rule sets, routers, and switches and use those holes to penetrate defenses. They exploit flaws in these devices to gain access to networks, redirect traffic on a network, and intercept information while in transmission. Through such actions, the attacker gains access to sensitive data, alters important information, or even uses a compromised machine to pose as another trusted system on the network.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Some organizations use commercial tools that evaluate the rule sets of network filtering devices to determine whether they are consistent or in conflict, providing an automated sanity check of network filters and search for errors in rule sets or access controls lists (ACLs) that may allow unintended services through the device. Such tools should be run each time significant changes are made to firewall rule sets, router ACLs, or other filtering technologies.
+    system_erd: "control_11_erd.png"
+  - id: 12
+    title: "Boundary Defense"
+    description: |
+      Detect/prevent/correct the flow of information transferring across networks of different trust levels with a focus on security-damaging data.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Attackers focus on exploiting systems that they can reach across the Internet, including not only DMZ systems but also workstations and laptop computers that pull content from the Internet through network boundaries. Threats such as organized crime groups and nation-states use configuration and architectural weaknesses found on perimeter systems, network devices, and Internet-accessing client machines to gain initial access into an organization. Then, with a base of operations on these machines, attackers often pivot to get deeper inside the boundary to steal or change information or to set up a persistent presence for later attacks against internal hosts. Additionally, many attacks occur between business partner networks, sometimes referred to as extranets, as attackers hop from one organization’s network to another, exploiting vulnerable systems on extranet perimeters.
+      
+      To control the flow of traffic through network borders and police content by looking for attacks and evidence of compromised machines, boundary defenses should be multi-layered, relying on firewalls, proxies, DMZ perimeter networks, and network-based IPS and IDS. It is also critical to filter both inbound and outbound traffic.
+      
+      It should be noted that boundary lines between internal and external networks are diminishing as a result of increased interconnectivity within and between organizations as well as the rapid rise in deployment of wireless technologies. These blurring lines sometimes allow attackers to gain access inside networks while bypassing boundary systems. However, even with this blurring of boundaries, effective security deployments still rely on carefully configured boundary defenses that separate networks with different threat levels, sets of users, data and levels of control.
+      
+      And despite the blurring of internal and external networks, effective multi-layered defenses of perimeter networks help lower the number of successful attacks, allowing security personnel to focus on attackers who have devised methods to bypass boundary restrictions.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      The boundary defenses included in this Control build on CIS Control 9. The additional recommendations here focus on improving the overall architecture and implementation of both Internet and internal network boundary points. Internal network segmentation is central to this Control because once inside a network, many intruders attempt to target the most sensitive machines. Usually, internal network protection is not set up to defend against an internal attacker. Setting up even a basic level of security segmentation across the network and protecting each segment with a proxy and a firewall will greatly reduce an intruder’s access to the other parts of the network.
+      
+      One element of this Control can be implemented using free or commercial IDS and sniffers to look for attacks from external sources directed at DMZ and internal systems, as well as attacks originating from internal systems against the DMZ or Internet. Security personnel should regularly test these sensors by launching vulnerability-scanning tools against them to verify that the scanner traffic triggers an appropriate alert. The captured packets of the IDS sensors should be reviewed using an automated script each day to ensure that log volumes are within expected parameters and that the logs are formatted properly and have not been corrupted.
+      
+      Additionally, packet sniffers should be deployed on DMZs to look for Hypertext Transfer Protocol (HTTP) traffic that bypasses HTTP proxies. By sampling traffic regularly, such as over a three-hour period once a week, information security personnel can search for HTTP traffic that is neither sourced by nor destined for a DMZ proxy, implying that the requirement for proxy use is being bypassed.
+    system_erd: "control_12_erd.png"
+  - id: 13
+    title: "Data Protection"
+    description: |
+      The processes and tools used to prevent data exfiltration, mitigate the effects of exfiltrated data, and ensure the privacy and integrity of sensitive information.
+    explanation: |
+      Why Is This CIS Control Critical?
+      
+      Data resides in many places. Protection of that data is best achieved through the application of a combination of encryption, integrity protection, and data loss prevention techniques. As organizations continue their move towards cloud computing and mobile access, it is important that proper care be taken to limit and report on data exfiltration while also mitigating the effects of data compromise.
+
+      Some organizations do not carefully identify and separate their most sensitive and critical assets from less sensitive, publicly accessible information on their internal networks. In many environments, internal users have access to all or most of the critical assets. Sensitive assets may also include systems that provide management and control of physical systems, such as Supervisory Control and Data Acquisition (SCADA). Once attackers have penetrated such a network, they can easily find and exfiltrate important information, cause physical damage, or disrupt operations with little resistance. For example, in several high-profile breaches over the past few years, attackers were able to gain access to sensitive data stored on the same servers with the same level of access as far less important data. There are also examples of using access to the corporate network to gain access to, then control over, physical assets and cause damage.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      It is important that an organization understand what its sensitive information is, where it resides, and who needs access to it. To derive sensitivity levels, organizations need to put together a list of the key types of data and the overall importance to the organization. This analysis would be used to create an overall data classification scheme for the organization. Organizations should define labels, such as “Sensitive,” “Business Confidential”, and “Public,” and classify their data according to those labels. Once the private information has been identified, it can then be further subdivided based on the impact it would have to the organization if it were compromised.
+      
+      Once the sensitivity of the data has been identified, create a data inventory or mapping that identifies business applications and the servers that house those applications. The network then needs to be segmented so that systems of the same sensitivity level are on the same network and segmented from systems with different trust levels. If possible, firewalls need to control access to each segment.
+      
+      Access to data should be based on job requirements and a need-to-know basis. Job requirements should be created for each user group to determine what information the group needs access to in order to perform its jobs. Based on the requirements, access should only be given to the data segments or servers that are needed for each job function. Detailed logging should be turned on for servers in order to track access and allow for security personnel to examine incidents in which data was improperly accessed.
+    system_erd: "control_13_erd.png"
+  - id: 14
+    title: "Controlled Access Based on the Need to Know"
+    description: |
+      The processes and tools used to track/control/prevent/correct secure access to critical assets (e.g., information, resources, systems) according to the formal determination of which persons, computers, and applications have a need and right to access these critical assets based on an approved classification.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Encrypting data provides a level of assurance that even if data is compromised, it is impractical to access the plaintext without significant resources; however, controls should also be put in place to mitigate the threat of data exfiltration in the first place. Many attacks occurred across the network, while others involved physical theft of laptops and other equipment holding sensitive information. Yet, in many cases, the victims were not aware that the sensitive data were leaving their systems because they were not monitoring data outflows. The movement of data across network boundaries both electronically and physically must be carefully scrutinized to minimize its exposure to attackers.
+
+      The loss of control over protected or sensitive data by organizations is a serious threat to business operations and a potential threat to national security. While some data are leaked or lost as a result of theft or espionage, the vast majority of these problems result from poorly understood data practices, a lack of effective policy architectures, and user error. Data loss can even occur as a result of legitimate activities such as e-Discovery during litigation, particularly when records retention practices are ineffective or nonexistent.
+      
+      The adoption of data encryption, both in transit and at rest, provides mitigation against data compromise. This is true if proper care has been taken in the processes and technologies associated with the encryption operations. An example of this is the management of cryptographic keys used by the various algorithms that protect data. The process for generation, use, and destruction of keys should be based on proven processes as defined in standards such as NIST SP 800-57.
+      
+      Care should also be taken to ensure that products used within an enterprise implement well known and vetted cryptographic algorithms, as identified by NIST. Re-evaluation of the algorithms and key sizes used within the enterprise on an annual basis is also recommended to ensure that organizations are not falling behind in the strength of protection applied to their data.
+      
+      For organizations that are moving data to the cloud, it is important to understand the security controls applied to data in the cloud multi-tenant environment, and determine the best course of action for application of encryption controls and security of keys. When possible, keys should be stored within secure containers such as Hardware Security Modules (HSMs).
+      
+      Data loss prevention (DLP) refers to a comprehensive approach covering people, processes, and systems that identify, monitor, and protect data in use (e.g., endpoint actions), data in motion (e.g., network actions), and data at rest (e.g., data storage) through deep content inspection and with a centralized management framework. Over the last several years, there has been a noticeable shift in attention and investment from securing the network to securing systems within the network, and to securing the data itself. DLP controls are based on policy, and include classifying sensitive data, discovering that data across an enterprise, enforcing controls, and reporting and auditing to ensure policy compliance.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Commercial tools are available to support enterprise management of encryption and key management within an enterprise and include the ability to support implementation of encryption controls within cloud and mobile environments.
+      
+      Definition of life cycle processes and roles and responsibilities associated with key management should be undertaken by each organization.
+      
+      Commercial DLP solutions are available to look for exfiltration attempts and detect other suspicious activities associated with a protected network holding sensitive information. Organizations deploying such tools should carefully inspect their logs and follow up on any discovered attempts, even those that are successfully blocked, to transmit sensitive information out of the organization without authorization.
+    system_erd: "control_14_erd.png"
+  - id: 15
+    title: "Wireless Access Control"
+    description: |
+      The processes and tools used to track/control/prevent/correct the secure use of wireless local area networks (WLANs), access points, and wireless client systems.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Major thefts of data have been initiated by attackers who have gained wireless access to organizations from outside the physical building, bypassing organizations’ security perimeters by connecting wirelessly to access points inside the organization. Wireless clients accompanying travelers are infected on a regular basis through remote exploitation while on public wireless networks found in airports and cafes. Such exploited systems are then used as backdoors when they are reconnected to the network of a target organization. Other organizations have reported the discovery of unauthorized wireless access points on their networks, planted and sometimes hidden for unrestricted access to an internal network. Because they do not require direct physical connections, wireless devices are a convenient vector for attackers to maintain long-term access into a target environment.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Effective organizations run commercial wireless scanning, detection, and discovery tools as well as commercial wireless intrusion detection systems.
+
+      Additionally, the security team should periodically capture wireless traffic from within the borders of a facility and use free and commercial analysis tools to determine whether the wireless traffic was transmitted using weaker protocols or encryption than the organization mandates. When devices relying on weak wireless security settings are identified, they should be found within the organization’s asset inventory and either reconfigured more securely or denied access to the organization network.
+      
+      Finally, the security team should employ remote management tools on the wired network to pull information about the wireless capabilities and devices connected to managed systems.
+    system_erd: "control_15_erd.png"
+  - id: 16
+    title: "Account Monitoring and Control"
+    description: |
+      Actively manage the life cycle of system and application accounts – their creation, use, dormancy, deletion – in order to minimize opportunities for attackers to leverage them.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Attackers frequently discover and exploit legitimate but inactive user accounts to impersonate legitimate users, thereby making discovery of attacker behavior difficult for security personnel watchers. Accounts of contractors and employees who have been terminated and accounts formerly set up for Red Team testing (but not deleted afterwards) have often been misused in this way. Additionally, some malicious insiders or former employees have gained access to accounts left behind in a system long after contract expiration, maintaining their access to an organization’s computing system, and sensitive data for unauthorized and sometimes malicious purposes.
+    category: Foundational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Although most operating systems include capabilities for logging information about account usage, these features are sometimes disabled by default. Even when such features are present and active, they often do not provide fine-grained detail about access to the system by default. Security personnel can configure systems to record more detailed information about account access, and use home-grown scripts or third-party log analysis tools to analyze this information and profile user access of various systems.
+      
+      Accounts must also be tracked very closely. Any account that is dormant must be disabled and eventually removed from the system. All active accounts must be traced back to authorized users of the system, and they should utilize multi-factor authentication. Users must also be logged out of the system after a period of inactivity to minimize the possibility of an attacker using their system to extract information from the organization.
+    system_erd: "control_16_erd.png"
+  - id: 17
+    title: "Implement a Security Awareness and Training Program"
+    description: |
+      For all functional roles in the organization (prioritizing those mission-critical to the business and its security), identify the specific knowledge, skills, and abilities needed to support defense of the enterprise; develop and execute an integrated plan to assess, identify gaps, and remediate through policy, organizational planning, training, and awareness programs.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      It is tempting to think of cyber defense primarily as a technical challenge, but the actions of people also play a critical part in the success or failure of an enterprise. People fulfill important functions at every stage of system design, implementation, operation, use, and oversight. Examples include: system developers and programmers (who may not understand the opportunity to resolve root cause vulnerabilities early in the system life cycle); IT operations professionals (who may not recognize the security implications of IT artifacts and logs); end users (who may be susceptible to social engineering schemes such as phishing); security analysts (who struggle to keep up with an explosion of new information); and executives and system owners (who struggle to quantify the role that cybersecurity plays in overall operational/mission risk, and have no reasonable way to make relevant investment decisions).
+
+      Attackers are very conscious of these issues and use them to plan their exploitations by, for example: carefully crafting phishing messages that look like routine and expected traffic to an unwary user; exploiting the gaps or seams between policy and technology (e.g., policies that have no technical enforcement); working within the time window of patching or log review; using nominally non-security-critical systems as jump points or bots.
+
+      No cyber defense approach can effectively address cyber risk without a means to address this fundamental vulnerability. Conversely, empowering people with good cyber defense habits can significantly increase readiness.
+    category: Organizational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      An effective enterprise-wide training program should take a holistic approach and consider policy and technology at the same time as the training of people. Policies should be designed with technical measurement and enforcement and they should be reinforced by training to fill gaps in understanding; technical controls can be implemented to protect systems and data and minimize the opportunity for people to make mistakes. With technical controls in place, training can be focused on concepts and skills that cannot be managed technically.
+      
+      An effective cyber defense training program is more than an annual event; it is an ongoing process improvement with the following key elements:
+
+        • The training is specific, tailored, and focused based on the specific behaviors and skills needed by the workforce, depending on their job role and responsibility.
+        • The training is repeated periodically, measured and tested for effectiveness, and updated regularly.
+        • It will increase awareness and discourage risky work-arounds by including rationale for good security behaviors and skills.
+      
+      In the actions called out in CIS Control 17, we have identified some critical elements of a successful training program. For more comprehensive treatment of this topic, we suggest the following resources to help the enterprise build an effective security awareness program:
+
+        • NIST SP 800-50 Infosec Awareness Training https://csrc.nist.gov/publications/detail/sp/800-50/final
+        • National Cyber Security Centre (UK) https://www.ncsc.gov.uk/ guidance/10-steps-user-education-and-awareness
+        • EDUCAUSE https://www.educause.edu/focus-areas-and-initiatives/ policy-and-security/cybersecurity-program/awareness-campaigns
+        • National Cyber Security Alliance (NCSA) https://staysafeonline.org/ • SANS https://www.sans.org/security-awareness-training/resources
+    system_erd: "control_17_erd.png"
+  - id: 18
+    title: "Application Software Security"
+    description: |
+      Manage the security life cycle of all in-house developed and acquired software in order to prevent, detect, and correct security weaknesses.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Attacks often take advantage of vulnerabilities found in web-based and other application software. Vulnerabilities can be present for many reasons, including coding mistakes, logic errors, incomplete requirements, and failure to test for unusual or unexpected conditions. Examples of specific errors include: the failure to check the size of user input; failure to filter out unneeded but potentially malicious character sequences from input streams; failure to initialize and clear variables; and poor memory management allowing flaws in one part of the software to affect unrelated (and more security critical) portions.
+
+      There is a flood of public and private information about such vulnerabilities available to attackers and defenders alike, as well as a robust marketplace for tools and techniques to allow “weaponization” of vulnerabilities into exploits. In one attack, more than 1 million web servers were exploited and turned into infection engines for visitors to those sites using SQL injection. During that attack, trusted websites from state governments and other organizations compromised by attackers were used to infect hundreds of thousands of browsers that accessed those websites. Many more web and non-web application vulnerabilities are discovered on a regular basis.
+    category: Organizational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      The security of applications (in-house developed or acquired off-the-shelf or from external developers) is a complex activity requiring a complete program encompassing enterprise-wide policy, technology, and the role of people.
+      
+      All software should be regularly tested for vulnerabilities before it’s put into production. The operational practice of scanning for application vulnerabilities has been consolidated within CIS Control 3: Continuous Vulnerability Management. However, the most effective approach is to implement a full supply chain security program for externally acquired software and a Secure Software Development Life Cycle for internally developed software. Those aspects are addressed in this Control.
+      
+      For software developed in-house or customer software developed externally under contract, an effective program for application software must address security throughout the entire life cycle, and embed security in as a natural part of establishing requirements, training, tools, and testing. Modern development cycles and methods do not allow for sequential approaches. Acceptance criteria should always include requirements that application vulnerability testing tools be run and all known vulnerabilities be documented. It is safe to assume that software will not be perfect, and so a development program must plan up-front for bug reporting and remediation as an essential security function.
+      
+      For software which is acquired (commercial, open-source, etc.), application security criteria should be part of the evaluation criteria and efforts should be made to understand the source’s software practices, testing, and error reporting and management. Whenever possible, suppliers should be required to show evidence that standard commercial software testing tools or services were used and no known vulnerabilities are present in the current version.
+      
+      The actions in CIS Control 18 provide specific, high-priority steps that can improve Application Software Security. In addition, we recommend the use of some of the excellent comprehensive resources dedicated to this topic:
+
+        • The Open Web Application Security Project (OWASP)
+          OWASP is an open community that creates and shares a rich collection of software tools and documentation on application security. https://www.owasp.org
+        • Software Assurance Forum for Excellence in Code (SAFECODE) SAFECODE creates and encourages broad industry adoption of proven software security, integrity and authenticity practices. https://www.safecode.org/
+    system_erd: "control_18_erd.png"
+  - id: 19
+    title: "Incident Response and Management"
+    description: |
+      Protect the organization’s information, as well as its reputation, by developing and implementing an incident response infrastructure (e.g., plans, defined roles, training, communications, management oversight) for quickly discovering an attack and then effectively containing the damage, eradicating the attacker’s presence, and restoring the integrity of the network and systems.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Cyber incidents are now just part of our way of life. Even large, well-funded, and technically sophisticated enterprises struggle to keep up with the frequency and complexity of attacks. The question of a successful cyber-attack against an enterprise is not “if” but “when.”
+
+      When an incident occurs, it is too late to develop the right procedures, reporting, data collection, management responsibility, legal protocols, and communications strategy that will allow the enterprise to successfully understand, manage, and recover. Without an incident response plan, an organization may not discover an attack in the first place, or, if the attack is detected, the organization may not follow good procedures to contain damage, eradicate the attacker’s presence, and recover in a secure fashion. Thus, the attacker may have a far greater impact, causing more damage, infecting more systems, and potentially exfiltrating more sensitive data than would otherwise be possible were an effective incident response plan in place.
+    category: Organizational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      After defining detailed incident response procedures, the incident response team should engage in periodic scenario-based training, working through a series of attack scenarios fine-tuned to the threats and vulnerabilities the organization faces. These scenarios help ensure that team members understand their role on the incident response team and also help prepare them to handle incidents. It is inevitable that exercise and training scenarios will identify gaps in plans and processes, and unexpected dependencies.
+      
+      The actions in CIS Control 19 provide specific, high-priority steps that can improve enterprise security, and should be a part of any comprehensive incident and response plan. In addition, we recommend use of some of the excellent comprehensive resources dedicated to this topic;
+
+        • CREST Cyber Security Incident Response Guide
+          CREST provides guidance, standards, and knowledge on a wide variety of cyberdefense topics. https://www.crest-approved.org/wp-content/uploads/2014/11/CSIR- Procurement-Guide.pdf
+    system_erd: "control_19_erd.png"
+  - id: 20
+    title: "Penetration Tests and Red Team Exercises"
+    description: |
+      Test the overall strength of an organization’s defense (the technology, the processes, and the people) by simulating the objectives and actions of an attacker.
+    explanation: |
+      Why Is This CIS Control Critical?
+
+      Attackers often exploit the gap between good defensive designs and intentions and implementation or maintenance. Examples include: the time window between announcement of a vulnerability, the availability of a vendor patch, and actual installation on every machine. Other examples include: well-intentioned policies that have no enforcement mechanism (especially those intended to restrict risky human actions); failure to apply good configurations to machines that come on and off of the network; and failure to understand the interaction among multiple defensive tools, or with normal system operations that have security implications.
+      
+      A successful defensive posture requires a comprehensive program of effective policies and governance, strong technical defenses, and appropriate action by people. In a complex environment where technology is constantly evolving, and new attacker tradecraft appears regularly, organizations should periodically test their defenses to identify gaps and to assess their readiness by conducting penetration testing.
+      
+      Penetration testing starts with the identification and assessment of vulnerabilities that can be identified in the enterprise. Next, tests are designed and executed to demonstrate specifically how an adversary can either subvert the organization’s security goals (e.g., the protection of specific Intellectual Property) or achieve specific adversarial objectives (e.g., establishment of a covert Command and Control infrastructure). The results provide deeper insight, through demonstration, into the business risks of various vulnerabilities.
+      
+      Red Team exercises take a comprehensive approach at the full spectrum of organization policies, processes, and defenses in order to improve organizational readiness, improve training for defensive practitioners, and inspect current performance levels. Independent Red Teams can provide valuable and objective insights about the existence of vulnerabilities and the efficacy of defenses and mitigating controls already in place and even of those planned for future implementation.
+    category: Organizational
+    igs:
+      - id: 1
+        description: |
+          An organization with limited resources and cybersecurity expertise available to implement Sub-Controls
+      - id: 2
+        description: |
+          An organization with moderate resources and cybersecurity expertise to implement Sub-Controls
+      - id: 3
+        description: |
+          A mature organization with significant resources and cybersecurity experience to allocate to Sub-Controls
+    procedures_and_tools: |
+      Historically, penetration tests and Red Team exercises are performed for specific purposes:
+
+        • as a “dramatic” demonstration of an attack, usually to convince decision- makers of their enterprise’s vulnerability;
+        • as a means to test the correct operation of enterprise defenses (“verification”); and
+        • to test that the enterprise has built the right defenses in the first place (“validation”).
+
+      In general, these kinds of tests are expensive, complex, and potentially introduce their own risks. They can provide significant value, but only when basic defensive measures are already in place, and when these tests are performed as part of a comprehensive, ongoing program of security management and improvement. Test events are a very expensive way to discover that your enterprise does a poor job with patching and configuration management, for example.
+      
+      Each organization should define a clear scope and rules of engagement for penetration testing and Red Team analyses. The scope of such projects should include, at a minimum, systems with the organization’s highest value information and production processing functionality. Other lower-value systems may also be tested to see if they can be used as pivot points to compromise higher-value targets. The rules of engagement for penetration tests and Red Team analyses should describe, at a minimum, times of day for testing, duration of tests, and the overall test approach.
+      
+      The actions in CIS Control 20 provide specific, high-priority steps that can improve enterprise security, and should be a part of any penetration testing and Red Team program. In addition, we recommend the use of some of the excellent comprehensive resources dedicated to this topic to support security test planning, management, and reporting:
+      
+        • OWASP Penetration Testing Methodologies https://www.owasp.org/index.php/Penetration_testing_methodologies
+        • PCI Security Standards Council https://www.pcisecuritystandards.org/documents/Penetration-Testing- Guidance-v1_1.pdf
+    system_erd: "control_20_erd.png"

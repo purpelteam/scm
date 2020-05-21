@@ -1,0 +1,27 @@
+---
+sub_controls:
+parent: 1
+items:
+  - id: 1.1
+    title: "Utilize an Active Discovery Tool"
+    description: |
+      Utilize an active discovery tool to identify devices connected to the organization’s network and update the hardware asset inventory.
+    asset_type: Devices
+    security_function: Identify
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 1.2
+    title: "Use a Passive Asset Discovery Tool"
+    description: |
+      Utilize a passive discovery tool to identify devices connected to the organization’s network and automatically update the organization’s hardware asset inventory.
+    asset_type: Devices
+    security_function: Identify
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+      
