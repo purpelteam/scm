@@ -117,3 +117,238 @@ items:
         For additional guidance on developing appropriate security training content for specialized roles, refer to the PCI SSC’s Information Supplement on Best Practices for Implementing a Security Awareness Program.
         "
         guidance_note: ""
+  - id: A.3.2
+    description: "Document and validate PCI DSS scope
+    "
+    description_note: ""
+    testing_procedures:
+    guidance: ""
+    guidance_note: ""
+    items:
+      - id: A.3.2.1
+        description: "Document and confirm the accuracy of PCI DSS scope at least quarterly and upon significant changes to the in-scope environment. At a minimum, the quarterly scoping validation should include:
+        
+        • Identifying all in-scope networks and system components
+        • Identifying all out-of-scope networks and justification for networks being out of scope, including descriptions of all segmentation controls implemented
+        • Identifying all connected entities—e.g., third-party entities with access to the cardholder data environment (CDE)
+        "
+        description_note: "PCI DSS Reference: Scope of PCI DSS Requirements
+        "
+        testing_procedures:
+          - id: A.3.2.1.a
+            description: "Examine documented results of scope reviews and interview personnel to verify that the reviews are performed:
+            
+            • At least quarterly
+            • After significant changes to the in-scope environment
+            "
+            description_note: ""
+          - id: A.3.2.1.b
+            description: "Examine documented results of quarterly scope reviews to verify the following is performed:
+            
+            • Identification of all in-scope networks and system components
+            • Identification of all out-of-scope networks and justification for networks being out of scope, including descriptions of all segmentation controls implemented
+            • Identification of all connected entities—e.g., third- party entities with access to the CDE
+            "
+            description_note: ""
+        guidance: "Validation of PCI DSS scope should be performed as frequently as possible to ensure PCI DSS scope remains up to date and aligned with changing business objectives.
+        "
+        guidance_note: ""
+      - id: A.3.2.2
+        description: "Determine PCI DSS scope impact for all changes to systems or networks, including additions of new systems and new network connections. Processes must include:
+        
+        • Performing a formal PCI DSS impact assessment
+        • Identifying applicable PCI DSS requirements to the system or network
+        • Updating PCI DSS scope as appropriate
+        • Documented sign-off of the results of the impact assessment by responsible personnel (as defined in A3.1.3)
+        "
+        description_note: "PCI DSS Reference: Scope of PCI DSS Requirements; Requirements 1-12
+        "
+        testing_procedures:
+          - id: A.3.2.2
+            description: "Examine change documentation and interview personnel to verify that for each change to systems or networks:
+            
+            • A formal PCI DSS impact assessment was performed.
+            • PCI DSS requirements applicable to the system or network changes were identified.
+            • PCI DSS scope was updated as appropriate for the change.
+            • Sign-off by responsible personnel (as defined in A3.1.3) was obtained and documented.
+            "
+            description_note: ""
+        guidance: "Changes to systems or networks can have significant impact to PCI DSS scope. For example, firewall rule changes can bring whole network segments into scope, or new systems may be added to the CDE that have to be appropriately protected.
+        
+        Processes to determine the potential impact that changes to systems and networks may have on an entity’s PCI DSS scope may be performed as part of a dedicated PCI DSS compliance program, or may fall under an entity’s over-arching compliance and/or governance program.
+        "
+        guidance_note: ""
+        items:
+          - id: A.3.2.2.1
+            description: "Upon completion of a change, all relevant PCI DSS requirements must be verified on all new or changed systems and networks, and documentation must be updated as applicable. Examples of PCI DSS requirements that should be verified include, but are not limited to:
+            
+            • Network diagram is updated to reflect changes.
+            • Systems are configured per configuration standards, with all default passwords changed and unnecessary services disabled.
+            • Systems are protected with required controls—e.g., file-integrity monitoring (FIM), anti-virus, patches, audit logging.
+            • Verify that sensitive authentication data (SAD) is not stored and that all cardholder data (CHD) storage is documented and incorporated into data- retention policy and procedures
+            • New systems are included in the quarterly vulnerability scanning process.
+            "
+            description_note: "PCI DSS Reference: Scope of PCI DSS Requirements; Requirement 1-12
+            "
+            testing_procedures:
+              - id: A.3.2.2.1
+                description: "For a sample of systems and network changes, examine change records, interview personnel and observe the affected systems/networks to verify that applicable PCI DSS requirements were implemented and documentation updated as part of the change.
+                "
+                description_note: ""
+            guidance: "It is important to have processes to analyze all changes made to ensure that all appropriate PCI DSS controls are applied to any systems or networks added to the in-scope environment due to a change.
+            
+            Building this validation into change management processes helps ensure that device inventories and configuration standards are kept up to date and security controls are applied where needed.
+            
+            A change management process should include supporting evidence that PCI DSS requirements are implemented or preserved through the iterative process.
+            "
+            guidance_note: ""
+      - id: A.3.2.3
+        description: "Changes to organizational structure— for example, a company merger or acquisition, change or reassignment of personnel with responsibility for security controls—result in a formal (internal) review of the impact to PCI DSS scope and applicability of controls.
+        "
+        description_note: "PCI DSS Reference: Requirement 12
+        "
+        testing_procedures:
+          - id: A.3.2.3
+            description: "Examine policies and procedures to verify that a change to organizational structure results in formal review of the impact to PCI DSS scope and applicability of controls.
+            "
+            description_note: ""
+        guidance: "An organization’s structure and management define the requirements and protocol for effective and secure operations. Changes to this structure could have negative effects to existing controls and frameworks by reallocating or removing resources that once supported PCI DSS controls or inheriting new responsibilities that may not have established controls in place. Therefore, it is important to revisit PCI DSS scope and controls when there are changes to ensure controls are in place and active.
+        "
+        guidance_note: ""
+      - id: A.3.2.4
+        description: "If segmentation is used, confirm PCI DSS scope by performing penetration testing on segmentation controls at least every six months and after any changes to segmentation controls/methods.
+        "
+        description_note: "PCI DSS Reference: Requirement 11
+        "
+        testing_procedures:
+          - id: A.3.2.4
+            description: "Examine the results from the most recent penetration test to verify that:
+            
+            • Penetration testing is performed to verify segmentation controls at least every six months and after any changes to segmentation controls/methods.
+            • The penetration testing covers all segmentation controls/methods in use.
+            • The penetration testing verifies that segmentation controls/methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE.
+            "
+            description_note: ""
+        guidance: "If segmentation is used to isolate in-scope networks from out-of-scope networks, those segmentation controls must be verified using penetration testing to confirm they continue to operate as intended and effectively. Penetration- testing techniques should follow the existing penetration methodology as specified in PCI DSS Requirement 11.
+        
+        For additional information on effective penetration testing, refer to the PCI SSC’s Information Supplement on Penetration Testing Guidance.
+        "
+        guidance_note: ""
+      - id: A.3.2.5
+        description: "Implement a data-discovery methodology to confirm PCI DSS scope and to locate all sources and locations of clear-text PAN at least quarterly and upon significant changes to the cardholder environment or processes.
+        
+        Data-discovery methodology must take into consideration the potential for clear-text PAN to reside on systems and networks outside of the currently defined CDE.
+        "
+        description_note: "PCI DSS Reference: Scope of PCI DSS Requirements
+        "
+        testing_procedures:
+          - id: A.3.2.5.a
+            description: "Examine documented data-discovery methodology to verify the following:
+            
+            • Data-discovery methodology includes processes for identifying all sources and locations of clear-text PAN.
+            • Methodology takes into consideration the potential for clear-text PAN to reside on systems and networks outside of the currently defined CDE.
+            "
+            description_note: ""
+          - id: A.3.2.5.b
+            description: "Examine results from recent data discovery efforts, and interview responsible personnel to verify that data discovery is performed at least quarterly and upon significant changes to the cardholder environment or processes.
+            "
+            description_note: ""
+        guidance: "PCI DSS requires that, as part of the scoping exercise, assessed entities must identify and document the existence of all clear-text PAN in their environments. Implementing a data- discovery methodology that identifies all sources and locations of clear-text PAN, and takes into consideration the potential for clear-text PAN to reside on systems and networks outside of the currently defined CDE or in unexpected places within the defined CDE—for example, in an error log or memory dump file— helps to ensure that previously unknown locations of clear-text PAN are detected and properly secured.
+        
+        A data-discovery process can be performed via a variety of methods, including but not limited to: (1) commercially available data-discovery software, (2) an in-house developed data-discovery program, or (3) a manual search. Regardless of the method used, the goal of the effort is to find all sources and locations of clear-text PAN (not just in the defined CDE).
+        "
+        guidance_note: ""
+        items:
+          - id: A.3.2.5.1
+            description: "Ensure effectiveness of methods used for data discovery—–e.g., methods must be able to discover clear-text PAN on all types of system components (for example, on each operating system or platform) and file formats in use.
+            
+            The effectiveness of data-discovery methods must be confirmed at least annually.
+            "
+            description_note: "PCI DSS Reference: Scope of PCI DSS Requirements
+            "
+            testing_procedures:
+              - id: A.3.2.5.1.a
+                description: "Interview personnel and review documentation to verify:
+                
+                • The entity has a process in place to test the effectiveness of methods used for data discovery.
+                • The process includes verifying the methods are able to discover clear-text PAN on all types of system components and file formats in use.
+                "
+                description_note: ""
+              - id: A.3.2.5.1.b
+                description: "Examine the results of recent effectiveness tests to verify the effectiveness of methods used for data discovery is confirmed at least annually.
+                "
+                description_note: ""
+            guidance: "A process to test the effectiveness of the methods used for data discovery ensures the completeness and accuracy of cardholder data detection. For completeness, at least a sampling of system components in both the in-scope and out-of-scope networks should be included in the data-discovery process. Accuracy can be tested by placing test PANs on a sample of system components and file formats in use and confirming that the data- discovery method detected the test PANs.
+            "
+            guidance_note: ""
+          - id: A.3.2.5.2
+            description: " Implement response procedures to be initiated upon the detection of clear-text PAN outside of the CDE to include:
+            
+            • Procedures for determining what to do if clear-text PAN is discovered outside of the CDE, including its retrieval, secure deletion and/or migration into the currently defined CDE, as applicable
+            • Procedures for determining how the data ended up outside of the CDE
+            • Procedures for remediating data leaks or process gaps that resulted in the data being outside of the CDE
+            • Procedures for identifying the source of the data
+            • Procedures for identifying whether any track data is stored with the PANs
+            "
+            description_note: ""
+            testing_procedures:
+              - id: A.3.2.5.2.a
+                description: "Examine documented response procedures to verify that procedures for responding to the detection of clear-text PAN outside of the CDE are defined and include:
+                
+                • Procedures for determining what to do if clear- text PAN is discovered outside of the CDE, including its retrieval, secure deletion and/or migration into the currently defined CDE, as applicable
+                • Procedures for determining how the data ended up outside the CDE
+                • Procedures for remediating data leaks or process gaps that resulted in the data being outside of the CDE
+                • Procedures for identifying the source of the data
+                • Procedures for identifying whether any track data is stored with the PANs
+                "
+                description_note: ""
+              - id: A.3.2.5.2.b
+                description: "Interview personnel and examine records of response actions to verify that remediation activities are performed when clear-text PAN is detected outside of the CDE.
+                "
+                description_note: ""
+            guidance: "Having documented response procedures that are followed in the event clear-text PAN is found outside of the CDE helps to identify the necessary remediation actions and prevent future leaks. For example, if PAN was found outside of the CDE, analysis should be performed to (1) determine whether it was saved independently of other data (or was it part of a full track?), (2) to identify the source of the data, and (3) identify the control gaps that resulted in the data being outside the CDE.
+            "
+            guidance_note: ""
+      - id: A.3.2.6
+        description: "Implement mechanisms for detecting and preventing clear-text PAN from leaving the CDE via an unauthorized channel, method, or process, including generation of audit logs and alerts.
+        "
+        description_note: "PCI DSS Reference: Scope of PCI DSS Requirements
+        "
+        testing_procedures:
+          - id: A.3.2.6.a
+            description: "Examine documentation and observe implemented mechanisms to verify that the mechanisms are:
+            
+            • Implemented and actively running
+            • Configured to detect and prevent clear-text PAN leaving the CDE via an unauthorized channel, method, or process
+            • Generating logs and alerts upon detection of clear- text PAN leaving the CDE via an unauthorized channel, method, or process
+            "
+            description_note: ""
+          - id: A.3.2.6.b
+            description: "Examine audit logs and alerts, and interview responsible personnel to verify that alerts are investigated.
+            "
+            description_note: ""
+        guidance: "Mechanisms to detect and prevent unauthorized loss of clear-text PAN may include appropriate tools—such as data loss prevention (DLP) solutions—and/or manual processes and procedures. Coverage of the mechanisms should include, but not be limited to, e-mails, downloads to removable media, and output to printers. Use of these mechanisms allows an organization to detect and prevent situations that may lead to data loss.
+        "
+        guidance_note: ""
+        items:
+          - id: A.3.2.6.1
+            description: " Implement response procedures to be initiated upon the detection of attempts to remove clear-text PAN from the CDE via an unauthorized channel, method, or process. Response procedures must include:
+            
+            • Procedures for the timely investigation of alerts by responsible personnel
+            • Procedures for remediating data leaks or process gaps, as necessary, to prevent any data loss
+            "
+            description_note: ""
+            testing_procedures:
+              - id: A.3.2.6.1.a
+                description: "Examine documented response procedures to verify that procedures for responding to the attempted removal of clear-text PAN from the CDE via an unauthorized channel, method, or process include:
+                
+                • Procedures for the timely investigation of alerts by responsible personnel
+                • Procedures for remediating data leaks or process gaps, as necessary, to prevent any data loss
+                "
+                description_note: ""
+              - id: A.3.2.6.1.b
+                description: "Interview personnel and examine records of actions taken when clear-text PAN is detected leaving the CDE via an unauthorized channel, method, or process, and verify that remediation activities were performed.
+                "
+                description_note: ""
+            guidance: "Attempts to remove clear-text PAN via an unauthorized channel, method, or process may indicate malicious intent to steal data, or may be the actions of an authorized employee who is unaware of or simply not following the proper methods. Timely investigation of these occurrences can identify where remediation needs to be applied and provides valuable information to help understand where the threats are coming from."
+            guidance_note: ""
