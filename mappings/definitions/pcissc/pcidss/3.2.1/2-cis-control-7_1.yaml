@@ -1,6 +1,6 @@
 ---
 mappings:
-references: AuditScripts Critical Security Controls Master Mapping 
+references: AuditScripts Critical Security Controls Master Mapping
 from: pci-dss-3.2.1
 to: cis-control-7.1
 items:

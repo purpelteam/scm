@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
+	mapping_commons "github.com/purpeltim/scm/mappings/readers/commons"
 	cis_control_commons "github.com/purpeltim/scm/standards/readers/cis/controls/commons"
 	pci_dss_commons "github.com/purpeltim/scm/standards/readers/pcissc/pcidss/standards/commons"
 
@@ -19,6 +20,7 @@ func main() {
 		HostInfo   *sysinfo.HostInfo
 		PciDssStd  *pci_dss_commons.Standard
 		CisControl *cis_control_commons.CISControl
+		Mappings   *mapping_commons.MappingDirectories
 	}
 
 	// Variable
@@ -48,6 +50,15 @@ func main() {
 		util.ExitWithError(err)
 	}
 	T.CisControl = cisControls
+
+	// Mapping Directories
+	mapping_commons.MappingCfgDir = "mappings/definitions/"
+
+	md, err := mapping_commons.ReadMappingDirectories()
+	if err != nil {
+		util.ExitWithError(err)
+	}
+	T.Mappings = md
 
 	// Verbose TestSCM
 	testSCM, err := json.Marshal(T)
