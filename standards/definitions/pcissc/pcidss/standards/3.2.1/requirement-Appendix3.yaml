@@ -1,0 +1,119 @@
+---
+requirements:
+parent: Appendix3
+items:
+  - id: A.3.1
+    description: "Implement a PCI DSS compliance program
+    "
+    description_note: ""
+    testing_procedures:
+    guidance: ""
+    guidance_note: ""
+    items:
+      - id: A.3.1.1
+        description: "Executive management shall establish responsibility for the protection of cardholder data and a PCI DSS compliance program to include:
+        
+        • Overall accountability for maintaining PCI DSS compliance
+        • Defining a charter for a PCI DSS compliance program
+        • Providing updates to executive management and board of directors on PCI DSS compliance initiatives and issues, including remediation activities, at least annually
+        "
+        description_note: "PCI DSS Reference: Requirement 12"
+        testing_procedures:
+          - id: A.3.1.1.a
+            description: "Examine documentation to verify executive management has assigned overall accountability for maintaining the entity’s PCI DSS compliance.
+            "
+            description_note: ""
+          - id: A.3.1.1.b
+            description: "Examine the company’s PCI DSS charter to verify it outlines the conditions under which the PCI DSS compliance program is organized.
+            "
+            description_note: ""
+          - id: A.3.1.1.c
+            description: "Examine executive management and board of directors meeting minutes and/or presentations to ensure PCI DSS compliance initiatives and remediation activities are communicated at least annually.
+            "
+            description_note: ""
+        guidance: "Executive management assignment of PCI DSS compliance responsibilities ensures executive- level visibility into the PCI DSS compliance program and allows for the opportunity to ask appropriate questions to determine the effectiveness of the program and influence strategic priorities. Overall responsibility for the PCI DSS compliance program may be assigned to individual roles and/or to business units within the organization.
+        "
+        guidance_note: ""
+      - id: A.3.1.2
+        description: "A formal PCI DSS compliance program must be in place to include:
+        
+        • Definition of activities for maintaining and monitoring overall PCI DSS compliance, including business-as-usual activities
+        • Annual PCI DSS assessment processes
+        • Processes for the continuous validation of PCI DSS requirements (for example: daily, weekly, quarterly, etc. as applicable per requirement)
+        • A process for performing business-impact analysis to determine potential PCI DSS impacts for strategic business decisions
+        "
+        description_note: "PCI DSS Reference: Requirements 1-12"
+        testing_procedures:
+          - id: A.3.1.2.a
+            description: "Examine information security policies and procedures to verify that processes are specifically defined for the following:
+            
+            • Maintaining and monitoring overall PCI DSS compliance, including business-as-usual activities
+            • Annual PCI DSS assessment(s)
+            • Continuous validation of PCI DSS requirements
+            • Business-impact analysis to determine potential PCI DSS impacts for strategic business decisions
+            "
+            description_note: ""
+          - id: A.3.1.2.b
+            description: "Interview personnel and observe compliance activities to verify that the defined processes are implemented for the following:
+            
+            • Maintaining and monitoring overall PCI DSS compliance, including business-as-usual activities
+            • Annual PCI DSS assessment(s)
+            • Continuous validation of PCI DSS requirements
+            • Business-impact analysis to determine potential PCI DSS impacts for strategic business decisions
+            "
+            description_note: ""
+        guidance: "A formal compliance program allows an organization to monitor the health of its security controls, be proactive in the event that a control fails, and effectively communicate activities and compliance status throughout the organization.
+        
+        The PCI DSS compliance program can be a dedicated program or part of an over-arching compliance and/or governance program, and should include a well-defined methodology that demonstrates consistent and effective evaluation. Example methodologies include: Deming Circle of Plan-Do-Check-Act (PDCA), ISO 27001, COBIT, DMAIC, and Six Sigma.
+        
+        Maintaining and monitoring an organization’s overall PCI DSS compliance includes identifying activities to be performed daily, weekly, monthly, quarterly, or annually, and ensuring these activities are being performed accordingly (for example, using a security self-assessment or PDCA methodology).
+        
+        Examples of strategic business decisions that should be analyzed for potential PCI DSS impacts may include mergers and acquisitions, new technology purchases, or new payment- acceptance channels.
+        "
+        guidance_note: ""
+      - id: A.3.1.3
+        description: "PCI DSS compliance roles and responsibilities must be specifically defined and formally assigned to one or more personnel, including at least the following:
+        
+        • Managing PCI DSS business-as-usual activities
+        • Managing annual PCI DSS assessments
+        • Managing continuous validation of PCI DSS requirements (for example: daily, weekly, quarterly, etc. as applicable per requirement)
+        • Managing business-impact analysis to determine potential PCI DSS impacts for strategic business decisions
+        "
+        description_note: "PCI DSS Reference: Requirement 12"
+        testing_procedures:
+          - id: A.3.1.3.a
+            description: "Examine information security policies and procedures and interview personnel to verify that roles and responsibilities are clearly defined and that duties are assigned to include at least the following:
+            
+            • Managing PCI DSS business-as-usual activities
+            • Managing annual PCI DSS assessments
+            • Managing continuous validation of PCI DSS requirements (for example: daily, weekly, quarterly, etc. as applicable per requirement)
+            • Managing business-impact analysis to determine potential PCI DSS impacts for strategic business decisions
+            "
+            description_note: ""
+          - id: A.3.1.3.b
+            description: "Interview responsible personnel and verify they are familiar with and performing their designated PCI DSS compliance responsibilities.
+            "
+            description_note: ""
+        guidance: "The formal definition of specific PCI DSS compliance roles and responsibilities helps to ensure accountability and monitoring of ongoing PCI DSS compliance efforts. These roles may be assigned to a single owner or multiple owners for different aspects. Ownership should be assigned to individuals with the authority to make risk- based decisions and upon whom accountability rests for the specific function. Duties should be formally defined and owners should be able to demonstrate an understanding of their responsibilities and accountability.
+        "
+        guidance_note: ""
+      - id: A.3.1.4
+        description: "Provide up-to-date PCI DSS and/or information security training at least annually to personnel with PCI DSS compliance responsibilities (as identified in A3.1.3).
+        "
+        description_note: "PCI DSS Reference: Requirement 12"
+        testing_procedures:
+          - id: A.3.1.4.a
+            description: "Examine information security policies and procedures to verify that PCI DSS and/or information security training is required at least annually for each role with PCI DSS compliance responsibilities.
+            "
+            description_note: ""
+          - id: A.3.1.4.b
+            description: "Interview personnel and examine certificates of attendance or other records to verify that personnel with PCI DSS compliance responsibility receive up-to-date PCI DSS and/or similar information security training at least annually.
+            "
+            description_note: ""
+        guidance: "Personnel responsible for PCI DSS compliance have specific training needs exceeding that which is typically provided by general security awareness training. Individuals with PCI DSS compliance responsibilities should receive specialized training that, in addition to general awareness of information security, focuses on specific security topics, skills, processes, or methodologies that must be followed for those individuals to perform their compliance responsibilities effectively.
+        
+        Training may be offered by third parties—for example, SANS or PCI SSC (PCI Awareness, PCIP, and ISA), payment brands, and acquirers— or training may be internal. Training content should be applicable for the particular job function and be current to include the latest security threats and/or version of PCI DSS.
+        
+        For additional guidance on developing appropriate security training content for specialized roles, refer to the PCI SSC’s Information Supplement on Best Practices for Implementing a Security Awareness Program.
+        "
+        guidance_note: ""

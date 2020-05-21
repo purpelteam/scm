@@ -134,5 +134,12 @@ requirements:
         • A3.3 Validate PCI DSS is incorporated into business-as-usual (BAU) activities.
         • A3.4 Control and manage logical access to the cardholder data environment.
         • A3.5 Identify and respond to suspicious events.
-    explanation_note: ""
+    explanation_note: |
+      Note: Some requirements have defined timeframes (for example, at least quarterly or every six months) within which certain activities are to be performed. For initial assessment to this document, it is not required that an activity has been performed for every such timeframe during the previous year, if the assessor verifies:
+      
+      1) The activity was performed in accordance with the applicable requirement within the most recent timeframe (that is, the most recent quarter or six-month period), and
+      2) The entity has documented policies and procedures for continuing to perform the activity within the defined timeframe.
+      For subsequent years after the initial assessment, an activity must have been performed for each timeframe for which it is required (for example, a quarterly activity must have been performed for each of the previous year’s four quarters).
+
+      Note: An entity is required to undergo an assessment according to this Appendix ONLY if instructed to do so by an acquirer or a payment brand.
     goal: Appendix
