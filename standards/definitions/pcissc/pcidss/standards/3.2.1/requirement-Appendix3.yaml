@@ -484,3 +484,63 @@ items:
         These reviews can also be used to verify that appropriate evidence is being maintained—for example, audit logs, vulnerability scan reports, firewall reviews, etc.—to assist the entity’s preparation for its next PCI DSS assessment.
         "
         guidance_note: ""
+  - id: A.3.4
+    description: "Control and manage logical access to the cardholder data environment
+    "
+    description_note: ""
+    testing_procedures:
+    guidance: ""
+    guidance_note: ""
+    items:
+      - id: A.3.4.1
+        description: "Review user accounts and access privileges to in-scope system components at least every six months to ensure user accounts and access remain appropriate based on job function, and authorized.
+        "
+        description_note: "PCI DSS Reference: Requirement 7
+        "
+        testing_procedures:
+          - id: A.3.4.1
+            description: "Interview responsible personnel and examine supporting documentation to verify that:
+            
+            • User accounts and access privileges are reviewed at least every six months.
+            • Reviews confirm that access is appropriate based on job function, and that all access is authorized.
+            "
+            description_note: ""
+        guidance: "Access requirements evolve over time as individuals change roles or leave the company, and as job functions change. Management needs to regularly review, revalidate, and update user access, as necessary, to reflect changes in personnel, including third parties, and users’ job functions.
+        "
+        guidance_note: ""
+  - id: A.3.5
+    description: "Identify and respond to suspicious events
+    "
+    description_note: ""
+    testing_procedures:
+    guidance: ""
+    guidance_note: ""
+    items:
+      - id: A.3.5.1
+        description: "Implement a methodology for the timely identification of attack patterns and undesirable behavior across systems—for example, using coordinated manual reviews and/or centrally managed or automated log- correlation tools—to include at least the following:
+        
+        • Identification of anomalies or suspicious activity as it occurs
+        • Issuance of timely alerts upon detection of suspicious activity or anomaly to responsible personnel
+        • Response to alerts in accordance with documented response procedures
+        "
+        description_note: "PCI DSS Reference: Requirements 10, 12
+        "
+        testing_procedures:
+          - id: A.3.5.1.a
+            description: "Review documentation and interview personnel to verify a methodology is defined and implemented to identify attack patterns and undesirable behavior across systems in a timely manner, and includes the following:
+            
+            • Identification of anomalies or suspicious activity as it occurs
+            • Issuance of timely alerts to responsible personnel
+            • Response to alerts in accordance with documented response procedures
+            "
+            description_note: ""
+          - id: A.3.5.1.b
+            description: "Examine incident response procedures and interview responsible personnel to verify that:
+            
+            • On-call personnel receive timely alerts.
+            • Alerts are responded to per documented response procedures.
+            "
+            description_note: ""
+        guidance: "The ability to identify attack patterns and undesirable behavior across systems is critical in preventing, detecting, or minimizing the impact of a data compromise. The presence of logs in all environments allows thorough tracking, alerting, and analysis when something goes wrong. Determining the cause of a compromise is very difficult, if not impossible, without a process to corroborate information from critical system components, and systems that perform security functions—such as firewalls, IDS/IPS, and file- integrity monitoring (FIM) systems. Thus, logs for all critical systems components and systems that perform security functions should be collected, correlated, and maintained. This could include the use of software products and service methodologies to provide real-time analysis, alerting, and reporting—such as security information and event management (SIEM), file- integrity monitoring (FIM), or change detection.
+        "
+        guidance_note: ""
