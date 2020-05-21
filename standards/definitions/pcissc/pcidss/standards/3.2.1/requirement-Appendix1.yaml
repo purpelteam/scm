@@ -1,0 +1,105 @@
+---
+requirements:
+parent: Appendix1
+items:
+  - id: A.1
+    description: "Protect each entity’s (that is, merchant, service provider, or other entity) hosted environment and data, per A1.1 through A1.4:
+    
+    A hosting provider must fulfill these requirements as well as all other relevant sections of the PCI DSS.
+    "
+    description_note: "Even though a hosting provider may meet these requirements, the compliance of the entity that uses the hosting provider is not guaranteed. Each entity must comply with the PCI DSS and validate compliance as applicable.
+    "
+    testing_procedures:
+      - id: A.1
+        description: "Specifically for a PCI DSS assessment of a shared hosting provider, to verify that shared hosting providers protect entities’ (merchants and service providers) hosted environment and data, select a sample of servers (Microsoft Windows and Unix/Linux) across a representative sample of hosted merchants and service providers, and perform A1.1 through A1.4 below:
+        "
+        description_note: ""
+    guidance: "Appendix A of PCI DSS is intended for shared hosting providers who wish to provide their merchant and/or service provider customers with a PCI DSS compliant hosting environment.
+    "
+    guidance_note: ""
+    items:
+      - id: A.1.1
+        description: "Ensure that each entity only runs processes that have access to that entity’s cardholder data environment.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: A.1.1
+            description: "If a shared hosting provider allows entities (for example, merchants or service providers) to run their own applications, verify these application processes run using the unique ID of the entity. For example:
+            
+            • No entity on the system can use a shared web server user ID.
+            • All CGI scripts used by an entity must be created and run as the entity’s unique user ID.
+            "
+            description_note: ""
+        guidance: "If a merchant or service provider is allowed to run their own applications on the shared server, these should run with the user ID of the merchant or service provider, rather than as a privileged user.
+        "
+        guidance_note: ""
+      - id: A.1.2
+        description: "Restrict each entity’s access and privileges to its own cardholder data environment only.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: A.1.2.a
+            description: "Verify the user ID of any application process is not a privileged user (root/admin).
+            "
+            description_note: ""
+          - id: A.1.2.b
+            description: "Verify each entity (merchant, service provider) has read, write, or execute permissions only for files and directories it owns or for necessary system files (restricted via file system permissions, access control lists, chroot, jailshell, etc.)
+            
+            Important: An entity’s files may not be shared by group.
+            "
+            description_note: ""
+          - id: A.1.2.c
+            description: "Verify that an entity’s users do not have write access to shared system binaries.
+            "
+            description_note: ""
+          - id: A.1.2.d
+            description: "Verify that viewing of log entries is restricted to the owning entity.
+            "
+            description_note: ""
+          - id: A.1.2.a
+            description: "To ensure each entity cannot monopolize server resources to exploit vulnerabilities (for example, error, race, and restart conditions resulting in, for example, buffer overflows), verify restrictions are in place for the use of these system resources:
+            
+            • Disk space 
+            • Bandwidth 
+            • Memory
+            • CPU
+            "
+            description_note: ""
+        guidance: "To ensure that access and privileges are restricted such that each merchant or service provider has access only to their own environment, consider the following:
+        
+        1. Privileges of the merchant’s or service provider’s web server user ID;
+        2. Permissions granted to read, write, and execute files;
+        3. Permissions granted to write to system binaries;
+        4. Permissions granted to merchant’s and service provider’s log files; and
+        5. Controls to ensure one merchant or service provider cannot monopolize system resources.
+        "
+        guidance_note: ""
+      - id: A.1.3
+        description: "Ensure logging and audit trails are enabled and unique to each entity’s cardholder data environment and consistent with PCI DSS Requirement 10.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: A.1.3
+            description: "Verify the shared hosting provider has enabled logging as follows, for each merchant and service provider environment:
+            
+            • Logs are enabled for common third-party applications.
+            • Logs are active by default.
+            • Logs are available for review by the owning entity.
+            • Log locations are clearly communicated to the owning entity.
+            "
+            description_note: ""
+        guidance: "Logs should be available in a shared hosting environment so the merchants and service providers have access to, and can review, logs specific to their cardholder data environment.
+        "
+        guidance_note: ""
+      - id: A.1.4
+        description: "Enable processes to provide for timely forensic investigation in the event of a compromise to any hosted merchant or service provider.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: A.1.4
+            description: "Verify the shared hosting provider has written policies that provide for a timely forensics investigation of related servers in the event of a compromise.
+            "
+            description_note: ""
+        guidance: "Shared hosting providers must have processes to provide quick and easy response in the event that a forensic investigation is needed for a compromise, down to the appropriate level of detail so that an individual merchant’s or service provider’s details are available.
+        "
+        guidance_note: ""
