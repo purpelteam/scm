@@ -392,3 +392,87 @@ items:
     guidance: "Performing thorough background investigations prior to hiring potential personnel who are expected to be given access to cardholder data reduces the risk of unauthorized use of PANs and other cardholder data by individuals with questionable or criminal backgrounds.
     "
     guidance_note: ""
+  - id: 12.8
+    description: "Maintain and implement policies and procedures to manage service providers with whom cardholder data is shared, or that could affect the security of cardholder data, as follows:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.8
+        description: "Through observation, review of policies and procedures, and review of supporting documentation, verify that processes are implemented to manage service providers with whom cardholder data is shared, or that could affect the security of cardholder data as follows:
+        "
+        description_note: ""
+    guidance: "If a merchant or service provider shares cardholder data with a service provider, certain requirements apply to ensure continued protection of this data will be enforced by such service providers.
+    
+    Some examples of the different types of service providers include backup tape storage facilities, managed service providers such as web-hosting companies or security service providers, entities that receive data for fraud-modeling purposes, etc.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.8.1
+        description: "Maintain a list of service providers including a description of the service provided.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.8.1
+            description: "Verify that a list of service providers is maintained and includes a description of the service provided.
+            "
+            description_note: ""
+        guidance: "Keeping track of all service providers identifies where potential risk extends to outside of the organization.
+        "
+        guidance_note: ""
+      - id: 12.8.2
+        description: "Maintain a written agreement that includes an acknowledgement that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process or transmit on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment.
+        "
+        description_note: "The exact wording of an acknowledgement will depend on the agreement between the two parties, the details of the service being provided, and the responsibilities assigned to each party. The acknowledgement does not have to include the exact wording provided in this requirement.
+        "
+        testing_procedures:
+          - id: 12.8.2
+            description: "Observe written agreements and confirm they include an acknowledgement by service providers that they are responsible for the security of cardholder data the service providers possess or otherwise store, process or transmit on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment.
+            "
+            description_note: ""
+        guidance: "The acknowledgement of the service providers evidences their commitment to maintaining proper security of cardholder data that it obtains from its clients. The extent to which the service provider is responsible for the security of cardholder data will depend on the particular service and the agreement between the provider and assessed entity.
+        
+        In conjunction with Requirement 12.9, this requirement is intended to promote a consistent level of understanding between parties about their applicable PCI DSS responsibilities. For example, the agreement may include the applicable PCI DSS requirements to be maintained as part of the provided service.
+        "
+        guidance_note: ""
+      - id: 12.8.3
+        description: "Ensure there is an established process for engaging service providers including proper due diligence prior to engagement.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.8.3
+            description: "Verify that policies and procedures are documented and implemented including proper due diligence prior to engaging any service provider.
+            "
+            description_note: ""
+        guidance: "The process ensures that any engagement of a service provider is thoroughly vetted internally by an organization, which should include a risk analysis prior to establishing a formal relationship with the service provider.
+        
+        Specific due-diligence processes and goals will vary for each organization. Examples of considerations may include the provider’s reporting practices, breach-notification and incident response procedures, details of how PCI DSS responsibilities are assigned between each party, how the provider validates their PCI DSS compliance and what evidence they will provide, etc.
+        "
+        guidance_note: ""
+      - id: 12.8.4
+        description: "Maintain a program to monitor service providers’ PCI DSS compliance status at least annually.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.8.4
+            description: "Verify that the entity maintains a program to monitor its service providers’ PCI DSS compliance status at least annually.
+            "
+            description_note: ""
+        guidance: "Knowing your service providers’ PCI DSS compliance status provides assurance and awareness about whether they comply with the same requirements that your organization is subject to. If the service provider offers a variety of services, this requirement should apply to those services delivered to the client, and those services in scope for the client’s PCI DSS assessment.
+        
+        The specific information an entity maintains will depend on the particular agreement with their providers, the type of service, etc. The intent is for the assessed entity to understand which PCI DSS requirements their providers have agreed to meet.
+        "
+        guidance_note: ""
+      - id: 12.8.5
+        description: "Maintain information about which PCI DSS requirements are managed by each service provider, and which are managed by the entity.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.8.5
+            description: "Verify the entity maintains information about which PCI DSS requirements are managed by each service provider, and which are managed by the entity.
+            "
+            description_note: ""
+        guidance: "Knowing your service providers’ PCI DSS compliance status provides assurance and awareness about whether they comply with the same requirements that your organization is subject to. If the service provider offers a variety of services, this requirement should apply to those services delivered to the client, and those services in scope for the client’s PCI DSS assessment.
+        
+        The specific information an entity maintains will depend on the particular agreement with their providers, the type of service, etc. The intent is for the assessed entity to understand which PCI DSS requirements their providers have agreed to meet.
+        "
+        guidance_note: ""
