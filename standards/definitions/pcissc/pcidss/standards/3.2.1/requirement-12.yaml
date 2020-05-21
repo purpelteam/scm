@@ -476,3 +476,124 @@ items:
         The specific information an entity maintains will depend on the particular agreement with their providers, the type of service, etc. The intent is for the assessed entity to understand which PCI DSS requirements their providers have agreed to meet.
         "
         guidance_note: ""
+  - id: 12.9
+    description: "Additional requirement for service providers only: Service providers acknowledge in writing to customers that they are responsible for the security of cardholder data the service provider possesses or otherwise stores, processes, or transmits on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment.
+    "
+    description_note: "The exact wording of an acknowledgement will depend on the agreement between the two parties, the details of the service being provided, and the responsibilities assigned to each party. The acknowledgement does not have to include the exact wording provided in this requirement.
+    "
+    testing_procedures:
+      - id: 12.9
+        description: "Additional testing procedure for service provider assessments only: Review service provider’s policies and procedures and observe templates used for written agreements to confirm the service provider acknowledges in writing to customers that the service provider will maintain all applicable PCI DSS requirements to the extent the service provider possesses or otherwise stores, processes, or transmits cardholder data on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment.
+        "
+        description_note: ""
+    guidance: "In conjunction with Requirement 12.8.2, this requirement is intended to promote a consistent level of understanding between service providers and their customers about their applicable PCI DSS responsibilities. The acknowledgement of the service providers evidences their commitment to maintaining proper security of cardholder data that it obtains from its clients.
+    
+    The service provider’s internal policies and procedures related to their customer engagement process and any templates used for written agreements should include provision of an applicable PCI DSS acknowledgement to their customers. The method by which the service provider provides written acknowledgment should be agreed between the provider and their customers.
+    "
+    guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+    "
+  - id: 12.10
+    description: "Implement an incident response plan. Be prepared to respond immediately to a system breach.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.10
+        description: "Examine the incident response plan and related procedures to verify entity is prepared to respond immediately to a system breach by performing the following:
+        "
+        description_note: ""
+    guidance: "Without a thorough security incident response plan that is properly disseminated, read, and understood by the parties responsible, confusion and lack of a unified response could create further downtime for the business, unnecessary public media exposure, as well as new legal liabilities.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.10.1
+        description: "Create the incident response plan to be implemented in the event of system breach. Ensure the plan addresses the following, at a minimum:
+        
+        • Roles, responsibilities, and communication and contact strategies in the event of a compromise including notification of the payment brands, at a minimum
+        • Specific incident response procedures
+        • Business recovery and continuity procedures
+        • Data backup processes
+        • Analysis of legal requirements for reporting compromises
+        • Coverage and responses of all critical system components
+        • Reference or inclusion of incident response procedures from the payment brands.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.1.a
+            description: "Verify that the incident response plan includes:
+            
+            • Roles, responsibilities, and communication strategies in the event of a compromise including notification of the payment brands, at a minimum
+            • Specific incident response procedures
+            • Business recovery and continuity procedures
+            • Data backup processes
+            • Analysis of legal requirements for reporting compromises (for example, California Bill 1386, which requires notification of affected consumers in the event of an actual or suspected compromise for any business with California residents in their database)
+            • Coverage and responses for all critical system components
+            • Reference or inclusion of incident response procedures from the payment brands.
+            "
+            description_note: ""
+          - id: 12.10.1.b
+            description: "Interview personnel and review documentation from a sample of previously reported incidents or alerts to verify that the documented incident response plan and procedures were followed.
+            "
+            description_note: ""
+        guidance: "The incident response plan should be thorough and contain all the key elements to allow your company to respond effectively in the event of a breach that could impact cardholder data.
+        "
+        guidance_note: ""
+      - id: 12.10.2
+        description: "Review and test the plan, including all elements listed in Requirement 12.10.1, at least annually.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.2
+            description: "Interview personnel and review documentation from testing to verify that the plan is tested at least annually, and that testing includes all elements listed in Requirement 12.10.1.
+            "
+            description_note: ""
+        guidance: "Without proper testing, key steps may be missed, which could result in increased exposure during an incident.
+        "
+        guidance_note: ""
+      - id: 12.10.3
+        description: "Designate specific personnel to be available on a 24/7 basis to respond to alerts.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.3
+            description: "Verify through observation, review of policies, and interviews of responsible personnel that designated personnel are available for 24/7 incident response and monitoring coverage for any evidence of unauthorized activity, detection of unauthorized wireless access points, critical IDS alerts, and/or reports of unauthorized critical system or content file changes.
+            "
+            description_note: ""
+        guidance: "Without a trained and readily available incident response team, extended damage to the network could occur, and critical data and systems may become “polluted” by inappropriate handling of the targeted systems. This can hinder the success of a post-incident investigation.
+        "
+        guidance_note: ""
+      - id: 12.10.4
+        description: "Provide appropriate training to staff with security breach response responsibilities.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.4
+            description: "Verify through observation, review of policies, and interviews of responsible personnel that staff with responsibilities for security breach response are periodically trained.
+            "
+            description_note: ""
+        guidance: "Without a trained and readily available incident response team, extended damage to the network could occur, and critical data and systems may become “polluted” by inappropriate handling of the targeted systems. This can hinder the success of a post-incident investigation.
+        "
+        guidance_note: ""
+      - id: 12.10.5
+        description: "Include alerts from security monitoring systems, including but not limited to intrusion-detection, intrusion-prevention, firewalls, and file-integrity monitoring systems.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.5
+            description: "Verify through observation and review of processes that monitoring and responding to alerts from security monitoring systems are covered in the incident response plan.
+            "
+            description_note: ""
+        guidance: "These monitoring systems are designed to focus on potential risk to data, are critical in taking quick action to prevent a breach, and must be included in the incident-response processes.
+        "
+        guidance_note: ""
+      - id: 12.10.6
+        description: "Develop a process to modify and evolve the incident response plan according to lessons learned and to incorporate industry developments.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.10.6
+            description: "Verify through observation, review of policies, and interviews of responsible personnel that there is a process to modify and evolve the incident response plan according to lessons learned and to incorporate industry developments.
+            "
+            description_note: ""
+        guidance: "Incorporating “lessons learned” into the incident response plan after an incident helps keep the plan current and able to react to emerging threats and security trends.
+        "
+        guidance_note: ""
