@@ -1,0 +1,60 @@
+---
+requirements:
+parent: Appendix2
+items:
+  - id: A.2.1
+    description: "Where POS POI terminals (at the merchant or payment acceptance location) use SSL and/or early TLS, the entity must confirm the devices are not susceptible to any known exploits for those protocols.
+    "
+    description_note: "This requirement is intended to apply to the entity with the POS POI terminal, such as a merchant. This requirement is not intended for service providers who serve as the termination or connection point to those POS POI terminals. Requirements A2.2 and A2.3 apply to POS POI service providers.
+    "
+    testing_procedures:
+      - id: A.2.1
+        description: "For POS POI terminals using SSL and/or early TLS, confirm the entity has documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS.
+        "
+        description_note: ""
+    guidance: "POS POI terminals used in card-present environments can continue using SSL/early TLS when it can be shown that the POS POI terminal is not susceptible to the currently known exploits.
+    
+    However, SSL is an outdated technology and may be subject to additional security vulnerabilities in the future; it is therefore strongly recommended that POS POI terminals be upgraded to a secure protocol as soon as possible. If SSL/early TLS is not needed in the environment, use of and fallback to these versions should be disabled.
+    
+    Refer to the current PCI SSC Information Supplements on SSL/Early TLS for further guidance.
+    "
+    guidance_note: "The allowance for POS POI terminals that are not currently susceptible to exploits is based on current, known risks. If new exploits are introduced to which POS POI terminals are susceptible, the POS POI terminals will need to be updated immediately.
+    "
+  - id: A.2.2
+    description: "Requirement for Service Providers Only: All service providers with existing connection points to POS POI terminals referred to in A2.1 that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: A.2.2
+        description: "Review the documented Risk Mitigation and Migration Plan to verify it includes:
+        
+        • Description of usage, including what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+        • Risk-assessment results and risk-reduction controls in place;
+        • Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+        • Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+        • Overview of migration project plan to replace SSL/early TLS at a future date.
+        "
+        description_note: ""
+    guidance: "POS POI termination points, including but not limited to a service providers such as an acquirer or acquirer processor, can continue using SSL/early TLS when it can be shown that the service provider has controls in place that mitigate the risk of supporting those connections for the service provider environment.
+    
+    The Risk Mitigation and Migration Plan is a document prepared by the entity that details their plans for migrating to a secure protocol, and also describes controls the entity has in place to reduce the risk associated with SSL/early TLS until the migration is complete.
+    
+    Service providers should communicate to all customers using SSL/early TLS about the risks associated with its use and need to migrate to a secure protocol.
+    
+    Refer to the current PCI SSC Information Supplements on SSL/early TLS for further guidance on Risk Mitigation and Migration Plans.
+    "
+    guidance_note: ""
+  - id: A.2.3
+    description: "Requirement for Service Providers Only: All service providers must provide a secure service offering.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: A.2.3
+        description: "Examine system configurations and supporting documentation to verify the service provider offers a secure protocol option for their service.
+        "
+        description_note: ""
+    guidance: "Service providers supporting SSL/early TLS connections for POS POI terminals should also provide a secure protocol option.
+    
+    Refer to the current PCI SSC Information Supplements on SSL/Early TLS for further guidance.
+    "
+    guidance_note: ""
