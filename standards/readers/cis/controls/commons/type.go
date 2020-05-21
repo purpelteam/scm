@@ -74,6 +74,7 @@ type SubControl struct {
 	Description               string `yaml:"description" json:"description"`
 	AssetType                 string `yaml:"asset_type" json:"asset_type"`
 	SecurityFunction          string `yaml:"security_function" json:"security_function"`
+	SensorOrBaseline          string `yaml:"sensor_or_baseline" json:"sensor_or_baseline"`
 	ImplementationGroupStart  string `yaml:"ig_start" json:"ig_start"`
 	ImplementationGroupStatus struct {
 		IG1 bool `yaml:"ig1" json:"ig1"`

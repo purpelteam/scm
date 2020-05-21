@@ -8,6 +8,7 @@ items:
       Utilize an active discovery tool to identify devices connected to the organization’s network and update the hardware asset inventory.
     asset_type: Devices
     security_function: Identify
+    sensor_or_baseline: "Active Device Discovery System"
     ig_start: 2
     ig_status:
       ig1: false
@@ -19,6 +20,7 @@ items:
       Utilize a passive discovery tool to identify devices connected to the organization’s network and automatically update the organization’s hardware asset inventory.
     asset_type: Devices
     security_function: Identify
+    sensor_or_baseline: "Passive Device Discovery System"
     ig_start: 3
     ig_status:
       ig1: false
