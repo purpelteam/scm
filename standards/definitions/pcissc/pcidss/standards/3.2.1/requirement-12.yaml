@@ -203,3 +203,129 @@ items:
         guidance: "To ensure all personnel are aware of their responsibilities to not store or copy cardholder data onto their local personal computers or other media, your policy should clearly prohibit such activities except for personnel that have been explicitly authorized to do so. Storing or copying cardholder data onto a local hard drive or other media must be in accordance with all applicable PCI DSS requirements.
         "
         guidance_note: ""
+  - id: 12.4
+    description: "Ensure that the security policy and procedures clearly define information security responsibilities for all personnel.
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.4.a
+        description: "Verify that information security policies clearly define information security responsibilities for all personnel.
+        "
+        description_note: ""
+      - id: 12.4.b
+        description: "Interview a sample of responsible personnel to verify they understand the security policies.
+        "
+        description_note: ""
+    guidance: "Without clearly defined security roles and responsibilities assigned, there could be inconsistent interaction with the security group, leading to unsecured implementation of technologies or use of outdated or unsecured technologies.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.4.1
+        description: "Additional requirement for service providers only: Executive management shall establish responsibility for the protection of cardholder data and a PCI DSS compliance program to include:
+        
+        • Overall accountability for maintaining PCI DSS compliance
+        • Defining a charter for a PCI DSS compliance program and communication to executive management
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.4.1.a
+            description: "Examine documentation to verify executive management has assigned overall accountability for maintaining the entity’s PCI DSS compliance.
+            "
+            description_note: ""
+          - id: 12.4.1.b
+            description: "Examine the company’s PCI DSS charter to verify it outlines the conditions under which the PCI DSS compliance program is organized and communicated to executive management.
+            "
+            description_note: ""
+        guidance: "Executive management assignment of PCI DSS compliance responsibilities ensures executive- level visibility into the PCI DSS compliance program and allows for the opportunity to ask appropriate questions to determine the effectiveness of the program and influence strategic priorities. Overall responsibility for the PCI DSS compliance program may be assigned to individual roles and/or to business units within the organization.
+        
+        Executive management may include C-level positions, board of directors, or equivalent. The specific titles will depend on the particular organizational structure. The level of detail provided to executive management should be appropriate for the particular organization and the intended audience.
+        "
+        guidance_note: "This requirement applies only when the entity being assessed is a service provider.
+        s"
+  - id: 12.5
+    description: "Assign to an individual or team the following information security management responsibilities:
+    "
+    description_note: ""
+    testing_procedures:
+      - id: 12.5
+        description: "Examine information security policies and procedures to verify:
+        
+        • The formal assignment of information security to a Chief Security Officer or other security-knowledgeable member of management.
+        • The following information security responsibilities are specifically and formally assigned:
+        "
+        description_note: ""
+    guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+    
+    Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.5.1
+        description: "Establish, document, and distribute security policies and procedures.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.5.1
+            description: "Verify that responsibility for establishing, documenting and distributing security policies and procedures is formally assigned.
+            "
+            description_note: ""
+        guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+        
+        Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+        "
+        guidance_note: ""
+      - id: 12.5.2
+        description: "Monitor and analyze security alerts and information, and distribute to appropriate personnel.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.5.2
+            description: "Verify that responsibility for monitoring and analyzing security alerts and distributing information to appropriate information security and business unit management personnel is formally assigned.
+            "
+            description_note: ""
+        guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+        
+        Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+        "
+        guidance_note: ""
+      - id: 12.5.3
+        description: "Establish, document, and distribute security incident response and escalation procedures to ensure timely and effective handling of all situations.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.5.3
+            description: "Verify that responsibility for establishing, documenting, and distributing security incident response and escalation procedures is formally assigned.
+            "
+            description_note: ""
+        guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+        
+        Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+        "
+        guidance_note: ""
+      - id: 12.5.4
+        description: "Administer user accounts, including additions, deletions, and modifications.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.5.4
+            description: "Verify that responsibility for administering (adding, deleting, and modifying) user account and authentication management is formally assigned.
+            "
+            description_note: ""
+        guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+        
+        Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+        "
+        guidance_note: ""
+      - id: 12.5.5
+        description: "Monitor and control all access to data.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.5.5
+            description: "Verify that responsibility for monitoring and controlling all access to data is formally assigned."
+            description_note: ""
+        guidance: "Each person or team with responsibilities for information security management should be clearly aware of their responsibilities and related tasks, through specific policy. Without this accountability, gaps in processes may open access into critical resources or cardholder data.
+        
+        Entities should also consider transition and/or succession plans for key personnel to avoid potential gaps in security assignments, which could result in responsibilities not being assigned and therefore not performed.
+        "
+        guidance_note: ""
