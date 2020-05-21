@@ -12,15 +12,15 @@ Features [( Roadmap #1 )](https://github.com/purpeltim/scm/projects/1):
 
 1. Definitions
 
-- [x] 1.1. PCI-DSS Requirements and Security Assessment Procedures Version 3.2.1 [MVP Done]
-- [ ] 1.2. CIS Controls Version 7.1 [In Progress]
+- [x] 1.1. PCI-DSS Requirements and Security Assessment Procedures Version 3.2.1 _**|-->[ :white_check_mark: MVP Done ]**_
+- [ ] 1.2. CIS Controls Version 7.1 _**|-->[ :repeat_one: In Progress ]**_
 - [ ] 1.3. CIS Kubernetes Benchmark Version 1.5.1
 - [ ] 1.4. CIS Docker Benchmark Version 1.2.0
 
 2. Mappings
 
 - [ ] 2.1. Mapping CIS Kubernetes Benchmark Versionn 1.5.1 To CIS Control Version 7.1
-- [ ] 2.2. Mapping CIS Controls Version 7.1 To PCI-DSS Requirement and Security Assessment Procedures Version 3.2.1
+- [ ] 2.2. Mapping CIS Controls Version 7.1 To PCI-DSS Requirement and Security Assessment Procedures Version 3.2.1 _**|-->[ :repeat_one: In Progress ]**_
 
 3. Tools
 
