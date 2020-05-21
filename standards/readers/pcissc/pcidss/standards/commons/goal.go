@@ -10,18 +10,6 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-// Goal contain information about PCI DSS Standard Goals Information
-type Goal struct {
-	ID           string   `yaml:"id" json:"id"`
-	Description  string   `yaml:"description" json:"description"`
-	Requirements []string `yaml:"requirements" json:"requirements"`
-}
-
-// Goals contain list of PCI DSS goal information
-type Goals struct {
-	Values []*Goal `yaml:"goals" json:"goals"`
-}
-
 // getStandardDefinitionFilePath get filepath location
 func getGoalDefinitionFilePath(version string) (string, error) {
 	filename := "goals.yaml"

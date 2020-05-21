@@ -14,9 +14,7 @@ func TestReadStandard(t *testing.T) {
 	CfgDir = cfgDir
 	Version = version
 
-	Standard := new(Standard)
-
-	s, err := Standard.ReadStandard(version)
+	s, err := ReadStandard(version)
 	if err != nil {
 		t.Errorf("unexpected error: %s", err)
 	}

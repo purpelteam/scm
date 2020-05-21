@@ -19,15 +19,14 @@ func main() {
 
 	T := TestProject{}
 
-	std := pci_dss_commons.Standard{}
 	pci_dss_commons.CfgDir = "standards/definitions/pcissc/pcidss/standards/"
 
-	result, err := std.ReadStandard("3.2.1")
+	stdPCIDss, err := pci_dss_commons.ReadStandard("3.2.1")
 	if err != nil {
 		util.ExitWithError(err)
 	}
 
-	T.PciDssStd = result
+	T.PciDssStd = stdPCIDss
 	T.HostInfo, err = sysinfo.GetHostInfo()
 	if err != nil {
 		util.ExitWithError(err)
