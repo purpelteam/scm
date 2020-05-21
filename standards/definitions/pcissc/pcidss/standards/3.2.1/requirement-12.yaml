@@ -54,3 +54,152 @@ items:
     Performing risk assessments at least annually and upon significant changes allows the organization to keep up to date with organizational changes and evolving threats, trends, and technologies.
     "
     guidance_note: ""
+  - id: 12.3
+    description: "Develop usage policies for critical technologies and define proper use of these technologies.
+
+    Ensure these usage policies require the following:
+    "
+    description_note: "Examples of critical technologies include, but are not limited to, remote access and wireless technologies, laptops, tablets, removable electronic media, e-mail usage and Internet usage.
+    "
+    testing_procedures:
+      - id: 12.3
+        description: "Examine the usage policies for critical technologies and interview responsible personnel to verify the following policies are implemented and followed:
+        "
+        description_note: ""
+    guidance: "Personnel usage policies can either prohibit use of certain devices and other technologies if that is company policy, or provide guidance for personnel as to correct usage and implementation. If usage policies are not in place, personnel may use the technologies in violation of company policy, thereby allowing malicious individuals to gain access to critical systems and cardholder data.
+    "
+    guidance_note: ""
+    items:
+      - id: 12.3.1
+        description: "Explicit approval by authorized parties
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.1
+            description: "Verify that the usage policies include processes for explicit approval from authorized parties to use the technologies.
+            "
+            description_note: ""
+        guidance: "Without requiring proper approval for implementation of these technologies, individual personnel may innocently implement a solution to a perceived business need, but also open a huge hole that subjects critical systems and data to malicious individuals.
+        "
+        guidance_note: ""
+      - id: 12.3.2
+        description: "Authentication for use of the technology
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.2
+            description: "Verify that the usage policies include processes for all technology use to be authenticated with user ID and password or other authentication item (for example, token).
+            "
+            description_note: ""
+        guidance: "If technology is implemented without proper authentication (user IDs and passwords, tokens, VPNs, etc.), malicious individuals may easily use this unprotected technology to access critical systems and cardholder data.
+        "
+        guidance_note: ""
+      - id: 12.3.3
+        description: "A list of all such devices and personnel with access
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.3
+            description: " Verify that the usage policies define:
+            
+            • A list of all critical devices, and
+            • A list of personnel authorized to use the devices.
+            "
+            description_note: ""
+        guidance: "Malicious individuals may breach physical security and place their own devices on the network as a “back door.” Personnel may also bypass procedures and install devices. An accurate inventory with proper device labeling allows for quick identification of non-approved installations.
+        "
+        guidance_note: ""
+      - id: 12.3.4
+        description: "A method to accurately and readily determine owner, contact information, and purpose (for example, labeling, coding, and/or inventorying of devices)
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.4
+            description: "Verify that the usage policies define a method to accurately and readily determine owner, contact information, and purpose (for example, labeling, coding, and/or inventorying of devices).
+            "
+            description_note: ""
+        guidance: "Malicious individuals may breach physical security and place their own devices on the network as a “back door.” Personnel may also bypass procedures and install devices. An accurate inventory with proper device labeling allows for quick identification of non-approved installations. Consider establishing an official naming convention for devices, and log all devices with established inventory controls. Logical labeling may be employed with information such as codes that can correlate the device to its owner, contact information, and purpose.
+        "
+        guidance_note: ""
+      - id: 12.3.5
+        description: "Acceptable uses of the technology
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.5
+            description: "Verify that the usage policies define acceptable uses for the technology.
+            "
+            description_note: ""
+        guidance: "By defining acceptable business use and location of company-approved devices and technology, the company is better able to manage and control gaps in configurations and operational controls, to ensure a “back door” is not opened for a malicious individual to gain access to critical systems and cardholder data.
+        "
+        guidance_note: ""
+      - id: 12.3.6
+        description: "Acceptable network locations for the technologies
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.6
+            description: "Verify that the usage policies define acceptable network locations for the technology.
+            "
+            description_note: ""
+        guidance: "By defining acceptable business use and location of company-approved devices and technology, the company is better able to manage and control gaps in configurations and operational controls, to ensure a “back door” is not opened for a malicious individual to gain access to critical systems and cardholder data.
+        "
+        guidance_note: ""
+      - id: 12.3.7
+        description: "List of company-approved products
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.7
+            description: "Verify that the usage policies include a list of company-approved products.
+            "
+            description_note: ""
+        guidance: "By defining acceptable business use and location of company-approved devices and technology, the company is better able to manage and control gaps in configurations and operational controls, to ensure a “back door” is not opened for a malicious individual to gain access to critical systems and cardholder data.
+        "
+        guidance_note: ""
+      - id: 12.3.8
+        description: "Automatic disconnect of sessions for remote-access technologies after a specific period of inactivity
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.8.a
+            description: "Verify that the usage policies require automatic disconnect of sessions for remote-access technologies after a specific period of inactivity.
+            "
+            description_note: ""
+          - id: 12.3.8.b
+            description: "Examine configurations for remote access technologies to verify that remote access sessions will be automatically disconnected after a specific period of inactivity.
+            "
+            description_note: ""
+        guidance: "Remote-access technologies are frequent \"back doors\" to critical resources and cardholder data. By disconnecting remote-access technologies when not in use (for example, those used to support your systems by your POS vendor, other vendors, or business partners), access and risk to networks is minimized.
+        "
+        guidance_note: ""
+      - id: 12.3.9
+        description: "Activation of remote-access technologies for vendors and business partners only when needed by vendors and business partners, with immediate deactivation after use
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.9
+            description: "Verify that the usage policies require activation of remote-access technologies used by vendors and business partners only when needed by vendors and business partners, with immediate deactivation after use.
+            "
+            description_note: ""
+        guidance: "Remote-access technologies are frequent \"back doors\" to critical resources and cardholder data. By disconnecting remote-access technologies when not in use (for example, those used to support your systems by your POS vendor, other vendors, or business partners), access and risk to networks is minimized.
+        "
+        guidance_note: ""
+      - id: 12.3.10
+        description: "For personnel accessing cardholder data via remote-access technologies, prohibit the copying, moving, and storage of cardholder data onto local hard drives and removable electronic media, unless explicitly authorized for a defined business need.
+        
+        Where there is an authorized business need, the usage policies must require the data be protected in accordance with all applicable PCI DSS Requirements.
+        "
+        description_note: ""
+        testing_procedures:
+          - id: 12.3.10.a
+            description: "Verify that the usage policies prohibit copying, moving, or storing of cardholder data onto local hard drives and removable electronic media when accessing such data via remote-access technologies.
+            "
+            description_note: ""
+          - id: 12.3.10.b
+            description: "For personnel with proper authorization, verify that usage policies require the protection of cardholder data in accordance with PCI DSS Requirements.
+            "
+            description_note: ""
+        guidance: "To ensure all personnel are aware of their responsibilities to not store or copy cardholder data onto their local personal computers or other media, your policy should clearly prohibit such activities except for personnel that have been explicitly authorized to do so. Storing or copying cardholder data onto a local hard drive or other media must be in accordance with all applicable PCI DSS requirements.
+        "
+        guidance_note: ""
