@@ -30,13 +30,13 @@ func getCISIGsDefinitionFilePath(version string) (string, error) {
 }
 
 // getImplemetationGroups get Imlementation Groups content
-func getImplemetationGroups(path string) (*ImplementaionGroups, error) {
+func getImplemetationGroups(path string) (*ImplementationGroups, error) {
 	data, err := ioutil.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
 
-	igs := new(ImplementaionGroups)
+	igs := new(ImplementationGroups)
 	err = yaml.Unmarshal(data, igs)
 	if err != nil {
 		return nil, err

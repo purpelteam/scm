@@ -9,13 +9,13 @@ var (
 
 // CISControl contain information about CIS Controls
 type CISControl struct {
-	ID          string                `yaml:"id" json:"id"`
-	Description string                `yaml:"description" json:"description"`
-	Since       string                `yaml:"since" json:"since"`
-	Author      string                `yaml:"author" json:"author"`
-	Categories  []*Category           `json:"categories"`
-	IGs         []*ImplementaionGroup `json:"implementaion_groups"`
-	Controls    []*Control            `json:"controls"`
+	ID          string                 `yaml:"id" json:"id"`
+	Description string                 `yaml:"description" json:"description"`
+	Since       string                 `yaml:"since" json:"since"`
+	Author      string                 `yaml:"author" json:"author"`
+	Categories  []*Category            `json:"categories"`
+	IGs         []*ImplementationGroup `json:"implementation_groups"`
+	Controls    []*Control             `json:"controls"`
 }
 
 // Category contain information about CIS Controls Category Information
@@ -30,17 +30,17 @@ type Categories struct {
 	Values []*Category `yaml:"categories" json:"categories"`
 }
 
-// ImplementaionGroup contain information about CIS Controls Implementation Group
-type ImplementaionGroup struct {
+// ImplementationGroup contain information about CIS Controls Implementation Group
+type ImplementationGroup struct {
 	ID                 string `yaml:"id" json:"id"`
 	Title              string `yaml:"title" json:"title"`
 	Definitions        string `yaml:"definitions" json:"definitions"`
 	QuickStartGuidance string `yaml:"quick_start_guidance" json:"quick_start_guidance"`
 }
 
-// ImplementaionGroups contain list of CIS Implementaion Group information
-type ImplementaionGroups struct {
-	Values []*ImplementaionGroup `yaml:"implementation_groups" json:"implementation_groups"`
+// ImplementationGroups contain list of CIS Implementation Group information
+type ImplementationGroups struct {
+	Values []*ImplementationGroup `yaml:"implementation_groups" json:"implementation_groups"`
 }
 
 // Control contain CIS Control item information
@@ -61,7 +61,7 @@ type Controls struct {
 	Values []*Control `yaml:"controls" json:"controls"`
 }
 
-// IGNote contain Implementaion Group Note
+// IGNote contain Implementation Group Note
 type IGNote struct {
 	ID          string `yaml:"id" json:"id"`
 	Description string `yaml:"description" json:"description"`
@@ -69,13 +69,13 @@ type IGNote struct {
 
 // SubControl contain SubControl information
 type SubControl struct {
-	ID                       string `yaml:"id" json:"id"`
-	Title                    string `yaml:"title" json:"title"`
-	Description              string `yaml:"description" json:"description"`
-	AssetType                string `yaml:"asset_type" json:"asset_type"`
-	SecurityFunction         string `yaml:"security_function" json:"security_function"`
-	ImplementaionGroupStart  string `yaml:"ig_start" json:"ig_start"`
-	ImplementaionGroupStatus struct {
+	ID                        string `yaml:"id" json:"id"`
+	Title                     string `yaml:"title" json:"title"`
+	Description               string `yaml:"description" json:"description"`
+	AssetType                 string `yaml:"asset_type" json:"asset_type"`
+	SecurityFunction          string `yaml:"security_function" json:"security_function"`
+	ImplementationGroupStart  string `yaml:"ig_start" json:"ig_start"`
+	ImplementationGroupStatus struct {
 		IG1 bool `yaml:"ig1" json:"ig1"`
 		IG2 bool `yaml:"ig2" json:"ig2"`
 		IG3 bool `yaml:"ig3" json:"ig3"`
