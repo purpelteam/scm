@@ -1,0 +1,65 @@
+---
+sub_controls:
+parent: 5
+items:
+  - id: 5.1
+    title: "Establish Secure Configurations"
+    description: |
+      Maintain documented security configuration standards for all authorized operating systems and software.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Baselines & Images"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 5.2
+    title: "Maintain Secure Images"
+    description: |
+      Maintain secure images or templates for all systems in the enterprise based on the organization’s approved configuration standards. Any new system deployment or existing system that becomes compromised should be imaged using one of those images or templates.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Baselines & Images"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 5.3
+    title: "Securely Store Master Images"
+    description: |
+      Store the master images and templates on securely configured servers, validated with integrity monitoring tools, to ensure that only authorized changes to the images are possible.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Baselines & Images"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 5.4
+    title: "Deploy System Configuration Management Tools"
+    description: |
+      Deploy system configuration management tools that will automatically enforce and redeploy configuration settings to systems at regularly scheduled intervals.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 5.5
+    title: "Implement Automated Configuration Monitoring Systems"
+    description: |
+      Utilize a Security Content Automation Protocol (SCAP) compliant configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+    asset_type: Applications
+    security_function: Detect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  

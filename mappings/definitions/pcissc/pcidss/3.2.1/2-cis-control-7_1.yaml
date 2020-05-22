@@ -32,6 +32,38 @@ items:
   - id: 2.1-4.9
     std_from: 2.1
     std_to: 4.9
+  # Requirement 2.2 - CIS C05
+  - id: 2.2-5.1
+    std_from: 2.2
+    std_to: 5.1
+  - id: 2.2-5.2
+    std_from: 2.2
+    std_to: 5.2
+  - id: 2.2-5.3
+    std_from: 2.2
+    std_to: 5.3
+  - id: 2.2-5.4
+    std_from: 2.2
+    std_to: 5.4
+  - id: 2.2-5.5
+    std_from: 2.2
+    std_to: 5.5
+  # Requirement 2.3 - CIS C05
+  - id: 2.3-5.1
+    std_from: 2.3
+    std_to: 5.1
+  - id: 2.3-5.2
+    std_from: 2.3
+    std_to: 5.2
+  - id: 2.3-5.3
+    std_from: 2.3
+    std_to: 5.3
+  - id: 2.3-5.4
+    std_from: 2.3
+    std_to: 5.4
+  - id: 2.3-5.5
+    std_from: 2.3
+    std_to: 5.5
   # Requirement 2.4 - CIS C01
   - id: 2.4-1.1
     std_from: 2.4
@@ -132,6 +164,22 @@ items:
   - id: 6.2-3.7
     std_from: 6.2
     std_to: 3.7
+  # Requirement 6.2 - CIS C05
+  - id: 6.2-5.1
+    std_from: 6.2
+    std_to: 5.1
+  - id: 6.2-5.2
+    std_from: 6.2
+    std_to: 5.2
+  - id: 6.2-5.3
+    std_from: 6.2
+    std_to: 5.3
+  - id: 6.2-5.4
+    std_from: 6.2
+    std_to: 5.4
+  - id: 6.2-5.5
+    std_from: 6.2
+    std_to: 5.5
   # Requirement 7.1 - CIS C04
   - id: 7.1-4.1
     std_from: 7.1
@@ -350,3 +398,19 @@ items:
   - id: 11.2-3.7
     std_from: 11.2
     std_to: 3.7
+  # Requirement 11.5 - CIS C05
+  - id: 11.5-5.1
+    std_from: 11.5
+    std_to: 5.1
+  - id: 11.5-5.2
+    std_from: 11.5
+    std_to: 5.2
+  - id: 11.5-5.3
+    std_from: 11.5
+    std_to: 5.3
+  - id: 11.5-5.4
+    std_from: 11.5
+    std_to: 5.4
+  - id: 11.5-5.5
+    std_from: 11.5
+    std_to: 5.5
