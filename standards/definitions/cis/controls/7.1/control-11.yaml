@@ -1,0 +1,89 @@
+---
+sub_controls:
+parent: 11
+items:
+  - id: 11.1
+    title: "Maintain Standard Security Configurations for Network Devices"
+    description: |
+      Maintain documented security configuration standards for all authorized network devices.
+    asset_type: Network
+    security_function: Identify
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 11.2
+    title: "Document Traffic Configuration Rules"
+    description: |
+      All configuration rules that allow traffic to flow through network devices should be documented in a configuration management system with a specific business reason for each rule, a specific individual’s name responsible for that business need, and an expected duration of the need.
+    asset_type: Network
+    security_function: Identify
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 11.3
+    title: "Use Automated Tools to Verify Standard Device Configurations and Detect Changes"
+    description: |
+      Compare all network device configurations against approved security configurations defined for each network device in use, and alert when any deviations are discovered.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 11.4
+    title: "Install the Latest Stable Version of Any Security- Related Updates on All Network Devices"
+    description: |
+      Install the latest stable version of any security- related updates on all network devices.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 11.5
+    title: "Manage Network Devices Using Multi- Factor Authentication and Encrypted Sessions"
+    description: |
+      Manage all network devices using multi-factor authentication and encrypted sessions.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Multi-Factor Authentication System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 11.6
+    title: "Use Dedicated Workstations for All Network Administrative Tasks"
+    description: |
+      Ensure network engineers use a dedicated machine for all administrative tasks or tasks requiring elevated access. This machine shall be segmented from the organization’s primary network and not be allowed Internet access. This machine shall not be used for reading email, composing documents, or surfing the Internet.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Dedicated Administration Systems"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 11.7
+    title: "Manage Network Infrastructure Through a Dedicated Network"
+    description: |
+      Manage the network infrastructure across network connections that are separated from the business use of that network, relying on separate VLANs or, preferably, on entirely different physical connectivity for management sessions for network devices.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Dedicated Administration Systems"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  

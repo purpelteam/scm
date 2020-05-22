@@ -4,6 +4,50 @@ references: AuditScripts Critical Security Controls Master Mapping
 from: pci-dss-3.2.1
 to: cis-control-7.1
 items:
+  # Requirement 1.1 - CIS C11
+  - id: 1.1-11.1
+    std_from: 1.1
+    std_to: 11.1
+  - id: 1.1-11.2
+    std_from: 1.1
+    std_to: 11.2
+  - id: 1.1-11.3
+    std_from: 1.1
+    std_to: 11.3
+  - id: 1.1-11.4
+    std_from: 1.1
+    std_to: 11.4
+  - id: 1.1-11.5
+    std_from: 1.1
+    std_to: 11.5
+  - id: 1.1-11.6
+    std_from: 1.1
+    std_to: 11.6
+  - id: 1.1-11.7
+    std_from: 1.1
+    std_to: 11.7
+  # Requirement 1.2 - CIS C11
+  - id: 1.2-11.1
+    std_from: 1.2
+    std_to: 11.1
+  - id: 1.2-11.2
+    std_from: 1.2
+    std_to: 11.2
+  - id: 1.2-11.3
+    std_from: 1.2
+    std_to: 11.3
+  - id: 1.2-11.4
+    std_from: 1.2
+    std_to: 11.4
+  - id: 1.2-11.5
+    std_from: 1.2
+    std_to: 11.5
+  - id: 1.2-11.6
+    std_from: 1.2
+    std_to: 11.6
+  - id: 1.2-11.7
+    std_from: 1.2
+    std_to: 11.7
   # Requirement 1.4 - CIS C09
   - id: 1.4-9.1
     std_from: 1.4
@@ -95,6 +139,28 @@ items:
   - id: 2.2-7.10
     std_from: 2.2
     std_to: 7.10
+  # Requirement 2.2 - CIS C11
+  - id: 2.2-11.1
+    std_from: 2.2
+    std_to: 11.1
+  - id: 2.2-11.2
+    std_from: 2.2
+    std_to: 11.2
+  - id: 2.2-11.3
+    std_from: 2.2
+    std_to: 11.3
+  - id: 2.2-11.4
+    std_from: 2.2
+    std_to: 11.4
+  - id: 2.2-11.5
+    std_from: 2.2
+    std_to: 11.5
+  - id: 2.2-11.6
+    std_from: 2.2
+    std_to: 11.6
+  - id: 2.2-11.7
+    std_from: 2.2
+    std_to: 11.7
   # Requirement 2.3 - CIS C05
   - id: 2.3-5.1
     std_from: 2.3
@@ -405,6 +471,28 @@ items:
   - id: 6.2-7.10
     std_from: 6.2
     std_to: 7.10
+  # Requirement 6.2 - CIS C11
+  - id: 6.2-11.1
+    std_from: 6.2
+    std_to: 11.1
+  - id: 6.2-11.2
+    std_from: 6.2
+    std_to: 11.2
+  - id: 6.2-11.3
+    std_from: 6.2
+    std_to: 11.3
+  - id: 6.2-11.4
+    std_from: 6.2
+    std_to: 11.4
+  - id: 6.2-11.5
+    std_from: 6.2
+    std_to: 11.5
+  - id: 6.2-11.6
+    std_from: 6.2
+    std_to: 11.6
+  - id: 6.2-11.7
+    std_from: 6.2
+    std_to: 11.7
   # Requirement 7.1 - CIS C04
   - id: 7.1-4.1
     std_from: 7.1

@@ -959,4 +959,92 @@ items:
   - id: 10.5-9.8
     std_from: 10.5
     std_to: 9.8
+  # Control 11 - PCI DSS R 1.1
+  - id: 11.1-1.1
+    std_from: 11.1
+    std_to: 1.1
+  - id: 11.2-1.1
+    std_from: 11.2
+    std_to: 1.1
+  - id: 11.3-1.1
+    std_from: 11.3
+    std_to: 1.1
+  - id: 11.4-1.1
+    std_from: 11.4
+    std_to: 1.1
+  - id: 11.5-1.1
+    std_from: 11.5
+    std_to: 1.1
+  - id: 11.6-1.1
+    std_from: 11.6
+    std_to: 1.1
+  - id: 11.7-1.1
+    std_from: 11.7
+    std_to: 1.1
+  # Control 11 - PCI DSS R 1.2
+  - id: 11.1-1.2
+    std_from: 11.1
+    std_to: 1.2
+  - id: 11.2-1.2
+    std_from: 11.2
+    std_to: 1.2
+  - id: 11.3-1.2
+    std_from: 11.3
+    std_to: 1.2
+  - id: 11.4-1.2
+    std_from: 11.4
+    std_to: 1.2
+  - id: 11.5-1.2
+    std_from: 11.5
+    std_to: 1.2
+  - id: 11.6-1.2
+    std_from: 11.6
+    std_to: 1.2
+  - id: 11.7-1.2
+    std_from: 11.7
+    std_to: 1.2
+  # Control 11 - PCI DSS R 2.2
+  - id: 11.1-2.2
+    std_from: 11.1
+    std_to: 2.2
+  - id: 11.2-2.2
+    std_from: 11.2
+    std_to: 2.2
+  - id: 11.3-2.2
+    std_from: 11.3
+    std_to: 2.2
+  - id: 11.4-2.2
+    std_from: 11.4
+    std_to: 2.2
+  - id: 11.5-2.2
+    std_from: 11.5
+    std_to: 2.2
+  - id: 11.6-2.2
+    std_from: 11.6
+    std_to: 2.2
+  - id: 11.7-2.2
+    std_from: 11.7
+    std_to: 2.2
+  # Control 11 - PCI DSS R 6.2
+  - id: 11.1-6.2
+    std_from: 11.1
+    std_to: 6.2
+  - id: 11.2-6.2
+    std_from: 11.2
+    std_to: 6.2
+  - id: 11.3-6.2
+    std_from: 11.3
+    std_to: 6.2
+  - id: 11.4-6.2
+    std_from: 11.4
+    std_to: 6.2
+  - id: 11.5-6.2
+    std_from: 11.5
+    std_to: 6.2
+  - id: 11.6-6.2
+    std_from: 11.6
+    std_to: 6.2
+  - id: 11.7-6.2
+    std_from: 11.7
+    std_to: 6.2
   
