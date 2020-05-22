@@ -27,3 +27,18 @@ type Mapping struct {
 	Location    string `yaml:"location" json:"location"`
 	Description string `yaml:"description" json:"description"`
 }
+
+// MappingDefinitions contain mapping definition
+type MappingDefinitions struct {
+	References string         `yaml:"references" json:"references"`
+	From       string         `yaml:"from" json:"from"`
+	To         string         `yaml:"to" json:"to"`
+	Items      []*MappingItem `yaml:"items" json:"items"`
+}
+
+// MappingItem containg mapping item
+type MappingItem struct {
+	ID      string `yaml:"id" json:"id"`
+	StdFrom string `yaml:"std_from" json:"std_from"`
+	StdTo   string `yaml:"std_to" json:"std_to"`
+}
