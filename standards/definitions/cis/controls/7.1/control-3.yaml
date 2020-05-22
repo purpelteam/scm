@@ -1,0 +1,89 @@
+---
+sub_controls:
+parent: 3
+items:
+  - id: 3.1
+    title: "Run Automated Vulnerability Scanning Tools"
+    description: |
+      Utilize an up-to-date Security Content Automation Protocol (SCAP) compliant vulnerability scanning tool to automatically scan all systems on the network on a weekly or more frequent basis to identify all potential vulnerabilities on the organization’s systems.
+    asset_type: Applications
+    security_function: Detect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 3.2
+    title: "Perform Authenticated Vulnerability Scanning"
+    description: |
+      Perform authenticated vulnerability scanning with agents running locally on each system or with remote scanners that are configured with elevated rights on the system being tested.
+    asset_type: Applications
+    security_function: Detect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 3.3
+    title: "Protect Dedicated Assessment Accounts"
+    description: |
+      Use a dedicated account for authenticated vulnerability scans, which should not be used for any other administrative activities and should be tied to specific machines at specific IP addresses.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 3.4
+    title: "Deploy Automated Operating System Patch Management Tools"
+    description: |
+      Deploy automated software update tools in order to ensure that the operating systems are running the most recent security updates provided by the software vendor.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Patch Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 3.5
+    title: "Deploy Automated Software Patch Management Tools"
+    description: |
+      Deploy automated software update tools in order to ensure that third-party software on all systems is running the most recent security updates provided by the software vendor.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Patch Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 3.6
+    title: "Compare Back-to-Back Vulnerability Scans"
+    description: |
+      Regularly compare the results from consecutive vulnerability scans to verify that vulnerabilities have been remediated in a timely manner.
+    asset_type: Applications
+    security_function: Respond
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 3.7
+    title: "Utilize a Risk-Rating Process"
+    description: |
+      Utilize a risk-rating process to prioritize the remediation of discovered vulnerabilities.
+    asset_type: Applications
+    security_function: Respond
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  
