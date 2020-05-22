@@ -863,4 +863,20 @@ items:
   - id: 8.8-5.4
     std_from: 8.8
     std_to: 5.4
+  # Control 9 - PCI DSS R 1.4
+  - id: 9.1-1.4
+    std_from: 9.1
+    std_to: 1.4
+  - id: 9.2-1.4
+    std_from: 9.2
+    std_to: 1.4
+  - id: 9.3-1.4
+    std_from: 9.3
+    std_to: 1.4
+  - id: 9.4-1.4
+    std_from: 9.4
+    std_to: 1.4
+  - id: 9.5-1.4
+    std_from: 9.5
+    std_to: 1.4
   

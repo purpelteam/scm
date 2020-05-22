@@ -1,0 +1,65 @@
+---
+sub_controls:
+parent: 9
+items:
+  - id: 9.1
+    title: "Associate Active Ports, Services, and Protocols to Asset Inventory"
+    description: |
+      Associate active ports, services, and protocols to the hardware assets in the asset inventory.
+    asset_type: Devices
+    security_function: Identify
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 9.2
+    title: "Ensure Only Approved Ports, Protocols, and Services Are Running"
+    description: |
+      Ensure that only network ports, protocols, and services listening on a system with validated business needs are running on each system.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 9.3
+    title: "Perform Regular Automated Port Scans"
+    description: |
+      Perform automated port scans on a regular basis against all systems and alert if unauthorized ports are detected on a system.
+    asset_type: Devices
+    security_function: Detect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 9.4
+    title: "Apply Host-Based Firewalls or Port-Filtering"
+    description: |
+      Apply host-based firewalls or port-filtering tools on end systems, with a default-deny rule that drops all traffic except those services and ports that are explicitly allowed.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "Host Based Firewall"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 9.5
+    title: "Implement Application Firewalls"
+    description: |
+      Place application firewalls in front of any critical servers to verify and validate the traffic going to the server. Any unauthorized traffic should be blocked and logged.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "Application Aware Firewall"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  
