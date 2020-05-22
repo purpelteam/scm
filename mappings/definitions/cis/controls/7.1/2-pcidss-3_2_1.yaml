@@ -414,4 +414,229 @@ items:
   - id: 5.5-11.5
     std_from: 5.5
     std_to: 11.5
+  # Control 6 - PCI DSS R 10.1
+  - id: 6.1-10.1
+    std_from: 6.1
+    std_to: 10.1
+  - id: 6.2-10.1
+    std_from: 6.2
+    std_to: 10.1
+  - id: 6.3-10.1
+    std_from: 6.3
+    std_to: 10.1
+  - id: 6.4-10.1
+    std_from: 6.4
+    std_to: 10.1
+  - id: 6.5-10.1
+    std_from: 6.5
+    std_to: 10.1
+  - id: 6.6-10.1
+    std_from: 6.6
+    std_to: 10.1
+  - id: 6.7-10.1
+    std_from: 6.7
+    std_to: 10.1
+  - id: 6.8-10.1
+    std_from: 6.8
+    std_to: 10.1
+  # Control 6 - PCI DSS R 10.2
+  - id: 6.1-10.2
+    std_from: 6.1
+    std_to: 10.2
+  - id: 6.2-10.2
+    std_from: 6.2
+    std_to: 10.2
+  - id: 6.3-10.2
+    std_from: 6.3
+    std_to: 10.2
+  - id: 6.4-10.2
+    std_from: 6.4
+    std_to: 10.2
+  - id: 6.5-10.2
+    std_from: 6.5
+    std_to: 10.2
+  - id: 6.6-10.2
+    std_from: 6.6
+    std_to: 10.2
+  - id: 6.7-10.2
+    std_from: 6.7
+    std_to: 10.2
+  - id: 6.8-10.2
+    std_from: 6.8
+    std_to: 10.2
+  # Control 6 - PCI DSS R 10.3
+  - id: 6.1-10.3
+    std_from: 6.1
+    std_to: 10.3
+  - id: 6.2-10.3
+    std_from: 6.2
+    std_to: 10.3
+  - id: 6.3-10.3
+    std_from: 6.3
+    std_to: 10.3
+  - id: 6.4-10.3
+    std_from: 6.4
+    std_to: 10.3
+  - id: 6.5-10.3
+    std_from: 6.5
+    std_to: 10.3
+  - id: 6.6-10.3
+    std_from: 6.6
+    std_to: 10.3
+  - id: 6.7-10.3
+    std_from: 6.7
+    std_to: 10.3
+  - id: 6.8-10.3
+    std_from: 6.8
+    std_to: 10.3
+  # Control 6 - PCI DSS R 10.4
+  - id: 6.1-10.4
+    std_from: 6.1
+    std_to: 10.4
+  - id: 6.2-10.4
+    std_from: 6.2
+    std_to: 10.4
+  - id: 6.3-10.4
+    std_from: 6.3
+    std_to: 10.4
+  - id: 6.4-10.4
+    std_from: 6.4
+    std_to: 10.4
+  - id: 6.5-10.4
+    std_from: 6.5
+    std_to: 10.4
+  - id: 6.6-10.4
+    std_from: 6.6
+    std_to: 10.4
+  - id: 6.7-10.4
+    std_from: 6.7
+    std_to: 10.4
+  - id: 6.8-10.4
+    std_from: 6.8
+    std_to: 10.4
+  # Control 6 - PCI DSS R 10.5
+  - id: 6.1-10.5
+    std_from: 6.1
+    std_to: 10.5
+  - id: 6.2-10.5
+    std_from: 6.2
+    std_to: 10.5
+  - id: 6.3-10.5
+    std_from: 6.3
+    std_to: 10.5
+  - id: 6.4-10.5
+    std_from: 6.4
+    std_to: 10.5
+  - id: 6.5-10.5
+    std_from: 6.5
+    std_to: 10.5
+  - id: 6.6-10.5
+    std_from: 6.6
+    std_to: 10.5
+  - id: 6.7-10.5
+    std_from: 6.7
+    std_to: 10.5
+  - id: 6.8-10.5
+    std_from: 6.8
+    std_to: 10.5
+  # Control 6 - PCI DSS R 10.6
+  - id: 6.1-10.6
+    std_from: 6.1
+    std_to: 10.6
+  - id: 6.2-10.6
+    std_from: 6.2
+    std_to: 10.6
+  - id: 6.3-10.6
+    std_from: 6.3
+    std_to: 10.6
+  - id: 6.4-10.6
+    std_from: 6.4
+    std_to: 10.6
+  - id: 6.5-10.6
+    std_from: 6.5
+    std_to: 10.6
+  - id: 6.6-10.6
+    std_from: 6.6
+    std_to: 10.6
+  - id: 6.7-10.6
+    std_from: 6.7
+    std_to: 10.6
+  - id: 6.8-10.6
+    std_from: 6.8
+    std_to: 10.6
+  # Control 6 - PCI DSS R 10.7
+  - id: 6.1-10.7
+    std_from: 6.1
+    std_to: 10.7
+  - id: 6.2-10.7
+    std_from: 6.2
+    std_to: 10.7
+  - id: 6.3-10.7
+    std_from: 6.3
+    std_to: 10.7
+  - id: 6.4-10.7
+    std_from: 6.4
+    std_to: 10.7
+  - id: 6.5-10.7
+    std_from: 6.5
+    std_to: 10.7
+  - id: 6.6-10.7
+    std_from: 6.6
+    std_to: 10.7
+  - id: 6.7-10.7
+    std_from: 6.7
+    std_to: 10.7
+  - id: 6.8-10.7
+    std_from: 6.8
+    std_to: 10.7
+  # Control 6 - PCI DSS R 10.8
+  - id: 6.1-10.8
+    std_from: 6.1
+    std_to: 10.8
+  - id: 6.2-10.8
+    std_from: 6.2
+    std_to: 10.8
+  - id: 6.3-10.8
+    std_from: 6.3
+    std_to: 10.8
+  - id: 6.4-10.8
+    std_from: 6.4
+    std_to: 10.8
+  - id: 6.5-10.8
+    std_from: 6.5
+    std_to: 10.8
+  - id: 6.6-10.8
+    std_from: 6.6
+    std_to: 10.8
+  - id: 6.7-10.8
+    std_from: 6.7
+    std_to: 10.8
+  - id: 6.8-10.8
+    std_from: 6.8
+    std_to: 10.8
+  # Control 6 - PCI DSS R 10.9
+  - id: 6.1-10.9
+    std_from: 6.1
+    std_to: 10.9
+  - id: 6.2-10.9
+    std_from: 6.2
+    std_to: 10.9
+  - id: 6.3-10.9
+    std_from: 6.3
+    std_to: 10.9
+  - id: 6.4-10.9
+    std_from: 6.4
+    std_to: 10.9
+  - id: 6.5-10.9
+    std_from: 6.5
+    std_to: 10.9
+  - id: 6.6-10.9
+    std_from: 6.6
+    std_to: 10.9
+  - id: 6.7-10.9
+    std_from: 6.7
+    std_to: 10.9
+  - id: 6.8-10.9
+    std_from: 6.8
+    std_to: 10.9
   
