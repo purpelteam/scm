@@ -763,4 +763,104 @@ items:
   - id: 7.10-11.5
     std_from: 7.10
     std_to: 11.5
+  # Control 8 - PCI DSS R 5.1
+  - id: 8.1-5.1
+    std_from: 8.1
+    std_to: 5.1
+  - id: 8.2-5.1
+    std_from: 8.2
+    std_to: 5.1
+  - id: 8.3-5.1
+    std_from: 8.3
+    std_to: 5.1
+  - id: 8.4-5.1
+    std_from: 8.4
+    std_to: 5.1
+  - id: 8.5-5.1
+    std_from: 8.5
+    std_to: 5.1
+  - id: 8.6-5.1
+    std_from: 8.6
+    std_to: 5.1
+  - id: 8.7-5.1
+    std_from: 8.7
+    std_to: 5.1
+  - id: 8.8-5.1
+    std_from: 8.8
+    std_to: 5.1
+  # Control 8 - PCI DSS R 5.2
+  - id: 8.1-5.2
+    std_from: 8.1
+    std_to: 5.2
+  - id: 8.2-5.2
+    std_from: 8.2
+    std_to: 5.2
+  - id: 8.3-5.2
+    std_from: 8.3
+    std_to: 5.2
+  - id: 8.4-5.2
+    std_from: 8.4
+    std_to: 5.2
+  - id: 8.5-5.2
+    std_from: 8.5
+    std_to: 5.2
+  - id: 8.6-5.2
+    std_from: 8.6
+    std_to: 5.2
+  - id: 8.7-5.2
+    std_from: 8.7
+    std_to: 5.2
+  - id: 8.8-5.2
+    std_from: 8.8
+    std_to: 5.2
+  # Control 8 - PCI DSS R 5.3
+  - id: 8.1-5.3
+    std_from: 8.1
+    std_to: 5.3
+  - id: 8.2-5.3
+    std_from: 8.2
+    std_to: 5.3
+  - id: 8.3-5.3
+    std_from: 8.3
+    std_to: 5.3
+  - id: 8.4-5.3
+    std_from: 8.4
+    std_to: 5.3
+  - id: 8.5-5.3
+    std_from: 8.5
+    std_to: 5.3
+  - id: 8.6-5.3
+    std_from: 8.6
+    std_to: 5.3
+  - id: 8.7-5.3
+    std_from: 8.7
+    std_to: 5.3
+  - id: 8.8-5.3
+    std_from: 8.8
+    std_to: 5.3
+  # Control 8 - PCI DSS R 5.4
+  - id: 8.1-5.4
+    std_from: 8.1
+    std_to: 5.4
+  - id: 8.2-5.4
+    std_from: 8.2
+    std_to: 5.4
+  - id: 8.3-5.4
+    std_from: 8.3
+    std_to: 5.4
+  - id: 8.4-5.4
+    std_from: 8.4
+    std_to: 5.4
+  - id: 8.5-5.4
+    std_from: 8.5
+    std_to: 5.4
+  - id: 8.6-5.4
+    std_from: 8.6
+    std_to: 5.4
+  - id: 8.7-5.4
+    std_from: 8.7
+    std_to: 5.4
+  - id: 8.8-5.4
+    std_from: 8.8
+    std_to: 5.4
   

@@ -1,0 +1,101 @@
+---
+sub_controls:
+parent: 8
+items:
+  - id: 8.1
+    title: "Utilize Centrally Managed Anti-Malware Software"
+    description: |
+      Utilize centrally managed anti-malware software to continuously monitor and defend each of the organization’s workstations and servers.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 8.2
+    title: "Ensure Anti-Malware Software and Signatures Are Updated"
+    description: |
+      Ensure that the organization’s anti-malware software updates its scanning engine and signature database on a regular basis.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 8.3
+    title: "Enable Operating System Anti-Exploitation Features/ Deploy Anti- Exploit Technologies"
+    description: |
+      Enable anti-exploitation features such as Data Execution Prevention (DEP) and Address Space Layout Randomization (ASLR) that are available in an operating system or deploy appropriate toolkits that can be configured to apply protection to a broader set of applications and executables.
+    asset_type: Devices
+    security_function: Detect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 8.4
+    title: "Configure Anti-Malware Scanning of Removable Media"
+    description: |
+      Configure devices so that they automatically conduct an anti-malware scan of removable media when inserted or connected.
+    asset_type: Devices
+    security_function: Detect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 8.5
+    title: "Configure Devices to Not Auto-Run Content"
+    description: |
+      Configure devices to not auto-run content from removable media.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 8.6
+    title: "Centralize Anti-Malware Logging"
+    description: |
+      Send all malware detection events to enterprise anti-malware administration tools and event log servers for analysis and alerting.
+    asset_type: Devices
+    security_function: Detect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 8.7
+    title: "Enable DNS Query Logging"
+    description: |
+      Enable Domain Name System (DNS) query logging to detect hostname lookups for known malicious domains.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "DNS Domain Filtering System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 8.8
+    title: "Enable Command-Line Audit Logging"
+    description: |
+      Enable command-line audit logging for command shells, such as Microsoft PowerShell and Bash.
+    asset_type: Devices
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  
