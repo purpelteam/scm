@@ -1,0 +1,149 @@
+---
+sub_controls:
+parent: 12
+items:
+  - id: 12.1
+    title: "Maintain an Inventory of Network Boundaries"
+    description: |
+      Maintain an up-to-date inventory of all of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Identify
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 12.2
+    title: "Scan for Unauthorized Connections Across Trusted Network Boundaries"
+    description: |
+      Perform regular scans from outside each trusted network boundary to detect any unauthorized connections which are accessible across the boundary.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.3
+    title: "Deny Communications With Known Malicious IP Addresses"
+    description: |
+      Deny communications with known malicious or unused Internet IP addresses and limit access only to trusted and necessary IP address ranges at each of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.4
+    title: "Deny Communication Over Unauthorized Ports"
+    description: |
+      Deny communication over unauthorized TCP or UDP ports or application traffic to ensure that only authorized protocols are allowed to cross the network boundary in or out of the network at each of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 12.5
+    title: "Configure Monitoring Systems to Record Network Packets"
+    description: |
+      Configure monitoring systems to record network packets passing through the boundary at each of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Packet Capture System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.6
+    title: "Deploy Network-Based IDS Sensors"
+    description: |
+      Deploy network-based Intrusion Detection Systems (IDS) sensors to look for unusual attack mechanisms and detect compromise of these systems at each of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Based Intruston Detection System (NIDS)"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.7
+    title: "Deploy Network-Based Intrusion Prevention Systems"
+    description: |
+      Deploy network-based Intrusion Prevention Systems (IPS) to block malicious network traffic at each of the organization’s network boundaries.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Based Intrusion Prevention System (IPS)"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 12.8
+    title: "Deploy NetFlow Collection on Networking Boundary Devices"
+    description: |
+      Enable the collection of NetFlow and logging data on all network boundary devices.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.9
+    title: "Deploy Application Layer Filtering Proxy Server"
+    description: |
+      Ensure that all network traffic to or from the Internet passes through an authenticated application layer proxy that is configured to filter unauthorized connections.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 12.10
+    title: "Decrypt Network Traffic at Proxy"
+    description: |
+      Decrypt all encrypted network traffic at the boundary proxy prior to analyzing the content. However, the organization may use whitelists of allowed sites that can be accessed through the proxy without decrypting the traffic.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 12.11
+    title: "Require All Remote Logins to Use Multi- Factor Authentication"
+    description: |
+      Require all remote login access to the organization’s network to encrypt data in transit and use multi-factor authentication.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Multi-Factor Authentication System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 12.12
+    title: "Manage All Devices Remotely Logging Into Internal Network"
+    description: |
+      Scan all enterprise devices remotely logging into the organization’s network prior to accessing the network to ensure that each of the organization’s security policies has been enforced in the same manner as local network devices.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  
