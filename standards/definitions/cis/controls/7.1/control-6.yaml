@@ -8,7 +8,7 @@ items:
       Use at least three synchronized time sources from which all servers and network devices retrieve time information on a regular basis so that timestamps in logs are consistent.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Network Time Protocol (NTP) Systems"
     ig_start: 2
     ig_status:
       ig1: false
@@ -20,7 +20,7 @@ items:
       Ensure that local logging has been enabled on all systems and networking devices.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 1
     ig_status:
       ig1: true
@@ -32,7 +32,7 @@ items:
       Enable system logging to include detailed information such as an event source, date, user, timestamp, source addresses, destination addresses, and other useful elements.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 2
     ig_status:
       ig1: false
@@ -44,7 +44,7 @@ items:
       Ensure that all systems that store logs have adequate storage space for the logs generated.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 2
     ig_status:
       ig1: false
@@ -56,7 +56,7 @@ items:
       Ensure that appropriate logs are being aggregated to a central log management system for analysis and review.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 2
     ig_status:
       ig1: false
@@ -68,7 +68,7 @@ items:
       Deploy Security Information and Event Management (SIEM) or log analytic tools for log correlation and analysis.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 2
     ig_status:
       ig1: false
@@ -80,7 +80,7 @@ items:
       On a regular basis, review logs to identify anomalies or abnormal events.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 2
     ig_status:
       ig1: false
@@ -92,7 +92,7 @@ items:
       On a regular basis, tune your SIEM system to better identify actionable events and decrease event noise.
     asset_type: Network
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 3
     ig_status:
       ig1: false
