@@ -1,0 +1,125 @@
+---
+sub_controls:
+parent: 2
+items:
+  - id: 2.1
+    title: "Maintain Inventory of Authorized Software"
+    description: |
+      Maintain an up-to-date list of all authorized software that is required in the enterprise for any business purpose on any business system.
+    asset_type: Applications
+    security_function: Identify
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 2.2
+    title: "Ensure Software Is Supported by Vendor"
+    description: |
+      Ensure that only software applications or operating systems currently supported and receiving vendor updates are added to the organization’s authorized software inventory. Unsupported software should be tagged as unsupported in the inventory system.
+    asset_type: Applications
+    security_function: Identify
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 2.3
+    title: "Utilize Software Inventory Tools"
+    description: |
+      Utilize software inventory tools throughout the organization to automate the documentation of all software on business systems.
+    asset_type: Applications
+    security_function: Identify
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 2.4
+    title: "Track Software Inventory Information"
+    description: |
+      The software inventory system should track the name, version, publisher, and install date for all software, including operating systems authorized by the organization.
+    asset_type: Applications
+    security_function: Identify
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 2.5
+    title: "Integrate Software and Hardware Asset Inventories"
+    description: |
+      The software inventory system should be tied into the hardware asset inventory so all devices and associated software are tracked from a single location.
+    asset_type: Applications
+    security_function: Identify
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 2.6
+    title: "Address Unapproved Software"
+    description: |
+      Ensure that unauthorized software is either removed or the inventory is updated in a timely manner.
+    asset_type: Applications
+    security_function: Respond
+    sensor_or_baseline: "Software Application Inventory"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 2.7
+    title: "Utilize Application Whitelisting"
+    description: |
+      Utilize application whitelisting technology on all assets to ensure that only authorized software executes and all unauthorized software is blocked from executing on assets.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 2.8
+    title: "Implement Application Whitelisting of Libraries"
+    description: |
+      The organization’s application whitelisting software must ensure that only authorized software libraries (such as *.dll, *.ocx, *.so, etc.) are allowed to load into a system process.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 2.9
+    title: "Implement Application Whitelisting of Scripts"
+    description: |
+      The organization’s application whitelisting software must ensure that only authorized, digitally signed scripts (such as *.ps1,*.py, macros, etc.) are allowed to run on a system.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 2.10
+    title: "Physically or Logically Segregate High Risk Applications"
+    description: |
+      Physically or logically segregated systems should be used to isolate and run software that is required for business operations but incurs higher risk for the organization.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  

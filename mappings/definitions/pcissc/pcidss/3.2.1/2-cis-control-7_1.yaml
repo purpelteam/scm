@@ -4,7 +4,7 @@ references: AuditScripts Critical Security Controls Master Mapping
 from: pci-dss-3.2.1
 to: cis-control-7.1
 items:
-  # Requirement 2
+  # Requirement 2 - C01
   - id: 2.4-1.1
     std_from: 2.4
     std_to: 1.1
@@ -29,3 +29,34 @@ items:
   - id: 2.4-1.8
     std_from: 2.4
     std_to: 1.8
+  # Requirement 2 - C02
+  - id: 2.4-2.1
+    std_from: 2.4
+    std_to: 2.1
+  - id: 2.4-2.2
+    std_from: 2.4
+    std_to: 2.2
+  - id: 2.4-2.3
+    std_from: 2.4
+    std_to: 2.3
+  - id: 2.4-2.4
+    std_from: 2.4
+    std_to: 2.4
+  - id: 2.4-2.5
+    std_from: 2.4
+    std_to: 2.5
+  - id: 2.4-2.6
+    std_from: 2.4
+    std_to: 2.6
+  - id: 2.4-2.7
+    std_from: 2.4
+    std_to: 2.7
+  - id: 2.4-2.8
+    std_from: 2.4
+    std_to: 2.8
+  - id: 2.4-2.9
+    std_from: 2.4
+    std_to: 2.9
+  - id: 2.4-2.10
+    std_from: 2.4
+    std_to: 2.10
