@@ -36,7 +36,7 @@ type MappingDefinitions struct {
 	Items      []*MappingItem `yaml:"items" json:"items"`
 }
 
-// MappingItem containg mapping item
+// MappingItem contain mapping item
 type MappingItem struct {
 	ID      string `yaml:"id" json:"id"`
 	StdFrom string `yaml:"std_from" json:"std_from"`
