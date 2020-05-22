@@ -126,3 +126,227 @@ items:
   - id: 3.7-11.2
     std_from: 3.7
     std_to: 11.2
+  # Control 4 - PCI DSS R 2.1
+  - id: 4.1-2.1
+    std_from: 4.1
+    std_to: 2.1
+  - id: 4.2-2.1
+    std_from: 4.2
+    std_to: 2.1
+  - id: 4.3-2.1
+    std_from: 4.3
+    std_to: 2.1
+  - id: 4.4-2.1
+    std_from: 4.4
+    std_to: 2.1
+  - id: 4.5-2.1
+    std_from: 4.5
+    std_to: 2.1
+  - id: 4.6-2.1
+    std_from: 4.6
+    std_to: 2.1
+  - id: 4.7-2.1
+    std_from: 4.7
+    std_to: 2.1
+  - id: 4.8-2.1
+    std_from: 4.8
+    std_to: 2.1
+  - id: 4.9-2.1
+    std_from: 4.9
+    std_to: 2.1
+  # Control 4 - PCI DSS R 7.1
+  - id: 4.1-7.1
+    std_from: 4.1
+    std_to: 7.1
+  - id: 4.2-7.1
+    std_from: 4.2
+    std_to: 7.1
+  - id: 4.3-7.1
+    std_from: 4.3
+    std_to: 7.1
+  - id: 4.4-7.1
+    std_from: 4.4
+    std_to: 7.1
+  - id: 4.5-7.1
+    std_from: 4.5
+    std_to: 7.1
+  - id: 4.6-7.1
+    std_from: 4.6
+    std_to: 7.1
+  - id: 4.7-7.1
+    std_from: 4.7
+    std_to: 7.1
+  - id: 4.8-7.1
+    std_from: 4.8
+    std_to: 7.1
+  - id: 4.9-7.1
+    std_from: 4.9
+    std_to: 7.1
+  # Control 4 - PCI DSS R 7.2
+  - id: 4.1-7.2
+    std_from: 4.1
+    std_to: 7.2
+  - id: 4.2-7.2
+    std_from: 4.2
+    std_to: 7.2
+  - id: 4.3-7.2
+    std_from: 4.3
+    std_to: 7.2
+  - id: 4.4-7.2
+    std_from: 4.4
+    std_to: 7.2
+  - id: 4.5-7.2
+    std_from: 4.5
+    std_to: 7.2
+  - id: 4.6-7.2
+    std_from: 4.6
+    std_to: 7.2
+  - id: 4.7-7.2
+    std_from: 4.7
+    std_to: 7.2
+  - id: 4.8-7.2
+    std_from: 4.8
+    std_to: 7.2
+  - id: 4.9-7.2
+    std_from: 4.9
+    std_to: 7.2
+  # Control 4 - PCI DSS R 7.3
+  - id: 4.1-7.3
+    std_from: 4.1
+    std_to: 7.3
+  - id: 4.2-7.3
+    std_from: 4.2
+    std_to: 7.3
+  - id: 4.3-7.3
+    std_from: 4.3
+    std_to: 7.3
+  - id: 4.4-7.3
+    std_from: 4.4
+    std_to: 7.3
+  - id: 4.5-7.3
+    std_from: 4.5
+    std_to: 7.3
+  - id: 4.6-7.3
+    std_from: 4.6
+    std_to: 7.3
+  - id: 4.7-7.3
+    std_from: 4.7
+    std_to: 7.3
+  - id: 4.8-7.3
+    std_from: 4.8
+    std_to: 7.3
+  - id: 4.9-7.3
+    std_from: 4.9
+    std_to: 7.3
+  # Control 4 - PCI DSS R 8.1
+  - id: 4.1-8.1
+    std_from: 4.1
+    std_to: 8.1
+  - id: 4.2-8.1
+    std_from: 4.2
+    std_to: 8.1
+  - id: 4.3-8.1
+    std_from: 4.3
+    std_to: 8.1
+  - id: 4.4-8.1
+    std_from: 4.4
+    std_to: 8.1
+  - id: 4.5-8.1
+    std_from: 4.5
+    std_to: 8.1
+  - id: 4.6-8.1
+    std_from: 4.6
+    std_to: 8.1
+  - id: 4.7-8.1
+    std_from: 4.7
+    std_to: 8.1
+  - id: 4.8-8.1
+    std_from: 4.8
+    std_to: 8.1
+  - id: 4.9-8.1
+    std_from: 4.9
+    std_to: 8.1
+  # Control 4 - PCI DSS R 8.2
+  - id: 4.1-8.2
+    std_from: 4.1
+    std_to: 8.2
+  - id: 4.2-8.2
+    std_from: 4.2
+    std_to: 8.2
+  - id: 4.3-8.2
+    std_from: 4.3
+    std_to: 8.2
+  - id: 4.4-8.2
+    std_from: 4.4
+    std_to: 8.2
+  - id: 4.5-8.2
+    std_from: 4.5
+    std_to: 8.2
+  - id: 4.6-8.2
+    std_from: 4.6
+    std_to: 8.2
+  - id: 4.7-8.2
+    std_from: 4.7
+    std_to: 8.2
+  - id: 4.8-8.2
+    std_from: 4.8
+    std_to: 8.2
+  - id: 4.9-8.2
+    std_from: 4.9
+    std_to: 8.2
+  # Control 4 - PCI DSS R 8.3
+  - id: 4.1-8.3
+    std_from: 4.1
+    std_to: 8.3
+  - id: 4.2-8.3
+    std_from: 4.2
+    std_to: 8.3
+  - id: 4.3-8.3
+    std_from: 4.3
+    std_to: 8.3
+  - id: 4.4-8.3
+    std_from: 4.4
+    std_to: 8.3
+  - id: 4.5-8.3
+    std_from: 4.5
+    std_to: 8.3
+  - id: 4.6-8.3
+    std_from: 4.6
+    std_to: 8.3
+  - id: 4.7-8.3
+    std_from: 4.7
+    std_to: 8.3
+  - id: 4.8-8.3
+    std_from: 4.8
+    std_to: 8.3
+  - id: 4.9-8.3
+    std_from: 4.9
+    std_to: 8.3
+  # Control 4 - PCI DSS R 8.7
+  - id: 4.1-8.7
+    std_from: 4.1
+    std_to: 8.7
+  - id: 4.2-8.7
+    std_from: 4.2
+    std_to: 8.7
+  - id: 4.3-8.7
+    std_from: 4.3
+    std_to: 8.7
+  - id: 4.4-8.7
+    std_from: 4.4
+    std_to: 8.7
+  - id: 4.5-8.7
+    std_from: 4.5
+    std_to: 8.7
+  - id: 4.6-8.7
+    std_from: 4.6
+    std_to: 8.7
+  - id: 4.7-8.7
+    std_from: 4.7
+    std_to: 8.7
+  - id: 4.8-8.7
+    std_from: 4.8
+    std_to: 8.7
+  - id: 4.9-8.7
+    std_from: 4.9
+    std_to: 8.7

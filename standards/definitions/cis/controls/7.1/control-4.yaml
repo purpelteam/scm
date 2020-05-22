@@ -1,0 +1,114 @@
+---
+sub_controls:
+parent: 4
+items:
+  - id: 4.1
+    title: "Maintain Inventory of Administrative Accounts"
+    description: |
+      Use automated tools to inventory all administrative accounts, including domain and local accounts, to ensure that only authorized individuals have elevated privileges.
+    asset_type: Users
+    security_function: Detect
+    sensor_or_baseline: "Privileged Account Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 4.2
+    title: "Change Default Passwords"
+    description: |
+      Before deploying any new asset, change all default passwords to have values consistent with administrative level accounts.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Privileged Account Management System"
+    ig_start: 3
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 4.3
+    title: "Ensure the Use of Dedicated Administrative Accounts"
+    description: |
+      Ensure that all users with administrative account access use a dedicated or secondary account for elevated activities. This account should only be used for administrative activities and not Internet browsing, email, or similar activities.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Privileged Account Management System"
+    ig_start: 3
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 4.4
+    title: "Use Unique Passwords"
+    description: |
+      Where multi-factor authentication is not supported (such as local administrator, root, or service accounts), accounts will use passwords that are unique to that system.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Privileged Account Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 4.5
+    title: "Use Multi-Factor Authentication for All Administrative Access"
+    description: |
+      Use multi-factor authentication and encrypted channels for all administrative account access.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Multi-Factor Authentication System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 4.6
+    title: "Use Dedicated Workstations For All Administrative Tasks"
+    description: |
+      Ensure administrators use a dedicated machine for all administrative tasks or tasks requiring administrative access. This machine will be segmented from the organization’s primary network and not be allowed Internet access.
+      
+      This machine will not be used for reading email, composing documents, or browsing the Internet.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Dedicated Administration Systems"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 4.7
+    title: "Limit Access to Scripting Tools"
+    description: |
+      Limit access to scripting tools (such as Microsoft® PowerShell and Python) to only administrative or development users with the need to access those capabilities.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 4.8
+    title: "Log and Alert on Changes to Administrative Group Membership"
+    description: |
+      Configure systems to issue a log entry and alert when an account is added to or removed from any group assigned administrative privileges.
+    asset_type: Users
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 4.9
+    title: "Log and Alert on Unsuccessful Administrative Account Login"
+    description: |
+      Configure systems to issue a log entry and alert on unsuccessful logins to an administrative account.
+    asset_type: Users
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true

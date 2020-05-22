@@ -4,6 +4,34 @@ references: AuditScripts Critical Security Controls Master Mapping
 from: pci-dss-3.2.1
 to: cis-control-7.1
 items:
+  # Requirement 2.1 - CIS C04
+  - id: 2.1-4.1
+    std_from: 2.1
+    std_to: 4.1
+  - id: 2.1-4.2
+    std_from: 2.1
+    std_to: 4.2
+  - id: 2.1-4.3
+    std_from: 2.1
+    std_to: 4.3
+  - id: 2.1-4.4
+    std_from: 2.1
+    std_to: 4.4
+  - id: 2.1-4.5
+    std_from: 2.1
+    std_to: 4.5
+  - id: 2.1-4.6
+    std_from: 2.1
+    std_to: 4.6
+  - id: 2.1-4.7
+    std_from: 2.1
+    std_to: 4.7
+  - id: 2.1-4.8
+    std_from: 2.1
+    std_to: 4.8
+  - id: 2.1-4.9
+    std_from: 2.1
+    std_to: 4.9
   # Requirement 2.4 - CIS C01
   - id: 2.4-1.1
     std_from: 2.4
@@ -104,6 +132,202 @@ items:
   - id: 6.2-3.7
     std_from: 6.2
     std_to: 3.7
+  # Requirement 7.1 - CIS C04
+  - id: 7.1-4.1
+    std_from: 7.1
+    std_to: 4.1
+  - id: 7.1-4.2
+    std_from: 7.1
+    std_to: 4.2
+  - id: 7.1-4.3
+    std_from: 7.1
+    std_to: 4.3
+  - id: 7.1-4.4
+    std_from: 7.1
+    std_to: 4.4
+  - id: 7.1-4.5
+    std_from: 7.1
+    std_to: 4.5
+  - id: 7.1-4.6
+    std_from: 7.1
+    std_to: 4.6
+  - id: 7.1-4.7
+    std_from: 7.1
+    std_to: 4.7
+  - id: 7.1-4.8
+    std_from: 7.1
+    std_to: 4.8
+  - id: 7.1-4.9
+    std_from: 7.1
+    std_to: 4.9
+  # Requirement 7.2 - CIS C04
+  - id: 7.2-4.1
+    std_from: 7.2
+    std_to: 4.1
+  - id: 7.2-4.2
+    std_from: 7.2
+    std_to: 4.2
+  - id: 7.2-4.3
+    std_from: 7.2
+    std_to: 4.3
+  - id: 7.2-4.4
+    std_from: 7.2
+    std_to: 4.4
+  - id: 7.2-4.5
+    std_from: 7.2
+    std_to: 4.5
+  - id: 7.2-4.6
+    std_from: 7.2
+    std_to: 4.6
+  - id: 7.2-4.7
+    std_from: 7.2
+    std_to: 4.7
+  - id: 7.2-4.8
+    std_from: 7.2
+    std_to: 4.8
+  - id: 7.2-4.9
+    std_from: 7.2
+    std_to: 4.9
+  # Requirement 7.3 - CIS C04
+  - id: 7.3-4.1
+    std_from: 7.3
+    std_to: 4.1
+  - id: 7.3-4.2
+    std_from: 7.3
+    std_to: 4.2
+  - id: 7.3-4.3
+    std_from: 7.3
+    std_to: 4.3
+  - id: 7.3-4.4
+    std_from: 7.3
+    std_to: 4.4
+  - id: 7.3-4.5
+    std_from: 7.3
+    std_to: 4.5
+  - id: 7.3-4.6
+    std_from: 7.3
+    std_to: 4.6
+  - id: 7.3-4.7
+    std_from: 7.3
+    std_to: 4.7
+  - id: 7.3-4.8
+    std_from: 7.3
+    std_to: 4.8
+  - id: 7.3-4.9
+    std_from: 7.3
+    std_to: 4.9
+  # Requirement 8.1 - CIS C04
+  - id: 8.1-4.1
+    std_from: 8.1
+    std_to: 4.1
+  - id: 8.1-4.2
+    std_from: 8.1
+    std_to: 4.2
+  - id: 8.1-4.3
+    std_from: 8.1
+    std_to: 4.3
+  - id: 8.1-4.4
+    std_from: 8.1
+    std_to: 4.4
+  - id: 8.1-4.5
+    std_from: 8.1
+    std_to: 4.5
+  - id: 8.1-4.6
+    std_from: 8.1
+    std_to: 4.6
+  - id: 8.1-4.7
+    std_from: 8.1
+    std_to: 4.7
+  - id: 8.1-4.8
+    std_from: 8.1
+    std_to: 4.8
+  - id: 8.1-4.9
+    std_from: 8.1
+    std_to: 4.9
+  # Requirement 8.2 - CIS C04
+  - id: 8.2-4.1
+    std_from: 8.2
+    std_to: 4.1
+  - id: 8.2-4.2
+    std_from: 8.2
+    std_to: 4.2
+  - id: 8.2-4.3
+    std_from: 8.2
+    std_to: 4.3
+  - id: 8.2-4.4
+    std_from: 8.2
+    std_to: 4.4
+  - id: 8.2-4.5
+    std_from: 8.2
+    std_to: 4.5
+  - id: 8.2-4.6
+    std_from: 8.2
+    std_to: 4.6
+  - id: 8.2-4.7
+    std_from: 8.2
+    std_to: 4.7
+  - id: 8.2-4.8
+    std_from: 8.2
+    std_to: 4.8
+  - id: 8.2-4.9
+    std_from: 8.2
+    std_to: 4.9
+  # Requirement 8.3 - CIS C04
+  - id: 8.3-4.1
+    std_from: 8.3
+    std_to: 4.1
+  - id: 8.3-4.2
+    std_from: 8.3
+    std_to: 4.2
+  - id: 8.3-4.3
+    std_from: 8.3
+    std_to: 4.3
+  - id: 8.3-4.4
+    std_from: 8.3
+    std_to: 4.4
+  - id: 8.3-4.5
+    std_from: 8.3
+    std_to: 4.5
+  - id: 8.3-4.6
+    std_from: 8.3
+    std_to: 4.6
+  - id: 8.3-4.7
+    std_from: 8.3
+    std_to: 4.7
+  - id: 8.3-4.8
+    std_from: 8.3
+    std_to: 4.8
+  - id: 8.3-4.9
+    std_from: 8.3
+    std_to: 4.9
+  # Requirement 8.7 - CIS C04
+  - id: 8.7-4.1
+    std_from: 8.7
+    std_to: 4.1
+  - id: 8.7-4.2
+    std_from: 8.7
+    std_to: 4.2
+  - id: 8.7-4.3
+    std_from: 8.7
+    std_to: 4.3
+  - id: 8.7-4.4
+    std_from: 8.7
+    std_to: 4.4
+  - id: 8.7-4.5
+    std_from: 8.7
+    std_to: 4.5
+  - id: 8.7-4.6
+    std_from: 8.7
+    std_to: 4.6
+  - id: 8.7-4.7
+    std_from: 8.7
+    std_to: 4.7
+  - id: 8.7-4.8
+    std_from: 8.7
+    std_to: 4.8
+  - id: 8.7-4.9
+    std_from: 8.7
+    std_to: 4.9
   # Requirement 11.2 - CIS C03
   - id: 11.2-3.1
     std_from: 11.2
