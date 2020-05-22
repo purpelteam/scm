@@ -198,6 +198,22 @@ items:
   - id: 2.4-2.10
     std_from: 2.4
     std_to: 2.10
+  # Requirement 4.3 - CIS C10
+  - id: 4.3-10.1
+    std_from: 4.3
+    std_to: 10.1
+  - id: 4.3-10.2
+    std_from: 4.3
+    std_to: 10.2
+  - id: 4.3-10.3
+    std_from: 4.3
+    std_to: 10.3
+  - id: 4.3-10.4
+    std_from: 4.3
+    std_to: 10.4
+  - id: 4.3-10.5
+    std_from: 4.3
+    std_to: 10.5
   # Requirement 5.1 - CIS C08
   - id: 5.1-8.1
     std_from: 5.1
@@ -585,6 +601,70 @@ items:
   - id: 8.7-4.9
     std_from: 8.7
     std_to: 4.9
+  # Requirement 9.5 - CIS C10
+  - id: 9.5-10.1
+    std_from: 9.5
+    std_to: 10.1
+  - id: 9.5-10.2
+    std_from: 9.5
+    std_to: 10.2
+  - id: 9.5-10.3
+    std_from: 9.5
+    std_to: 10.3
+  - id: 9.5-10.4
+    std_from: 9.5
+    std_to: 10.4
+  - id: 9.5-10.5
+    std_from: 9.5
+    std_to: 10.5
+  # Requirement 9.6 - CIS C10
+  - id: 9.6-10.1
+    std_from: 9.6
+    std_to: 10.1
+  - id: 9.6-10.2
+    std_from: 9.6
+    std_to: 10.2
+  - id: 9.6-10.3
+    std_from: 9.6
+    std_to: 10.3
+  - id: 9.6-10.4
+    std_from: 9.6
+    std_to: 10.4
+  - id: 9.6-10.5
+    std_from: 9.6
+    std_to: 10.5
+  # Requirement 9.7 - CIS C10
+  - id: 9.7-10.1
+    std_from: 9.7
+    std_to: 10.1
+  - id: 9.7-10.2
+    std_from: 9.7
+    std_to: 10.2
+  - id: 9.7-10.3
+    std_from: 9.7
+    std_to: 10.3
+  - id: 9.7-10.4
+    std_from: 9.7
+    std_to: 10.4
+  - id: 9.7-10.5
+    std_from: 9.7
+    std_to: 10.5
+  # Requirement 9.8 - CIS C10
+  - id: 9.8-10.1
+    std_from: 9.8
+    std_to: 10.1
+  - id: 9.8-10.2
+    std_from: 9.8
+    std_to: 10.2
+  - id: 9.8-10.3
+    std_from: 9.8
+    std_to: 10.3
+  - id: 9.8-10.4
+    std_from: 9.8
+    std_to: 10.4
+  - id: 9.8-10.5
+    std_from: 9.8
+    std_to: 10.5
   # Requirement 10.1 - CIS C06
   - id: 10.1-6.1
     std_from: 10.1

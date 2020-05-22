@@ -879,4 +879,84 @@ items:
   - id: 9.5-1.4
     std_from: 9.5
     std_to: 1.4
+  # Control 10 - PCI DSS R 4.3
+  - id: 10.1-4.3
+    std_from: 10.1
+    std_to: 4.3
+  - id: 10.2-4.3
+    std_from: 10.2
+    std_to: 4.3
+  - id: 10.3-4.3
+    std_from: 10.3
+    std_to: 4.3
+  - id: 10.4-4.3
+    std_from: 10.4
+    std_to: 4.3
+  - id: 10.5-4.3
+    std_from: 10.5
+    std_to: 4.3
+  # Control 10 - PCI DSS R 9.5
+  - id: 10.1-9.5
+    std_from: 10.1
+    std_to: 9.5
+  - id: 10.2-9.5
+    std_from: 10.2
+    std_to: 9.5
+  - id: 10.3-9.5
+    std_from: 10.3
+    std_to: 9.5
+  - id: 10.4-9.5
+    std_from: 10.4
+    std_to: 9.5
+  - id: 10.5-9.5
+    std_from: 10.5
+    std_to: 9.5
+  # Control 10 - PCI DSS R 9.6
+  - id: 10.1-9.6
+    std_from: 10.1
+    std_to: 9.6
+  - id: 10.2-9.6
+    std_from: 10.2
+    std_to: 9.6
+  - id: 10.3-9.6
+    std_from: 10.3
+    std_to: 9.6
+  - id: 10.4-9.6
+    std_from: 10.4
+    std_to: 9.6
+  - id: 10.5-9.6
+    std_from: 10.5
+    std_to: 9.6
+  # Control 10 - PCI DSS R 9.7
+  - id: 10.1-9.7
+    std_from: 10.1
+    std_to: 9.7
+  - id: 10.2-9.7
+    std_from: 10.2
+    std_to: 9.7
+  - id: 10.3-9.7
+    std_from: 10.3
+    std_to: 9.7
+  - id: 10.4-9.7
+    std_from: 10.4
+    std_to: 9.7
+  - id: 10.5-9.7
+    std_from: 10.5
+    std_to: 9.7
+  # Control 10 - PCI DSS R 9.8
+  - id: 10.1-9.8
+    std_from: 10.1
+    std_to: 9.8
+  - id: 10.2-9.8
+    std_from: 10.2
+    std_to: 9.8
+  - id: 10.3-9.8
+    std_from: 10.3
+    std_to: 9.8
+  - id: 10.4-9.8
+    std_from: 10.4
+    std_to: 9.8
+  - id: 10.5-9.8
+    std_from: 10.5
+    std_to: 9.8
   
