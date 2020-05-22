@@ -639,4 +639,128 @@ items:
   - id: 6.8-10.9
     std_from: 6.8
     std_to: 10.9
+  # Control 7 - PCI DSS R 2.2
+  - id: 7.1-2.2
+    std_from: 7.1
+    std_to: 2.2
+  - id: 7.2-2.2
+    std_from: 7.2
+    std_to: 2.2
+  - id: 7.3-2.2
+    std_from: 7.3
+    std_to: 2.2
+  - id: 7.4-2.2
+    std_from: 7.4
+    std_to: 2.2
+  - id: 7.5-2.2
+    std_from: 7.5
+    std_to: 2.2
+  - id: 7.6-2.2
+    std_from: 7.6
+    std_to: 2.2
+  - id: 7.7-2.2
+    std_from: 7.7
+    std_to: 2.2
+  - id: 7.8-2.2
+    std_from: 7.8
+    std_to: 2.2
+  - id: 7.9-2.2
+    std_from: 7.9
+    std_to: 2.2
+  - id: 7.10-2.2
+    std_from: 7.10
+    std_to: 2.2
+  # Control 7 - PCI DSS R 2.3
+  - id: 7.1-2.3
+    std_from: 7.1
+    std_to: 2.3
+  - id: 7.2-2.3
+    std_from: 7.2
+    std_to: 2.3
+  - id: 7.3-2.3
+    std_from: 7.3
+    std_to: 2.3
+  - id: 7.4-2.3
+    std_from: 7.4
+    std_to: 2.3
+  - id: 7.5-2.3
+    std_from: 7.5
+    std_to: 2.3
+  - id: 7.6-2.3
+    std_from: 7.6
+    std_to: 2.3
+  - id: 7.7-2.3
+    std_from: 7.7
+    std_to: 2.3
+  - id: 7.8-2.3
+    std_from: 7.8
+    std_to: 2.3
+  - id: 7.9-2.3
+    std_from: 7.9
+    std_to: 2.3
+  - id: 7.10-2.3
+    std_from: 7.10
+    std_to: 2.3
+  # Control 7 - PCI DSS R 6.2
+  - id: 7.1-6.2
+    std_from: 7.1
+    std_to: 6.2
+  - id: 7.2-6.2
+    std_from: 7.2
+    std_to: 6.2
+  - id: 7.3-6.2
+    std_from: 7.3
+    std_to: 6.2
+  - id: 7.4-6.2
+    std_from: 7.4
+    std_to: 6.2
+  - id: 7.5-6.2
+    std_from: 7.5
+    std_to: 6.2
+  - id: 7.6-6.2
+    std_from: 7.6
+    std_to: 6.2
+  - id: 7.7-6.2
+    std_from: 7.7
+    std_to: 6.2
+  - id: 7.8-6.2
+    std_from: 7.8
+    std_to: 6.2
+  - id: 7.9-6.2
+    std_from: 7.9
+    std_to: 6.2
+  - id: 7.10-6.2
+    std_from: 7.10
+    std_to: 6.2
+  # Control 7 - PCI DSS R 11.5
+  - id: 7.1-11.5
+    std_from: 7.1
+    std_to: 11.5
+  - id: 7.2-11.5
+    std_from: 7.2
+    std_to: 11.5
+  - id: 7.3-11.5
+    std_from: 7.3
+    std_to: 11.5
+  - id: 7.4-11.5
+    std_from: 7.4
+    std_to: 11.5
+  - id: 7.5-11.5
+    std_from: 7.5
+    std_to: 11.5
+  - id: 7.6-11.5
+    std_from: 7.6
+    std_to: 11.5
+  - id: 7.7-11.5
+    std_from: 7.7
+    std_to: 11.5
+  - id: 7.8-11.5
+    std_from: 7.8
+    std_to: 11.5
+  - id: 7.9-11.5
+    std_from: 7.9
+    std_to: 11.5
+  - id: 7.10-11.5
+    std_from: 7.10
+    std_to: 11.5
   

@@ -1,0 +1,125 @@
+---
+sub_controls:
+parent: 7
+items:
+  - id: 7.1
+    title: "Ensure Use of Only Fully Supported Browsers and Email Clients"
+    description: |
+      Ensure that only fully supported web browsers and email clients are allowed to execute in the organization, ideally only using the latest version of the browsers and email clients provided by the vendor.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 3
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 7.2
+    title: "Disable Unnecessary or Unauthorized Browser or Email Client Plugins"
+    description: |
+      Uninstall or disable any unauthorized browser or email client plugins or add-on applications.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "Software Whitelisting System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.3
+    title: "Limit Use of Scripting Languages in Web Browsers and Email Clients"
+    description: |
+      Ensure that only authorized scripting languages are able to run in all web browsers and email clients.
+    asset_type: Applications
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.4
+    title: "Maintain and Enforce Network-Based URL Filters"
+    description: |
+      Enforce network-based URL filters that limit a system’s ability to connect to websites not approved by the organization. This filtering shall be enforced for each of the organization’s systems, whether they are physically at an organization’s facilities or not.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network URL Filtering System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.5
+    title: "Subscribe to URL- Categorization Service"
+    description: |
+      Subscribe to URL-categorization services to ensure that they are up-to-date with the most recent website category definitions available. Uncategorized sites shall be blocked by default.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network URL Filtering System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.6
+    title: "Log All URL Requests"
+    description: |
+      Log all URL requests from each of the organization’s systems, whether on-site or a mobile device, in order to identify potentially malicious activity and assist incident handlers with identifying potentially compromised systems.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.7
+    title: "Use of DNS Filtering Services"
+    description: |
+      Use Domain Name System (DNS) filtering services to help block access to known malicious domains.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "DNS Domain Filtering System"
+    ig_start: 3
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 7.8
+    title: "Implement DMARC and Enable Receiver-Side Verification"
+    description: |
+      To lower the chance of spoofed or modified emails from valid domains, implement Domain- based Message Authentication, Reporting and Conformance (DMARC) policy and verification, starting by implementing the Sender Policy Framework (SPF) and the DomainKeys Identified Mail (DKIM) standards.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Anti-Spam Gateway"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.9
+    title: "Block Unnecessary File Types"
+    description: |
+      Block all email attachments entering the organization’s email gateway if the file types are unnecessary for the organization’s business.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Anti-Spam Gateway"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 7.10
+    title: "Sandbox All Email Attachments"
+    description: |
+      Use sandboxing to analyze and block inbound email attachments with malicious behavior.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Anti-Spam Gateway"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  
