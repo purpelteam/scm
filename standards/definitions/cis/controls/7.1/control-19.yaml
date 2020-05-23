@@ -1,0 +1,108 @@
+---
+sub_controls:
+parent: 19
+items:
+  - id: 19.1
+    title: "Document Incident Response Procedures"
+    description: |
+      Ensure that there are written incident response plans that define roles of personnel as well as phases of incident handling/management.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 19.2
+    title: "Assign Job Titles and Duties for Incident
+Response"
+    description: |
+      Assign job titles and duties for handling computer and network incidents to specific individuals, and ensure tracking and documentation throughout the incident through resolution.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 19.3
+    title: "Designate Management Personnel to Support
+Incident Handling"
+    description: |
+      Designate management personnel, as well as backups, who will support the incident handling process by acting in key decision-making roles.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 19.4
+    title: "Devise Organization- wide Standards For
+Reporting Incidents"
+    description: |
+      Devise organization-wide standards for the time required for system administrators and other workforce members to report anomalous events to the incident handling team, the mechanisms for such reporting, and the kind of information that should be included in the incident notification.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 19.5
+    title: "Maintain Contact Information For
+Reporting Security Incidents"
+    description: |
+      Assemble and maintain information on third- party contact information to be used to report a security incident, such as Law Enforcement, relevant government departments, vendors, and Information Sharing and Analysis Center (ISAC) partners.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 19.6
+    title: "Publish Information Regarding Reporting Computer Anomalies
+and Incidents"
+    description: |
+      Publish information for all workforce members, regarding reporting computer anomalies and incidents, to the incident handling team. Such information should be included in routine employee awareness activities.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 19.7
+    title: "Conduct Periodic Incident Scenario
+Sessions for Personnel"
+    description: |
+      Plan and conduct routine incident response exercises and scenarios for the workforce involved in the incident response to maintain awareness and comfort in responding to real-world threats. Exercises should test communication channels, decision making, and incident responder’s technical capabilities using tools and data available to them.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 19.8
+    title: "Create Incident Scoring and Prioritization
+Schema"
+    description: |
+      Create incident scoring and prioritization schema based on known or potential impact to your organization. Utilize score to define frequency of status updates and escalation procedures.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Incident Management Plans"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  

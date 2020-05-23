@@ -1975,6 +1975,31 @@ items:
   - id: 11.5-7.10
     std_from: 11.5
     std_to: 7.10
+  # Requirement 12.1 - CIS C19
+  - id: 12.1-19.1
+    std_from: 12.1
+    std_to: 19.1
+  - id: 12.1-19.2
+    std_from: 12.1
+    std_to: 19.2
+  - id: 12.1-19.3
+    std_from: 12.1
+    std_to: 19.3
+  - id: 12.1-19.4
+    std_from: 12.1
+    std_to: 19.4
+  - id: 12.1-19.5
+    std_from: 12.1
+    std_to: 19.5
+  - id: 12.1-19.6
+    std_from: 12.1
+    std_to: 19.6
+  - id: 12.1-19.7
+    std_from: 12.1
+    std_to: 19.7
+  - id: 12.1-19.8
+    std_from: 12.1
+    std_to: 19.8
   # Requirement 12.6 - CIS C17
   - id: 12.6-17.1
     std_from: 12.6
