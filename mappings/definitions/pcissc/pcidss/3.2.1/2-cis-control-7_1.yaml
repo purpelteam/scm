@@ -1891,6 +1891,31 @@ items:
   - id: 11.2-3.7
     std_from: 11.2
     std_to: 3.7
+  # Requirement 11.3 - CIS C20
+  - id: 11.3-20.1
+    std_from: 11.3
+    std_to: 20.1
+  - id: 11.3-20.2
+    std_from: 11.3
+    std_to: 20.2
+  - id: 11.3-20.3
+    std_from: 11.3
+    std_to: 20.3
+  - id: 11.3-20.4
+    std_from: 11.3
+    std_to: 20.4
+  - id: 11.3-20.5
+    std_from: 11.3
+    std_to: 20.5
+  - id: 11.3-20.6
+    std_from: 11.3
+    std_to: 20.6
+  - id: 11.3-20.7
+    std_from: 11.3
+    std_to: 20.7
+  - id: 11.3-20.8
+    std_from: 11.3
+    std_to: 20.8
   # Requirement 11.4 - CIS C12
   - id: 11.4-12.1
     std_from: 11.4

@@ -2028,3 +2028,29 @@ items:
   - id: 19.8-12.1
     std_from: 19.8
     std_to: 12.1
+  # Control 20 - PCI DSS R 11.3
+  - id: 20.1-11.3
+    std_from: 20.1
+    std_to: 11.3
+  - id: 20.2-11.3
+    std_from: 20.2
+    std_to: 11.3
+  - id: 20.3-11.3
+    std_from: 20.3
+    std_to: 11.3
+  - id: 20.4-11.3
+    std_from: 20.4
+    std_to: 11.3
+  - id: 20.5-11.3
+    std_from: 20.5
+    std_to: 11.3
+  - id: 20.6-11.3
+    std_from: 20.6
+    std_to: 11.3
+  - id: 20.7-11.3
+    std_from: 20.7
+    std_to: 11.3
+  - id: 20.8-11.3
+    std_from: 20.8
+    std_to: 11.3
+  

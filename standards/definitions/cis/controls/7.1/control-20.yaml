@@ -1,0 +1,101 @@
+---
+sub_controls:
+parent: 20
+items:
+  - id: 20.1
+    title: "Establish a Penetration Testing Program"
+    description: |
+      Establish a program for penetration tests that includes a full scope of blended attacks, such as wireless, client-based, and web application attacks.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 20.2
+    title: "Conduct Regular External and Internal Penetration Tests"
+    description: |
+      Conduct regular external and internal penetration tests to identify vulnerabilities and attack vectors that can be used to exploit enterprise systems successfully.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 20.3
+    title: "Perform Periodic Red Team Exercises"
+    description: |
+      Perform periodic Red Team exercises to test organizational readiness to identify and stop attacks or to respond quickly and effectively.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 20.4
+    title: "Include Tests for Presence of Unprotected System Information and Artifacts"
+    description: |
+      Include tests for the presence of unprotected system information and artifacts that would be useful to attackers, including network diagrams, configuration files, older penetration test reports, emails or documents containing passwords or other information critical to system operation.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 20.5
+    title: "Create a Test Bed for Elements Not Typically Tested in Production"
+    description: |
+      Create a test bed that mimics a production environment for specific penetration tests and Red Team attacks against elements that are not typically tested in production, such as attacks against supervisory control and data acquisition and other control systems.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 20.6
+    title: "Use Vulnerability Scanning and Penetration Testing Tools in Concert"
+    description: |
+      Use vulnerability scanning and penetration testing tools in concert. The results of vulnerability scanning assessments should be used as a starting point to guide and focus penetration testing efforts.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 20.7
+    title: "Ensure Results From Penetration Test Are Documented Using Open, Machine- Readable Standards"
+    description: |
+      Wherever possible, ensure that Red Team results are documented using open, machine-readable standards (e.g., SCAP). Devise a scoring method for determining the results of Red Team exercises so that results can be compared over time.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 20.8
+    title: "Control and Monitor Accounts Associated With Penetration Testing"
+    description: |
+      Any user or system accounts used to perform penetration testing should be controlled and monitored to make sure they are only being used for legitimate purposes, and are removed or restored to normal function after testing is over.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Penetration Testing Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  
