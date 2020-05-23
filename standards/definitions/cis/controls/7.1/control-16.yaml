@@ -1,0 +1,161 @@
+---
+sub_controls:
+parent: 16
+items:
+  - id: 16.1
+    title: "Maintain an Inventory of Authentication Systems"
+    description: |
+      Maintain an inventory of each of the organization’s authentication systems, including those located on-site or at a remote service provider.
+    asset_type: Users
+    security_function: Identify
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.2
+    title: "Configure Centralized Point of Authentication"
+    description: |
+      Configure access for all accounts through as few centralized points of authentication as possible, including network, security, and cloud systems.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.3
+    title: "Require Multi-Factor Authentication"
+    description: |
+      Require multi-factor authentication for all user accounts, on all systems, whether managed on-site or by a third-party provider.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Multi-Factor Authentication System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.4
+    title: "Encrypt or Hash All Authentication Credentials"
+    description: |
+      Encrypt or hash with a salt all authentication credentials when stored.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.5
+    title: "Encrypt Transmittal of Username and Authentication Credentials"
+    description: |
+      Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.6
+    title: "Maintain an Inventory of Accounts"
+    description: |
+      Maintain an inventory of all accounts organized by authentication system.
+    asset_type: Users
+    security_function: Identify
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.7
+    title: "Establish Process for Revoking Access"
+    description: |
+      Establish and follow an automated process for revoking system access by disabling accounts immediately upon termination or change of responsibilities of an employee or contractor. Disabling these accounts, instead of deleting accounts, allows preservation of audit trails.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.8
+    title: "Disable Any Unassociated Accounts"
+    description: |
+      Disable any account that cannot be associated with a business process or business owner.
+    asset_type: Users
+    security_function: Respond
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 16.9
+    title: "Disable Dormant Accounts"
+    description: |
+      Automatically disable dormant accounts after a set period of inactivity.
+    asset_type: Users
+    security_function: Respond
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 16.10
+    title: "Ensure All Accounts Have An Expiration Date"
+    description: |
+      Ensure that all accounts have an expiration date that is monitored and enforced.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.11
+    title: "Lock Workstation Sessions After Inactivity"
+    description: |
+      Automatically lock workstation sessions after a standard period of inactivity.
+    asset_type: Users
+    security_function: Protect
+    sensor_or_baseline: "Identity & Access Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 16.12
+    title: "Monitor Attempts to Access Deactivated Accounts"
+    description: |
+      Monitor attempts to access deactivated accounts through audit logging.
+    asset_type: Users
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 16.13
+    title: "Alert on Account Login Behavior Deviation"
+    description: |
+      Alert when users deviate from normal login behavior, such as time-of-day, workstation location, and duration.
+    asset_type: Users
+    security_function: Detect
+    sensor_or_baseline: "Log Management System / SIEM"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  
