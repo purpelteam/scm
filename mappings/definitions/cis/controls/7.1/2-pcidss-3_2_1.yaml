@@ -1269,4 +1269,116 @@ items:
   - id: 12.12-11.4
     std_from: 12.12
     std_to: 11.4
+  # Control 13 - PCI DSS R 3.6
+  - id: 13.1-3.6
+    std_from: 13.1
+    std_to: 3.6
+  - id: 13.2-3.6
+    std_from: 13.2
+    std_to: 3.6
+  - id: 13.3-3.6
+    std_from: 13.3
+    std_to: 3.6
+  - id: 13.4-3.6
+    std_from: 13.4
+    std_to: 3.6
+  - id: 13.5-3.6
+    std_from: 13.5
+    std_to: 3.6
+  - id: 13.6-3.6
+    std_from: 13.6
+    std_to: 3.6
+  - id: 13.7-3.6
+    std_from: 13.7
+    std_to: 3.6
+  - id: 13.8-3.6
+    std_from: 13.8
+    std_to: 3.6
+  - id: 13.9-3.6
+    std_from: 13.9
+    std_to: 3.6
+  # Control 13 - PCI DSS R 4.1
+  - id: 13.1-4.1
+    std_from: 13.1
+    std_to: 4.1
+  - id: 13.2-4.1
+    std_from: 13.2
+    std_to: 4.1
+  - id: 13.3-4.1
+    std_from: 13.3
+    std_to: 4.1
+  - id: 13.4-4.1
+    std_from: 13.4
+    std_to: 4.1
+  - id: 13.5-4.1
+    std_from: 13.5
+    std_to: 4.1
+  - id: 13.6-4.1
+    std_from: 13.6
+    std_to: 4.1
+  - id: 13.7-4.1
+    std_from: 13.7
+    std_to: 4.1
+  - id: 13.8-4.1
+    std_from: 13.8
+    std_to: 4.1
+  - id: 13.9-4.1
+    std_from: 13.9
+    std_to: 4.1
+  # Control 13 - PCI DSS R 4.2
+  - id: 13.1-4.2
+    std_from: 13.1
+    std_to: 4.2
+  - id: 13.2-4.2
+    std_from: 13.2
+    std_to: 4.2
+  - id: 13.3-4.2
+    std_from: 13.3
+    std_to: 4.2
+  - id: 13.4-4.2
+    std_from: 13.4
+    std_to: 4.2
+  - id: 13.5-4.2
+    std_from: 13.5
+    std_to: 4.2
+  - id: 13.6-4.2
+    std_from: 13.6
+    std_to: 4.2
+  - id: 13.7-4.2
+    std_from: 13.7
+    std_to: 4.2
+  - id: 13.8-4.2
+    std_from: 13.8
+    std_to: 4.2
+  - id: 13.9-4.2
+    std_from: 13.9
+    std_to: 4.2
+  # Control 13 - PCI DSS R 4.3
+  - id: 13.1-4.3
+    std_from: 13.1
+    std_to: 4.3
+  - id: 13.2-4.3
+    std_from: 13.2
+    std_to: 4.3
+  - id: 13.3-4.3
+    std_from: 13.3
+    std_to: 4.3
+  - id: 13.4-4.3
+    std_from: 13.4
+    std_to: 4.3
+  - id: 13.5-4.3
+    std_from: 13.5
+    std_to: 4.3
+  - id: 13.6-4.3
+    std_from: 13.6
+    std_to: 4.3
+  - id: 13.7-4.3
+    std_from: 13.7
+    std_to: 4.3
+  - id: 13.8-4.3
+    std_from: 13.8
+    std_to: 4.3
+  - id: 13.9-4.3
+    std_from: 13.9
+    std_to: 4.3
   

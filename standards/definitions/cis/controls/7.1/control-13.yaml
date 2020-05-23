@@ -1,0 +1,113 @@
+---
+sub_controls:
+parent: 13
+items:
+  - id: 13.1
+    title: "Maintain an Inventory of Sensitive Information"
+    description: |
+      Maintain an inventory of all sensitive information stored, processed, or transmitted by the organization’s technology systems, including those located on-site or at a remote service provider.
+    asset_type: Data
+    security_function: Identify
+    sensor_or_baseline: "Data Inventory / Classification System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 13.2
+    title: "Remove Sensitive Data or Systems Not Regularly Accessed by Organization"
+    description: |
+      Remove sensitive data or systems not regularly accessed by the organization from the network. These systems shall only be used as stand-alone systems (disconnected from the network) by the business unit needing to occasionally use the system or completely virtualized and powered off until needed.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Data Inventory / Classification System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 13.3
+    title: "Monitor and Block Unauthorized Network Traffic"
+    description: |
+      Deploy an automated tool on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security professionals.
+    asset_type: Data
+    security_function: Detect
+    sensor_or_baseline: "Network Based Data Loss Prevention (DLP) System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 13.4
+    title: "Only Allow Access to Authorized Cloud Storage or Email Providers"
+    description: |
+      Only allow access to authorized cloud storage or email providers.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Network Firewall / Acess Control System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 13.5
+    title: "Monitor and Detect Any Unauthorized Use of Encryption"
+    description: |
+      Monitor all traffic leaving the organization and detect any unauthorized use of encryption.
+    asset_type: Data
+    security_function: Detect
+    sensor_or_baseline: "Network Based Data Loss Prevention (DLP) System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 13.6
+    title: "Encrypt Mobile Device Data"
+    description: |
+      Utilize approved cryptographic mechanisms to protect enterprise data stored on all mobile devices.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Whole Disk Encryption System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 13.7
+    title: "Manage USB Devices"
+    description: |
+      If USB storage devices are required, enterprise software should be used that can configure systems to allow the use of specific devices. An inventory of such devices should be maintained.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 13.8
+    title: "Manage System’s External Removable Media’s Read/Write Configurations"
+    description: |
+      Configure systems not to write data to external removable media, if there is no business need for supporting such devices.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 13.9
+    title: "Encrypt Data on USB Storage Devices"
+    description: |
+      If USB storage devices are required, all data stored on such devices must be encrypted while at rest.
+    asset_type: Data
+    security_function: Protect
+    sensor_or_baseline: "Endpoint Protection System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  

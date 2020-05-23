@@ -375,6 +375,90 @@ items:
   - id: 2.4-2.10
     std_from: 2.4
     std_to: 2.10
+  # Requirement 3.1 - CIS C13
+  - id: 3.1-13.1
+    std_from: 3.1
+    std_to: 13.1
+  - id: 3.1-13.2
+    std_from: 3.1
+    std_to: 13.2
+  - id: 3.1-13.3
+    std_from: 3.1
+    std_to: 13.3
+  - id: 3.1-13.4
+    std_from: 3.1
+    std_to: 13.4
+  - id: 3.1-13.5
+    std_from: 3.1
+    std_to: 13.5
+  - id: 3.1-13.6
+    std_from: 3.1
+    std_to: 13.6
+  - id: 3.1-13.7
+    std_from: 3.1
+    std_to: 13.7
+  - id: 3.1-13.8
+    std_from: 3.1
+    std_to: 13.8
+  - id: 3.1-13.9
+    std_from: 3.1
+    std_to: 13.9
+  # Requirement 4.1 - CIS C13
+  - id: 4.1-13.1
+    std_from: 4.1
+    std_to: 13.1
+  - id: 4.1-13.2
+    std_from: 4.1
+    std_to: 13.2
+  - id: 4.1-13.3
+    std_from: 4.1
+    std_to: 13.3
+  - id: 4.1-13.4
+    std_from: 4.1
+    std_to: 13.4
+  - id: 4.1-13.5
+    std_from: 4.1
+    std_to: 13.5
+  - id: 4.1-13.6
+    std_from: 4.1
+    std_to: 13.6
+  - id: 4.1-13.7
+    std_from: 4.1
+    std_to: 13.7
+  - id: 4.1-13.8
+    std_from: 4.1
+    std_to: 13.8
+  - id: 4.1-13.9
+    std_from: 4.1
+    std_to: 13.9
+  # Requirement 4.2 - CIS C13
+  - id: 4.2-13.1
+    std_from: 4.2
+    std_to: 13.1
+  - id: 4.2-13.2
+    std_from: 4.2
+    std_to: 13.2
+  - id: 4.2-13.3
+    std_from: 4.2
+    std_to: 13.3
+  - id: 4.2-13.4
+    std_from: 4.2
+    std_to: 13.4
+  - id: 4.2-13.5
+    std_from: 4.2
+    std_to: 13.5
+  - id: 4.2-13.6
+    std_from: 4.2
+    std_to: 13.6
+  - id: 4.2-13.7
+    std_from: 4.2
+    std_to: 13.7
+  - id: 4.2-13.8
+    std_from: 4.2
+    std_to: 13.8
+  - id: 4.2-13.9
+    std_from: 4.2
+    std_to: 13.9
   # Requirement 4.3 - CIS C10
   - id: 4.3-10.1
     std_from: 4.3
@@ -391,6 +475,34 @@ items:
   - id: 4.3-10.5
     std_from: 4.3
     std_to: 10.5
+  # Requirement 4.3 - CIS C13
+  - id: 4.3-13.1
+    std_from: 4.3
+    std_to: 13.1
+  - id: 4.3-13.2
+    std_from: 4.3
+    std_to: 13.2
+  - id: 4.3-13.3
+    std_from: 4.3
+    std_to: 13.3
+  - id: 4.3-13.4
+    std_from: 4.3
+    std_to: 13.4
+  - id: 4.3-13.5
+    std_from: 4.3
+    std_to: 13.5
+  - id: 4.3-13.6
+    std_from: 4.3
+    std_to: 13.6
+  - id: 4.3-13.7
+    std_from: 4.3
+    std_to: 13.7
+  - id: 4.3-13.8
+    std_from: 4.3
+    std_to: 13.8
+  - id: 4.3-13.9
+    std_from: 4.3
+    std_to: 13.9
   # Requirement 5.1 - CIS C08
   - id: 5.1-8.1
     std_from: 5.1
