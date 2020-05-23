@@ -1839,4 +1839,32 @@ items:
   - id: 16.13-8.8
     std_from: 16.13
     std_to: 8.8
+  # Control 17 - PCI DSS R 12.6
+  - id: 17.1-12.6
+    std_from: 17.1
+    std_to: 12.6
+  - id: 17.2-12.6
+    std_from: 17.2
+    std_to: 12.6
+  - id: 17.3-12.6
+    std_from: 17.3
+    std_to: 12.6
+  - id: 17.4-12.6
+    std_from: 17.4
+    std_to: 12.6
+  - id: 17.5-12.6
+    std_from: 17.5
+    std_to: 12.6
+  - id: 17.6-12.6
+    std_from: 17.6
+    std_to: 12.6
+  - id: 17.7-12.6
+    std_from: 17.7
+    std_to: 12.6
+  - id: 17.8-12.6
+    std_from: 17.8
+    std_to: 12.6
+  - id: 17.9-12.6
+    std_from: 17.9
+    std_to: 12.6
   

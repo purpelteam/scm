@@ -1,0 +1,114 @@
+---
+sub_controls:
+parent: 17
+items:
+  - id: 17.1
+    title: "Perform a Skills Gap Analysis"
+    description: |
+      Perform a skills gap analysis to understand the skills and behaviors workforce members are not adhering to, using this information to build a baseline education roadmap.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 17.2
+    title: "Deliver Training to Fill the Skills Gap"
+    description: |
+      Deliver training to address the skills gap identified to positively impact workforce members’ security behavior.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 17.3
+    title: "Implement a Security Awareness Program"
+    description: |
+      Create a security awareness program for all workforce members to complete on a regular basis to ensure they understand and exhibit the necessary behaviors and skills to help ensure the security of the organization. The organization’s security awareness program should be communicated in a continuous and engaging manner.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 17.4
+    title: "Update Awareness Content Frequently"
+    description: |
+      Ensure that the organization’s security awareness program is updated frequently (at least annually) to address new technologies, threats, standards, and business requirements.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 17.5
+    title: "Train Workforce on Secure Authentication"
+    description: |
+      Train workforce members on the importance of enabling and utilizing secure authentication.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 17.6
+    title: "Train Workforce on Identifying Social Engineering Attacks"
+    description: |
+      Train the workforce on how to identify different forms of social engineering attacks, such as phishing, phone scams, and impersonation calls.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 17.7
+    title: "Train Workforce on Sensitive Data Handling"
+    description: |
+      Train workforce members on how to identify and properly store, transfer, archive, and destroy sensitive information.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 17.8
+    title: "Train Workforce on Causes of Unintentional Data Exposure"
+    description: |
+      Train workforce members to be aware of causes for unintentional data exposures, such as losing their mobile devices or emailing the wrong person due to autocomplete in email.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 17.9
+    title: "Train Workforce Members on Identifying and Reporting Incidents"
+    description: |
+      Train workforce members to be able to identify the most common indicators of an incident and be able to report such an incident.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  
+  

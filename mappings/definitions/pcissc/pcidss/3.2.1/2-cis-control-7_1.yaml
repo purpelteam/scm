@@ -1839,4 +1839,31 @@ items:
   - id: 11.5-7.10
     std_from: 11.5
     std_to: 7.10
-  
+  # Requirement 12.6 - CIS C17
+  - id: 12.6-17.1
+    std_from: 12.6
+    std_to: 17.1
+  - id: 12.6-17.2
+    std_from: 12.6
+    std_to: 17.2
+  - id: 12.6-17.3
+    std_from: 12.6
+    std_to: 17.3
+  - id: 12.6-17.4
+    std_from: 12.6
+    std_to: 17.4
+  - id: 12.6-17.5
+    std_from: 12.6
+    std_to: 17.5
+  - id: 12.6-17.6
+    std_from: 12.6
+    std_to: 17.6
+  - id: 12.6-17.7
+    std_from: 12.6
+    std_to: 17.7
+  - id: 12.6-17.8
+    std_from: 12.6
+    std_to: 17.8
+  - id: 12.6-17.9
+    std_from: 12.6
+    std_to: 17.9
