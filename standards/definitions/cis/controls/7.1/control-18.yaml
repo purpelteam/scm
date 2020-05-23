@@ -1,0 +1,137 @@
+---
+sub_controls:
+parent: 18
+items:
+  - id: 18.1
+    title: "Establish Secure Coding Practices"
+    description: |
+      Establish secure coding practices appropriate to the programming language and development environment being used.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.2
+    title: "Ensure That Explicit Error Checking Is Performed for All In-House Developed Software"
+    description: |
+      For in-house developed software, ensure that explicit error checking is performed and documented for all input, including for size, data type, and acceptable ranges or formats.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.3
+    title: "Verify That Acquired Software Is Still Supported"
+    description: |
+      Verify that the version of all software acquired from outside your organization is still supported by the developer or appropriately hardened based on developer security recommendations.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.4
+    title: "Only Use Up-to-Date and Trusted Third-Party Components"
+    description: |
+      Only use up-to-date and trusted third-party components for the software developed by the organization.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 18.5
+    title: "Use only Standardized and Extensively Reviewed Encryption Algorithms"
+    description: |
+      Use only standardized, currently accepted, and extensively reviewed encryption algorithms.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.6
+    title: "Ensure Software Development Personnel Are Trained in Secure Coding"
+    description: |
+      Ensure that all software development personnel receive training in writing secure code for their specific development environment and responsibilities.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Training / Awareness Education Plans"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.7
+    title: "Apply Static and Dynamic Code Analysis Tools"
+    description: |
+      Apply static and dynamic analysis tools to verify that secure coding practices are being adhered to for internally developed software.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Software Vulnerability Scanning Tool"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.8
+    title: "Establish a Process to Accept and Address Reports of Software Vulnerabilities"
+    description: |
+      Establish a process to accept and address reports of software vulnerabilities, including providing a means for external entities to contact your security group.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Software Vulnerability Scanning Tool"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.9
+    title: "Separate Production and Non-Production Systems"
+    description: |
+      Maintain separate environments for production and non-production systems. Developers should not have unmonitored access to production environments.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Secure Coding Standards"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.10
+    title: "Deploy Web Application Firewalls"
+    description: |
+      Protect web applications by deploying web application firewalls (WAFs) that inspect all traffic flowing to the web application for common web application attacks. For applications that are not web-based, specific application firewalls should be deployed if such tools are available for the given application type. If the traffic is encrypted, the device should either sit behind the encryption or be capable of decrypting the traffic prior to analysis. If neither option is appropriate, a host-based web application firewall should be deployed.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "Web Application Firewall (WAF)"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 18.11
+    title: "Use Standard Hardening Configuration Templates for Databases"
+    description: |
+      For applications that rely on a database, use standard hardening configuration templates. All systems that are part of critical business processes should also be tested.
+    asset_type: N/A
+    security_function: N/A
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  
