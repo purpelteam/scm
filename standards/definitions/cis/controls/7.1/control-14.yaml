@@ -8,7 +8,7 @@ items:
       Segment the network based on the label or classification level of the information stored on the servers, locate all sensitive information on separated Virtual Local Area Networks (VLANs).
     asset_type: Network
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Network Firewall / Acess Control System"
     ig_start: 2
     ig_status:
       ig1: false
@@ -20,7 +20,7 @@ items:
       Enable firewall filtering between VLANs to ensure that only authorized systems are able to communicate with other systems necessary to fulfill their specific responsibilities.
     asset_type: Network
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Network Firewall / Acess Control System"
     ig_start: 2
     ig_status:
       ig1: false
@@ -32,7 +32,7 @@ items:
       Disable all workstation-to-workstation communication to limit an attacker’s ability to move laterally and compromise neighboring systems, through technologies such as private VLANs or micro segmentation.
     asset_type: Network
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Network Firewall / Acess Control System"
     ig_start: 2
     ig_status:
       ig1: false
@@ -44,7 +44,7 @@ items:
       Encrypt all sensitive information in transit.
     asset_type: Data
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "System Configuration Enforcement System"
     ig_start: 2
     ig_status:
       ig1: false
@@ -56,7 +56,7 @@ items:
       Utilize an active discovery tool to identify all sensitive information stored, processed, or transmitted by the organization’s technology systems, including those located on-site or at a remote service provider, and update the organization’s sensitive information inventory.
     asset_type: Data
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Data Inventory / Classification System"
     ig_start: 3
     ig_status:
       ig1: false
@@ -68,7 +68,7 @@ items:
       Protect all information stored on systems with file system, network share, claims, application, or database specific access control lists. These controls will enforce the principle that only authorized individuals should have access to the information based on their need to access the information as a part of their responsibilities.
     asset_type: Data
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "System Configuration Enforcement System"
     ig_start: 1
     ig_status:
       ig1: true
@@ -80,7 +80,7 @@ items:
       Use an automated tool, such as host-based Data Loss Prevention, to enforce access controls to data even when the data is copied off a system.
     asset_type: Data
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Host Based Data Loss Prevention (DLP) System"
     ig_start: 3
     ig_status:
       ig1: false
@@ -92,7 +92,7 @@ items:
       Encrypt all sensitive information at rest using a tool that requires a secondary authentication mechanism not integrated into the operating system, in order to access the information.
     asset_type: Data
     security_function: Protect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Host Based Data Loss Prevention (DLP) System"
     ig_start: 3
     ig_status:
       ig1: false
@@ -104,7 +104,7 @@ items:
       Enforce detailed audit logging for access to sensitive data or changes to sensitive data (utilizing tools such as File Integrity Monitoring or Security Information and Event Monitoring).
     asset_type: Data
     security_function: Detect
-    sensor_or_baseline: ""
+    sensor_or_baseline: "Log Management System / SIEM"
     ig_start: 3
     ig_status:
       ig1: false
