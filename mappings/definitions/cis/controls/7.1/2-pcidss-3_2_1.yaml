@@ -1577,4 +1577,66 @@ items:
   - id: 14.9-8.7
     std_from: 14.9
     std_to: 8.7
+  # Control 15 - PCI DSS R 4.3
+  - id: 15.1-4.3
+    std_from: 15.1
+    std_to: 4.3
+  - id: 15.2-4.3
+    std_from: 15.2
+    std_to: 4.3
+  - id: 15.3-4.3
+    std_from: 15.3
+    std_to: 4.3
+  - id: 15.4-4.3
+    std_from: 15.4
+    std_to: 4.3
+  - id: 15.5-4.3
+    std_from: 15.5
+    std_to: 4.3
+  - id: 15.6-4.3
+    std_from: 15.6
+    std_to: 4.3
+  - id: 15.7-4.3
+    std_from: 15.7
+    std_to: 4.3
+  - id: 15.8-4.3
+    std_from: 15.8
+    std_to: 4.3
+  - id: 15.9-4.3
+    std_from: 15.9
+    std_to: 4.3
+  - id: 15.10-4.3
+    std_from: 15.10
+    std_to: 4.3
+  # Control 15 - PCI DSS R 11.1
+  - id: 15.1-11.1
+    std_from: 15.1
+    std_to: 11.1
+  - id: 15.2-11.1
+    std_from: 15.2
+    std_to: 11.1
+  - id: 15.3-11.1
+    std_from: 15.3
+    std_to: 11.1
+  - id: 15.4-11.1
+    std_from: 15.4
+    std_to: 11.1
+  - id: 15.5-11.1
+    std_from: 15.5
+    std_to: 11.1
+  - id: 15.6-11.1
+    std_from: 15.6
+    std_to: 11.1
+  - id: 15.7-11.1
+    std_from: 15.7
+    std_to: 11.1
+  - id: 15.8-11.1
+    std_from: 15.8
+    std_to: 11.1
+  - id: 15.9-11.1
+    std_from: 15.9
+    std_to: 11.1
+  - id: 15.10-11.1
+    std_from: 15.10
+    std_to: 11.1
   

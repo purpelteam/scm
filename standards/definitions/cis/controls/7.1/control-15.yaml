@@ -1,0 +1,125 @@
+---
+sub_controls:
+parent: 15
+items:
+  - id: 15.1
+    title: "Maintain an Inventory of Authorized Wireless Access Points"
+    description: |
+      Maintain an inventory of authorized wireless access points connected to the wired network.
+    asset_type: Network
+    security_function: Identify
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 15.2
+    title: "Detect Wireless Access Points Connected to the Wired Network"
+    description: |
+      Configure network vulnerability scanning tools to detect and alert on unauthorized wireless access points connected to the wired network.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "SCAP Based Vulnerability Management System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 15.3
+    title: "Use a Wireless Intrusion Detection System"
+    description: |
+      Use a wireless intrusion detection system (WIDS) to detect and alert on unauthorized wireless access points connected to the network.
+    asset_type: Network
+    security_function: Detect
+    sensor_or_baseline: "Wireless Intrusion Detection System (WIDS)"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 15.4
+    title: "Disable Wireless Access on Devices if Not Required"
+    description: |
+      Disable wireless access on devices that do not have a business purpose for wireless access.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 15.5
+    title: "Limit Wireless Access on Client Devices"
+    description: |
+      Configure wireless access on client machines that do have an essential wireless business purpose, to allow access only to authorized wireless networks and to restrict access to other wireless networks.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 15.6
+    title: "Disable Peer-to-Peer Wireless Network Capabilities on Wireless Clients"
+    description: |
+      Disable peer-to-peer (ad hoc) wireless network capabilities on wireless clients.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 15.7
+    title: "Leverage the Advanced Encryption Standard (AES) to Encrypt Wireless Data"
+    description: |
+      Leverage the Advanced Encryption Standard (AES) to encrypt wireless data in transit.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  - id: 15.8
+    title: "Use Wireless Authentication Protocols That Require Mutual, Multi-Factor Authentication"
+    description: |
+      Ensure that wireless networks use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS), that requires mutual, multi-factor authentication.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 3
+    ig_status:
+      ig1: false
+      ig2: false
+      ig3: true
+  - id: 15.9
+    title: "Disable Wireless Peripheral Access to Devices"
+    description: |
+      Disable wireless peripheral access of devices [such as Bluetooth and Near Field Communication (NFC)], unless such access is required for a business purpose.
+    asset_type: Devices
+    security_function: Protect
+    sensor_or_baseline: "System Configuration Enforcement System"
+    ig_start: 2
+    ig_status:
+      ig1: false
+      ig2: true
+      ig3: true
+  - id: 15.10
+    title: "Create Separate Wireless Network for Personal and Untrusted Devices"
+    description: |
+      Create a separate wireless network for personal or untrusted devices. Enterprise access from this network should be treated as untrusted and filtered and audited accordingly.
+    asset_type: Network
+    security_function: Protect
+    sensor_or_baseline: "Network Device Management System"
+    ig_start: 1
+    ig_status:
+      ig1: true
+      ig2: true
+      ig3: true
+  
