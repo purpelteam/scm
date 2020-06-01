@@ -13,7 +13,7 @@ import (
 	"github.com/purpeltim/scm/tools/sysinfo"
 )
 
-// testCmd represents the version command
+// testCmd represents the test command
 var testCmd = &cobra.Command{
 	Use:   "test",
 	Short: "Test the feature of SCM.",
